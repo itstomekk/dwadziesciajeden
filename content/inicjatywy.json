@@ -28,14 +28,14 @@
      "title": "Kancelaria DJP: Bitcoin desk",
      "type_label": "usługi prawne",
      "url": "https://djp.pl/",
-     "description_pl": "Warszawska kancelaria, która przyjmuje bitcoin, ma zespół prawników-bitcoinerów i trzyma BTC w rezerwach firmy."
+     "description_pl": "Nasz przyjaciel i prawnik bitcoinowy. Warszawska kancelaria z zespołem Bitcoin desk, przyjmuje płatności w bitcoinie."
     }
    ]
   },
   {
    "id": "tlumaczenia",
    "title": "Pomóż tłumaczyć",
-   "intro": "Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli i narzędzi. Każdy może dołożyć kilka zdań.",
+   "intro": "Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.",
    "items": [
     {
      "title": "Bitcoin in Polish",
@@ -111,10 +111,10 @@
      "description_pl": "Wielojęzyczna grupa warszawskich wydarzeń. W poniedziałki Bitcoin Café: spotkanie w małych grupach, bez prezentacji, wokół Twoich pytań."
     },
     {
-     "title": "Poznań BitcoinWalk",
+     "title": "Poznań BitcoinWalk · Spacery ku wolności",
      "type_label": "spacer, Poznań",
-     "url": "https://www.meetup.com/pl-PL/pozna%C5%84-bitcoinwalk/",
-     "description_pl": "Bitcoinowe spacery po Poznaniu, ogłaszane na Meetup i na naszej poznańskiej grupie."
+     "url": "https://www.meetup.com/poz21m/",
+     "description_pl": "Bitcoinowe spacery po Poznaniu. Zbiórka zwykle przy Skwerze Jana Suwarta (ul. Ewangelicka). Terminy na Meetup i na naszej poznańskiej grupie."
     }
    ]
   },
@@ -127,6 +127,12 @@
      "type_label": "Telegram",
      "url": "https://t.me/dwadziesciajeden",
      "description_pl": "Nasz główny czat. Tu dzieje się większość rzeczy."
+    },
+    {
+     "title": "Dwadzieścia Jeden na Nostrze",
+     "type_label": "Armada, Nostr",
+     "url": "https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33",
+     "description_pl": "Nasza społeczność na Armadzie: czat oparty na Nostrze, szyfrowany, bez właściciela serwera. Wystarczy klucz Nostr."
     },
     {
      "title": "Wątek Bitcoin w Polsce",

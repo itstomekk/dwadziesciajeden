@@ -27,6 +27,7 @@ TG = "https://t.me/dwadziesciajeden"
 TG_POZNAN = "https://t.me/DwadziesciaJedenPoznan"
 X_URL = "https://x.com/21BitcoinPolska"
 NOSTR_NPUB = "npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc"
+NOSTR_ARMADA = "https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33"
 NOSTR_URL = "https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2"
 EMAIL = "kontakt@dwadziesciajeden.pl"
 
@@ -83,10 +84,8 @@ def text_of(h: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
 
 
-LOGO = (
-    '<svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="var(--orange)"/>'
-    '<text x="20" y="28" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="22" fill="#16130F">21</text></svg>'
-)
+LOGO_SRC = BASE + "/assets/logo.jpg"
+LOGO = f'<img class="mark" src="{LOGO_SRC}" width="44" height="44" alt="">'
 
 
 def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
@@ -116,10 +115,10 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
 <meta property="og:image" content="{SITE_URL}{og.replace(BASE, '', 1) if og.startswith(BASE) else og}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@21BitcoinPolska">
-<meta name="theme-color" content="#16130F">
-<link rel="icon" href="{b('/assets/favicon.svg')}" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="{b('/assets/favicon.png')}" type="image/png">
 <link rel="apple-touch-icon" href="{b('/assets/apple-touch-icon.png')}">
-<link rel="preload" href="{b('/assets/fonts/fraunces-latin.woff2')}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{b('/assets/fonts/montserrat-latin.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{b('/assets/fonts/fonts.css')}">
 <link rel="stylesheet" href="{b('/assets/site.css')}?v={BUILT}">
 </head>
@@ -143,14 +142,15 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
 <footer class="foot">
   <div class="foot__in">
     <div class="foot__brand">
-      <a class="brand brand--light" href="{b('/')}">{LOGO}<span>Dwadzieścia Jeden</span></a>
+      <a class="brand" href="{b('/')}">{LOGO}<span>Dwadzieścia Jeden</span></a>
       <p>Polska społeczność Bitcoin Only. Część sieci <a href="https://twentyone.world/" rel="noopener">TwentyOne</a>.</p>
     </div>
     <div class="foot__col">
       <h2>Społeczność</h2>
       <a href="{TG}" rel="noopener">Czat na Telegramie</a>
       <a href="{X_URL}" rel="noopener">@21BitcoinPolska na X</a>
-      <a href="{NOSTR_URL}" rel="noopener">Nostr</a>
+      <a href="{NOSTR_ARMADA}" rel="noopener">Społeczność na Nostrze (Armada)</a>
+      <a href="{NOSTR_URL}" rel="noopener">Profil na Nostrze</a>
       <a href="{b('/dolacz-do-nas/#kontakt')}">Kontakt</a>
     </div>
     <div class="foot__col">
@@ -309,7 +309,7 @@ def build():
     <p class="kicker">Zrealizowany projekt</p>
     <h2>Standard Bitcoina w polskim Parlamencie</h2>
     <p>Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa. 8 stycznia 2026 trafiły z listem otwartym do każdego posła i senatora, a cztery dni później do Prezydenta RP. Zbiórkę wsparło 80 osób.</p>
-    <p class="cta-row"><a class="btn btn--dark" href="{b('/bitcoin-w-parlamencie/')}">Przeczytaj całą historię</a><a class="link-arrow" href="{b('/kronika/#standard-bitcoina')}">Przebieg w kronice</a></p>
+    <p class="cta-row"><a class="btn btn--dark" href="{b('/bitcoin-w-parlamencie/')}">Przeczytaj całą historię</a><a class="link-arrow" href="{b('/kronika/')}">Przebieg w kronice</a></p>
   </div>
 </section>
 
@@ -325,6 +325,7 @@ def build():
       <a class="join__card join__card--main" href="{TG}" rel="noopener"><span>Telegram · główny czat</span><strong>t.me/dwadziesciajeden</strong></a>
       <a class="join__card" href="{TG_POZNAN}" rel="noopener"><span>Telegram · Poznań</span><strong>DwadziesciaJedenPoznan</strong></a>
       <a class="join__card" href="{X_URL}" rel="noopener"><span>X</span><strong>@21BitcoinPolska</strong></a>
+      <a class="join__card" href="{NOSTR_ARMADA}" rel="noopener"><span>Nostr · społeczność na Armadzie</span><strong>Dwadzieścia Jeden na Armada</strong></a>
       <div class="join__card join__card--nostr"><span class="npub">Nostr <a href="{NOSTR_URL}" rel="noopener">profil</a><button class="copy-btn" type="button" data-copy="{NOSTR_NPUB}">Kopiuj</button></span><strong>{NOSTR_NPUB}</strong></div>
     </div>
     <p class="join__rules">Zanim dołączysz, przeczytaj <a href="{b('/zasady/')}">zasady społeczności</a>.</p>
@@ -442,6 +443,12 @@ def build():
                            '<p class="note">Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na <a href="https://t.me/dwadziesciajeden" rel="noopener">czacie</a> i na X.</p>', h, flags=re.S)
                 h += ('<h3>Z archiwum</h3><ul><li><a href="https://x.com/21BitcoinPolska/status/1794694392374342098" rel="noopener">„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024</a></li>'
                       '<li><a href="https://x.com/21BitcoinPolska/status/1919430740485304721" rel="noopener">Meetup w Krakowie, 9 maja 2025</a></li></ul>')
+            if c["slug"] == "poznan":
+                h = h.replace('<h3 id="meetup">', '<h3 id="stale">Stałe spotkania</h3><div class="regulars">'
+                              '<a class="regular" href="https://www.meetup.com/poz21m/" rel="noopener"><span class="regular__when">Spacery, terminy na Meetup</span><strong>Poznań BitcoinWalk · Spacery ku wolności</strong><span>Spacer i rozmowa o Bitcoinie. Zbiórka zwykle przy Skwerze Jana Suwarta, ul. Ewangelicka. Latem także grill i spacery nad Rusałką.</span></a>'
+                              '<a class="regular" href="https://t.me/DwadziesciaJedenPoznan" rel="noopener"><span class="regular__when">Na bieżąco</span><strong>Dwadzieścia Jeden Poznań</strong><span>Poznańska grupa na Telegramie. Tu ogłaszamy spacery i spotkania.</span></a>'
+                              '</div><p class="note">Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjściem.</p><h3 id="meetup">', 1)
+                h = h.replace('https://www.meetup.com/pl-PL/pozna%C5%84-bitcoinwalk/', 'https://www.meetup.com/poz21m/').replace('Poznań BitcoinWalk | Meetup', 'Spacery ku wolności (Poznań BitcoinWalk) | Meetup')
             if c["slug"] == "warszawa":
                 h = h.replace('<h3 id="meetup">', '<h3 id="stale">Stałe spotkania</h3><div class="regulars">'
                               '<a class="regular" href="https://bitcoinwalk.org/warszawa" rel="noopener"><span class="regular__when">Soboty, 11:30</span><strong>BitcoinWalk Warszawa</strong><span>Spacer i rozmowa o Bitcoinie. Zbiórka: Ogród Saski, Fontanna Wielka. Także po angielsku.</span></a>'

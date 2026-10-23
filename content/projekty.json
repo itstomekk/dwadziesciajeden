@@ -145,24 +145,9 @@
    "origin": "old /projekty/"
   },
   {
-   "id": "bitcoin-polska-yt",
-   "name": "Bitcoin Polska na YouTube",
-   "status": "kanał",
-   "kind": "friends",
-   "image": null,
-   "text": "Oskar Pilch prowadzi bitcoinowe „słuchowisko”: wartościowe artykuły do przesłuchania gdziekolwiek jesteś.",
-   "links": [
-    {
-     "label": "youtube.com/@bitcoinpolska",
-     "url": "https://www.youtube.com/@bitcoinpolska"
-    }
-   ],
-   "origin": "old /projekty/"
-  },
-  {
    "id": "djp",
    "name": "Kancelaria DJP: Bitcoin desk",
-   "status": "od 2023",
+   "status": "nasz przyjaciel · prawnik bitcoinowy",
    "kind": "friends",
    "image": null,
    "text": "Warszawska kancelaria prawna pod przewodnictwem Gracjana Pietrasa przyjmuje płatności w bitcoinie i stworzyła Bitcoin desk, zespół prawników-bitcoinerów. W grudniu 2024 dołączyła BTC do rezerw firmy.",

@@ -137,7 +137,7 @@
      "author": "Polskie Stowarzyszenie Bitcoin",
      "type_label": "strona edukacyjna",
      "url": "https://anatomiabitcoina.pl/",
-     "description_pl": "Materiały o Bitcoinie zebrane w jednym miejscu, po polsku. Polecane na naszym czacie w maju 2026."
+     "description_pl": "Materiały o Bitcoinie zebrane w jednym miejscu, po polsku. Projekt Polskiego Stowarzyszenia Bitcoin."
     },
     {
      "title": "10 przykazań dobrego bitcoinowania",
@@ -150,7 +150,7 @@
      "title": "Timechain Calendar po polsku",
      "type_label": "kalendarium",
      "url": "https://timechaincalendar.com/pl",
-     "description_pl": "Historia Bitcoina dzień po dniu, w wersji polskiej, przy której pracowali tłumacze z naszej społeczności."
+     "description_pl": "Historia Bitcoina dzień po dniu, w polskiej wersji."
     },
     {
      "title": "Bitcoin.org po polsku",
@@ -178,6 +178,18 @@
      "type_label": "raport, EN",
      "url": "https://en.odfoundation.eu/a/726702,impact-of-the-eu-and-fatf-regulatory-frameworks-on-non-custodial-crypto-assets-wallets/",
      "description_pl": "Analiza wpływu regulacji UE i FATF na portfele, w których sam trzymasz klucze. Autorzy z polskiej społeczności."
+    },
+    {
+     "title": "Bitcoin.pl",
+     "type_label": "portal",
+     "url": "https://bitcoin.pl/",
+     "description_pl": "Polski portal z wiadomościami. Pisał też o naszej akcji „Standard Bitcoina” dla posłów i senatorów."
+    },
+    {
+     "title": "Polskie Stowarzyszenie Bitcoin",
+     "type_label": "stowarzyszenie",
+     "url": "https://bitcoin.org.pl/",
+     "description_pl": "Artykuły, apele i stanowiska PSB w sprawach Bitcoina w Polsce."
     }
    ]
   },
@@ -191,6 +203,12 @@
      "type_label": "podcast",
      "url": "https://bujac.pl/",
      "description_pl": "Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach."
+    },
+    {
+     "title": "Laissez Faire",
+     "type_label": "podcast",
+     "url": "https://truefans.fm/laissez-faire",
+     "description_pl": "Polski podcast wolnościowy. Bitcoinowa seria „₿ujać – O Bitcoinie po polsku” wychodzi właśnie tutaj."
     },
     {
      "title": "Gdzie jest problem? (polski lektor)",
@@ -211,13 +229,6 @@
      "type_label": "poradnik wideo",
      "url": "https://youtu.be/Jnw-jwobIRU",
      "description_pl": "Praktyczny poradnik z polskojęzycznego kanału o samodzielnym przechowywaniu."
-    },
-    {
-     "title": "Bitcoin Polska",
-     "author": "Oskar Pilch",
-     "type_label": "YouTube",
-     "url": "https://www.youtube.com/@bitcoinpolska",
-     "description_pl": "Bitcoinowe słuchowisko: czytane teksty o Bitcoinie. Kanał nie publikuje od kilku lat, archiwum wciąż warto przesłuchać."
     },
     {
      "title": "Czy bitcoin to marnotrawstwo energii?",
