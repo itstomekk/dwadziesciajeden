@@ -1,0 +1,21 @@
+{
+  "_note": "Glossary for words set in italics on the old /kim-jestesmy/ page, which linked to a /slowniczek/ page that never existed. Definitions written for this site.",
+  "terms": [
+    {"term": "Austriacka szkoła ekonomii", "def": "Nurt ekonomii (Menger, Mises, Hayek, Rothbard), który tłumaczy gospodarkę przez działania ludzi. Ostrzega przed sztucznym tworzeniem pieniądza i kredytu, bo to ono napędza cykle boomów i kryzysów."},
+    {"term": "Fiat (pieniądz fiducjarny)", "def": "Pieniądz bez pokrycia, który ma wartość, bo państwo tak zadekretowało. Jego podaż zależy od decyzji banku centralnego i rządu, więc może rosnąć bez ograniczeń."},
+    {"term": "FUD", "def": "Fear, Uncertainty, Doubt: strach, niepewność i wątpliwości. Tak nazywamy straszenie Bitcoinem bez rzetelnych argumentów."},
+    {"term": "Shitpostowanie", "def": "Publikowanie memów i lekkich, prowokacyjnych wpisów. W bitcoinowym świecie często najszybsza droga, żeby ktoś w ogóle zainteresował się tematem."},
+    {"term": "Meetup", "def": "Nieformalne spotkanie ludzi zainteresowanych Bitcoinem, zwykle w barze lub kawiarni. Bez sprzedaży, bez prelekcji na siłę."},
+    {"term": "Walk (BitcoinWalk)", "def": "Spacer połączony z rozmową o Bitcoinie. Alternatywa dla meetupu: świeże powietrze, mniej ekranów, więcej rozmowy."},
+    {"term": "Proof-of-Work", "def": "W Bitcoinie: mechanizm, w którym górnicy wydają realną energię, żeby dopisać blok. W społeczności: realna praca na rzecz innych, na przykład artykuł, tłumaczenie, kod albo poradnik."},
+    {"term": "Proof of Keys", "def": "Coroczna akcja 3 stycznia: wypłać bitcoiny z giełd i aplikacji do portfela, do którego tylko Ty masz klucze."},
+    {"term": "Self-custody", "def": "Samodzielne przechowywanie bitcoinów. Ty trzymasz klucze prywatne, więc nikt nie zamrozi ani nie zgubi Twoich środków za Ciebie."},
+    {"term": "Seed (fraza odzyskiwania)", "def": "12 lub 24 słowa, z których da się odtworzyć portfel. Zapisz je offline. Kto ma seed, ma bitcoiny."},
+    {"term": "Orange pill (orangepilling)", "def": "Moment, w którym ktoś naprawdę rozumie, czym jest Bitcoin i dlaczego zdrowy pieniądz ma znaczenie. Orangepilling to pomaganie innym dojść do tego momentu."},
+    {"term": "Bitcoin Only", "def": "Zasada, że zajmujemy się wyłącznie Bitcoinem. Bez altcoinów, tokenów i projektów, które próbują się pod niego podczepić."},
+    {"term": "Lightning Network", "def": "Druga warstwa Bitcoina do szybkich i tanich płatności. Dobrze sprawdza się w małych kwotach, napiwkach i płatnościach w sklepie."},
+    {"term": "Nostr", "def": "Otwarty protokół do publikowania wpisów bez centralnego serwera. Twoja tożsamość to para kluczy, a nie konto w czyjejś firmie."},
+    {"term": "Sats (satoshi)", "def": "Najmniejsza jednostka bitcoina: 1 BTC to 100 000 000 satoshi."},
+    {"term": "IOU", "def": "I owe you, czyli „jestem Ci winien”. Saldo na giełdzie to obietnica wypłaty, a nie bitcoin w Twoim posiadaniu."}
+  ]
+}

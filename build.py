@@ -1,0 +1,623 @@
+"""Build the static Dwadzieścia Jeden site into docs/.
+
+Stdlib only. Reads content/*.json, writes docs/ (wiped each run, CNAME kept).
+BASE: URL prefix. GitHub Pages project site = "/dwadziesciajeden"; custom domain = "".
+    python build.py                 # BASE from config below
+    DJ_BASE= python build.py        # build for the root of a custom domain
+NOINDEX stays True until the owner says go live.
+"""
+import html
+import json
+import os
+import re
+import shutil
+from datetime import date
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / "docs"
+C = ROOT / "content"
+
+BASE = os.environ.get("DJ_BASE", "/dwadziesciajeden").rstrip("/")
+SITE_URL = os.environ.get("DJ_SITE_URL", "https://itstomekk.github.io/dwadziesciajeden").rstrip("/")
+NOINDEX = os.environ.get("DJ_NOINDEX", "1") == "1"
+BUILT = date.today().isoformat()
+
+TG = "https://t.me/dwadziesciajeden"
+TG_POZNAN = "https://t.me/DwadziesciaJedenPoznan"
+X_URL = "https://x.com/21BitcoinPolska"
+NOSTR_NPUB = "npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc"
+NOSTR_URL = "https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2"
+EMAIL = "kontakt@dwadziesciajeden.pl"
+
+NAV = [
+    ("Kim jesteśmy", "/kim-jestesmy/"),
+    ("Miasta", "/miasta/"),
+    ("Mapa", "/bitcoinowa-mapa-polski/"),
+    ("Projekty", "/projekty/"),
+    ("Inicjatywy", "/inicjatywy/"),
+    ("Biblioteka", "/biblioteka/"),
+    ("Kronika", "/kronika/"),
+]
+
+MONTHS = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia",
+          "września", "października", "listopada", "grudnia"]
+MONTHS_NOM = ["Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień",
+              "Wrzesień", "Październik", "Listopad", "Grudzień"]
+
+e = html.escape
+pages_index = []  # for search
+
+
+def load(name, default=None):
+    p = C / name
+    if not p.exists():
+        return default
+    return json.loads(p.read_text(encoding="utf-8"))
+
+
+def b(path: str) -> str:
+    return BASE + path
+
+
+def fill(h: str) -> str:
+    return h.replace("{B}", BASE)
+
+
+def pl_date(d: str) -> str:
+    parts = d.split("-")
+    if len(parts) == 3:
+        return f"{int(parts[2])} {MONTHS[int(parts[1]) - 1]} {parts[0]}"
+    if len(parts) == 2:
+        return f"{MONTHS_NOM[int(parts[1]) - 1]} {parts[0]}"
+    return d
+
+
+def link(l):
+    if l.get("internal"):
+        return f'<a href="{b(l["internal"])}">{e(l["label"])}</a>'
+    return f'<a href="{e(l["url"])}" rel="noopener">{e(l["label"])}</a>'
+
+
+def text_of(h: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
+
+
+LOGO = (
+    '<svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="var(--orange)"/>'
+    '<text x="20" y="28" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="22" fill="#16130F">21</text></svg>'
+)
+
+
+def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
+    full_title = f"{title} · Dwadzieścia Jeden" if title != "Dwadzieścia Jeden" else "Dwadzieścia Jeden: polska społeczność Bitcoin Only"
+    desc = desc or "Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne."
+    og = og_image or b("/assets/og.jpg")
+    nav = "".join(
+        f'<a href="{b(u)}"{" aria-current=page" if path.startswith(u) else ""}>{e(t)}</a>' for t, u in NAV
+    )
+    robots = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ""
+    crumb = ""
+    if crumbs:
+        crumb = '<nav class="crumbs" aria-label="Okruszki">' + " / ".join(
+            f'<a href="{b(u)}">{e(t)}</a>' for t, u in crumbs) + "</nav>"
+    return f"""<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{e(full_title)}</title>
+<meta name="description" content="{e(desc)}">
+{robots}
+<link rel="canonical" href="{SITE_URL}{path}">
+<meta property="og:type" content="{'article' if kind == 'post' else 'website'}">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(desc)}">
+<meta property="og:image" content="{SITE_URL}{og.replace(BASE, '', 1) if og.startswith(BASE) else og}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@21BitcoinPolska">
+<meta name="theme-color" content="#16130F">
+<link rel="icon" href="{b('/assets/favicon.svg')}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{b('/assets/apple-touch-icon.png')}">
+<link rel="preload" href="{b('/assets/fonts/fraunces-latin.woff2')}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{b('/assets/fonts/fonts.css')}">
+<link rel="stylesheet" href="{b('/assets/site.css')}?v={BUILT}">
+</head>
+<body class="k-{kind}" data-base="{BASE}">
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top">
+  <div class="top__in">
+    <a class="brand" href="{b('/')}">{LOGO}<span>Dwadzieścia Jeden</span></a>
+    <nav class="nav" id="nav" aria-label="Główne menu">{nav}</nav>
+    <div class="top__act">
+      <button class="icon-btn" type="button" data-search-open aria-label="Szukaj"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      <a class="btn btn--primary btn--sm" href="{TG}" rel="noopener">Dołącz</a>
+      <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="tresc">
+{crumb}
+{body}
+</main>
+<footer class="foot">
+  <div class="foot__in">
+    <div class="foot__brand">
+      <a class="brand brand--light" href="{b('/')}">{LOGO}<span>Dwadzieścia Jeden</span></a>
+      <p>Polska społeczność Bitcoin Only. Część sieci <a href="https://twentyone.world/" rel="noopener">TwentyOne</a>.</p>
+    </div>
+    <div class="foot__col">
+      <h2>Społeczność</h2>
+      <a href="{TG}" rel="noopener">Czat na Telegramie</a>
+      <a href="{X_URL}" rel="noopener">@21BitcoinPolska na X</a>
+      <a href="{NOSTR_URL}" rel="noopener">Nostr</a>
+      <a href="{b('/dolacz-do-nas/#kontakt')}">Kontakt</a>
+    </div>
+    <div class="foot__col">
+      <h2>Strona</h2>
+      <a href="{b('/artykuly/')}">Artykuły</a>
+      <a href="{b('/zasady/')}">Zasady i sieć TwentyOne</a>
+      <a href="{b('/slowniczek/')}">Słowniczek</a>
+      <a href="{b('/bitcoin-whitepaper/')}">Whitepaper po polsku</a>
+    </div>
+    <div class="foot__col">
+      <h2>Newsletter</h2>
+      <p class="muted">Zapisy wrócą wkrótce. <span class="ph" data-placeholder="newsletter">do ustalenia</span></p>
+      <p class="muted">Na bieżąco: <a href="{TG}" rel="noopener">Telegram</a>.</p>
+    </div>
+  </div>
+  <p class="foot__fine">Nie udzielamy porad inwestycyjnych. Not your keys, not your coins.</p>
+</footer>
+<div class="search" id="search" hidden>
+  <div class="search__box" role="dialog" aria-modal="true" aria-label="Szukaj">
+    <input type="search" id="search-q" placeholder="Szukaj: artykuły, miasta, książki, projekty…" autocomplete="off">
+    <ol class="search__res" id="search-res"></ol>
+    <button class="search__close" type="button" data-search-close>Zamknij <kbd>Esc</kbd></button>
+  </div>
+</div>
+<script src="{b('/assets/site.js')}?v={BUILT}" defer></script>
+</body>
+</html>
+"""
+
+
+def write(path, doc):
+    target = OUT / path.strip("/") / "index.html" if path.endswith("/") else OUT / path.lstrip("/")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(doc, encoding="utf-8")
+
+
+def add_index(path, title, kind, text, tags=()):
+    pages_index.append({"u": path, "t": title, "k": kind, "x": text[:1200], "g": list(tags)})
+
+
+def page_head(kicker, title, lede=""):
+    return (f'<header class="ph-head"><p class="kicker">{kicker}</p><h1>{e(title)}</h1>'
+            + (f'<p class="lede">{lede}</p>' if lede else "") + "</header>")
+
+
+def redirect(path, to):
+    write(path, f'<!doctype html><meta charset="utf-8"><title>Przeniesiono</title>'
+                f'<meta name="robots" content="noindex"><link rel="canonical" href="{SITE_URL}{to}">'
+                f'<meta http-equiv="refresh" content="0; url={b(to)}"><p><a href="{b(to)}">Strona przeniesiona.</a></p>')
+
+
+# ---------------------------------------------------------------- components
+
+def post_card(p, compact=False):
+    tag = p["tags"][0] if p["tags"] else ""
+    return (f'<a class="post-card" href="{b("/" + p["slug"] + "/")}">'
+            f'<span class="post-card__meta">{e(tag)}{" · " if tag else ""}{pl_date(p["published"])}</span>'
+            f'<span class="post-card__title">{e(p["title"])}</span></a>')
+
+
+def chronicle_item(en, show_images=True):
+    imgs = ""
+    if show_images and en.get("images"):
+        imgs = '<div class="tl__imgs">' + "".join(
+            f'<a href="{b("/assets/kronika/" + i["file"])}" class="tl__img"><img src="{b("/assets/kronika/" + i["file"])}" alt="{e(i["alt"])}" loading="lazy"></a>'
+            for i in en["images"]) + "</div>"
+    cls = " ".join("t-" + re.sub(r"[^a-z0-9]+", "-", t.lower()) for t in en.get("tags", []))
+    anchor = "standard-bitcoina" if "Standard Bitcoina" in en.get("tags", []) and en["date"] == "2025-10-31" else ""
+    if not anchor and "meetupy" in en.get("tags", []) and en["date"] == "2022-11-04":
+        anchor = "meetupy"
+    return (f'<li class="tl__item {cls}"{f" id={anchor}" if anchor else ""}><time datetime="{en["date"]}">{pl_date(en["date"])}</time>'
+            f'<div class="tl__body"><h3>{e(en["title"])}</h3><p>{e(en["text"])}</p>{imgs}'
+            f'<p class="tl__links">{" · ".join(link(l) for l in en.get("links", []))}</p></div></li>')
+
+
+def btcmap_embed(community=None, title="BTC Map"):
+    src = (f"https://btcmap.org/communities/map?community={community}" if community
+           else "https://btcmap.org/map#6/52.07/19.48")
+    return (f'<div class="map-embed"><iframe title="{e(title)}" loading="lazy" allow="geolocation" allowfullscreen '
+            f'src="{e(src)}"></iframe></div>')
+
+
+# ---------------------------------------------------------------- pages
+
+def build():
+    if OUT.exists():
+        cname = (OUT / "CNAME").read_text() if (OUT / "CNAME").exists() else None
+        shutil.rmtree(OUT)
+    else:
+        cname = None
+    OUT.mkdir()
+    if cname:
+        (OUT / "CNAME").write_text(cname)
+    (OUT / ".nojekyll").write_text("")
+    shutil.copytree(ROOT / "assets", OUT / "assets")
+
+    imported = load("imported.json", [])
+    by_slug = {r["slug"]: r for r in imported}
+    kronika = load("kronika.json", {"entries": []})["entries"]
+    projekty = load("projekty.json", {"projects": [], "intro": ""})
+    biblioteka = load("biblioteka.json", None)
+    inicjatywy = load("inicjatywy.json", None)
+    zasady = load("zasady.json", None)
+    slownik = load("slowniczek.json", {"terms": []})["terms"]
+    miasta = load("miasta.json", {"cities": []})["cities"]
+
+    posts = sorted([r for r in imported if r["kind"] == "post" and not r["tags"] == ["Miasta"]],
+                   key=lambda r: r["published"], reverse=True)
+
+    # kronika images -> tracked assets/kronika (copied from the private archive once)
+    kdir = ROOT / "assets" / "kronika"
+    kdir.mkdir(exist_ok=True)
+    for en in kronika:
+        for i in en.get("images", []):
+            src = ROOT / "source-archive" / "x-media" / i["file"]
+            if not (kdir / i["file"]).exists() and src.exists():
+                shutil.copyfile(src, kdir / i["file"])
+    shutil.copytree(kdir, OUT / "assets" / "kronika", dirs_exist_ok=True)
+
+    # ---- home
+    sb = by_slug["standard-bitcoina-w-polskim-parlamencie"]
+    latest_k = sorted(kronika, key=lambda x: x["date"], reverse=True)[:4]
+    sections = [
+        ("Miasta", "/miasta/", "Warszawa, Kraków, Poznań, Wrocław, Katowice. Meetupy i BitcoinWalki."),
+        ("Mapa", "/bitcoinowa-mapa-polski/", "Gdzie w Polsce zapłacisz bitcoinem. Dodaj miejsce albo je zweryfikuj."),
+        ("Projekty", "/projekty/", "Standard Bitcoina w Parlamencie, Bitcoin FilmFest, BTC Map i więcej."),
+        ("Inicjatywy", "/inicjatywy/", "Polskie stowarzyszenia, wydarzenia, podcasty i ludzie, którzy budują."),
+        ("Biblioteka", "/biblioteka/", "Książki, strony, nagrania i whitepaper po polsku."),
+        ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
+    ]
+    home = f"""
+<div class="dateline"><span>Warszawa · Kraków · Poznań · Wrocław · Katowice</span><span>Bitcoin Only od 2022</span><span>Blok po bloku</span></div>
+<section class="hero">
+  <div class="hero__text">
+    <p class="kicker">Polska społeczność Bitcoin Only · sieć TwentyOne</p>
+    <h1>Dwadzieścia<br>Jeden</h1>
+    <p class="lede">Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.</p>
+    <p class="cta-row"><a class="btn btn--primary" href="{TG}" rel="noopener">Dołącz do czatu na Telegramie</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
+  </div>
+  <figure class="hero__photo">
+    <img src="{b('/assets/kronika/2025-12-17_2001320953809121791_0.jpg')}" alt="Kartony z egzemplarzami Standardu Bitcoina przed wysyłką do parlamentarzystów" width="900" height="1200">
+    <figcaption>560 egzemplarzy „Standardu Bitcoina” przed wysyłką do Sejmu i Senatu, grudzień 2025. Fot. <a href="https://x.com/21BitcoinPolska/status/2001320953809121791" rel="noopener">@21BitcoinPolska</a></figcaption>
+  </figure>
+</section>
+
+<section class="facts" aria-label="W liczbach">
+  <div><strong>2022</strong><span>pierwszy meetup w Warszawie</span></div>
+  <div><strong>560</strong><span>książek dla posłów i senatorów</span></div>
+  <div><strong>5</strong><span>miast na naszej mapie</span></div>
+  <div><strong>0</strong><span>altcoinów</span></div>
+</section>
+
+<section class="feature">
+  <div class="feature__img"><img src="{b('/assets/media/images/2025/10/IMG_1260.png')}" alt="Grafika kampanii Standard Bitcoina w polskim Parlamencie" loading="lazy"></div>
+  <div class="feature__text">
+    <p class="kicker">Zrealizowany projekt</p>
+    <h2>Standard Bitcoina w polskim Parlamencie</h2>
+    <p>Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa. 8 stycznia 2026 trafiły z listem otwartym do każdego posła i senatora, a cztery dni później do Prezydenta RP. Zbiórkę wsparło 80 osób.</p>
+    <p class="cta-row"><a class="btn btn--dark" href="{b('/standard-bitcoina-w-polskim-parlamencie/')}">O kampanii</a><a class="link-arrow" href="{b('/kronika/#standard-bitcoina')}">Przebieg w kronice</a></p>
+  </div>
+</section>
+
+<section class="index-list" aria-label="Działy">
+  {''.join(f'<a class="index-list__row" href="{b(u)}"><span class="index-list__name">{e(t)}</span><span class="index-list__line">{e(d)}</span><span class="index-list__arrow" aria-hidden="true">→</span></a>' for t, u, d in sections)}
+</section>
+
+<section class="join">
+  <div class="join__in">
+    <h2>Gdzie nas znaleźć</h2>
+    <p>Na czacie rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.</p>
+    <div class="join__grid">
+      <a class="join__card join__card--main" href="{TG}" rel="noopener"><span>Telegram · główny czat</span><strong>t.me/dwadziesciajeden</strong></a>
+      <a class="join__card" href="{TG_POZNAN}" rel="noopener"><span>Telegram · Poznań</span><strong>DwadziesciaJedenPoznan</strong></a>
+      <a class="join__card" href="{X_URL}" rel="noopener"><span>X</span><strong>@21BitcoinPolska</strong></a>
+      <div class="join__card join__card--nostr"><span class="npub">Nostr <a href="{NOSTR_URL}" rel="noopener">profil</a><button class="copy-btn" type="button" data-copy="{NOSTR_NPUB}">Kopiuj</button></span><strong>{NOSTR_NPUB}</strong></div>
+    </div>
+    <p class="join__rules">Zanim dołączysz, przeczytaj <a href="{b('/zasady/')}">zasady społeczności</a>.</p>
+  </div>
+</section>
+
+<section class="two-col">
+  <div>
+    <h2 class="sec-title">Artykuły</h2>
+    <div class="post-list">{''.join(post_card(p) for p in posts[:5])}</div>
+    <a class="link-arrow" href="{b('/artykuly/')}">Wszystkie artykuły</a>
+  </div>
+  <div>
+    <h2 class="sec-title">Z kroniki</h2>
+    <ol class="tl tl--mini">{''.join(chronicle_item(x, False) for x in latest_k)}</ol>
+    <a class="link-arrow" href="{b('/kronika/')}">Cała kronika</a>
+  </div>
+</section>
+
+<section class="network">
+  <p class="kicker">Sieć TwentyOne</p>
+  <p class="network__text">Dwadzieścia Jeden to polska gałąź sieci <a href="https://twentyone.world/" rel="noopener">TwentyOne</a>: niezależnych, lokalnych społeczności Bitcoin Only, które nazywają się „dwadzieścia jeden” we własnym języku. Einundzwanzig, Veintiuno, Huszonegy, Jednadvacet, Yirmibir i my.</p>
+  <a class="link-arrow" href="{b('/zasady/')}">Jak działa sieć i nasze zasady</a>
+</section>
+"""
+    write("/", layout("/", "Dwadzieścia Jeden", home, kind="home"))
+    add_index("/", "Dwadzieścia Jeden: strona główna", "strona", text_of(home))
+
+    # ---- imported posts
+    for p in imported:
+        if p["kind"] == "redirect":
+            continue
+        slug = p["slug"]
+        if slug in ("projekty", "bitcoinowa-mapa-polski", "miasta", "warszawa", "krakow", "poznan"):
+            continue  # custom pages below
+        body_html = fill(p["html"])
+        if slug == "kim-jestesmy":
+            body_html = body_html.replace(f'<p><a href="{BASE}/autor/jesterhodl/">@JesterHodl</a></p>',
+                                          f'<p class="byline">Tekst: <a href="{BASE}/autor/jesterhodl/">@JesterHodl</a></p>')
+        is_post = p["kind"] == "post"
+        meta = ""
+        if is_post:
+            tags = " ".join(f'<a class="tag" href="{b("/tag/" + slugify(t) + "/")}">{e(t)}</a>' for t in p["tags"])
+            meta = f'<p class="post-meta">{tags}<time datetime="{p["published"]}">{pl_date(p["published"])}</time></p>'
+        feat = ""
+        if p.get("feature_image"):
+            feat = f'<figure class="post-feature"><img src="{fill(p["feature_image"])}" alt="" loading="lazy"></figure>'
+        archived = ""
+        if p["origin"].startswith("wayback"):
+            archived = (f'<p class="note">Wpis odtworzony z archiwum strony. <a href="{e(p["source"])}" rel="noopener">Kopia w Wayback Machine</a>.</p>')
+        extra = ""
+        if slug == "dolacz-do-nas":
+            extra = join_extra()
+        if slug == "standard-bitcoina-w-polskim-parlamencie":
+            ks = [x for x in kronika if "Standard Bitcoina" in x.get("tags", [])]
+            extra = ('<section class="prose-wide"><h2>Przebieg kampanii</h2><ol class="tl">'
+                     + "".join(chronicle_item(x) for x in ks) + "</ol></section>")
+        crumbs = [("Artykuły", "/artykuly/")] if is_post else None
+        body = (f'<article class="article">{"<p class=kicker>" + e(p["tags"][0]) + "</p>" if is_post and p["tags"] else ""}'
+                f'<h1>{e(p["title"])}</h1>{meta}{feat}<div class="prose">{body_html}</div>{archived}</article>{extra}')
+        desc = p["excerpt"][:160] if p["excerpt"] else text_of(body_html)[:160]
+        write(f"/{slug}/", layout(f"/{slug}/", p["title"], body, desc=desc, kind="post" if is_post else "page",
+                                  og_image=fill(p["feature_image"]) if p.get("feature_image") else None, crumbs=crumbs))
+        add_index(f"/{slug}/", p["title"], "artykuł" if is_post else "strona", text_of(body_html), p["tags"])
+
+    # ---- artykuły + tags + author
+    write("/artykuly/", layout("/artykuly/", "Artykuły",
+                              page_head("Archiwum", "Artykuły", "Wszystkie wpisy z dwadziesciajeden.pl, także te odtworzone z archiwum.")
+                              + '<div class="post-list post-list--wide">' + "".join(post_card(p) for p in posts) + "</div>"))
+    add_index("/artykuly/", "Artykuły", "strona", " ".join(p["title"] for p in posts))
+    tag_desc = {
+        "Artykuły": "Teksty o Bitcoinie, bezpieczeństwie i pieniądzu.",
+        "Zbiórki": "Nasze zbiórki w bitcoinie.",
+        "Meetupy": "Oto koordynaty czasoprzestrzenne naszych meetupów w przestrzeni fizycznej.",
+        "Zasoby": "Materiały do pobrania.",
+        "Miasta": "Strony miast, w których się spotykamy.",
+    }
+    all_tagged = [r for r in imported if r["kind"] in ("post", "page")]
+    for tag in tag_desc:
+        items = sorted([r for r in all_tagged if tag in r["tags"]], key=lambda r: r["published"], reverse=True)
+        extra = ""
+        if tag == "Miasta":
+            items = []
+            extra = city_grid(miasta)
+        write(f"/tag/{slugify(tag)}/", layout(f"/tag/{slugify(tag)}/", tag,
+                                             page_head("Tag", tag, tag_desc[tag])
+                                             + ('<div class="post-list post-list--wide">' + "".join(post_card(p) for p in items) + "</div>" if items else "")
+                                             + extra))
+    author_posts = [r for r in posts if r["origin"].startswith("ghost")] + [by_slug["zbieramy-satki-na-wosp"]]
+    write("/autor/jesterhodl/", layout("/autor/jesterhodl/", "JesterHodl",
+                                       page_head("Autor", "JesterHodl", 'Współtwórca Dwadzieścia Jeden. Pisze na <a href="https://jesterhodl.com/" rel="noopener">jesterhodl.com</a>.')
+                                       + '<div class="post-list post-list--wide">' + "".join(post_card(p) for p in author_posts) + "</div>"))
+    redirect("/author/jesterhodl/", "/autor/jesterhodl/")
+    redirect("/mapa/", "/bitcoinowa-mapa-polski/")
+    redirect("/meetupy/", "/miasta/")
+
+    # ---- miasta
+    old_intro = fill(by_slug["miasta"]["html"])
+    old_intro = re.sub(r"<p>Poniżej znajdziesz strony wg miast:</p><ul>.*?</ul>", "", old_intro, flags=re.S)
+    meetupy_old = by_slug.get("meetupy")
+    body = (page_head("Spotkania", "Miasta") + f'<div class="prose">{old_intro}</div>' + city_grid(miasta))
+    write("/miasta/", layout("/miasta/", "Miasta", body, desc="Meetupy i BitcoinWalki Dwadzieścia Jeden w polskich miastach."))
+    add_index("/miasta/", "Miasta", "strona", text_of(body))
+    for c in miasta:
+        if c["slug"] in by_slug:
+            h = fill(by_slug[c["slug"]]["html"])
+            h = h.replace("dwadzieścia-jeden-poznań", "dwadzie%C5%9Bcia-jeden-pozna%C5%84")
+            # dead bitcoinwalk.org city page (404 on 2026-10-23)
+            h = re.sub(r'<h3 id="bitcoinwalk">BitcoinWalk</h3><a class="link-card" href="https://bitcoinwalk\.org/poznan/".*?</a>',
+                       '<h3 id="bitcoinwalk">BitcoinWalk</h3><p>Formuła spacerów pochodzi z <a href="https://bitcoinwalk.org/" rel="noopener">bitcoinwalk.org</a>. Terminy publikujemy na Meetup, Telegramie i X.</p>', h, flags=re.S)
+            if c["slug"] == "krakow":
+                h += ('<h3>Z archiwum</h3><ul><li><a href="https://x.com/21BitcoinPolska/status/1794694392374342098" rel="noopener">„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024</a></li>'
+                      '<li><a href="https://x.com/21BitcoinPolska/status/1919430740485304721" rel="noopener">Meetup w Krakowie, 9 maja 2025</a></li></ul>')
+            if c["slug"] == "warszawa":
+                h = h.replace('<h3 id="btcmap">', '<h3>Z archiwum</h3><ul>'
+                              f'<li><a href="{BASE}/meetup-w-warszawie-4-xi-2022/">Meetup, 4 XI 2022</a></li>'
+                              f'<li><a href="{BASE}/meetup-w-warszawie-2-xii-2022/">Meetup, 2 XII 2022</a></li>'
+                              f'<li><a href="{BASE}/meetup-w-warszawie-17-ii-2023/">Meetup w BarBazaar, 17 II 2023</a></li>'
+                              f'<li><a href="{BASE}/kronika/">Pozostałe spotkania w kronice</a></li></ul><h3 id="btcmap">', 1)
+            pub = by_slug[c["slug"]]["published"]
+        else:
+            h = fill(c["html"])
+            if c.get("btcmap"):
+                h += f'<h3 id="btcmap">BTC Map</h3>' + btcmap_embed(c["btcmap"], f"BTC Map: {c['name']}")
+            pub = None
+        body = (f'<article class="article"><p class="kicker">Miasto</p><h1>{e(c["name"])}</h1>'
+                f'<div class="prose">{h}</div></article>')
+        write(f"/{c['slug']}/", layout(f"/{c['slug']}/", c["name"], body, desc=c["line"], crumbs=[("Miasta", "/miasta/")]))
+        add_index(f"/{c['slug']}/", c["name"], "miasto", text_of(h), ["Miasta"])
+
+    # ---- mapa
+    m = fill(by_slug["bitcoinowa-mapa-polski"]["html"])
+    m = re.sub(r'<div class="map-embed">.*?</div>', btcmap_embed(None, "BTC Map: Polska"), m, flags=re.S)
+    m = m.replace('href="https://btcmap.org/community/dwadzie%C5%9Bcia-jeden"', 'href="https://btcmap.org/country/pl"')
+    city_maps = "".join(
+        f'<li><a href="https://btcmap.org/community/{e(c["btcmap"])}" rel="noopener">{e(c["name"])}</a></li>'
+        for c in miasta if c.get("btcmap"))
+    m += (f'<h2>Mapy miast</h2><ul class="city-maps">{city_maps}</ul>'
+          f'<h2>Jak pomóc</h2><ol><li>Otwórz miejsce na <a href="https://btcmap.org/country/pl" rel="noopener">btcmap.org/country/pl</a>.</li>'
+          f'<li>Byłeś tam niedawno i zapłaciłeś bitcoinem? Potwierdź je jednym kliknięciem.</li>'
+          f'<li>Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.</li>'
+          f'<li>Daj znać na <a href="{TG}" rel="noopener">czacie</a>, żebyśmy mogli pochwalić się nowym miejscem.</li></ol>')
+    body = f'<article class="article"><p class="kicker">Mapa</p><h1>Bitcoinowa Mapa Polski</h1><div class="prose">{m}</div></article>'
+    write("/bitcoinowa-mapa-polski/", layout("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", body,
+                                             desc="Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność."))
+    add_index("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", "strona", text_of(m))
+
+    # ---- projekty
+    cards = []
+    for pr in projekty["projects"]:
+        img = (f'<img src="{b("/assets/" + pr["image"])}" alt="{e(pr.get("image_alt", ""))}" loading="lazy">' if pr.get("image") else
+               f'<span class="proj__mono" aria-hidden="true">{e(pr["name"][:1])}</span>')
+        cards.append(f'<article class="proj proj--{pr["kind"]}" id="{pr["id"]}"><div class="proj__img">{img}</div>'
+                     f'<div class="proj__body"><p class="proj__status">{e(pr["status"])}{" · nasz projekt" if pr["kind"] == "ours" else " · zaprzyjaźnieni"}</p>'
+                     f'<h2>{e(pr["name"])}</h2><p>{e(pr["text"])}</p><p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
+    body = (page_head("Co robimy", "Projekty", e(projekty["intro"]).replace("Napisz do nas.", f'<a href="{b("/dolacz-do-nas/")}">Napisz do nas.</a>'))
+            + '<div class="proj-list">' + "".join(cards) + "</div>")
+    write("/projekty/", layout("/projekty/", "Projekty", body, desc="Projekty społeczności Dwadzieścia Jeden i zaprzyjaźnionych inicjatyw."))
+    for pr in projekty["projects"]:
+        add_index(f"/projekty/#{pr['id']}", pr["name"], "projekt", pr["text"])
+
+    # ---- inicjatywy / biblioteka
+    build_catalog("/inicjatywy/", "Inicjatywy w Polsce", "Kto buduje",
+                  "Stowarzyszenia, wydarzenia, społeczności i media, dzięki którym o Bitcoinie da się rozmawiać po polsku.",
+                  inicjatywy)
+    build_catalog("/biblioteka/", "Biblioteka", "Po polsku",
+                  "Książki, strony, nagrania i dokumenty o Bitcoinie w języku polskim. Zaczynasz? Weź whitepaper i „Standard Bitcoina”.",
+                  biblioteka, whitepaper=True)
+
+    # ---- kronika
+    ks = sorted(kronika, key=lambda x: x["date"], reverse=True)
+    years = sorted({k["date"][:4] for k in ks}, reverse=True)
+    filters = ["wszystko", "meetupy", "Standard Bitcoina", "zbiórki", "Bitcoin FilmFest"]
+    fbar = "".join(f'<button type="button" data-filter="{"" if f == "wszystko" else "t-" + re.sub(r"[^a-z0-9]+", "-", f.lower())}"'
+                   f'{" aria-pressed=true" if f == "wszystko" else " aria-pressed=false"}>{e(f)}</button>' for f in filters)
+    blocks = ""
+    for y in years:
+        blocks += f'<h2 class="tl-year">{y}</h2><ol class="tl">' + "".join(chronicle_item(x) for x in ks if x["date"][:4] == y) + "</ol>"
+    gallery = [(x, i) for x in ks for i in x.get("images", [])]
+    body = (page_head("Od 2022", "Kronika",
+                      f'Najważniejsze momenty społeczności, ze starej strony i z naszego konta na X. Zdjęcia: <a href="{X_URL}" rel="noopener">@21BitcoinPolska</a>, każde podpięte pod swój post.')
+            + f'<div class="filters" role="group" aria-label="Filtruj">{fbar}</div><div class="tl-wrap">{blocks}</div>'
+            + '<section class="gallery"><h2 class="sec-title">Zdjęcia</h2><div class="gallery__grid">'
+            + "".join(f'<figure><a href="{b("/assets/kronika/" + i["file"])}"><img src="{b("/assets/kronika/" + i["file"])}" alt="{e(i["alt"])}" loading="lazy"></a>'
+                      f'<figcaption>{pl_date(x["date"])} · <a href="{e(x["links"][0].get("url", b(x["links"][0].get("internal", "/"))))}" rel="noopener">źródło</a></figcaption></figure>'
+                      for x, i in gallery)
+            + "</div></section>")
+    write("/kronika/", layout("/kronika/", "Kronika", body, desc="Kronika społeczności Dwadzieścia Jeden: meetupy, zbiórki, kampanie."))
+    for x in ks:
+        add_index("/kronika/", f'{x["title"]} ({pl_date(x["date"])})', "kronika", x["text"], x.get("tags", []))
+
+    # ---- zasady
+    build_zasady(zasady)
+
+    # ---- słowniczek
+    dl = "".join(f'<div class="term" id="{slugify(t["term"])}"><dt>{e(t["term"])}</dt><dd>{e(t["def"])}</dd></div>' for t in slownik)
+    write("/slowniczek/", layout("/slowniczek/", "Słowniczek",
+                                 page_head("Pojęcia", "Słowniczek", "Słowa, które padają u nas najczęściej, wyjaśnione po ludzku.")
+                                 + f'<dl class="glossary">{dl}</dl>'))
+    for t in slownik:
+        add_index(f"/slowniczek/#{slugify(t['term'])}", t["term"], "pojęcie", t["def"])
+
+    # ---- 404, robots, sitemap, search index
+    (OUT / "404.html").write_text(layout("/404.html", "Nie ma takiej strony",
+                                         page_head("404", "Nie ma takiej strony", f'Spróbuj wyszukiwarki albo wróć na <a href="{b("/")}">stronę główną</a>.')),
+                                  encoding="utf-8")
+    (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n" if NOINDEX else f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+    urls = sorted({p["u"].split("#")[0] for p in pages_index})
+    (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                                     + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>\n", encoding="utf-8")
+    (OUT / "search.json").write_text(json.dumps(pages_index, ensure_ascii=False), encoding="utf-8")
+    print(f"built {len(list(OUT.rglob('index.html')))} pages, {len(pages_index)} search records, base='{BASE}', noindex={NOINDEX}")
+
+
+def slugify(s):
+    tr = str.maketrans("ąćęłńóśźżĄĆĘŁŃÓŚŹŻ", "acelnoszzACELNOSZZ")
+    return re.sub(r"[^a-z0-9]+", "-", s.translate(tr).lower()).strip("-")
+
+
+def city_grid(miasta):
+    return '<div class="cities">' + "".join(
+        f'<a class="city" href="{b("/" + c["slug"] + "/")}"><span class="city__name">{e(c["name"])}</span><span class="city__line">{e(c["line"])}</span></a>'
+        for c in miasta) + "</div>"
+
+
+def join_extra():
+    return f"""<section class="prose-wide">
+<h2>Zanim napiszesz pierwszą wiadomość</h2>
+<p>Jesteśmy społecznością Bitcoin Only. Na czacie nie promujemy altcoinów, tokenów ani „okazji inwestycyjnych”, nie wysyłamy linków polecających bez kontekstu i nie prosimy nikogo o seed. Pełne zasady: <a href="{b('/zasady/')}">Zasady społeczności</a>.</p>
+</section>"""
+
+
+def build_catalog(path, title, kicker, lede, data, whitepaper=False):
+    body = page_head(kicker, title, lede)
+    if whitepaper:
+        body += (f'<section class="wp-strip"><div><p class="kicker">Zacznij tutaj</p><h2>Bitcoin: Elektroniczny System Pieniężny Typu Peer-to-Peer</h2>'
+                 f'<p>Biała księga Satoshiego Nakamoto w tłumaczeniu Damiana Mee. Dziewięć stron, od których wszystko się zaczęło.</p></div>'
+                 f'<p class="cta-row"><a class="btn btn--primary" href="{b("/assets/media/files/2023/02/bitcoin_pl.pdf")}" download>Pobierz PDF po polsku</a>'
+                 f'<a class="btn btn--ghost" href="{b("/bitcoin-whitepaper/")}">Oryginał i więcej</a></p></section>')
+    if not data:
+        body += '<p class="ph-block" data-placeholder="catalog">Katalog w przygotowaniu.</p>'
+    else:
+        cats = data["categories"]
+        body += '<nav class="toc" aria-label="Spis">' + "".join(f'<a href="#{c["id"]}">{e(c["title"])}</a>' for c in cats) + "</nav>"
+        for c in cats:
+            body += f'<section class="cat" id="{c["id"]}"><h2 class="sec-title">{e(c["title"])}</h2>'
+            if c.get("intro"):
+                body += f'<p class="cat__intro">{e(c["intro"])}</p>'
+            if c.get("layout") == "books":
+                body += '<div class="books">' + "".join(book_card(i) for i in c["items"]) + "</div>"
+            else:
+                body += '<div class="res-list">' + "".join(res_row(i) for i in c["items"]) + "</div>"
+            body += "</section>"
+            for i in c["items"]:
+                add_index(f"{path}#{c['id']}", i["title"], title.lower(), (i.get("author", "") + " " + i.get("description_pl", "")).strip())
+        if data.get("checked"):
+            body += f'<p class="note">Linki sprawdzone {pl_date(data["checked"])}. Brakuje czegoś? Napisz na <a href="{TG}" rel="noopener">czacie</a>.</p>'
+    write(path, layout(path, title, body, desc=lede))
+    add_index(path, title, "strona", lede)
+
+
+def book_card(i):
+    img = (f'<img src="{e(i["image_local"])}" alt="Okładka: {e(i["title"])}" loading="lazy">' if i.get("image_local")
+           else f'<span class="book__ph" aria-hidden="true">{e(i["title"])}</span>')
+    img = img.replace("{B}", BASE)
+    return (f'<a class="book" href="{e(i["url"])}" rel="noopener"><span class="book__cover">{img}</span>'
+            f'<span class="book__author">{e(i.get("author", ""))}</span><span class="book__title">{e(i["title"])}</span>'
+            f'<span class="book__desc">{e(i.get("description_pl", ""))}</span>'
+            f'<span class="book__pub">{e(i.get("publisher", ""))}</span></a>')
+
+
+def res_row(i):
+    meta = " · ".join(x for x in [i.get("type_label", ""), i.get("author", "")] if x)
+    host = re.sub(r"^https?://(www\.)?", "", i["url"]).split("/")[0]
+    return (f'<a class="res" href="{e(i["url"])}" rel="noopener"><span class="res__meta">{e(meta)}</span>'
+            f'<span class="res__title">{e(i["title"])}</span><span class="res__desc">{e(i.get("description_pl", ""))}</span>'
+            f'<span class="res__host">{e(host)}</span></a>')
+
+
+def build_zasady(z):
+    body = page_head("Społeczność", "Zasady i sieć TwentyOne",
+                     "Dwadzieścia Jeden jest częścią TwentyOne: sieci lokalnych społeczności Bitcoin Only, które działają według wspólnych, prostych zasad.")
+    if not z:
+        body += '<p class="ph-block" data-placeholder="zasady">Treść w przygotowaniu.</p>'
+    else:
+        body += f'<section class="prose-wide"><h2>Czym jest sieć TwentyOne</h2>{z["concept_html"]}</section>'
+        body += '<section class="rules"><h2>Zasady społeczności</h2><ol>' + "".join(
+            f'<li><strong>{e(r["title"])}</strong><span>{e(r["text"])}</span></li>' for r in z["rules"]) + "</ol></section>"
+        body += f'<section class="prose-wide">{z.get("more_html", "")}<p class="note">Źródło: <a href="https://twentyone.world/" rel="noopener">twentyone.world</a> (Gigi). Streszczenie i tłumaczenie nasze, stan na {pl_date(z["checked"])}.</p></section>'
+    write("/zasady/", layout("/zasady/", "Zasady i sieć TwentyOne", body,
+                             desc="Zasady społeczności Dwadzieścia Jeden i idea sieci TwentyOne."))
+    add_index("/zasady/", "Zasady i sieć TwentyOne", "strona", text_of(body))
+
+
+if __name__ == "__main__":
+    build()

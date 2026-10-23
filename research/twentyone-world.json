@@ -1,0 +1,244 @@
+{
+  "source": "https://twentyone.world/",
+  "fetched": "2026-10-23",
+  "pages": [
+    {
+      "url": "https://twentyone.world/",
+      "title": "Strona główna (mapa)",
+      "summary_en": "Landing page of the network; tagline: constant signal, local language, open group. States this is NOT about meetups but about building lasting, scalable communities.",
+      "summary_pl": "Strona główna z mapą świata. Hasło: „Constant Signal. Local Language. Open Group.” (stały sygnał, lokalny język, otwarta grupa). Podkreśla, że to NIE jest strona o meetupach (odsyła do list meetupów i BitcoinWalk), tylko o budowaniu trwałych i skalowalnych społeczności. Mapa koloruje kraje z działającą społecznością; kraje bez wpisu pozostają szare.",
+      "rules": [
+        "Trzy filary: stały sygnał (beacon), lokalny język, otwarta grupa.",
+        "Cel to budowa społeczności, które trwają i się skalują – nie organizacja meetupów."
+      ],
+      "rules_en": [
+        "Three pillars: constant signal (beacon), local language, open group.",
+        "Goal is lasting, scalable communities, not meetups."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/concept.html",
+      "title": "Koncepcja",
+      "summary_en": "The concept: a network of open communities providing localized, high-quality, bitcoin-only content, each with an open space and a beacon in the local language. twentyone.world open-sources the concept, gives a blueprint and connects communities.",
+      "summary_pl": "Definicja sieci: twentyone.world to sieć otwartych społeczności, które dostarczają zlokalizowane, wysokiej jakości treści wyłącznie o bitcoinie (bitcoin-only). Każda społeczność ma (1) otwartą przestrzeń, gdzie bitcoinerzy z danego kraju łączą się, współpracują i wymieniają pomysły, oraz (2) „beacon” (latarnię) w cyberprzestrzeni, mówiącą językiem tej społeczności. Cel twentyone.world: udostępnić koncepcję jako open source, dać praktyczny blueprint do zakładania społeczności i połączyć je w sieć, by uczyły się od siebie.",
+      "rules": [
+        "Treści wyłącznie o bitcoinie (bitcoin-only), wysokiej jakości i zlokalizowane.",
+        "Każda społeczność ma otwartą przestrzeń dla bitcoinerów z danego kraju.",
+        "Każda społeczność ma beacon w cyberprzestrzeni w swoim języku.",
+        "Koncepcja jest open source – można ją kopiować i dostosowywać."
+      ],
+      "rules_en": [
+        "Bitcoin-only, high-quality, localized content.",
+        "Each community has an open space for its country's bitcoiners.",
+        "Each community has a beacon in cyberspace in its own language.",
+        "Concept is open source."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/beacon.html",
+      "title": "Beacon (latarnia)",
+      "summary_en": "Step one is creating a beacon in cyberspace: local language, local culture, bitcoin only. A podcast is recommended (weekly/bi-weekly) but newsletter/YouTube also fine; must be online, not in meatspace.",
+      "summary_pl": "Krok pierwszy: stworzyć beacon w cyberprzestrzeni. Skupienie na: lokalnym języku, lokalnej kulturze, wyłącznie bitcoinie. Najłatwiejszy i zwykle najlepszy format to podcast (osobisty, łatwy w produkcji), ale może to być też newsletter, kanał YouTube itp. Beacon ma być w cyberprzestrzeni, nie w świecie fizycznym. Sprawdzone formaty: cotygodniowy przegląd newsów, wywiady, czytanie książek i artykułów (tłumaczenia), pytanie „jak trafiłeś na bitcoina?”. Zaczyna się po polsku/w języku ojczystym; przegląd newsów i czytanie tłumaczeń to najprostszy start. Częstotliwość: co tydzień lub co dwa tygodnie.",
+      "rules": [
+        "Beacon = lokalny język + lokalna kultura + tylko bitcoin.",
+        "Beacon ma być w cyberprzestrzeni (podcast, newsletter, YouTube), nie w meatspace.",
+        "Zalecany format: podcast co tydzień lub co dwa tygodnie, w języku ojczystym.",
+        "Przykładowe formaty: przegląd newsów, wywiady, czytanie artykułów, historie „jak trafiłem do bitcoina”."
+      ],
+      "rules_en": [
+        "Beacon = local language + local culture + bitcoin only.",
+        "Must live in cyberspace, not meatspace.",
+        "Podcast weekly/bi-weekly in native language recommended.",
+        "Formats: news roundup, interviews, readings, 'how I found bitcoin'."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/blueprint.html",
+      "title": "Blueprint (plan działania)",
+      "summary_en": "Step-by-step plan for starting a local 'twentyone' community (a fork): team up, create a beacon, provide a space, translate content, be consistent for at least 21 weeks. Includes a checklist and invitation to be added to the map via GitHub.",
+      "summary_pl": "Plan założenia lokalnej społeczności „twentyone” (czyli forka), sprawdzony w wielu krajach. Kroki: (0) Team Up – znajdź drugiego bitcoinera mówiącego Twoim językiem, kogoś, kogo lubisz; nie rób wszystkiego sam. (1) Beacon – coś łatwego do znalezienia i skonsumowania, „mało szumu, dużo sygnału”; najlepiej tygodniowy/dwutygodniowy podcast; można forknąć logo i nazwę. (2) Przestrzeń – publiczny czat (Telegram, Matrix, IRC, Discord – narzędzie jest mało ważne); ważna jest solidna grupa „plebsu”, który jest tu dla rewolucji, a nie dla pieniędzy ani do promowania kolejnego shitcoina; „bądź gościnny, ale czujny i pamiętaj, że każdy jest scamerem”. (3) Język i kultura – tłumacz najlepsze treści na język lokalny, angażuj społeczność. (4) Konsekwencja – trzymaj się tego co najmniej 21 tygodni. Checklista: znajdź bitcoinera, (opcjonalnie) przetłumacz nazwę, (opcjonalnie) forknij logo, stwórz beacon, stwórz grupę, tłumacz treści, bądź konsekwentny. Na końcu: dodaj swój fork przez GitHub.",
+      "rules": [
+        "Znajdź co najmniej jednego partnera/bitcoinera mówiącego tym samym językiem – nie działaj sam.",
+        "Stwórz beacon: mało szumu, dużo sygnału; podcast co tydzień lub co dwa tygodnie.",
+        "Zapewnij publiczny czat grupowy (narzędzie drugorzędne: Telegram, Matrix, IRC, Discord).",
+        "Grupa dla ludzi zainteresowanych rewolucją, nie zyskiem ani promowaniem shitcoinów (hard rule: „not to shill the next shitcoin project”).",
+        "Bądź gościnny, ale czujny; „everyone is a scammer”.",
+        "Tłumacz najlepsze treści edukacyjne na język lokalny i angażuj społeczność.",
+        "Konsekwencja: trzymaj się działań min. 21 tygodni.",
+        "Nazwa i logo są opcjonalnie do forkowania."
+      ],
+      "rules_en": [
+        "Team up with a bitcoiner speaking your language.",
+        "Beacon: low noise, high signal; weekly/bi-weekly podcast.",
+        "Public group chat; tool unimportant.",
+        "Plebs in it for the revolution, not money or shilling shitcoins.",
+        "Be welcoming but vigilant; everyone is a scammer.",
+        "Translate content, involve community.",
+        "Stick with it at least 21 weeks.",
+        "Forking name/logo optional."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/cyberspace.html",
+      "title": "Otwarta przestrzeń (Open Space)",
+      "summary_en": "Provide an open, public, easy-to-join group in cyberspace (Telegram, Matrix, nostr, etc.). Don't start with meetups; meetups grow out of cyberspace because they don't scale on their own.",
+      "summary_pl": "Zapewnij otwartą przestrzeń, do której łatwo dołączyć – publiczną grupę. Musi ona być w cyberprzestrzeni, nie w świecie fizycznym; meetupy mogą przyjść później („Meatspace doesn’t scale. Cyberspace does.”). Narzędzia, które się sprawdziły: Telegram, Matrix (Element), nostr i inne. O meetupach autor pisze: nie zaczynaj od nich, nie oczekuj, że same się skalują; „meetupy wyrastają z cyberprzestrzeni”. Najpierw beacon i sieć online. Zamiast męczyć się z organizacją meetupu, można iść na BitcoinWalk.",
+      "rules": [
+        "Grupa ma być otwarta dla publiczności i łatwa do dołączenia.",
+        "Przestrzeń najpierw w cyberprzestrzeni (Telegram, Matrix, nostr itp.).",
+        "Nie zaczynaj od meetupów; meetupy mają wyrastać z cyberprzestrzeni.",
+        "Alternatywa dla meetupu: BitcoinWalk."
+      ],
+      "rules_en": [
+        "Group must be public and easy to join.",
+        "Cyberspace first (Telegram, Matrix, nostr...).",
+        "Don't start with meetups; they grow out of cyberspace.",
+        "Alternative: BitcoinWalk."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/focus.html",
+      "title": "Fokus",
+      "summary_en": "Whole page is a single statement: Local Language. Local Culture. No Shitcoins.",
+      "summary_pl": "Strona składa się z jednego hasła: „Local Language. Local Culture. No Shitcoins.” – lokalny język, lokalna kultura, żadnych shitcoinów. Obrazek na stronie (no-shitcoins.png) ilustruje to hasło.",
+      "rules": [
+        "Lokalny język.",
+        "Lokalna kultura.",
+        "Żadnych shitcoinów (hard rule: „No Shitcoins”)."
+      ],
+      "rules_en": [
+        "Local language.",
+        "Local culture.",
+        "No shitcoins."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/fork.html",
+      "title": "What the Fork? (forkowanie)",
+      "summary_en": "Explains forking: if you create bitcoin-only content in your native language and your thing is called 'twentyone' in your language, you have a fork; other names are fine too. Motivation (EINUNDZWANZIG, Germany 2018), naming list incl. 'dwadzieścia jeden', the concept, three tricks, 'Twentyone is what you make of it'.",
+      "summary_pl": "Jeśli tworzysz treści wyłącznie o bitcoinie w swoim języku, a Twoja inicjatywa nazywa się „twentyone” w tym języku, masz fork twentyone. Inna nazwa też jest w porządku. Motywacja: wiele krajów nie ma bitcoin-only treści w języku ojczystym ani regionalnych społeczności wolnych od „shitcoinerii”; Niemcy były takim krajem do 2018 r., stąd EINUNDZWANZIG. Nazwa: „twentyone” w Twoim języku – lista zawiera m.in. einundzwanzig, yirmibir, dvadeset jedan, njëzet e një, huszonegy, ventuno i polskie „dwadzieścia jeden”; jeśli nazwa tłumaczy się na „twentyone”, kraj na mapie jest pomarańczowy. Koncepcja w skrócie: Team Up, beacon (lokalny, bitcoin-only, wysoki sygnał), przestrzeń (czat), tłumaczenie treści, konsekwencja 21 tygodni. Logo – zasoby na /logo/. Tłumaczenia są „absolutnie kluczowe”. „Sztuczka” to trzy rzeczy: rób coś publicznego, co się skaluje; bądź konsekwentny; NIE RÓB WSZYSTKIEGO SAM (znajdź kolegę/koleżankę z siłką – kogoś, kogo lubisz). Po ~21 tygodniach inni sami się zgłaszają. Wspólnota: „Twentyone is what you make of it” – różni ludzie mogą akcentować różne rzeczy i należy to wspierać. Na stronie jest też mem „thank you” (obrazek).",
+      "rules": [
+        "Fork = bitcoin-only treści w języku ojczystym; nazwa „twentyone” w lokalnym języku (inna nazwa też dopuszczalna).",
+        "Nazwa powinna być tłumaczeniem „twentyone” – wtedy kraj jest pomarańczowy na mapie; dla Polski: „dwadzieścia jeden”.",
+        "Kroki: Team Up, Beacon, Przestrzeń, Tłumaczenia, Konsekwencja (21 tygodni).",
+        "Trzy sztuczki: coś publicznego i skalowalnego; konsekwencja; nie rób wszystkiego sam.",
+        "Lokalizacja treści jest „absolutely paramount”.",
+        "„Twentyone is what you make of it” – różne akcenty w społeczności są OK i należy je wspierać."
+      ],
+      "rules_en": [
+        "Fork = bitcoin-only content in native language, named 'twentyone' translated (other names OK).",
+        "Translated name => country orange on map; Polish 'dwadzieścia jeden' listed.",
+        "Steps: team up, beacon, space, translate, be consistent 21 weeks.",
+        "Three tricks: public/scalable, consistent, don't go alone.",
+        "Localized content is paramount.",
+        "'Twentyone is what you make of it'."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/logo/",
+      "title": "Logo",
+      "summary_en": "Logo recipe: 'twentyone' translated into the local language, set in The Bold Font, with a small bitcoin logo. SVG templates (horizontal, square, two-line), font and everything.zip downloadable; Inkscape suggested; existing fork logos listed; new fork logos added via GitHub folder.",
+      "summary_pl": "Przepis na logo: słowo „twentyone” przetłumaczone na język lokalny, krojem „The Bold Font”, z małym logo bitcoina. Niektóre forki używają układu kwadratowego lub wielowierszowego. Do pobrania: everything.zip, szablony SVG (poziomy, kwadratowy, dwuliniowy), font The Bold Font (darmowy, autor New Bold Times, dafont.com) i bitcoin.svg. Do edycji SVG zaleca się Inkscape. Strona zawiera galerię istniejących forków (w tym polski plik dwadziesciajeden.png); aby dodać własne logo, wrzuca się je do folderu logo/forks na GitHubie. Brak jawnych zakazów ani specyfikacji kolorów – logo jest „do forkowania, bądź kreatywny”.",
+      "rules": [
+        "Logo = „twentyone” w języku lokalnym + The Bold Font + małe logo bitcoina.",
+        "Dozwolone układy: poziomy, kwadratowy, dwuliniowy (szablony SVG).",
+        "Edycja SVG dozwolona (zalecany Inkscape); forkowanie logo jest zachęcane („Feel free to be creative!”).",
+        "Nowe logo forka zgłasza się do folderu logo/forks na GitHubie."
+      ],
+      "rules_en": [
+        "Logo = translated 'twentyone' + The Bold Font + small bitcoin logo.",
+        "Layouts: horizontal, square, two-line.",
+        "Editing SVG allowed; being creative encouraged.",
+        "Add fork logo via GitHub folder."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/language.html",
+      "title": "Język",
+      "summary_en": "English is saturated; focus on local language and culture, 'for the plebs, by the plebs'. Provides a list of recommended entry-point articles to translate and further resources.",
+      "summary_pl": "„English is saturated. The remaining 7,117 languages are not.” Skup się na lokalnym języku i kulturze – dla lokalnych bitcoinerów, tworzone przez lokalnych bitcoinerów. Strona zawiera listę 9 artykułów-wejść do tłumaczenia dla nowicjuszy: Szabo „Shelling Out” i „Money, blockchains, and social scalability”, Boyapati „The Bullish Case for Bitcoin”, Gigi „Dear Family, Dear Friends”, Parker Lewis „Bitcoin, Not Blockchain”, Gwern „Bitcoin is Worse is Better”, Farrington „Bitcoin is Venice”, Nic Carter „A most peaceful revolution”, Breedlove „Masters and Slaves of Money”. Dalsze źródła: bitcoin-resources.com, Nakamoto Institute, europeanbitcoiners.com (lista przekładów), a także ulotka Bitcoin for Local Business do przetłumaczenia.",
+      "rules": [
+        "Skup się na języku lokalnym i kulturze lokalnej.",
+        "Treści dla lokalnych bitcoinerów, tworzone przez lokalnych bitcoinerów.",
+        "Tłumacz polecane artykuły wprowadzające; pełna lista na stronie /language.",
+        "Warto przetłumaczyć ulotkę Bitcoin for Local Business."
+      ],
+      "rules_en": [
+        "Focus on local language and culture.",
+        "For plebs, by the plebs.",
+        "Translate recommended intro articles.",
+        "Translate the Bitcoin for Local Business flyer."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/network.html",
+      "title": "Sieć (Network)",
+      "summary_en": "Network part is a work in progress. Lists 15 existing forks; includes 'Dwadzieścia Jeden' -> https://dwadziesciajeden.pl. Open group at https://t.me/twentyonedotworld.",
+      "summary_pl": "Część „sieciowa” to praca w toku; kto ma fork lub chce pomóc, ma się skontaktować z Gigim. Otwarta grupa twentyone.world na Telegramie (t.me/twentyonedotworld) dla zainteresowanych. Lista istniejących forków (15): Njëzet e një, EINUNDZWANZIG, EENENTWINTIG, Dvadeset Jedan, Jednadvacet, ENOGTYVE, VEINTIUNO, Vingt et Un, Huszonegy, Ventuno, Dwadzieścia Jeden (https://dwadziesciajeden.pl), Vinte e Um, Dvadsaťjeden, Bitcoin Ljubljana, Yirmibir. Polska jest wymieniona.",
+      "rules": [
+        "Sieć jest w fazie rozwoju – chętni do pomocy kontaktują się z Gigim.",
+        "Polska: „Dwadzieścia Jeden” – https://dwadziesciajeden.pl jest na liście forków."
+      ],
+      "rules_en": [
+        "Network is work-in-progress; contact Gigi.",
+        "Poland listed: Dwadzieścia Jeden -> dwadziesciajeden.pl."
+      ]
+    },
+    {
+      "url": "https://twentyone.world/secrets.html",
+      "title": "Sekrety",
+      "summary_en": "Three (maybe four) secrets: don't do it alone; focus on your language and culture; cyberspace first; consistency. Stick with it for 21 weeks.",
+      "summary_pl": "„Trzy sekrety. A może cztery”: (1) nie rób tego sam, (2) skup się na swoim języku i kulturze, (3) zacznij od cyberprzestrzeni, (4) konsekwencja, konsekwencja, konsekwencja. Cokolwiek robisz, trzymaj się tego przez 21 tygodni.",
+      "rules": [
+        "Nie działaj sam.",
+        "Język i kultura lokalna.",
+        "Najpierw cyberprzestrzeń, potem meetupy.",
+        "Konsekwencja – min. 21 tygodni."
+      ],
+      "rules_en": [
+        "Don't do it alone.",
+        "Focus on your language and culture.",
+        "Cyberspace first.",
+        "Consistency; 21 weeks."
+      ]
+    }
+  ],
+  "additional_sources": [
+    {
+      "url": "https://github.com/twentyone-world/twentyone-world.github.io/blob/main/CONTRIBUTING.md",
+      "title": "CONTRIBUTING.md (linked from /blueprint.html)",
+      "note": "Listing requirements: local language; active beacon for >=21 weeks; open group with >=21 members; add via pull request."
+    },
+    {
+      "url": "https://twentyone.world/data/countries.json",
+      "title": "Map data",
+      "note": "Poland entry: name 'Dwadzieścia Jeden', link https://dwadziesciajeden.pl, no 'offbrand' flag (orange on map)."
+    }
+  ],
+  "logo_assets": [
+    "https://twentyone.world/logo/twentyone.svg",
+    "https://twentyone.world/logo/twe-nty-one.svg",
+    "https://twentyone.world/logo/twenty-one.svg",
+    "https://twentyone.world/logo/bitcoin.svg",
+    "https://twentyone.world/logo/everything.zip",
+    "https://twentyone.world/logo/the_bold_font.zip",
+    "https://twentyone.world/logo/paths/twentyone.svg",
+    "https://twentyone.world/logo/paths/twe-nty-one.svg",
+    "https://twentyone.world/logo/paths/twenty-one.svg",
+    "https://twentyone.world/logo/forks/dwadziesciajeden.png"
+  ],
+  "logo_notes": {
+    "font": "The Bold Font (free, by New Bold Times, dafont.com)",
+    "bitcoin_orange": "#f7931a (from bitcoin.svg / templates)",
+    "text_colour_in_templates": "black on light background; some templates include #f9f9f9/#666666",
+    "explicit_colour_rules_on_site": false
+  },
+  "poland_listed": {
+    "found": true,
+    "evidence": "https://twentyone.world/network.html lists '[Dwadzieścia Jeden](https://dwadziesciajeden.pl)' among 15 forks; https://twentyone.world/data/countries.json has Poland (PL/POL) name 'Dwadzieścia Jeden', link_to_public_community_group https://dwadziesciajeden.pl (no offbrand flag); https://twentyone.world/fork.html name list includes 'dwadzieścia jeden'; logo /logo/forks/dwadziesciajeden.png."
+  },
+  "unverified_or_missing": [
+    "No explicit code of conduct, moderation rules or logo licence on the site.",
+    "No explicit colour specification for the logo; colours only inferable from SVG templates."
+  ]
+}

@@ -1,0 +1,6 @@
+# Raw captures (Ghost dump, Wayback HTML, X harvest) stay private and out of git.
+source-archive/
+tools/*.ttf
+__pycache__/
+*.pyc
+qa/shots/

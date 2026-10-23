@@ -1,0 +1,520 @@
+{
+ "_note": "Curated chronicle. Every entry links to its source: a post on the old dwadziesciajeden.pl (imported) or a post by @21BitcoinPolska on X (found via Wayback + X syndication, 2026-10-23). Text is a neutral summary, not a copy of the post. Images: files from source-archive/x-media copied to assets/kronika by build.py; credit = the linked X post.",
+ "entries": [
+  {
+   "date": "2022-10",
+   "title": "Startuje Dwadzieścia Jeden",
+   "text": "Powstaje konto @21BitcoinPolska. Dwadzieścia Jeden to polska społeczność bitcoinowych maksymalistów, która chce przybliżać Bitcoina po polsku.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [
+    {
+     "label": "Profil na X",
+     "url": "https://x.com/21BitcoinPolska"
+    }
+   ]
+  },
+  {
+   "date": "2022-11-04",
+   "title": "Pierwszy meetup w Warszawie",
+   "text": "Społeczność Bitcoin Only spotyka się w Warszawie przy Brackiej 20. Od tego czasu meetupy w stolicy odbywają się regularnie.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Wpis o meetupie",
+     "internal": "/meetup-w-warszawie-4-xi-2022/"
+    }
+   ]
+  },
+  {
+   "date": "2022-12-02",
+   "title": "Grudniowy meetup w Warszawie",
+   "text": "Drugie spotkanie w tym samym miejscu, przy Brackiej 20.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Wpis o meetupie",
+     "internal": "/meetup-w-warszawie-2-xii-2022/"
+    }
+   ]
+  },
+  {
+   "date": "2023-01-12",
+   "title": "Meetup we Wrocławiu",
+   "text": "Nowy rok zaczynamy we Wrocławiu, w Kawiarni Literatka na Rynku.",
+   "tags": [
+    "meetupy",
+    "Wrocław"
+   ],
+   "links": [
+    {
+     "label": "Wpis o meetupie",
+     "internal": "/meetup-we-wroclawiu-12-i-2023/"
+    }
+   ]
+  },
+  {
+   "date": "2023-02-10",
+   "title": "Hostujemy whitepaper",
+   "text": "Na stronie pojawia się biała księga Bitcoina: polskie tłumaczenie Damiana Mee i oryginał.",
+   "tags": [
+    "zasoby"
+   ],
+   "links": [
+    {
+     "label": "Bitcoin Whitepaper",
+     "internal": "/bitcoin-whitepaper/"
+    }
+   ]
+  },
+  {
+   "date": "2023-02-17",
+   "title": "Bitcoiners in Poland, unite!",
+   "text": "Meetup w BarBazaar, gdzie można płacić w BTC. W planie: wspólne zakładanie multisiga i rozmowa o planowanym w Warszawie Bitcoin FilmFest.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Wpis o meetupie",
+     "internal": "/meetup-w-warszawie-17-ii-2023/"
+    }
+   ]
+  },
+  {
+   "date": "2023-05-22",
+   "title": "Pizza Day w Hackerspace",
+   "text": "Świętujemy Bitcoin Pizza Day w warszawskim Hackerspace.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1660610118952574977"
+    }
+   ]
+  },
+  {
+   "date": "2023-06-16",
+   "title": "Bitcoinowa mapa Polski",
+   "text": "Przejmujemy opiekę nad polskimi danymi w BTC Map. Każdy może dodać lub zweryfikować miejsce, w którym zapłaci bitcoinem.",
+   "tags": [
+    "mapa"
+   ],
+   "links": [
+    {
+     "label": "Mapa",
+     "internal": "/bitcoinowa-mapa-polski/"
+    }
+   ]
+  },
+  {
+   "date": "2024-01-28",
+   "title": "Satki dla WOŚP",
+   "text": "Zbiórka na Geyser dla 32. Finału WOŚP: bitcoinerzy z zagranicy wspierają Orkiestrę, a darczyńcy dostają odznakę w sieci Nostr.",
+   "tags": [
+    "zbiórki"
+   ],
+   "links": [
+    {
+     "label": "Wpis o zbiórce",
+     "internal": "/zbieramy-satki-na-wosp/"
+    }
+   ]
+  },
+  {
+   "date": "2024-04-08",
+   "title": "Dołączamy do portalu sieci",
+   "text": "Dodajemy Dwadzieścia Jeden do portalu Einundzwanzig, a Bitcoin FilmFest staje się tam pierwszym polskim wydarzeniem.",
+   "tags": [
+    "społeczność",
+    "Bitcoin FilmFest"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1777342724582117574"
+    }
+   ]
+  },
+  {
+   "date": "2024-05-27",
+   "title": "Kraków: dla kogo jest Bitcoin?",
+   "text": "Spotkanie w Techies o tym, dla kogo jest Bitcoin oraz kiedy i jak go kupić. Krakowskie meetupy wracają też w lipcu.",
+   "tags": [
+    "meetupy",
+    "Kraków"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1794694392374342098"
+    }
+   ]
+  },
+  {
+   "date": "2024-06-29",
+   "title": "Bitcoin & Nostr meetup",
+   "text": "Wieczór w BarBazaar na Ząbkowskiej, z koncertem na żywo. Wstęp wolny, zasada jedna: bez shitcoinów.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1807052500127678678"
+    }
+   ],
+   "images": [
+    {
+     "file": "2024-06-29_1807052500127678678_0.png",
+     "alt": "Plakat meetupu Dwadzieścia Jeden w BarBazaar"
+    }
+   ]
+  },
+  {
+   "date": "2024-07-06",
+   "title": "BitcoinWalk w Poznaniu",
+   "text": "Bitcoinowy spacer z cyklu BitcoinWalk w Poznaniu, prowadzony przez Macieja Sołtysiaka.",
+   "tags": [
+    "meetupy",
+    "Poznań"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1808604096737251681"
+    },
+    {
+     "label": "Strona Poznania",
+     "internal": "/poznan/"
+    }
+   ]
+  },
+  {
+   "date": "2024-12-03",
+   "title": "Kancelaria na standardzie bitcoina",
+   "text": "Warszawska kancelaria DJP dołącza BTC do rezerw firmy. Wcześniej przyjęła płatności w bitcoinie i stworzyła zespół Bitcoin desk.",
+   "tags": [
+    "Polska"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1864084608783917111"
+    }
+   ]
+  },
+  {
+   "date": "2025-02-05",
+   "title": "Mecenat polskiego wydania Broken Money",
+   "text": "Zachęcamy do wsparcia Wydawnictwa Freedom Publishing przy polskim wydaniu książki Lyn Alden. Książka ukazała się jako „Zepsuty pieniądz”.",
+   "tags": [
+    "książki"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1887107891426975855"
+    },
+    {
+     "label": "Biblioteka",
+     "internal": "/biblioteka/"
+    }
+   ]
+  },
+  {
+   "date": "2025-02-09",
+   "title": "Zimowy BitcoinWalk w Poznaniu",
+   "text": "Drugi spacer w 2025 roku. Wydarzenie ogłoszone na BitcoinWalk, Club Orange, Meetup i w Nostrze (Flockstr).",
+   "tags": [
+    "meetupy",
+    "Poznań"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1887466636418163178"
+    }
+   ],
+   "images": [
+    {
+     "file": "2025-02-06_1887466636418163178_0.jpg",
+     "alt": "Panorama Poznania z wieżą kościoła i czerwonymi dachami"
+    }
+   ]
+  },
+  {
+   "date": "2025-04-11",
+   "title": "Meetup na Pradze",
+   "text": "Kolejne spotkanie w BarBazaar przy Ząbkowskiej 12, o 20:00.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1910357810484851033"
+    }
+   ],
+   "images": [
+    {
+     "file": "2025-04-10_1910357810484851033_0.jpg",
+     "alt": "Plakat meetupu Dwadzieścia Jeden w BarBazaar, piątek 11.04, 20:00"
+    }
+   ]
+  },
+  {
+   "date": "2025-05-22",
+   "title": "Bitcoin FilmFest na Pizza Day",
+   "text": "Edycja 2025 festiwalu filmowego w Warszawie wypada w Bitcoin Pizza Day. Zapraszamy całą społeczność.",
+   "tags": [
+    "Bitcoin FilmFest"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1915347718672715998"
+    },
+    {
+     "label": "Projekt",
+     "internal": "/projekty/#bitcoin-filmfest"
+    }
+   ]
+  },
+  {
+   "date": "2025-10-31",
+   "title": "Startuje Standard Bitcoina w Parlamencie",
+   "text": "W rocznicę whitepapera ruszamy ze zbiórką na Geyser: 560 egzemplarzy „Standardu Bitcoina” Saifedeana Ammousa dla każdego posła i senatora, w 8 tygodni.",
+   "tags": [
+    "zbiórki",
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1984261385359093847"
+    },
+    {
+     "label": "O kampanii",
+     "internal": "/standard-bitcoina-w-polskim-parlamencie/"
+    }
+   ],
+   "images": [
+    {
+     "file": "2025-10-31_1984356197760450754_0.png",
+     "alt": "Grafika kampanii Standard Bitcoina w polskim Parlamencie"
+    }
+   ]
+  },
+  {
+   "date": "2025-11-01",
+   "title": "Pierwsi darczyńcy",
+   "text": "Satsback i Cryptosteel wspierają kampanię. Zbiórka idzie wyłącznie w bitcoinie, a Freedom Publishing dostarcza książki po dobrej cenie.",
+   "tags": [
+    "zbiórki",
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1984548718264430884"
+    }
+   ]
+  },
+  {
+   "date": "2025-11-14",
+   "title": "Osobiste dedykacje",
+   "text": "Każdy darczyńca może napisać przesłanie do wybranego posła lub senatora.",
+   "tags": [
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1989338167980204388"
+    }
+   ]
+  },
+  {
+   "date": "2025-11-21",
+   "title": "Cykl rozmów na X Spaces",
+   "text": "W piątki o 12:30 rozmawiamy na X Spaces o postępach zbiórki, pieniądzu, wolności i nowościach ze świata Bitcoina.",
+   "tags": [
+    "Standard Bitcoina",
+    "społeczność"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1991588879191949344"
+    }
+   ]
+  },
+  {
+   "date": "2025-12-13",
+   "title": "BitcoinWalk we Wrocławiu",
+   "text": "Po rozmowie na Spaces o byciu „jedynym bitcoinerem w mieście” odbywa się BitcoinWalk we Wrocławiu.",
+   "tags": [
+    "meetupy",
+    "Wrocław"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/1998512892866605371"
+    }
+   ]
+  },
+  {
+   "date": "2025-12-17",
+   "title": "Cel zbiórki osiągnięty",
+   "text": "Dociera do nas 625 egzemplarzy „Standardu Bitcoina”. 560 z nich trafi na początku stycznia do posłów i senatorów RP.",
+   "tags": [
+    "zbiórki",
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/2001320953809121791"
+    }
+   ],
+   "images": [
+    {
+     "file": "2025-12-17_2001320953809121791_0.jpg",
+     "alt": "Stos zaklejonych kartonów z książką Standard Bitcoina na wierzchu"
+    }
+   ]
+  },
+  {
+   "date": "2026-01-03",
+   "title": "Genesis Day i Proof of Keys",
+   "text": "Publikujemy poradnik: jak raz w roku sprawdzić, że Twoje bitcoiny naprawdę są Twoje.",
+   "tags": [
+    "artykuły"
+   ],
+   "links": [
+    {
+     "label": "Artykuł",
+     "internal": "/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/"
+    }
+   ]
+  },
+  {
+   "date": "2026-01-04",
+   "title": "560 paczek gotowych",
+   "text": "Książki spakowane, do każdej dołączony list otwarty. Wysyłka rusza z nową sesją Sejmu.",
+   "tags": [
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/2007894977049944573"
+    }
+   ],
+   "images": [
+    {
+     "file": "2026-01-04_2007894977049944573_0.jpg",
+     "alt": "Książki rozłożone na regale przed wysyłką"
+    }
+   ]
+  },
+  {
+   "date": "2026-01-08",
+   "title": "Wielki finał: książki w Sejmie i Senacie",
+   "text": "Rano 560 egzemplarzy z listem otwartym trafia do biur podawczych Sejmu i Senatu RP. Zbiórkę na Geyser wsparło 80 osób.",
+   "tags": [
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/2009269514953793771"
+    }
+   ],
+   "images": [
+    {
+     "file": "2026-01-08_2009269514953793771_0.jpg",
+     "alt": "Pokój pełen kartonów z książkami przed dostawą"
+    },
+    {
+     "file": "2026-01-08_2009269514953793771_1.jpg",
+     "alt": "Dostawczy samochód przed budynkiem w zimowej scenerii"
+    },
+    {
+     "file": "2026-01-08_2009269514953793771_2.jpg",
+     "alt": "Wejście do punktu podawczego Kancelarii Sejmu i Senatu, Al. Na Skarpie 16"
+    }
+   ]
+  },
+  {
+   "date": "2026-01-12",
+   "title": "Standard Bitcoina dla Prezydenta",
+   "text": "List otwarty i egzemplarz książki trafiają do Kancelarii Prezydenta RP.",
+   "tags": [
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/2010746380122517794"
+    }
+   ],
+   "images": [
+    {
+     "file": "2026-01-12_2010747298523820470_0.jpg",
+     "alt": "Tablica Kancelarii Prezydenta Rzeczypospolitej Polskiej przy wejściu"
+    }
+   ]
+  },
+  {
+   "date": "2026-01-14",
+   "title": "Rozliczenie zbiórki",
+   "text": "Publikujemy finansowe podsumowanie zbiórki na Geyser, a 16 stycznia omawiamy kampanię na Spaces.",
+   "tags": [
+    "Standard Bitcoina"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/2011514515821904156"
+    }
+   ]
+  },
+  {
+   "date": "2026-05-22",
+   "title": "Maxi meetup wraca",
+   "text": "Warszawski meetup maksymalistów wraca na Bitcoin Pizza Day.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [
+    {
+     "label": "Post na X",
+     "url": "https://x.com/21BitcoinPolska/status/2055184286177726543"
+    }
+   ],
+   "images": [
+    {
+     "file": "2026-05-15_2055184286177726543_0.jpg",
+     "alt": "Ilustrowany plakat Bitcoin Pizza Dzień Warsaw z Pałacem Kultury"
+    }
+   ]
+  }
+ ]
+}
