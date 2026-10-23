@@ -31,7 +31,7 @@
    "name": "Bitcoin FilmFest",
    "status": "co roku w Warszawie",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/bitcoin-filmfest.jpg",
    "text": "Festiwal filmowy o Bitcoinie, pieniądzu i wolności, robiony przez bitcoinerów dla bitcoinerów. Rozmawialiśmy o nim już na meetupie w lutym 2023, a w 2024 dodaliśmy go do portalu sieci TwentyOne jako pierwsze polskie wydarzenie. Edycja 2025 wypadła w Bitcoin Pizza Day.",
    "links": [
     {
@@ -43,14 +43,15 @@
      "url": "https://x.com/bitcoinfilmfest"
     }
    ],
-   "origin": "@21BitcoinPolska posts 2023-02, 2024-04, 2025-04; owner request 2026-10-23"
+   "origin": "@21BitcoinPolska posts 2023-02, 2024-04, 2025-04; owner request 2026-10-23",
+   "image_alt": "Grafika: Bitcoin FilmFest"
   },
   {
    "id": "btcmap",
    "name": "BTC Map Polska",
    "status": "trwa",
    "kind": "ours",
-   "image": null,
+   "image": "projekty/btcmap.jpg",
    "text": "Dbamy o to, żeby światowa mapa miejsc, w których płacisz bitcoinem, była aktualna także w Polsce. Każdy może dodać nowe miejsce albo potwierdzić istniejące.",
    "links": [
     {
@@ -62,14 +63,15 @@
      "url": "https://btcmap.org/community/dwadzie%C5%9Bcia-jeden"
     }
    ],
-   "origin": "old /projekty/"
+   "origin": "old /projekty/",
+   "image_alt": "Grafika: BTC Map Polska"
   },
   {
    "id": "wosp",
    "name": "Satki dla WOŚP",
    "status": "zrealizowany · 2024",
    "kind": "ours",
-   "image": null,
+   "image": "projekty/wosp.jpg",
    "text": "Zbiórka w bitcoinie dla 32. Finału Wielkiej Orkiestry Świątecznej Pomocy, skierowana do bitcoinerów z zagranicy. Darczyńcy dostawali odznakę w sieci Nostr.",
    "links": [
     {
@@ -81,7 +83,8 @@
      "url": "https://geyser.fund/project/greatorchestraofchristmascharity"
     }
    ],
-   "origin": "old post (Wayback)"
+   "origin": "old post (Wayback)",
+   "image_alt": "Grafika: Satki dla WOŚP"
   },
   {
    "id": "meetupy",
@@ -104,7 +107,7 @@
    "name": "Bitcoin In Polish",
    "status": "archiwum",
    "kind": "ours",
-   "image": null,
+   "image": "projekty/bitcoin-in-polish.jpg",
    "text": "Inicjatywa Mato (archiwumbitcoina.pl), JesterHodla (jesterhodl.com) i JoannyXLang: tłumaczenie wartościowych narzędzi i artykułów, żeby były gotowe po polsku, kiedy przyjdzie czas.",
    "links": [
     {
@@ -112,14 +115,15 @@
      "url": "https://geyser.fund/project/bitcoininpolish"
     }
    ],
-   "origin": "old /projekty/"
+   "origin": "old /projekty/",
+   "image_alt": "Grafika: Bitcoin In Polish"
   },
   {
    "id": "nostr-relay",
    "name": "Relay Nostr",
    "status": "eksperyment",
    "kind": "ours",
-   "image": null,
+   "image": "projekty/nostr-relay.jpg",
    "text": "JesterHodl postawił eksperymentalny relay Nostr społeczności.",
    "links": [
     {
@@ -127,14 +131,15 @@
      "url": "wss://relay.dwadziesciajeden.pl/"
     }
    ],
-   "origin": "old /projekty/"
+   "origin": "old /projekty/",
+   "image_alt": "Grafika: Relay Nostr"
   },
   {
    "id": "satsback",
    "name": "Satsback.com",
    "status": "partner",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/satsback.jpg",
    "text": "Cashback w bitcoinie za zakupy online: ponad 600 polskich sklepów, w tym Allegro, Pyszne, Empik, Carrefour i MediaMarkt, oraz tysiące z całej Europy. Wypłaty idą przez Lightning. Satsback wsparł też kampanię Standard Bitcoina. Link poniżej to link partnerski.",
    "links": [
     {
@@ -142,14 +147,15 @@
      "url": "https://satsback.com/register/dlorDWND5JPeV7pw"
     }
    ],
-   "origin": "old /projekty/"
+   "origin": "old /projekty/",
+   "image_alt": "Grafika: Satsback.com"
   },
   {
    "id": "djp",
    "name": "Kancelaria DJP: Bitcoin desk",
    "status": "nasz przyjaciel · prawnik bitcoinowy",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/djp.jpg",
    "text": "Warszawska kancelaria prawna pod przewodnictwem Gracjana Pietrasa przyjmuje płatności w bitcoinie i stworzyła Bitcoin desk, zespół prawników-bitcoinerów. W grudniu 2024 dołączyła BTC do rezerw firmy.",
    "links": [
     {
@@ -161,14 +167,15 @@
      "url": "https://x.com/21BitcoinPolska/status/1669080872329379840"
     }
    ],
-   "origin": "old /projekty/ + post 2024-12-03"
+   "origin": "old /projekty/ + post 2024-12-03",
+   "image_alt": "Grafika: Kancelaria DJP: Bitcoin desk"
   },
   {
    "id": "filmweb",
    "name": "Filmweb",
    "status": "2023",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/filmweb.jpg",
    "text": "Największy polski serwis filmowy wprowadził płatności w bitcoinie, uruchomił węzeł Lightning i własny relay Nostr.",
    "links": [
     {
@@ -176,14 +183,15 @@
      "url": "https://x.com/21BitcoinPolska/status/1669671420782080002"
     }
    ],
-   "origin": "old /projekty/"
+   "origin": "old /projekty/",
+   "image_alt": "Grafika: Filmweb"
   },
   {
    "id": "bitblik",
    "name": "bitblik",
    "status": "aplikacja, open source",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/bitblik.jpg",
    "text": "Most między bitcoinem a BLIK-iem. Płacisz bitcoinem w Żabce, na Allegro czy w bankomacie, albo sprzedajesz kody BLIK za sats. Peer-to-peer, bez KYC, środki zablokowane w Lightning hold-invoice, a nie u pośrednika. Instalacja przez Zapstore, APK albo AltStore.",
    "links": [
     {
@@ -195,14 +203,15 @@
      "url": "https://gitworkshop.dev/bitblik.app/relay.ngit.dev/bitblik"
     }
    ],
-   "origin": "owner request 2026-10-23; bitblik.app"
+   "origin": "owner request 2026-10-23; bitblik.app",
+   "image_alt": "Grafika: bitblik"
   },
   {
    "id": "cryptosteel",
    "name": "Cryptosteel",
    "status": "partner",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/cryptosteel.jpg",
    "text": "Stalowe kapsuły i kasety na frazę odzyskiwania, odporne na ogień, wodę i czas. Cryptosteel był jednym z pierwszych darczyńców kampanii Standard Bitcoina w Parlamencie.",
    "links": [
     {
@@ -210,14 +219,15 @@
      "url": "https://cryptosteel.com/"
     }
    ],
-   "origin": "owner request 2026-10-23; post 2025-11-01"
+   "origin": "owner request 2026-10-23; post 2025-11-01",
+   "image_alt": "Grafika: Cryptosteel"
   },
   {
    "id": "bitcoin-district",
    "name": "Bitcoin District",
    "status": "Próspera, Roatán",
    "kind": "friends",
-   "image": null,
+   "image": "projekty/bitcoin-district.jpg",
    "text": "Bitcoinowa dzielnica w Próspera na wyspie Roatán w Hondurasie: miejsce do życia, pracy i budowania na standardzie Bitcoina.",
    "links": [
     {
@@ -225,7 +235,8 @@
      "url": "https://thebitcoindistrict.com/"
     }
    ],
-   "origin": "owner request 2026-10-23"
+   "origin": "owner request 2026-10-23",
+   "image_alt": "Grafika: Bitcoin District"
   }
  ]
 }

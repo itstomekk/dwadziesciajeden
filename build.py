@@ -36,7 +36,6 @@ NAV = [
     ("Miasta", "/miasta/"),
     ("Mapa", "/bitcoinowa-mapa-polski/"),
     ("Projekty", "/projekty/"),
-    ("Inicjatywy", "/inicjatywy/"),
     ("Biblioteka", "/biblioteka/"),
     ("Kronika", "/kronika/"),
 ]
@@ -277,8 +276,7 @@ def build():
     sections = [
         ("Miasta", "/miasta/", "Warszawa, Kraków, Poznań, Wrocław, Katowice. Meetupy i BitcoinWalki."),
         ("Mapa", "/bitcoinowa-mapa-polski/", "Gdzie w Polsce zapłacisz bitcoinem. Dodaj miejsce albo je zweryfikuj."),
-        ("Projekty", "/projekty/", "Standard Bitcoina w Parlamencie, Bitcoin FilmFest, BTC Map i więcej."),
-        ("Inicjatywy", "/inicjatywy/", "Polskie projekty, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
+        ("Projekty", "/projekty/", "Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
         ("Biblioteka", "/biblioteka/", "Książki, strony, nagrania i whitepaper po polsku."),
         ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
     ]
@@ -422,7 +420,8 @@ def build():
     redirect("/author/jesterhodl/", "/autor/jesterhodl/")
     redirect("/mapa/", "/bitcoinowa-mapa-polski/")
     redirect("/meetupy/", "/miasta/")
-    redirect("/polskie-projekty/", "/inicjatywy/")
+    redirect("/polskie-projekty/", "/projekty/")
+    redirect("/inicjatywy/", "/projekty/")
 
     # ---- miasta
     old_intro = fill(by_slug["miasta"]["html"])
@@ -488,24 +487,36 @@ def build():
                                              desc="Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność."))
     add_index("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", "strona", text_of(m))
 
-    # ---- projekty
-    cards = []
-    for pr in projekty["projects"]:
+    # ---- projekty + inicjatywy (one page)
+    def proj_card(pr):
         img = (f'<img src="{b("/assets/" + pr["image"])}" alt="{e(pr.get("image_alt", ""))}" loading="lazy">' if pr.get("image") else
                f'<span class="proj__mono" aria-hidden="true">{e(pr["name"][:1])}</span>')
-        cards.append(f'<article class="proj proj--{pr["kind"]}" id="{pr["id"]}"><div class="proj__img">{img}</div>'
-                     f'<div class="proj__body"><p class="proj__status">{e(pr["status"])}{" · nasz projekt" if pr["kind"] == "ours" else " · zaprzyjaźnieni"}</p>'
-                     f'<h2>{e(pr["name"])}</h2><p>{e(pr["text"])}</p><p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
-    body = (page_head("Co robimy", "Projekty", e(projekty["intro"]).replace("Napisz do nas.", f'<a href="{b("/dolacz-do-nas/")}">Napisz do nas.</a>'))
-            + '<div class="proj-list">' + "".join(cards) + "</div>")
-    write("/projekty/", layout("/projekty/", "Projekty", body, desc="Projekty społeczności Dwadzieścia Jeden i zaprzyjaźnionych inicjatyw."))
+        return (f'<article class="proj proj--{pr["kind"]}" id="{pr["id"]}"><div class="proj__img">{img}</div>'
+                f'<div class="proj__body"><p class="proj__status">{e(pr["status"])}{" · nasz projekt" if pr["kind"] == "ours" else " · zaprzyjaźnieni"}</p>'
+                f'<h2>{e(pr["name"])}</h2><p>{e(pr["text"])}</p><p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
+    groups = [("nasze", "Nasze projekty", [p for p in projekty["projects"] if p["kind"] == "ours"]),
+              ("zaprzyjaznieni", "Zaprzyjaźnieni", [p for p in projekty["projects"] if p["kind"] != "ours"])]
+    cats = (inicjatywy or {}).get("categories", [])
+    body = (page_head("Co robimy", "Projekty i inicjatywy", e(projekty["intro"]).replace("Napisz do nas.", f'<a href="{b("/dolacz-do-nas/")}">Napisz do nas.</a>'))
+            + '<nav class="toc" aria-label="Spis">' + "".join(f'<a href="#{gid}">{e(t)}</a>' for gid, t, _ in groups)
+            + "".join(f'<a href="#{c["id"]}">{e(c["title"])}</a>' for c in cats) + "</nav>")
+    for gid, t, items in groups:
+        body += f'<section class="cat" id="{gid}"><h2 class="sec-title">{e(t)}</h2><div class="proj-list">' + "".join(proj_card(p) for p in items) + "</div></section>"
+    for c in cats:
+        body += f'<section class="cat" id="{c["id"]}"><h2 class="sec-title">{e(c["title"])}</h2>'
+        if c.get("intro"):
+            body += f'<p class="cat__intro">{e(c["intro"])}</p>'
+        body += '<div class="ini-grid">' + "".join(ini_card(i) for i in c["items"]) + "</div></section>"
+        for i in c["items"]:
+            add_index(f"/projekty/#{c['id']}", i["title"], "inicjatywa", i.get("description_pl", ""))
+    if inicjatywy and inicjatywy.get("checked"):
+        body += f'<p class="note proj-note">Linki sprawdzone {pl_date(inicjatywy["checked"])}. Grafiki pochodzą ze stron projektów. Brakuje czegoś? Napisz na <a href="{TG}" rel="noopener">czacie</a>.</p>'
+    write("/projekty/", layout("/projekty/", "Projekty i inicjatywy", body, desc="Projekty społeczności Dwadzieścia Jeden, zaprzyjaźnieni i polskie inicjatywy bitcoinowe."))
+    add_index("/projekty/", "Projekty i inicjatywy", "strona", "projekty inicjatywy stowarzyszenia wydarzenia czaty")
     for pr in projekty["projects"]:
         add_index(f"/projekty/#{pr['id']}", pr["name"], "projekt", pr["text"])
 
-    # ---- inicjatywy / biblioteka
-    build_catalog("/inicjatywy/", "Inicjatywy w Polsce", "Kto buduje",
-                  "Stowarzyszenia, wydarzenia, społeczności i media, dzięki którym o Bitcoinie da się rozmawiać po polsku.",
-                  inicjatywy)
+    # ---- biblioteka
     build_catalog("/biblioteka/", "Biblioteka", "Po polsku",
                   "Książki, strony, nagrania i dokumenty o Bitcoinie w języku polskim. Zaczynasz? Weź whitepaper i „Standard Bitcoina”.",
                   biblioteka, whitepaper=True)
@@ -610,6 +621,15 @@ def book_card(i):
             f'<span class="book__author">{e(i.get("author", ""))}</span><span class="book__title">{e(i["title"])}</span>'
             f'<span class="book__desc">{e(i.get("description_pl", ""))}</span>'
             f'<span class="book__pub">{e(i.get("publisher", ""))}</span></a>')
+
+
+def ini_card(i):
+    meta = " · ".join(x for x in [i.get("type_label", ""), i.get("author", "")] if x)
+    host = re.sub(r"^https?://(www\.)?", "", i["url"]).split("/")[0]
+    img = f'<img src="{b("/assets/" + i["image"])}" alt="" loading="lazy">' if i.get("image") else ""
+    return (f'<a class="ini" href="{e(i["url"])}" rel="noopener"><span class="ini__img">{img}</span>'
+            f'<span class="ini__body"><span class="res__meta">{e(meta)}</span><span class="ini__title">{e(i["title"])}</span>'
+            f'<span class="res__desc">{e(i.get("description_pl", ""))}</span><span class="res__host">{e(host)}</span></span></a>')
 
 
 def res_row(i):

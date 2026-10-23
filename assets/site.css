@@ -185,6 +185,16 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 .proj h2{font-size:clamp(26px,2.8vw,34px)}
 .proj__links{font-weight:600}
 
+/* initiatives grid (on /projekty/) */
+.ini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:18px}
+.ini{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:6px;overflow:hidden;color:inherit;text-decoration:none;background:#fff;transition:border-color .15s,transform .15s}
+.ini:hover{border-color:var(--orange);transform:translateY(-2px)}
+.ini__img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--paper-2)}
+.ini__body{display:flex;flex-direction:column;gap:6px;padding:16px 18px 18px}
+.ini__title{font:700 19px/1.25 var(--serif)}
+.cat .proj-list{max-width:none;margin:0;padding:0}
+.ini-grid{margin-top:22px}
+.proj-note{max-width:var(--w);margin:0 auto 60px;padding:0 var(--pad)}
 /* catalog */
 .toc{max-width:var(--w);margin:0 auto 12px;padding:0 var(--pad);display:flex;flex-wrap:wrap;gap:8px}
 .toc a{padding:8px 14px;border:1px solid var(--ink);border-radius:2px;text-decoration:none;font-size:14px;font-weight:500}
