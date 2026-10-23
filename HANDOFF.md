@@ -16,6 +16,18 @@ Updated 2026-10-23.
 
 - Round 3 (owner feedback): old site look restored (white, amber #F2A900, original "21 Bitcoin Polska" logo from Ghost, Montserrat headings to match the logo; old theme CSS in `source-archive/oldtheme/`). Armada Nostr community link added (header join grid, footer, inicjatywy). Poznań walks = meetup.com/poz21m ("Spacery ku wolności"). Added Laissez Faire, bitcoin.pl, PSB; removed YouTube Bitcoin Polska. DJP stays as friend and Bitcoin lawyer.
 
+## Domain cutover (dwadziesciajeden.pl), in progress 2026-10-23
+
+- Domain owner is Tomek's colleague. DNS at Njalla (njal.la), mail at Proton (MX + TXT must stay). Old web host (Ghost): A `151.115.73.132`, AAAA `2001:bc8:1d90:123:dc00:ff:fe09:69c7` (rollback values).
+- Tomek added `dwadziesciajeden.pl` under github.com/settings/pages (account itstomekk). Pending TXT, for the colleague to add: `_github-pages-challenge-itstomekk` = `dfe0834c3de16736ecf92e4cb1c948`. Then click Verify.
+- Colleague's DNS change: delete old A/AAAA on `@`; add A 185.199.108-111.153, AAAA 2606:50c0:8000-8003::153, CNAME `www` -> `itstomekk.github.io`.
+- Launch (only after A records resolve to GitHub, check `nslookup dwadziesciajeden.pl 1-you.njalla.no`):
+  `DJ_BASE= DJ_SITE_URL=https://dwadziesciajeden.pl DJ_NOINDEX=0 python build.py` (writes `docs/CNAME`, robots Allow + sitemap), QA with
+  `DJ_BASE= python qa/serve.py 8733` + `DJ_BASE= DJ_QA_PORT=8733 C:/Python314/python.exe qa/qa_run.py` (gate `launch-indexable`), commit, push,
+  then `gh api -X PUT repos/itstomekk/dwadziesciajeden/pages -f cname=dwadziesciajeden.pl`, wait for the cert, `-F https_enforced=true`.
+- A preview build (default env) never writes CNAME. Do not push a launch build before DNS points to GitHub: the github.io preview would redirect to a dead domain.
+- Port 8721 may be held by a stale preview server from another session; use another port via `DJ_QA_PORT`.
+
 ## Owner rules
 
 - Look = old amber/white identity + "hacker layer" (end of `assets/site.css`): JetBrains Mono for UI voice (`//` kickers, `##` section titles, `./` index rows), square corners, terminal hero (`.shell`, live block height from mempool.space via `[data-tip]`, silent fallback), dark stats bar and console join band, project images grayscale until hover. Owner does not use many photos: prefer type and terminal motifs over imagery. Note `.term` is the glossary class; terminal styles use `.shell`.
