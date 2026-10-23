@@ -159,6 +159,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
       <a href="{b('/zasady/')}">Zasady i sieć TwentyOne</a>
       <a href="{b('/slowniczek/')}">Słowniczek</a>
       <a href="{b('/bitcoin-whitepaper/')}">Whitepaper po polsku</a>
+      <a href="https://github.com/itstomekk/dwadziesciajeden" rel="noopener">Kod strony na GitHubie</a>
     </div>
     <div class="foot__col">
       <h2>Newsletter</h2>
