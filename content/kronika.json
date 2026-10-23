@@ -4,7 +4,7 @@
   {
    "date": "2021-04-05",
    "title": "Na początku był yellowpilled 🟡",
-   "text": "Zakładamy na Telegramie grupę yellowpilled dla polskich bitcoinowych maksymalistów. Cel: naprawić polską scenę Bitcoina, bez sh**coinów i bez jałowych dyskusji. Tu rodzą się pierwsze warszawskie spotkania.",
+   "text": "Zakładamy na Telegramie grupę yellowpilled dla polskich bitcoinowych maksymalistów. Przez pierwszy tydzień wpadają tu tylko tweety konta Yellow Pill PL, a 12 kwietnia rusza prawdziwa rozmowa. Cel: naprawić polską scenę Bitcoina, bez sh**coinów i bez jałowych dyskusji.",
    "tags": [
     "społeczność"
    ],
@@ -12,9 +12,197 @@
    "source": "telegram"
   },
   {
-   "date": "2022-06-04",
+   "date": "2021-04-12",
+   "title": "bitcoin-intro.com po polsku",
+   "text": "Ktoś z grupy tłumaczy na polski serwis bitcoin-intro.com, prosty wstęp do Bitcoina dla początkujących. Trafia do polskich materiałów Yellow Pill.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-04-19",
+   "title": "Kalkulator bitcoin500plus.pl",
+   "text": "Z rozmowy na czacie powstaje kalkulator, który pokazuje, ile mieliby rodzice, gdyby odkładali 500+ w satoshi.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-04-25",
+   "title": "mempool.space mówi po polsku",
+   "text": "Polskie tłumaczenie interfejsu mempool.space trafia do aplikacji. Grupa pomaga dobrać terminy, na przykład „transfer do” i „transfer z” zamiast peg-in i peg-out.",
+   "tags": [
+    "technologia",
+    "edukacja"
+   ],
+   "links": [
+    {
+     "label": "mempool.space/pl",
+     "url": "https://mempool.space/pl/"
+    }
+   ],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-05-02",
+   "title": "Dlaczego żółta pigułka?",
+   "text": "Pomarańczowa pigułka była już zajęta. Żółta ma mówić szerzej: Bitcoin, ale też wolność i samosuwerenność.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-05-15",
+   "title": "Tłumaczenia w Archiwum Bitcoina",
+   "text": "Ukazuje się polski przekład eseju „Ostatnie słowo o energii Bitcoina”, odpowiedź na energetyczny FUD. Latem dochodzą „Bitcoin is Venice” i tekst Saifedeana Ammousa.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [
+    {
+     "label": "Esej o energii",
+     "url": "https://archiwumbitcoina.pl/ostatnie-slowo-na-temat-bitcoinowego-poboru-energii-elektrycznej/"
+    },
+    {
+     "label": "archiwumbitcoina.pl",
+     "url": "https://archiwumbitcoina.pl/"
+    }
+   ],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-07-15",
+   "title": "Pierwszy Twitter Space yellowpilled",
+   "text": "Pierwsza polska rozmowa grupy na Twitter Spaces: węzły Lightning, tłumaczenia, firmy przyjmujące BTC i edukacja. W sierpniu odbywa się druga.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-07-21",
+   "title": "Bitcoin Czytanka",
+   "text": "Rusza podcast yellowpill. Pierwsza „Bitcoin Czytanka” to lektorska wersja eseju Parkera Lewisa „Bitcoin nie jest pieniądzem bez pokrycia”.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [
+    {
+     "label": "Odcinek",
+     "url": "https://anchor.fm/laissezfairepl/episodes/Bitcoin-Czytanka-Bitcoin-nie-jest-pienidzem-bez-pokrycia--Parker-Lewis-e14pnn1"
+    }
+   ],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-08-07",
+   "title": "Pierwsze piwo w Warszawie",
+   "text": "Kilka osób z czatu spotyka się w Warszawie przy Świetlicy Wolności. Pytamy lokale o płatności Lightning. Z tej rozmowy wychodzi pomysł 100k party.",
+   "tags": [
+    "meetupy",
+    "Warszawa"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-08-08",
+   "title": "Pomysł 100k party",
+   "text": "Planujemy imprezę w ciągu miesiąca od przebicia 100 tys. USD za bitcoina. Wejście za 100 tys. satów, mecenat za 500 tys. Powstaje prosta strona i osobny czat.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-08-16",
+   "title": "Zrzutka na Bitcoiny Feniksa",
+   "text": "Zrzucamy się na połowę wpisowego studenckiej drużyny na turniej Mistrzostwa Niewidzialnej Nogi. W zamian drużyna gra pod bitcoinową nazwą.",
+   "tags": [
+    "zbiórki"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2021-10-08",
+   "title": "Bitcoinizujemy Weekend Kapitalizmu",
+   "text": "Na Weekendzie Kapitalizmu w Warszawie lokal sprzedaje wszystko za bitcoina. Rozdajemy vouchery Lightning, pomagamy ustawić portfele i jako wolontariusze prowadzimy onboarding.",
+   "tags": [
+    "edukacja",
+    "społeczność",
+    "Warszawa"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-02-03",
+   "title": "„21 Lekcji” po polsku",
+   "text": "Polski przekład „21 Lekcji” Gigiego trafia na czat do wspólnej recenzji. Przez kolejne tygodnie zbieramy uwagi i szukamy dobrych polskich terminów.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-04-28",
+   "title": "Pierwszy raz o twentyone.world",
+   "text": "Na czacie pojawia się twentyone.world: mapa lokalnych społeczności Bitcoin Only i otwarty przepis, jak założyć taką u siebie.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [
+    {
+     "label": "twentyone.world",
+     "url": "https://twentyone.world/"
+    }
+   ],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-05-20",
+   "title": "Pomysł: zostańmy „dwadzieścia jeden”",
+   "text": "Po polskim Space European Bitcoiners przychodzą nowe osoby. Dzień później pada pomysł, żeby przemianować grupę na „dwadzieścia jeden” i dołączyć do sieci 21.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-05-21",
+   "title": "Razem na Pizza Day w Pradze",
+   "text": "Kilka osób z grupy jedzie na Bitcoin Pizza Day do Pragi i relacjonuje prelekcje na czacie.",
+   "tags": [
+    "meetupy"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-05-29",
+   "title": "List do EPA po polsku",
+   "text": "Tłumaczymy na polski list bitcoinowej społeczności do amerykańskiej Agencji Ochrony Środowiska, prostujący mity o energii i kopaniu, i wrzucamy go na Wykop.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-06-06",
    "title": "Rejestrujemy dwadziesciajeden.pl",
-   "text": "Domena społeczności zostaje zarejestrowana i opłacona w bitcoinie, kilka miesięcy przed publicznym startem.",
+   "text": "Adres 21.pl jest zajęty, więc rejestrujemy dwadziesciajeden.pl, opłacone w bitcoinie. Kilka miesięcy przed publicznym startem.",
    "tags": [
     "społeczność"
    ],
@@ -29,7 +217,7 @@
   {
    "date": "2022-06-06",
    "title": "Redesign: dołączamy do kolektywu 21",
-   "text": "Z yellowpilled robimy nową grupę Dwadzieścia Jeden i dołączamy do międzynarodowej sieci lokalnych społeczności 21, zapoczątkowanej przez niemieckie Einundzwanzig.",
+   "text": "Kilka dni po propozycji ludzi z niemieckiego Einundzwanzig powstaje nowa grupa Dwadzieścia Jeden, polska gałąź międzynarodowej sieci lokalnych społeczności 21. Przez wakacje to jeszcze mały zespół startowy.",
    "tags": [
     "społeczność"
    ],
@@ -44,6 +232,31 @@
     }
    ],
    "source": "telegram"
+  },
+  {
+   "date": "2022-09-01",
+   "title": "„The Bullish Case for Bitcoin” po polsku",
+   "text": "Ukazuje się polskie wydanie książki Vijaya Boyapatiego. Przetłumaczył ją ktoś z grupy, a wydawca rozdaje egzemplarze do dalszego polecania.",
+   "tags": [
+    "edukacja"
+   ],
+   "links": [
+    {
+     "label": "Wydawnictwo",
+     "url": "https://wydawnictwofp.pl/ksiazki/dlaczego-bitcoin/"
+    }
+   ],
+   "source": "telegram-yellowpilled"
+  },
+  {
+   "date": "2022-09-23",
+   "title": "Przeprowadzka do Dwadzieścia Jeden",
+   "text": "Stary czat od dawna nie ma administratora, więc nie da się nim zarządzać. Cała ekipa yellowpilled przenosi się do grupy Dwadzieścia Jeden, a stary czat zostaje na offtopy.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
   },
   {
    "date": "2022-09-24",
@@ -74,6 +287,17 @@
     }
    ],
    "source": "telegram"
+  },
+  {
+   "date": "2022-10-25",
+   "title": "Piwo we Wrocławiu",
+   "text": "Spotykamy się we Wrocławiu w Browarze Stu Mostów, razem z kilkoma osobami spoza czatu.",
+   "tags": [
+    "meetupy",
+    "Wrocław"
+   ],
+   "links": [],
+   "source": "telegram-yellowpilled"
   },
   {
    "date": "2022-10-26",
