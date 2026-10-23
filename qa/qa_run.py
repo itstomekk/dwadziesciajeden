@@ -19,7 +19,7 @@ BASE = "http://127.0.0.1:" + os.environ.get("DJ_QA_PORT", "8721") + os.environ.g
 SHOTS = HERE / "shots"
 SHOTS.mkdir(exist_ok=True)
 
-PAGES = ["/", "/kim-jestesmy/", "/dolacz-do-nas/", "/zasady/", "/miasta/", "/warszawa/", "/poznan/", "/wroclaw/",
+PAGES = ["/", "/kim-jestesmy/", "/dolacz-do-nas/", "/zasady/", "/edukacja/", "/bitcoinowa-mapa-polski/", "/warszawa/", "/poznan/", "/wroclaw/",
          "/bitcoinowa-mapa-polski/", "/projekty/", "/inicjatywy/", "/biblioteka/", "/kronika/", "/artykuly/",
          "/standard-bitcoina-w-polskim-parlamencie/", "/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/",
          "/zbieramy-satki-na-wosp/", "/bitcoin-whitepaper/", "/slowniczek/", "/tag/zbiorki/"]
@@ -98,7 +98,7 @@ with sync_playwright() as pw:
         page = ctx.new_page()
         for path in PAGES:
             msgs = []
-            page.on("console", lambda m, msgs=msgs: msgs.append(m.text) if m.type == "error" else None)
+            page.on("console", lambda m, msgs=msgs: msgs.append(m.text + " @" + (m.location or {}).get("url", "")) if m.type == "error" else None)
             page.on("pageerror", lambda ex, msgs=msgs: msgs.append(str(ex)))
             page.goto(BASE + path, wait_until="networkidle", timeout=45000)
             page.wait_for_timeout(300)

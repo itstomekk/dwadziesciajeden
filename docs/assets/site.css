@@ -102,7 +102,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 .join__card--main{background:var(--orange);border-color:var(--orange)}
 .join__card--main span,.join__card--main strong{color:var(--ink)}
 .join__card--main:hover{background:#FFBE1A}
-.join__card--nostr{grid-column:span 2}
+.join__card--nostr{grid-column:1/-1}
 .join__rules{font-size:15px}
 
 /* two column / lists */
@@ -436,3 +436,24 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 .network{max-width:var(--w)}
 .network__text{max-width:880px}
 @media (max-width:860px){.facts{margin-left:var(--pad);margin-right:var(--pad)}.facts div:nth-child(3){border-left:0;padding-left:22px}.facts div:nth-child(n+3){border-top:1px solid #2A2D32}}
+
+/* icons, mission */
+.ico{width:1.05em;height:1.05em;flex:none;vertical-align:-.15em;margin-right:.45em}
+.ico-link{display:inline-flex;align-items:center}
+.join__card span{display:flex;align-items:center}
+.join__card span .ico{width:16px;height:16px}
+.join__card--main .ico{color:var(--ink)}
+.join__card .npub .ico{margin-right:0}
+.mission{max-width:var(--w);margin:8px auto 40px;padding:0 var(--pad);display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:none}
+.mission div{display:flex;flex-direction:column;gap:8px;padding:22px;background:var(--shellbg);color:var(--shell-ink)}
+.mission div+div{border-left:1px solid #2A2D32}
+.mission strong{font:700 17px/1.3 var(--mono);color:var(--orange)}
+.mission strong::before{content:"> ";color:#6B7079}
+.mission span{color:#C2C6CC;font-size:15px}
+.mission a{color:var(--shell-ink);text-decoration-color:var(--orange)}
+@media (max-width:860px){.mission{grid-template-columns:1fr}.mission div+div{border-left:0;border-top:1px solid #2A2D32}}
+
+.warn{border:1.5px solid var(--ink);border-left:6px solid var(--red);padding:6px 24px 10px;margin:0 0 2.2em;background:#fff}
+.warn h2{margin-top:.8em}
+.warn h2::before{content:"! ";font-family:var(--mono);color:var(--red)}
+@media (min-width:1100px){.cities{grid-template-columns:repeat(5,1fr)}}

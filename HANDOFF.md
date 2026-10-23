@@ -30,6 +30,10 @@ Updated 2026-10-23.
 
 ## Owner rules
 
+- Miasta live inside Mapa (`/bitcoinowa-mapa-polski/#miasta`); `/miasta/` and `/meetupy/` redirect there. Nav: Kim jesteśmy, Edukacja, Mapa i miasta, Projekty, Biblioteka, Kronika.
+- `/edukacja/` = mission + Bitcoin basics + six steps + scam warning. Education only, never investment advice.
+- Telegram Poznań is not promoted on the home page (stays on the Poznań city page). Telegram/X/Nostr links carry CC0 icons (`icon()` in build.py).
+
 - Look = old amber/white identity + "hacker layer" (end of `assets/site.css`): JetBrains Mono for UI voice (`//` kickers, `##` section titles, `./` index rows), square corners, terminal hero (`.shell`, live block height from mempool.space via `[data-tip]`, silent fallback), dark stats bar and console join band, project images grayscale until hover. Owner does not use many photos: prefer type and terminal motifs over imagery. Note `.term` is the glossary class; terminal styles use `.shell`.
 
 - Every project and initiative card gets an image. Sources: og:image / logo from the project's own site, Geyser API (`api.geyser.fund/graphql`, `projectGet.thumbnailImage`), or our own X media. Normalised to 800x600 JPG in `assets/projekty/` (wide text banners letterboxed on a blurred copy, logos centred on a plain background). Raw downloads in `source-archive/project-images/`.

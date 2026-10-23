@@ -31,10 +31,21 @@ NOSTR_ARMADA = "https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa
 NOSTR_URL = "https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2"
 EMAIL = "kontakt@dwadziesciajeden.pl"
 
+# brand icons: Telegram + X from Simple Icons (CC0), Nostr from mbarulli/nostr-logo (CC0)
+def icon(name):
+    paths = {
+        "telegram": ("0 0 24 24", "M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"),
+        "x": ("0 0 24 24", "M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"),
+        "nostr": ("44 44 172 172", "M210.8 199.4c0 3.1-2.5 5.7-5.7 5.7h-68c-3.1 0-5.7-2.5-5.7-5.7v-15.5c.3-19 2.3-37.2 6.5-45.5 2.5-5 6.7-7.7 11.5-9.1 9.1-2.7 24.9-.9 31.7-1.2 0 0 20.4.8 20.4-10.7s-9.1-8.6-9.1-8.6c-10 .3-17.7-.4-22.6-2.4-8.3-3.3-8.6-9.2-8.6-11.2-.4-23.1-34.5-25.9-64.5-20.1-32.8 6.2.4 53.3.4 116.1v8.4c0 3.1-2.6 5.6-5.7 5.6H57.7c-3.1 0-5.7-2.5-5.7-5.7v-144c0-3.1 2.5-5.7 5.7-5.7h31.7c3.1 0 5.7 2.5 5.7 5.7 0 4.7 5.2 7.2 9 4.5 11.4-8.2 26-12.5 42.4-12.5 36.6 0 64.4 21.4 64.4 68.7v83.2ZM150 99.3c0-6.7-5.4-12.1-12.1-12.1s-12.1 5.4-12.1 12.1 5.4 12.1 12.1 12.1S150 106 150 99.3Z"),
+    }
+    vb, d = paths[name]
+    return f'<svg class="ico" viewBox="{vb}" aria-hidden="true" focusable="false"><path fill="currentColor" d="{d}"/></svg>'
+
+
 NAV = [
     ("Kim jesteśmy", "/kim-jestesmy/"),
-    ("Miasta", "/miasta/"),
-    ("Mapa", "/bitcoinowa-mapa-polski/"),
+    ("Edukacja", "/edukacja/"),
+    ("Mapa i miasta", "/bitcoinowa-mapa-polski/"),
     ("Projekty", "/projekty/"),
     ("Biblioteka", "/biblioteka/"),
     ("Kronika", "/kronika/"),
@@ -146,14 +157,15 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
     </div>
     <div class="foot__col">
       <h2>Społeczność</h2>
-      <a href="{TG}" rel="noopener">Czat na Telegramie</a>
-      <a href="{X_URL}" rel="noopener">@21BitcoinPolska na X</a>
-      <a href="{NOSTR_ARMADA}" rel="noopener">Społeczność na Nostrze (Armada)</a>
-      <a href="{NOSTR_URL}" rel="noopener">Profil na Nostrze</a>
+      <a class="ico-link" href="{TG}" rel="noopener">{icon("telegram")}Czat na Telegramie</a>
+      <a class="ico-link" href="{X_URL}" rel="noopener">{icon("x")}@21BitcoinPolska na X</a>
+      <a class="ico-link" href="{NOSTR_ARMADA}" rel="noopener">{icon("nostr")}Społeczność na Nostrze (Armada)</a>
+      <a class="ico-link" href="{NOSTR_URL}" rel="noopener">{icon("nostr")}Profil na Nostrze</a>
       <a href="{b('/dolacz-do-nas/#kontakt')}">Kontakt</a>
     </div>
     <div class="foot__col">
       <h2>Strona</h2>
+      <a href="{b('/edukacja/')}">Edukacja: jak zacząć</a>
       <a href="{b('/artykuly/')}">Artykuły</a>
       <a href="{b('/zasady/')}">Zasady i sieć TwentyOne</a>
       <a href="{b('/slowniczek/')}">Słowniczek</a>
@@ -276,8 +288,8 @@ def build():
     sb = by_slug["standard-bitcoina-w-polskim-parlamencie"]
     latest_k = sorted(kronika, key=lambda x: x["date"], reverse=True)[:4]
     sections = [
-        ("Miasta", "/miasta/", "Warszawa, Kraków, Poznań, Wrocław, Katowice. Meetupy i BitcoinWalki."),
-        ("Mapa", "/bitcoinowa-mapa-polski/", "Gdzie w Polsce zapłacisz bitcoinem. Dodaj miejsce albo je zweryfikuj."),
+        ("Edukacja", "/edukacja/", "Czym jest Bitcoin, jak zacząć i jak nie dać się oszukać. Po polsku, bez sprzedawania."),
+        ("Mapa i miasta", "/bitcoinowa-mapa-polski/", "Gdzie zapłacisz bitcoinem i gdzie się spotykamy: Warszawa, Kraków, Poznań, Wrocław, Katowice."),
         ("Projekty", "/projekty/", "Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
         ("Biblioteka", "/biblioteka/", "Książki, strony, nagrania i whitepaper po polsku."),
         ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
@@ -323,11 +335,10 @@ def build():
     <h2>Gdzie nas znaleźć</h2>
     <p>Na czacie rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.</p>
     <div class="join__grid">
-      <a class="join__card join__card--main" href="{TG}" rel="noopener"><span>Telegram · główny czat</span><strong>t.me/dwadziesciajeden</strong></a>
-      <a class="join__card" href="{TG_POZNAN}" rel="noopener"><span>Telegram · Poznań</span><strong>DwadziesciaJedenPoznan</strong></a>
-      <a class="join__card" href="{X_URL}" rel="noopener"><span>X</span><strong>@21BitcoinPolska</strong></a>
-      <a class="join__card" href="{NOSTR_ARMADA}" rel="noopener"><span>Nostr · społeczność na Armadzie</span><strong>Dwadzieścia Jeden na Armada</strong></a>
-      <div class="join__card join__card--nostr"><span class="npub">Nostr <a href="{NOSTR_URL}" rel="noopener">profil</a><button class="copy-btn" type="button" data-copy="{NOSTR_NPUB}">Kopiuj</button></span><strong>{NOSTR_NPUB}</strong></div>
+      <a class="join__card join__card--main" href="{TG}" rel="noopener"><span>{icon("telegram")}Telegram · główny czat</span><strong>t.me/dwadziesciajeden</strong></a>
+      <a class="join__card" href="{NOSTR_ARMADA}" rel="noopener"><span>{icon("nostr")}Nostr · społeczność na Armadzie</span><strong>Dwadzieścia Jeden na Armadzie</strong></a>
+      <a class="join__card" href="{X_URL}" rel="noopener"><span>{icon("x")}X</span><strong>@21BitcoinPolska</strong></a>
+      <div class="join__card join__card--nostr"><span class="npub">{icon("nostr")}Nostr <a href="{NOSTR_URL}" rel="noopener">profil</a><button class="copy-btn" type="button" data-copy="{NOSTR_NPUB}">Kopiuj</button></span><strong>{NOSTR_NPUB}</strong></div>
     </div>
     <p class="join__rules">Zanim dołączysz, przeczytaj <a href="{b('/zasady/')}">zasady społeczności</a>.</p>
   </div>
@@ -421,7 +432,8 @@ def build():
                                        + '<div class="post-list post-list--wide">' + "".join(post_card(p) for p in author_posts) + "</div>"))
     redirect("/author/jesterhodl/", "/autor/jesterhodl/")
     redirect("/mapa/", "/bitcoinowa-mapa-polski/")
-    redirect("/meetupy/", "/miasta/")
+    redirect("/meetupy/", "/bitcoinowa-mapa-polski/#miasta")
+    redirect("/miasta/", "/bitcoinowa-mapa-polski/#miasta")
     redirect("/polskie-projekty/", "/projekty/")
     redirect("/inicjatywy/", "/projekty/")
 
@@ -429,9 +441,8 @@ def build():
     old_intro = fill(by_slug["miasta"]["html"])
     old_intro = re.sub(r"<p>Poniżej znajdziesz strony wg miast:</p><ul>.*?</ul>", "", old_intro, flags=re.S)
     meetupy_old = by_slug.get("meetupy")
-    body = (page_head("Spotkania", "Miasta") + f'<div class="prose">{old_intro}</div>' + city_grid(miasta))
-    write("/miasta/", layout("/miasta/", "Miasta", body, desc="Meetupy i BitcoinWalki Dwadzieścia Jeden w polskich miastach."))
-    add_index("/miasta/", "Miasta", "strona", text_of(body))
+    miasta_section = (f'<section class="cat" id="miasta"><h2 class="sec-title">Miasta</h2><div class="cat__intro prose">{old_intro}</div></section>'
+                      + city_grid(miasta))
     for c in miasta:
         if c["slug"] in by_slug:
             h = fill(by_slug[c["slug"]]["html"])
@@ -469,7 +480,7 @@ def build():
             pub = None
         body = (f'<article class="article"><p class="kicker">Miasto</p><h1>{e(c["name"])}</h1>'
                 f'<div class="prose">{h}</div></article>')
-        write(f"/{c['slug']}/", layout(f"/{c['slug']}/", c["name"], body, desc=c["line"], crumbs=[("Miasta", "/miasta/")]))
+        write(f"/{c['slug']}/", layout(f"/{c['slug']}/", c["name"], body, desc=c["line"], crumbs=[("Mapa i miasta", "/bitcoinowa-mapa-polski/#miasta")]))
         add_index(f"/{c['slug']}/", c["name"], "miasto", text_of(h), ["Miasta"])
 
     # ---- mapa
@@ -484,7 +495,9 @@ def build():
           f'<li>Byłeś tam niedawno i zapłaciłeś bitcoinem? Potwierdź je jednym kliknięciem.</li>'
           f'<li>Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.</li>'
           f'<li>Daj znać na <a href="{TG}" rel="noopener">czacie</a>, żebyśmy mogli pochwalić się nowym miejscem.</li></ol>')
-    body = f'<article class="article"><p class="kicker">Mapa</p><h1>Bitcoinowa Mapa Polski</h1><div class="prose">{m}</div></article>'
+    body = (f'<article class="article"><p class="kicker">Mapa i miasta</p><h1>Bitcoinowa Mapa Polski</h1>'
+            f'<p class="lede">Gdzie w Polsce zapłacisz bitcoinem i gdzie się spotykamy. <a href="#miasta">Przejdź do miast</a>.</p>'
+            f'<div class="prose">{m}</div></article>' + miasta_section)
     write("/bitcoinowa-mapa-polski/", layout("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", body,
                                              desc="Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność."))
     add_index("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", "strona", text_of(m))
@@ -546,6 +559,7 @@ def build():
         add_index("/kronika/", f'{x["title"]} ({pl_date(x["date"])})', "kronika", x["text"], x.get("tags", []))
 
     # ---- zasady
+    build_edukacja()
     build_zasady(zasady)
 
     # ---- słowniczek
@@ -640,6 +654,49 @@ def res_row(i):
     return (f'<a class="res" href="{e(i["url"])}" rel="noopener"><span class="res__meta">{e(meta)}</span>'
             f'<span class="res__title">{e(i["title"])}</span><span class="res__desc">{e(i.get("description_pl", ""))}</span>'
             f'<span class="res__host">{e(host)}</span></a>')
+
+
+
+def build_edukacja():
+    steps = [
+        ("Zrozum, zanim kupisz", f'Zacznij od <a href="{b("/bitcoin-whitepaper/")}">whitepaperu po polsku</a> (dziewięć stron) i „Standardu Bitcoina”. Więcej w <a href="{b("/biblioteka/")}">bibliotece</a>.'),
+        ("Zacznij od małej kwoty", "Kupuj tylko tyle, ile możesz spokojnie trzymać latami i czego utrata nie zrujnuje Ci życia. To nie jest porada inwestycyjna, tylko zdrowy rozsądek."),
+        ("Weź klucze do siebie", "Wypłać bitcoiny z giełdy do portfela, w którym to Ty masz frazę odzyskiwania (seed). Not your keys, not your coins."),
+        ("Zabezpiecz frazę odzyskiwania", "Zapisz ją offline: na papierze albo na stali. Nigdy zdjęcie, chmura ani menedżer haseł. Nikomu jej nie podawaj."),
+        ("Używaj", f'Zapłać bitcoinem przez Lightning, znajdź miejsca na <a href="{b("/bitcoinowa-mapa-polski/")}">mapie</a>, przyjmuj satsy za swoją pracę.'),
+        ("Weryfikuj sam", "Uruchom własny węzeł, na przykład Bitcoin Core. Wtedy nie musisz nikomu wierzyć na słowo: don’t trust, verify."),
+    ]
+    scams = [
+        "Nikt z nas nie napisze do Ciebie pierwszy w prywatnej wiadomości z ofertą albo „pomocą”.",
+        "Nikt nie potrzebuje Twojej frazy odzyskiwania: ani support, ani admin, ani doradca.",
+        "Obietnica stałego zysku, podwojenia środków albo gwarantowanego wyniku to oszustwo.",
+        "Nowa moneta „lepsza od Bitcoina” to zwykle sposób, żeby ktoś zarobił na Tobie.",
+        f'Masz wątpliwość? Zapytaj na <a href="{TG}" rel="noopener">czacie</a>, zanim klikniesz albo coś wyślesz.',
+    ]
+    body = page_head("Misja i edukacja", "Edukacja",
+                     "Nasza misja jest prosta: żeby każdy w Polsce mógł zrozumieć Bitcoina po polsku i używać go samodzielnie. "
+                     "Nie sprzedajemy kursów, sygnałów ani tokenów. Tłumaczymy, odpowiadamy na pytania i spotykamy się na żywo.")
+    body += ('<section class="mission"><div><strong>Tłumaczymy</strong><span>Whitepaper, Bitcoin Core, SeedSigner i teksty, które warto znać, po polsku.</span></div>'
+             f'<div><strong>Spotykamy się</strong><span>Meetupy i BitcoinWalki w pięciu miastach. <a href="{b("/bitcoinowa-mapa-polski/#miasta")}">Zobacz miasta</a>.</span></div>'
+             f'<div><strong>Wnosimy Bitcoina tam, gdzie zapadają decyzje</strong><span>560 egzemplarzy „Standardu Bitcoina” w Sejmie i Senacie. <a href="{b("/bitcoin-w-parlamencie/")}">Historia akcji</a>.</span></div></section>')
+    body += ('<section class="prose-wide"><h2>Czym jest Bitcoin</h2>'
+             '<p>Bitcoin to pieniądz i sieć płatności bez banku centralnego, bez prezesa i bez możliwości dodruku. Zasady są zapisane w otwartym kodzie, a pilnują ich tysiące niezależnych węzłów na całym świecie.</p>'
+             '<p>Bitcoinów nigdy nie będzie więcej niż 21 milionów. Nowe bloki z transakcjami powstają średnio co dziesięć minut, a każdy z nich zabezpiecza praca górników (proof of work). Cofnięcie potwierdzonej historii jest praktycznie niemożliwe.</p>'
+             '<p>Bitcoin nie ma konta, które ktoś może zamrozić. Masz klucze, masz bitcoiny. Dlatego najważniejsza lekcja to samodzielne przechowywanie.</p>'
+             '<h2>Dlaczego tylko Bitcoin</h2>'
+             '<p>Za większością innych „kryptowalut” stoi firma, fundacja albo założyciele z dużym zapasem monet. Bitcoin nie ma emitenta ani właściciela i właśnie dlatego jest wyjątkowy. Skupiamy się na nim w całości: na naszych spotkaniach i czatach nie promujemy altcoinów ani tokenów.</p></section>')
+    body += ('<section class="rules"><h2>Jak zacząć: sześć kroków</h2><ol>' + "".join(
+        f'<li><strong>{e(t)}</strong><span>{x}</span></li>' for t, x in steps) + "</ol></section>")
+    body += ('<section class="prose-wide"><div class="warn"><h2>Uważaj na oszustów</h2><ul>' + "".join(f"<li>{x}</li>" for x in scams) + "</ul></div>"
+             '<h2>Dalej</h2><ul>'
+             f'<li><a href="{b("/biblioteka/")}">Biblioteka</a>: książki, strony i nagrania po polsku.</li>'
+             f'<li><a href="{b("/slowniczek/")}">Słowniczek</a>: seed, sats, HODL i inne słowa, które usłyszysz na meetupie.</li>'
+             f'<li><a href="{b("/bitcoinowa-mapa-polski/#miasta")}">Miasta</a>: przyjdź na spotkanie i zapytaj na żywo.</li>'
+             f'<li><a href="{TG}" rel="noopener">Czat na Telegramie</a>: żadne pytanie nie jest głupie.</li></ul>'
+             '<p class="note">Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.</p></section>')
+    write("/edukacja/", layout("/edukacja/", "Edukacja", body,
+                               desc="Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania."))
+    add_index("/edukacja/", "Edukacja: jak zacząć z Bitcoinem", "strona", text_of(body))
 
 
 def build_zasady(z):
