@@ -14,6 +14,14 @@ Updated 2026-10-23.
   - `/biblioteka/` with 13 book covers (local copies in `assets/books/`), sites, recordings. `/zasady/` from twentyone.world.
   - Telegram group t.me/dwadziesciajeden exported read-only (`tools/tg_export_topics.py`): topics "Bitcoin w Polsce i po polsku" (2324 msgs), "Bitcoin po Polsku" (2060), plus "Linki i polecajki" and "Projekty, appki". Files in `source-archive/telegram/` (private, gitignored). Only public resource links were used on the site; no member messages or names are published.
 
+- Round 3 (owner feedback): old site look restored (white, amber #F2A900, original "21 Bitcoin Polska" logo from Ghost, Montserrat headings to match the logo; old theme CSS in `source-archive/oldtheme/`). Armada Nostr community link added (header join grid, footer, inicjatywy). Poznań walks = meetup.com/poz21m ("Spacery ku wolności"). Added Laissez Faire, bitcoin.pl, PSB; removed YouTube Bitcoin Polska. DJP stays as friend and Bitcoin lawyer.
+
+## Owner rules
+
+- Never quote Telegram members by name.
+- Anatomia Bitcoina is PSB's, not ours; we only helped translate some materials.
+- No Bitcoin Poland conference. Satsback is Polish, no need to say so.
+
 ## Facts to keep straight
 
 - BitcoinWalk Warszawa: Tomek said Saturdays 11:00; bitcoinwalk.org and Meetup both list 11:30. Site shows 11:30.
