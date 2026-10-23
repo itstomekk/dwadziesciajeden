@@ -1,6 +1,14 @@
 (() => {
   const base = document.body.dataset.base || "";
 
+  // live block height (mempool.space); silent on failure
+  const tips = document.querySelectorAll("[data-tip]");
+  if (tips.length && window.fetch) {
+    fetch("https://mempool.space/api/blocks/tip/height").then((r) => r.ok ? r.text() : Promise.reject())
+      .then((h) => { const n = Number(h); if (n > 0) tips.forEach((t) => { t.textContent = t.textContent.startsWith("#") ? "#" + n.toLocaleString("pl-PL") : String(n); }); })
+      .catch(() => tips.forEach((t) => { t.textContent = t.textContent.startsWith("#") ? "po bloku" : "tick tock, next block"; }));
+  }
+
   // mobile menu
   const menuBtn = document.querySelector(".menu-btn");
   const nav = document.getElementById("nav");

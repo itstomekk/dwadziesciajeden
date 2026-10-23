@@ -18,6 +18,8 @@ Updated 2026-10-23.
 
 ## Owner rules
 
+- Look = old amber/white identity + "hacker layer" (end of `assets/site.css`): JetBrains Mono for UI voice (`//` kickers, `##` section titles, `./` index rows), square corners, terminal hero (`.shell`, live block height from mempool.space via `[data-tip]`, silent fallback), dark stats bar and console join band, project images grayscale until hover. Owner does not use many photos: prefer type and terminal motifs over imagery. Note `.term` is the glossary class; terminal styles use `.shell`.
+
 - Every project and initiative card gets an image. Sources: og:image / logo from the project's own site, Geyser API (`api.geyser.fund/graphql`, `projectGet.thumbnailImage`), or our own X media. Normalised to 800x600 JPG in `assets/projekty/` (wide text banners letterboxed on a blurred copy, logos centred on a plain background). Raw downloads in `source-archive/project-images/`.
 - Projekty and Inicjatywy are one page (`/projekty/`); `/inicjatywy/` and `/polskie-projekty/` redirect there. Do not list the same thing twice (projects win over initiative cards).
 - Never quote Telegram members by name.

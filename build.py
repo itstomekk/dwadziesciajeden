@@ -237,12 +237,12 @@ def btcmap_embed(community=None, title="BTC Map"):
 
 def build():
     if OUT.exists():
-        cname = (OUT / "CNAME").read_text() if (OUT / "CNAME").exists() else None
         shutil.rmtree(OUT)
-    else:
-        cname = None
+    # CNAME follows the build mode: only a custom-domain build (DJ_BASE="" + non-github.io
+    # DJ_SITE_URL) writes it, so a preview rebuild can never carry the domain by accident.
+    cname = None
     if not BASE and "github.io" not in SITE_URL:
-        cname = SITE_URL.split("://", 1)[-1].split("/", 1)[0] + "\n"   # custom-domain build
+        cname = SITE_URL.split("://", 1)[-1].split("/", 1)[0] + "\n"
     OUT.mkdir()
     if cname:
         (OUT / "CNAME").write_text(cname)
@@ -283,18 +283,18 @@ def build():
         ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
     ]
     home = f"""
-<div class="dateline"><span>Warszawa · Kraków · Poznań · Wrocław · Katowice</span><span>Bitcoin Only od 2022</span><span>Blok po bloku</span></div>
+<div class="dateline"><span>Warszawa · Kraków · Poznań · Wrocław · Katowice</span><span>Bitcoin Only od 2022</span><span>blok <b class="tip" data-tip>#…</b></span></div>
 <section class="hero">
   <div class="hero__text">
-    <p class="kicker">Polska społeczność Bitcoin Only · sieć TwentyOne</p>
+    <p class="kicker">Polska społeczność Bitcoin Only · sieć&nbsp;TwentyOne</p>
     <h1>Dwadzieścia<br>Jeden</h1>
     <p class="lede">Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.</p>
     <p class="cta-row"><a class="btn btn--primary" href="{TG}" rel="noopener">Dołącz do czatu na Telegramie</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
   </div>
-  <figure class="hero__photo">
-    <img src="{b('/assets/kronika/2025-12-17_2001320953809121791_0.jpg')}" alt="Kartony z egzemplarzami Standardu Bitcoina przed wysyłką do parlamentarzystów" width="900" height="1200">
-    <figcaption>560 egzemplarzy „Standardu Bitcoina” przed wysyłką do Sejmu i Senatu, grudzień 2025. Fot. <a href="https://x.com/21BitcoinPolska/status/2001320953809121791" rel="noopener">@21BitcoinPolska</a></figcaption>
-  </figure>
+  <div class="shell">
+    <div class="shell__bar"><span>~/dwadziesciajeden</span><span>bash</span></div>
+    <pre class="shell__body"><span class="l"><i>$</i> whoami</span><span class="l o">dwadziescia_jeden: polska społeczność bitcoin only</span><span class="l"><i>$</i> cat zasady.txt</span><span class="l o">bitcoin only · zero altcoinów · nic nie sprzedajemy</span><span class="l"><i>$</i> bitcoin-cli getblockcount</span><span class="l o"><b class="tip" data-tip>…</b></span><span class="l"><i>$</i> ./dolacz.sh</span><span class="l o">→ <a href="{TG}" rel="noopener">t.me/dwadziesciajeden</a></span><span class="l"><i>$</i> <span class="cur" aria-hidden="true"></span></span></pre>
+  </div>
 </section>
 
 <section class="facts" aria-label="W liczbach">
@@ -575,7 +575,7 @@ def slugify(s):
 
 def city_grid(miasta):
     return '<div class="cities">' + "".join(
-        f'<a class="city" href="{b("/" + c["slug"] + "/")}"><span class="city__name">{e(c["name"])}</span><span class="city__line">{e(c["line"])}</span></a>'
+        f'<a class="city" data-slug="{e(c["slug"])}" href="{b("/" + c["slug"] + "/")}"><span class="city__name">{e(c["name"])}</span><span class="city__line">{e(c["line"])}</span></a>'
         for c in miasta) + "</div>"
 
 

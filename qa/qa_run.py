@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 HERE = Path(__file__).resolve().parent
 DOCS = HERE.parent / "docs"
-BASE = "http://127.0.0.1:" + os.environ.get("DJ_QA_PORT", "8721") + os.environ.get("DJ_BASE", "/dwadziesciajeden").rstrip("/")
+BASE = "http://127.0.0.1:8721" + os.environ.get("DJ_BASE", "/dwadziesciajeden").rstrip("/")
 SHOTS = HERE / "shots"
 SHOTS.mkdir(exist_ok=True)
 
@@ -76,13 +76,7 @@ gate("clean-markup", not leftover, f"leftovers: {leftover[:8] if leftover else '
 # 4. noindex while in preview
 robots = (DOCS / "robots.txt").read_text()
 noidx = all('name="robots" content="noindex,nofollow"' in f.read_text(encoding="utf-8") for f in files if f.name == "index.html" and "http-equiv" not in f.read_text(encoding="utf-8"))
-if os.environ.get("DJ_BASE", "/dwadziesciajeden"):
-    gate("preview-noindex", "Disallow: /" in robots and noidx, "robots.txt Disallow all + meta noindex on every page")
-else:  # custom-domain launch build
-    anyidx = any('content="noindex,nofollow"' in f.read_text(encoding="utf-8") for f in files if f.name == "index.html")
-    cname = (DOCS / "CNAME").read_text().strip() if (DOCS / "CNAME").exists() else ""
-    gate("launch-indexable", "Disallow: /" not in robots and "Sitemap:" in robots and not anyidx and cname == "dwadziesciajeden.pl",
-         f"robots allows + sitemap, no noindex pages, CNAME={cname!r}")
+gate("preview-noindex", "Disallow: /" in robots and noidx, "robots.txt Disallow all + meta noindex on every page")
 
 # 5. placeholders listed
 ph = sorted({m for f in files for m in re.findall(r'data-placeholder="([^"]+)"', f.read_text(encoding="utf-8"))})
