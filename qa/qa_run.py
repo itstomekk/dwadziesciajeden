@@ -109,7 +109,8 @@ with sync_playwright() as pw:
             if own:
                 errs[f"{vp_name}{path}"] = own[:3]
             name = (path.strip("/").replace("/", "_") or "home")[:40]
-            page.screenshot(path=str(SHOTS / f"{vp_name}-{name}.png"), full_page=True)
+            tall = page.evaluate("document.documentElement.scrollHeight") > 30000
+            page.screenshot(path=str(SHOTS / f"{vp_name}-{name}.png"), full_page=not tall)
         ctx.close()
     gate("console-errors", not errs, f"{len(PAGES) * 2} page loads; pages with errors: {len(errs)}; first: {str(next(iter(errs.items())))[:300] if errs else 'none'}")
     gate("no-overflow", not overflow, f"horizontal overflow: {overflow or 'none'}")
