@@ -290,7 +290,7 @@ def build():
         ("Edukacja", "/edukacja/", "Czym jest Bitcoin, jak zacząć, jak nie dać się oszukać. Plus biblioteka: książki, strony i nagrania po polsku."),
         ("Mapa i miasta", "/bitcoinowa-mapa-polski/", "Gdzie zapłacisz bitcoinem i gdzie się spotykamy: Warszawa, Kraków, Poznań, Wrocław, Katowice."),
         ("Projekty", "/projekty/", "Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
-        ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
+        ("Kronika", "/kronika/", "Od yellowpilled w 2021 do książek w Sejmie."),
     ]
     home = f"""
 <div class="dateline"><span>Warszawa · Kraków · Poznań · Wrocław · Katowice</span><span>Bitcoin Only od 2022</span><span>blok <b class="tip" data-tip>#…</b></span></div>
@@ -542,7 +542,7 @@ def build():
     for y in years:
         blocks += f'<h2 class="tl-year">{y}</h2><ol class="tl">' + "".join(chronicle_item(x) for x in ks if x["date"][:4] == y) + "</ol>"
     gallery = [(x, i) for x in ks for i in x.get("images", [])]
-    body = (page_head("Od 2022", "Kronika",
+    body = (page_head("Od 2021", "Kronika",
                       f'Najważniejsze momenty społeczności: ze starej strony, z naszego konta na X i z czatu na Telegramie (bez nazwisk i cytatów). Zdjęcia: <a href="{X_URL}" rel="noopener">@21BitcoinPolska</a>, każde podpięte pod swój post.')
             + f'<div class="filters" role="group" aria-label="Filtruj">{fbar}</div><div class="tl-wrap">{blocks}</div>'
             + '<section class="gallery"><h2 class="sec-title">Zdjęcia</h2><div class="gallery__grid">'

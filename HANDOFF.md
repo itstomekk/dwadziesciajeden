@@ -30,6 +30,7 @@ Updated 2026-10-23.
 
 ## Owner rules
 
+- Owner 2026-10-23: the community started as Telegram group "yellowpilled" (created 2021-04-05); the current group was created 2022-06-06 as a redesign joining the 21 network. BFF grew out of 21. Never mention BIP-110/BIP-444 in site content. Sometimes call altcoins "sh**coiny". Friends added: Alby, Deltabadger, Quark (Quark is NOT in YouBuyBitcoin Orange Pages as of 2026-10-23; its network notice says shops reopen 2026-11-02 after MiCA licensing).
 - Kronika now has 93 entries: 63 from a read-only review of the whole Telegram group (17 topics, ~50k messages, exported 2026-10-23 with `tools/tg_export_topics.py --all`; digests + per-topic candidate JSON in `source-archive/telegram/digest/`, private). Telegram-sourced entries carry `"source": "telegram"` and a link to the main chat only. Left out on purpose: moderation disputes, credit disputes, politics, the Bitcoin Poland conference, individual trades.
 
 - Miasta live inside Mapa (`/bitcoinowa-mapa-polski/#miasta`); `/miasta/` and `/meetupy/` redirect there. Nav: Kim jesteśmy, Edukacja, Mapa i miasta, Projekty, Biblioteka, Kronika.

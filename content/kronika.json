@@ -2,7 +2,17 @@
  "_note": "Curated chronicle. Every entry links to its source: a post on the old dwadziesciajeden.pl (imported) or a post by @21BitcoinPolska on X (found via Wayback + X syndication, 2026-10-23). Text is a neutral summary, not a copy of the post. Images: files from source-archive/x-media copied to assets/kronika by build.py; credit = the linked X post. Entries with source=telegram come from a read-only review of the public community chat (2026-10-23): neutral summaries, no member names or quotes; raw export stays private in source-archive/telegram/.",
  "entries": [
   {
-   "date": "2022-06",
+   "date": "2021-04-05",
+   "title": "Na początku był yellowpilled 🟡",
+   "text": "Zakładamy na Telegramie grupę yellowpilled dla polskich bitcoinowych maksymalistów. Cel: naprawić polską scenę Bitcoina, bez sh**coinów i bez jałowych dyskusji. Tu rodzą się pierwsze warszawskie spotkania.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [],
+   "source": "telegram"
+  },
+  {
+   "date": "2022-06-04",
    "title": "Rejestrujemy dwadziesciajeden.pl",
    "text": "Domena społeczności zostaje zarejestrowana i opłacona w bitcoinie, kilka miesięcy przed publicznym startem.",
    "tags": [
@@ -17,9 +27,28 @@
    "source": "telegram"
   },
   {
+   "date": "2022-06-06",
+   "title": "Redesign: dołączamy do kolektywu 21",
+   "text": "Z yellowpilled robimy nową grupę Dwadzieścia Jeden i dołączamy do międzynarodowej sieci lokalnych społeczności 21, zapoczątkowanej przez niemieckie Einundzwanzig.",
+   "tags": [
+    "społeczność"
+   ],
+   "links": [
+    {
+     "label": "z czatu społeczności",
+     "url": "https://t.me/dwadziesciajeden"
+    },
+    {
+     "label": "twentyone.world",
+     "url": "https://twentyone.world/"
+    }
+   ],
+   "source": "telegram"
+  },
+  {
    "date": "2022-09-24",
    "title": "Polska gałąź, nie kopia",
-   "text": "Grupa należy do polskich administratorów. Koncept sieci przyszedł od niemieckiej społeczności Einundzwanzig, żeby nie zaczynać od zera.",
+   "text": "Grupa należy do polskich administratorów. Koncept przyszedł od niemieckiej sieci Einundzwanzig, żeby nie zaczynać od zera.",
    "tags": [
     "społeczność"
    ],
@@ -34,7 +63,7 @@
   {
    "date": "2022-09-30",
    "title": "Tu rozmawiamy tylko o Bitcoinie",
-   "text": "Ustalamy zasadę: tematy pozabitcoinowe, rynki, polityka i altcoiny zostają w innych miejscach, ta grupa jest Bitcoin Only.",
+   "text": "Ustalamy zasadę: tematy pozabitcoinowe, rynki, polityka i sh**coiny zostają w starszej grupie, a Dwadzieścia Jeden jest Bitcoin Only.",
    "tags": [
     "społeczność"
    ],
@@ -65,7 +94,7 @@
   {
    "date": "2022-10-28",
    "title": "Startuje Dwadzieścia Jeden",
-   "text": "Publikujemy ogłoszenie: polska społeczność Bitcoina dołącza do sieci TwentyOne i zaprasza na pierwszy meetup 4 listopada w Warszawie. Powstaje konto @21BitcoinPolska.",
+   "text": "Publikujemy pierwsze publiczne ogłoszenie: Dwadzieścia Jeden jest częścią sieci TwentyOne i zaprasza na meetup 4 listopada w Warszawie. Powstaje konto @21BitcoinPolska.",
    "tags": [
     "społeczność"
    ],
@@ -386,8 +415,8 @@
   },
   {
    "date": "2023-03-24",
-   "title": "Pierwszy Bitcoin FilmFest",
-   "text": "Pomagamy przy pierwszej edycji festiwalu w Warszawie: wolontariusze, promocja i wspólne Spaces BFF x Dwadzieścia Jeden.",
+   "title": "Z Dwadzieścia Jeden wyrasta Bitcoin FilmFest",
+   "text": "Pierwsza edycja festiwalu w Warszawie rodzi się w naszej społeczności: wolontariusze, promocja i wspólne Spaces BFF x Dwadzieścia Jeden.",
    "tags": [
     "Bitcoin FilmFest",
     "Warszawa"
@@ -500,6 +529,26 @@
    "source": "telegram"
   },
   {
+   "date": "2023-06-08",
+   "title": "Reprezentujemy Polskę na BTC Prague",
+   "text": "Jedziemy na BTC Prague 2023 jako polska gałąź sieci 21, z naszymi naklejkami. Wcześniej pomagamy przetłumaczyć stronę konferencji na polski.",
+   "tags": [
+    "społeczność",
+    "meetupy"
+   ],
+   "links": [
+    {
+     "label": "z czatu społeczności",
+     "url": "https://t.me/dwadziesciajeden"
+    },
+    {
+     "label": "btcprague.com",
+     "url": "https://btcprague.com/"
+    }
+   ],
+   "source": "telegram"
+  },
+  {
    "date": "2023-06-16",
    "title": "Bitcoinowa mapa Polski",
    "text": "Przejmujemy opiekę nad polskimi danymi w BTC Map: profil ogólnopolski i lokalne dla Warszawy, Wrocławia, Poznania i Katowic. Każdy może dodać lub zweryfikować miejsce.",
@@ -563,7 +612,7 @@
   {
    "date": "2023-10-19",
    "title": "Odmawiamy giełdzie",
-   "text": "Giełda zainteresowana polskim rynkiem proponuje współpracę. Wspólnie odpowiadamy, że nie wspieramy firm handlujących altcoinami.",
+   "text": "Giełda zainteresowana polskim rynkiem proponuje współpracę. Wspólnie odpowiadamy, że nie wspieramy firm, które żyją z handlu sh**coinami.",
    "tags": [
     "społeczność"
    ],
@@ -795,7 +844,7 @@
   },
   {
    "date": "2024-05-10",
-   "title": "Zasady wobec altcoinów",
+   "title": "Zasady wobec sh**coinów",
    "text": "Po głosowaniu przyjmujemy zasadę: można zostać, ale bez promowania altcoinów. Dochodzą nowi administratorzy.",
    "tags": [
     "społeczność"
@@ -1189,26 +1238,6 @@
    "source": "telegram"
   },
   {
-   "date": "2025-11-08",
-   "title": "Warszawa: rozmowa o BIP-444",
-   "text": "Po sobotnim spacerze rzeczowa dyskusja o proponowanym soft forku i Core 30, z nagraniem.",
-   "tags": [
-    "technologia",
-    "Warszawa"
-   ],
-   "links": [
-    {
-     "label": "Nagranie",
-     "url": "https://youtu.be/4TFWv4PqodI"
-    },
-    {
-     "label": "z czatu społeczności",
-     "url": "https://t.me/dwadziesciajeden"
-    }
-   ],
-   "source": "telegram"
-  },
-  {
    "date": "2025-11-10",
    "title": "Polski tutorial RoboSats",
    "text": "Film instruktażowy przygotowany przez społeczność trafia na oficjalną stronę RoboSats.",
@@ -1248,22 +1277,6 @@
    "text": "Polskie wydanie książki Lyn Alden, przy którym pomagaliśmy, dostaje nominację w ogólnopolskim plebiscycie książkowym.",
    "tags": [
     "edukacja"
-   ],
-   "links": [
-    {
-     "label": "z czatu społeczności",
-     "url": "https://t.me/dwadziesciajeden"
-    }
-   ],
-   "source": "telegram"
-  },
-  {
-   "date": "2025-11-18",
-   "title": "Spór o BIP-110 dostaje własny wątek",
-   "text": "Dyskusja o proponowanym soft forku zagłusza czat, więc wydzielamy dla niej osobny temat. To najgorętsza debata w historii grupy.",
-   "tags": [
-    "technologia",
-    "społeczność"
    ],
    "links": [
     {
@@ -1546,22 +1559,6 @@
    "date": "2026-05-27",
    "title": "Testujemy społeczność na Nostrze",
    "text": "Sprawdzamy, czy da się przenieść rozmowy z Telegrama na Nostra: własny relay i klient webowy do testów.",
-   "tags": [
-    "technologia",
-    "społeczność"
-   ],
-   "links": [
-    {
-     "label": "z czatu społeczności",
-     "url": "https://t.me/dwadziesciajeden"
-    }
-   ],
-   "source": "telegram"
-  },
-  {
-   "date": "2026-08-16",
-   "title": "BIP-110: wątek trafia do archiwum",
-   "text": "Tydzień po aktywacji zamykamy wątek o forku i zostawiamy go jako archiwum. Oceny przebiegu aktywacji w grupie się różnią.",
    "tags": [
     "technologia",
     "społeczność"
