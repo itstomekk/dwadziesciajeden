@@ -247,7 +247,7 @@ def build():
     (OUT / ".nojekyll").write_text("")
     shutil.copytree(ROOT / "assets", OUT / "assets")
 
-    imported = load("imported.json", [])
+    imported = load("imported.json", []) + load("artykuly.json", [])
     by_slug = {r["slug"]: r for r in imported}
     kronika = load("kronika.json", {"entries": []})["entries"]
     projekty = load("projekty.json", {"projects": [], "intro": ""})
@@ -277,7 +277,7 @@ def build():
         ("Miasta", "/miasta/", "Warszawa, Kraków, Poznań, Wrocław, Katowice. Meetupy i BitcoinWalki."),
         ("Mapa", "/bitcoinowa-mapa-polski/", "Gdzie w Polsce zapłacisz bitcoinem. Dodaj miejsce albo je zweryfikuj."),
         ("Projekty", "/projekty/", "Standard Bitcoina w Parlamencie, Bitcoin FilmFest, BTC Map i więcej."),
-        ("Inicjatywy", "/inicjatywy/", "Polskie stowarzyszenia, wydarzenia, podcasty i ludzie, którzy budują."),
+        ("Inicjatywy", "/inicjatywy/", "Polskie projekty, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
         ("Biblioteka", "/biblioteka/", "Książki, strony, nagrania i whitepaper po polsku."),
         ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
     ]
@@ -309,7 +309,7 @@ def build():
     <p class="kicker">Zrealizowany projekt</p>
     <h2>Standard Bitcoina w polskim Parlamencie</h2>
     <p>Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa. 8 stycznia 2026 trafiły z listem otwartym do każdego posła i senatora, a cztery dni później do Prezydenta RP. Zbiórkę wsparło 80 osób.</p>
-    <p class="cta-row"><a class="btn btn--dark" href="{b('/standard-bitcoina-w-polskim-parlamencie/')}">O kampanii</a><a class="link-arrow" href="{b('/kronika/#standard-bitcoina')}">Przebieg w kronice</a></p>
+    <p class="cta-row"><a class="btn btn--dark" href="{b('/bitcoin-w-parlamencie/')}">Przeczytaj całą historię</a><a class="link-arrow" href="{b('/kronika/#standard-bitcoina')}">Przebieg w kronice</a></p>
   </div>
 </section>
 
@@ -420,6 +420,7 @@ def build():
     redirect("/author/jesterhodl/", "/autor/jesterhodl/")
     redirect("/mapa/", "/bitcoinowa-mapa-polski/")
     redirect("/meetupy/", "/miasta/")
+    redirect("/polskie-projekty/", "/inicjatywy/")
 
     # ---- miasta
     old_intro = fill(by_slug["miasta"]["html"])
@@ -436,9 +437,16 @@ def build():
             h = re.sub(r'<h3 id="bitcoinwalk">BitcoinWalk</h3><a class="link-card" href="https://bitcoinwalk\.org/poznan/".*?</a>',
                        '<h3 id="bitcoinwalk">BitcoinWalk</h3><p>Formuła spacerów pochodzi z <a href="https://bitcoinwalk.org/" rel="noopener">bitcoinwalk.org</a>. Terminy publikujemy na Meetup, Telegramie i X.</p>', h, flags=re.S)
             if c["slug"] == "krakow":
+                # meetup.com/krakow-bitcoin-meetup returns "Group not found" (checked 2026-10-23)
+                h = re.sub(r'<a class="link-card" href="https://www\.meetup\.com/pl-PL/krakow-bitcoin-meetup/".*?</a>',
+                           '<p class="note">Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na <a href="https://t.me/dwadziesciajeden" rel="noopener">czacie</a> i na X.</p>', h, flags=re.S)
                 h += ('<h3>Z archiwum</h3><ul><li><a href="https://x.com/21BitcoinPolska/status/1794694392374342098" rel="noopener">„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024</a></li>'
                       '<li><a href="https://x.com/21BitcoinPolska/status/1919430740485304721" rel="noopener">Meetup w Krakowie, 9 maja 2025</a></li></ul>')
             if c["slug"] == "warszawa":
+                h = h.replace('<h3 id="meetup">', '<h3 id="stale">Stałe spotkania</h3><div class="regulars">'
+                              '<a class="regular" href="https://bitcoinwalk.org/warszawa" rel="noopener"><span class="regular__when">Soboty, 11:30</span><strong>BitcoinWalk Warszawa</strong><span>Spacer i rozmowa o Bitcoinie. Zbiórka: Ogród Saski, Fontanna Wielka. Także po angielsku.</span></a>'
+                              '<a class="regular" href="https://www.meetup.com/bitcoin-warsaw/" rel="noopener"><span class="regular__when">Poniedziałki, 18:00</span><strong>Bitcoin Café · Bitcoin Warsaw</strong><span>Spotkanie w małych grupach, bez prezentacji: przychodzisz z pytaniami. Miejsce w wydarzeniu na Meetup.</span></a>'
+                              '</div><p class="note">Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjściem.</p><h3 id="meetup">', 1)
                 h = h.replace('<h3 id="btcmap">', '<h3>Z archiwum</h3><ul>'
                               f'<li><a href="{BASE}/meetup-w-warszawie-4-xi-2022/">Meetup, 4 XI 2022</a></li>'
                               f'<li><a href="{BASE}/meetup-w-warszawie-2-xii-2022/">Meetup, 2 XII 2022</a></li>'

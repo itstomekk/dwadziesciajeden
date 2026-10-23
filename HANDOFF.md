@@ -1,0 +1,32 @@
+# Handoff
+
+Updated 2026-10-23.
+
+## State
+
+- Preview live at https://itstomekk.github.io/dwadziesciajeden/ (noindex, robots Disallow all).
+- 36 pages. QA: ALL PASS (old URLs 26/26, internal links, console errors, overflow, search, chronicle filter).
+- Done in round 2:
+  - Friendly projects added: bitblik, Cryptosteel, Bitcoin District (`content/projekty.json`).
+  - Polish projects: `/inicjatywy/` (sections: Polskie projekty, Pomóż tłumaczyć, Organizacje, Wydarzenia, Czaty). `/polskie-projekty/` redirects there.
+  - Full article `/bitcoin-w-parlamencie/` (sources: @21BitcoinPolska posts Oct 2025 to Jan 2026, campaign page, Geyser).
+  - Warsaw regulars on `/warszawa/` and `/inicjatywy/`: BitcoinWalk Saturdays 11:30 (Ogród Saski, Fontanna Wielka), Bitcoin Café Mondays 18:00 (meetup.com/bitcoin-warsaw).
+  - `/biblioteka/` with 13 book covers (local copies in `assets/books/`), sites, recordings. `/zasady/` from twentyone.world.
+  - Telegram group t.me/dwadziesciajeden exported read-only (`tools/tg_export_topics.py`): topics "Bitcoin w Polsce i po polsku" (2324 msgs), "Bitcoin po Polsku" (2060), plus "Linki i polecajki" and "Projekty, appki". Files in `source-archive/telegram/` (private, gitignored). Only public resource links were used on the site; no member messages or names are published.
+
+## Facts to keep straight
+
+- BitcoinWalk Warszawa: Tomek said Saturdays 11:00; bitcoinwalk.org and Meetup both list 11:30. Site shows 11:30.
+- Bitcoin Café venue in late Sept 2026: Vita Cafe, Dobra 42. Site says "check the Meetup event" instead of a fixed venue.
+- meetup.com/krakow-bitcoin-meetup is gone ("Group not found"); Kraków page now points to the chat.
+- bitcoinwalk.org/wroclaw/ and /poznan/ return 404.
+- bujac.pl is behind a Cloudflare challenge (403 to scripts, fine in a browser).
+
+## Plan (next rounds)
+
+1. Mine the Telegram exports further: Polish places accepting BTC, translation history, events timeline for the chronicle. Ask before quoting any member by name.
+2. Newsletter: decide tool (Nostr long-form, Substack, Buttondown) and fill the placeholder.
+3. Design polish: post headlines instead of repeated "Post na X", project thumbnails for letter placeholders (bitblik, Cryptosteel, Bitcoin District logos with permission), city pages BTC Map embed centering.
+4. Bitcoin w Parlamencie: add press coverage (bitcoin.pl, comparic.pl link is 404 now) and any replies from MPs.
+5. Launch: point dwadziesciajeden.pl (Ghost today) at Pages, set `DJ_BASE=""`, `NOINDEX=False`, add CNAME, submit sitemap.
+6. TwentyOne logo: no formal license; ask Gigi (dergigi.com/contact) before using the Polish fork on merch.

@@ -1,0 +1,232 @@
+{
+ "checked": "2026-10-23",
+ "categories": [
+  {
+   "id": "ksiazki",
+   "title": "Książki o Bitcoinie i pieniądzu",
+   "layout": "books",
+   "intro": "Polskie wydania, od których warto zacząć. Większość wydaje Freedom Publishing, które dostarczyło też książki do naszej kampanii w Parlamencie.",
+   "items": [
+    {
+     "title": "Zepsuty pieniądz. Dlaczego nasz system finansowy nas zawodzi i jak możemy go naprawić",
+     "author": "Lyn Alden",
+     "url": "https://wydawnictwofp.pl/ksiazki/zepsuty-pieniadz/",
+     "description_pl": "Obszerna analiza historii pieniądza widzianej przez pryzmat technologii, która pokazuje, skąd wzięły się dzisiejsze problemy systemu finansowego i gdzie w tym wszystkim jest Bitcoin.",
+     "image_local": "{B}/assets/books/zepsuty-pieniadz.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Standard Bitcoina. Zdecentralizowana alternatywa dla bankowości centralnej",
+     "author": "Saifedean Ammous",
+     "url": "https://wydawnictwofp.pl/ksiazki/standard-bitcoina/",
+     "description_pl": "Klasyczna książka tłumacząca, dlaczego twardy pieniądz ma znaczenie i czemu Bitcoin jest jego najnowszą, cyfrową odsłoną.",
+     "image_local": "{B}/assets/books/standard-bitcoina.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Standard pieniądza dekretowego. Zniewolenie długiem jako alternatywa dla ludzkiej cywilizacji",
+     "author": "Saifedean Ammous",
+     "url": "https://wydawnictwofp.pl/ksiazki/standard-pieniadza-dekretowego/",
+     "description_pl": "Kontynuacja „Standardu Bitcoina”, która rozkłada na części system pieniądza fiat: jak działa, kto na nim zyskuje i jakie skutki ma dla gospodarki oraz społeczeństwa.",
+     "image_local": "{B}/assets/books/standard-pieniadza-dekretowego.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Dlaczego Bitcoin",
+     "author": "Vijay Boyapati",
+     "url": "https://wydawnictwofp.pl/ksiazki/dlaczego-bitcoin/",
+     "description_pl": "Krótki, zwarty esej o tym, jak ewoluowały formy pieniądza i dlaczego Bitcoin ma szansę zostać jego najlepszą wersją.",
+     "image_local": "{B}/assets/books/dlaczego-bitcoin.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Nasz pieniądz Bitcoin",
+     "author": "Michael Caras",
+     "url": "https://wydawnictwofp.pl/ksiazki/nasz-pieniadz-bitcoin/",
+     "description_pl": "Bajka dla dzieci o mieszkańcach miasteczka, którzy sami odkrywają, czym jest dobry pieniądz, i dzięki temu zaczynają rozumieć Bitcoina.",
+     "image_local": "{B}/assets/books/nasz-pieniadz-bitcoin.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Zrozumieć Bitcoina",
+     "author": "Robert P. Murphy, Silas Barta",
+     "url": "https://wydawnictwofp.pl/ksiazki/zrozumiec-bitcoina/",
+     "description_pl": "Przystępne wprowadzenie dla laika: czym jest Bitcoin, jak działa jego protokół i dlaczego miłośnicy wolności powinni się nim zainteresować.",
+     "image_local": "{B}/assets/books/zrozumiec-bitcoina.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Standard złota w epoce pieniądza cyfrowego",
+     "author": "George Gilder",
+     "url": "https://wydawnictwofp.pl/ksiazki/standard-zlota-w-epoce-pieniadza-cyfrowego/",
+     "description_pl": "Krótka książka o tym, czym jest bogactwo i jaką rolę w jego tworzeniu odgrywa pieniądz, napisana z perspektywy teorii informacji i argumentująca za złotem.",
+     "image_local": "{B}/assets/books/standard-zlota-w-epoce-pieniadza-cyfrowe.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Pakiet „3 x Saifedean Ammous”",
+     "author": "Saifedean Ammous",
+     "url": "https://wydawnictwofp.pl/ksiazki/pakiet-3-x-saifedean-ammous/",
+     "description_pl": "Zestaw trzech książek Ammousa w jednym zamówieniu: „Standard Bitcoina”, „Standard pieniądza dekretowego” oraz „Zasady ekonomii”.",
+     "image_local": "{B}/assets/books/pakiet-3-x-saifedean-ammous.jpg",
+     "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Pakiet „Standard Bitcoina + Standard pieniądza dekretowego”",
+     "author": "Saifedean Ammous",
+     "url": "https://wydawnictwofp.pl/ksiazki/pakiet-standard-x-2/",
+     "description_pl": "Zestaw dwóch książek Ammousa: „Standard Bitcoina” i „Standard pieniądza dekretowego”.",
+     "image_local": "{B}/assets/books/pakiet-standard-x-2.jpg",
+     "publisher": "Freedom Publishing"
+    }
+   ]
+  },
+  {
+   "id": "technicznie",
+   "title": "Technicznie",
+   "layout": "books",
+   "intro": "Dla tych, którzy chcą zrozumieć protokół od środka albo na nim budować.",
+   "items": [
+    {
+     "title": "Bitcoin. Ilustrowany przewodnik",
+     "author": "Kalle Rosenbaum",
+     "url": "https://helion.pl/ksiazki/bitcoin-ilustrowany-przewodnik-kalle-rosenbaum,bitilv.htm",
+     "description_pl": "Bogato ilustrowany podręcznik, który krok po kroku tłumaczy techniczne podstawy Bitcoina: podpisy cyfrowe, dowód pracy i sieć peer-to-peer.",
+     "image_local": "{B}/assets/books/bitilv.jpg",
+     "publisher": "Helion"
+    },
+    {
+     "title": "Bitcoin. Wszystko, co musisz wiedzieć o programowaniu z użyciem otwartego łańcucha bloków. Wydanie III",
+     "author": "Andreas M. Antonopoulos, David A. Harding",
+     "url": "https://helion.pl/ksiazki/bitcoin-wszystko-co-musisz-wiedziec-o-programowaniu-z-uzyciem-otwartego-lancucha-blokow-wydanie-i-andreas-antonopoulos-david-harding,bitws3.htm",
+     "description_pl": "Polskie wydanie trzecie „Mastering Bitcoin” – techniczny przewodnik po działaniu Bitcoina dla programistów i osób, które chcą zajrzeć pod maskę protokołu.",
+     "image_local": "{B}/assets/books/bitws3.jpg",
+     "publisher": "Helion"
+    },
+    {
+     "title": "Lightning Network dla praktyków. Protokół drugiej warstwy i jego wykorzystanie do obsługi płatności bitcoinami",
+     "author": "Andreas M. Antonopoulos, Olaoluwa Osuntokun, René Pickhardt",
+     "url": "https://helion.pl/ksiazki/lightning-network-dla-praktykow-protokol-drugiej-warstwy-i-jego-wykorzystanie-do-obslugi-platnosci-andreas-m-antonopoulos-olaoluwa-osuntokun-rene,linepr.htm",
+     "description_pl": "Techniczna książka o Lightning Network dla programistów i inżynierów, którzy chcą budować aplikacje płacące bitcoinem w drugiej warstwie.",
+     "image_local": "{B}/assets/books/linepr.jpg",
+     "publisher": "Helion"
+    },
+    {
+     "title": "Zrozumieć Bitcoin. Programowanie kryptowalut od podstaw",
+     "author": "Jimmy Song",
+     "url": "https://helion.pl/ksiazki/zrozumiec-bitcoin-programowanie-kryptowalut-od-podstaw-jimmy-song,zrobit.htm",
+     "description_pl": "Podręcznik uczący Bitcoina przez pisanie kodu: od matematyki krzywych eliptycznych po transakcje i blok łańcucha.",
+     "image_local": "{B}/assets/books/zrobit.jpg",
+     "publisher": "Helion"
+    }
+   ]
+  },
+  {
+   "id": "strony",
+   "title": "Strony i tłumaczenia",
+   "items": [
+    {
+     "title": "Archiwum Bitcoina",
+     "author": "Mato",
+     "type_label": "blog",
+     "url": "https://archiwumbitcoina.pl/",
+     "description_pl": "Polskie tłumaczenia najważniejszych tekstów o Bitcoinie, zebrane w jednym miejscu."
+    },
+    {
+     "title": "Anatomia Bitcoina",
+     "author": "Polskie Stowarzyszenie Bitcoin",
+     "type_label": "strona edukacyjna",
+     "url": "https://anatomiabitcoina.pl/",
+     "description_pl": "Materiały o Bitcoinie zebrane w jednym miejscu, po polsku. Polecane na naszym czacie w maju 2026."
+    },
+    {
+     "title": "10 przykazań dobrego bitcoinowania",
+     "author": "Parman, European Bitcoiners",
+     "type_label": "tekst",
+     "url": "https://europeanbitcoiners.com/10-przykazan-dobrego-bitcoinowania/",
+     "description_pl": "Krótki, praktyczny tekst o dobrych nawykach bitcoinera, w polskim tłumaczeniu."
+    },
+    {
+     "title": "Timechain Calendar po polsku",
+     "type_label": "kalendarium",
+     "url": "https://timechaincalendar.com/pl",
+     "description_pl": "Historia Bitcoina dzień po dniu, w wersji polskiej, przy której pracowali tłumacze z naszej społeczności."
+    },
+    {
+     "title": "Bitcoin.org po polsku",
+     "type_label": "strona",
+     "url": "https://bitcoin.org/pl/",
+     "description_pl": "Polska wersja klasycznej strony o Bitcoinie: jak działa, jak zacząć, jak wybrać portfel."
+    },
+    {
+     "title": "Whitepaper po polsku na bitcoin.org",
+     "author": "tłum. Damian Mee",
+     "type_label": "PDF",
+     "url": "https://bitcoin.org/files/bitcoin-paper/bitcoin_pl.pdf",
+     "description_pl": "To samo tłumaczenie białej księgi, które hostujemy u siebie, w wersji z bitcoin.org."
+    },
+    {
+     "title": "Nostr: przyszłość sieci społecznościowych",
+     "author": "Gracjan Pietras",
+     "type_label": "artykuł",
+     "url": "https://www.linkedin.com/pulse/nostr-przysz%C5%82o%C5%9B%C4%87-sieci-spo%C5%82eczno%C5%9Bciowych-gracjan-pietras-thwpf/",
+     "description_pl": "Polskie wprowadzenie do protokołu Nostr, polecane przez nas we wrześniu 2024."
+    },
+    {
+     "title": "Raport ODF o portfelach non-custodial",
+     "author": "Gracjan Pietras, Marcin Liszka",
+     "type_label": "raport, EN",
+     "url": "https://en.odfoundation.eu/a/726702,impact-of-the-eu-and-fatf-regulatory-frameworks-on-non-custodial-crypto-assets-wallets/",
+     "description_pl": "Analiza wpływu regulacji UE i FATF na portfele, w których sam trzymasz klucze. Autorzy z polskiej społeczności."
+    }
+   ]
+  },
+  {
+   "id": "nagrania",
+   "title": "Podcasty i nagrania",
+   "items": [
+    {
+     "title": "Bujać",
+     "author": "Mateusz Gadaj",
+     "type_label": "podcast",
+     "url": "https://bujac.pl/",
+     "description_pl": "Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach."
+    },
+    {
+     "title": "Gdzie jest problem? (polski lektor)",
+     "type_label": "film",
+     "url": "https://www.youtube.com/watch?v=3VupBwORhLk",
+     "description_pl": "Film krok po kroku pokazujący, jak państwowy wpływ na pieniądz rodzi kolejne problemy. Polską wersję przygotowali bitcoinerzy z naszej społeczności."
+    },
+    {
+     "title": "Bitcoin: Odkrywanie Nowego Świata (wykład)",
+     "author": "Wiktor Lisowski",
+     "type_label": "wykład",
+     "url": "https://www.youtube.com/watch?v=wECefAXbJWw",
+     "description_pl": "Solidny wstęp do Bitcoina po polsku, polecany przez nas w 2024."
+    },
+    {
+     "title": "Jak połączyć Trezor One ze Sparrow Wallet?",
+     "author": "Dlaczego bitcoin?",
+     "type_label": "poradnik wideo",
+     "url": "https://youtu.be/Jnw-jwobIRU",
+     "description_pl": "Praktyczny poradnik z polskojęzycznego kanału o samodzielnym przechowywaniu."
+    },
+    {
+     "title": "Bitcoin Polska",
+     "author": "Oskar Pilch",
+     "type_label": "YouTube",
+     "url": "https://www.youtube.com/@bitcoinpolska",
+     "description_pl": "Bitcoinowe słuchowisko: czytane teksty o Bitcoinie. Kanał nie publikuje od kilku lat, archiwum wciąż warto przesłuchać."
+    },
+    {
+     "title": "Czy bitcoin to marnotrawstwo energii?",
+     "author": "Radio WNET",
+     "type_label": "audycja",
+     "url": "https://wnet.fm/2025/02/05/czy-bitcoin-to-marnotrawstwo-energii-wyjasniaja-lech-wilczynski-i-gracjan-pietras/",
+     "description_pl": "Lech Wilczyński i Gracjan Pietras rozprawiają się z mitami o energii i Bitcoinie."
+    }
+   ]
+  }
+ ]
+}

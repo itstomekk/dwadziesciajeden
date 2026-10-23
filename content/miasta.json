@@ -1,8 +1,8 @@
 {
   "_note": "City index. warszawa/krakow/poznan bodies come from the imported Ghost pages; wroclaw/katowice are new pages built only from verified links (old /mapa/ page via Wayback, @21BitcoinPolska posts, btcmap.org checked 2026-10-23).",
   "cities": [
-    {"slug": "warszawa", "name": "Warszawa", "line": "Meetupy maksymalistów, Bitcoin & Nostr, Pizza Day.", "btcmap": "dwadzieścia-jeden-warszawa"},
-    {"slug": "krakow", "name": "Kraków", "line": "Kraków Bitcoin Meetup, współorganizowany z Satsback.", "btcmap": null},
+    {"slug": "warszawa", "name": "Warszawa", "line": "BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.", "btcmap": "dwadzieścia-jeden-warszawa"},
+    {"slug": "krakow", "name": "Kraków", "line": "Meetupy w Techies i wykłady. Terminy na czacie.", "btcmap": null},
     {"slug": "poznan", "name": "Poznań", "line": "BitcoinWalki i własna grupa na Telegramie.", "btcmap": "dwadzieścia-jeden-poznań"},
     {"slug": "wroclaw", "name": "Wrocław", "line": "Meetup od 2023 i BitcoinWalk od grudnia 2025.", "btcmap": "dwadzieścia-jeden-wrocław",
      "html": "<p>We Wrocławiu spotkaliśmy się pierwszy raz 12 stycznia 2023 w Kawiarni Literatka na Rynku. W grudniu 2025, po rozmowie na Spaces o byciu „jedynym bitcoinerem w mieście”, odbył się tu BitcoinWalk.</p><h3>Z archiwum</h3><ul><li><a href=\"{B}/meetup-we-wroclawiu-12-i-2023/\">Meetup we Wrocławiu, 12 I 2023</a></li><li><a href=\"https://x.com/21BitcoinPolska/status/1998512892866605371\" rel=\"noopener\">BitcoinWalk we Wrocławiu, grudzień 2025 (post na X)</a></li></ul><p>Chcesz, żeby spotkania we Wrocławiu odbywały się regularnie? Napisz na <a href=\"https://t.me/dwadziesciajeden\" rel=\"noopener\">naszym czacie</a>, pomożemy z promocją.</p>"},

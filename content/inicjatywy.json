@@ -1,0 +1,152 @@
+{
+ "checked": "2026-10-23",
+ "categories": [
+  {
+   "id": "polskie-projekty",
+   "title": "Polskie projekty bitcoinowe",
+   "intro": "Narzędzia i firmy, które budują Bitcoina w Polsce albo dla Polaków. Znasz kolejne? Daj znać na czacie.",
+   "items": [
+    {
+     "title": "bitblik",
+     "type_label": "aplikacja, open source",
+     "url": "https://bitblik.app/",
+     "description_pl": "Most między bitcoinem a BLIK-iem: płacisz bitcoinem wszędzie, gdzie działa BLIK, albo sprzedajesz kody BLIK za sats. Peer-to-peer, bez KYC, rozliczenie przez Lightning hold-invoice."
+    },
+    {
+     "title": "Satsback",
+     "type_label": "cashback w bitcoinie",
+     "url": "https://satsback.com/",
+     "description_pl": "Zwrot w bitcoinie za zakupy w setkach polskich sklepów internetowych. Współorganizował krakowskie meetupy i wsparł naszą kampanię w Parlamencie."
+    },
+    {
+     "title": "Cryptosteel",
+     "type_label": "metalowy backup seeda",
+     "url": "https://cryptosteel.com/",
+     "description_pl": "Stalowe kapsuły i kasety do przechowywania frazy odzyskiwania, odporne na ogień i wodę. Darczyńca kampanii Standard Bitcoina w Parlamencie."
+    },
+    {
+     "title": "Kancelaria DJP: Bitcoin desk",
+     "type_label": "usługi prawne",
+     "url": "https://djp.pl/",
+     "description_pl": "Warszawska kancelaria, która przyjmuje bitcoin, ma zespół prawników-bitcoinerów i trzyma BTC w rezerwach firmy."
+    }
+   ]
+  },
+  {
+   "id": "tlumaczenia",
+   "title": "Pomóż tłumaczyć",
+   "intro": "Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli i narzędzi. Każdy może dołożyć kilka zdań.",
+   "items": [
+    {
+     "title": "Bitcoin in Polish",
+     "type_label": "zbiórka na Geyser",
+     "url": "https://geyser.fund/project/bitcoininpolish",
+     "description_pl": "Zbiórka na tłumaczenie aplikacji, portfeli, artykułów i książek o Bitcoinie na polski."
+    },
+    {
+     "title": "SeedSigner na Transifex",
+     "type_label": "tłumaczenie",
+     "url": "https://explore.transifex.com/seedsigner/seedsigner/",
+     "description_pl": "Otwarty projekt tłumaczenia SeedSignera, urządzenia do podpisywania transakcji, które zbudujesz sam."
+    },
+    {
+     "title": "Bitcoin Core na Transifex",
+     "type_label": "tłumaczenie",
+     "url": "https://explore.transifex.com/bitcoin/bitcoin/",
+     "description_pl": "Polska wersja interfejsu Bitcoin Core. Poprawki i aktualizacje zawsze się przydadzą."
+    },
+    {
+     "title": "Wątek Bitcoin po Polsku",
+     "type_label": "Telegram",
+     "url": "https://t.me/dwadziesciajeden/7916",
+     "description_pl": "Tu ustalamy słownictwo, dzielimy się tłumaczeniami i szukamy rąk do pracy."
+    }
+   ]
+  },
+  {
+   "id": "organizacje",
+   "title": "Organizacje i sieci",
+   "items": [
+    {
+     "title": "Polskie Stowarzyszenie Bitcoin",
+     "type_label": "stowarzyszenie, od 2013",
+     "url": "https://bitcoin.org.pl/",
+     "description_pl": "Najstarsza polska organizacja bitcoinowa, ze Szczecina. Przekazała 1 mln satoshi na naszą kampanię w Parlamencie i wsparła Bitcoin FilmFest 2026."
+    },
+    {
+     "title": "TwentyOne",
+     "author": "Gigi",
+     "type_label": "sieć społeczności",
+     "url": "https://twentyone.world/",
+     "description_pl": "Międzynarodowa sieć lokalnych społeczności Bitcoin Only. Dwadzieścia Jeden jest jej polską gałęzią."
+    },
+    {
+     "title": "BTC Map: Polska",
+     "type_label": "mapa",
+     "url": "https://btcmap.org/country/pl",
+     "description_pl": "Wszystkie miejsca w Polsce, w których zapłacisz bitcoinem. Dane uzupełnia społeczność, także my."
+    }
+   ]
+  },
+  {
+   "id": "wydarzenia",
+   "title": "Wydarzenia i spotkania",
+   "items": [
+    {
+     "title": "Bitcoin FilmFest",
+     "type_label": "festiwal, Warszawa",
+     "url": "https://bitcoinfilmfest.com/",
+     "description_pl": "Festiwal kina o Bitcoinie, pieniądzu i wolności, robiony przez bitcoinerów dla bitcoinerów."
+    },
+    {
+     "title": "BitcoinWalk Warszawa",
+     "type_label": "spacer, soboty 11:30",
+     "url": "https://bitcoinwalk.org/warszawa",
+     "description_pl": "Cotygodniowy spacer i rozmowa o Bitcoinie, zbiórka przy Fontannie Wielkiej w Ogrodzie Saskim. Mile widziani także anglojęzyczni."
+    },
+    {
+     "title": "Bitcoin Warsaw",
+     "type_label": "Meetup, poniedziałki 18:00",
+     "url": "https://www.meetup.com/bitcoin-warsaw/",
+     "description_pl": "Wielojęzyczna grupa warszawskich wydarzeń. W poniedziałki Bitcoin Café: spotkanie w małych grupach, bez prezentacji, wokół Twoich pytań."
+    },
+    {
+     "title": "Poznań BitcoinWalk",
+     "type_label": "spacer, Poznań",
+     "url": "https://www.meetup.com/pl-PL/pozna%C5%84-bitcoinwalk/",
+     "description_pl": "Bitcoinowe spacery po Poznaniu, ogłaszane na Meetup i na naszej poznańskiej grupie."
+    }
+   ]
+  },
+  {
+   "id": "spolecznosci",
+   "title": "Czaty i społeczności",
+   "items": [
+    {
+     "title": "Dwadzieścia Jeden",
+     "type_label": "Telegram",
+     "url": "https://t.me/dwadziesciajeden",
+     "description_pl": "Nasz główny czat. Tu dzieje się większość rzeczy."
+    },
+    {
+     "title": "Wątek Bitcoin w Polsce",
+     "type_label": "Telegram",
+     "url": "https://t.me/dwadziesciajeden/17350",
+     "description_pl": "Polskie newsy, regulacje, miejsca akceptujące bitcoin i akcje społeczności."
+    },
+    {
+     "title": "Dwadzieścia Jeden Poznań",
+     "type_label": "Telegram",
+     "url": "https://t.me/DwadziesciaJedenPoznan",
+     "description_pl": "Poznańska grupa społeczności."
+    },
+    {
+     "title": "BitcoinWalk Warszawa na Nostrze",
+     "type_label": "Nostr (Flotilla)",
+     "url": "https://app.flotilla.social/join?r=warszawa.bitcoinwalk.org&c=OWY8E116",
+     "description_pl": "Czat warszawskich spacerów, prowadzony na Nostrze."
+    }
+   ]
+  }
+ ]
+}

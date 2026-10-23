@@ -334,3 +334,13 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 .copy-btn:hover{border-color:var(--orange);color:var(--orange)}
 .join__card--nostr strong{font:500 13px/1.45 var(--mono);overflow-wrap:anywhere}
 .join__card--nostr{cursor:default}
+
+.inline-img--wide img{max-width:100%;width:100%}
+.regulars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.regular{display:flex;flex-direction:column;gap:6px;padding:18px;border:1.5px solid var(--ink);border-radius:2px;text-decoration:none;background:#fffdf8}
+.regular:hover{background:var(--orange);color:var(--ink)}
+.regular__when{font:600 12.5px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--orange-ink)}
+.regular:hover .regular__when{color:var(--ink)}
+.regular strong{font:600 21px/1.2 var(--serif)}
+.regular span:last-child{font-size:15px;color:var(--ink-2)}
+@media (max-width:640px){.regulars{grid-template-columns:1fr}}

@@ -1,0 +1,43 @@
+{
+ "checked": "2026-10-23",
+ "concept_html": "<p>TwentyOne (<a href=\"https://twentyone.world/\" rel=\"noopener\">twentyone.world</a>) to sieć otwartych, lokalnych społeczności bitcoinerów, zainicjowana przez Gigiego z niemieckiego EINUNDZWANZIG. Każda nazywa się „dwadzieścia jeden” w swoim języku i stoi na tym samym schemacie: stały sygnał (podcast, newsletter lub inna regularna publikacja), lokalny język i kultura oraz otwarta grupa, do której łatwo dołączyć.</p><p>Treści dotyczą wyłącznie Bitcoina. Meetupy mogą wyrosnąć z takiej społeczności, ale zaczyna się od internetu, bo on się skaluje. Koncepcja jest open source: każdy może ją skopiować i dopasować do siebie. Polska jest na <a href=\"https://twentyone.world/network.html\" rel=\"noopener\">liście sieci</a> jako Dwadzieścia Jeden.</p>",
+ "rules": [
+  {
+   "title": "Tylko Bitcoin",
+   "text": "Rozmawiamy o Bitcoinie. Altcoiny, tokeny i „okazje inwestycyjne” nie mają tu miejsca."
+  },
+  {
+   "title": "Nie zarabiamy na uczestnikach",
+   "text": "Jesteśmy tu dla idei, nie po to, żeby sprzedawać ludziom z grupy albo promować kolejny projekt."
+  },
+  {
+   "title": "Gościnnie, ale czujnie",
+   "text": "Witamy nowych, ale nie ufamy w ciemno. Nikt z nas nie poprosi Cię o seed, klucze ani przelew. Ktoś prosi? To scam: zgłoś go adminom."
+  },
+  {
+   "title": "Otwarta grupa",
+   "text": "Do społeczności łatwo dołączyć: czat na Telegramie jest publiczny."
+  },
+  {
+   "title": "Po polsku",
+   "text": "Tworzymy i tłumaczymy treści dla Polaków. Każda pomoc przy tłumaczeniach jest mile widziana."
+  },
+  {
+   "title": "Najpierw internet, potem meetupy",
+   "text": "Podstawą jest regularny sygnał i grupa online. Spotkania na żywo wyrastają z nich, a nie odwrotnie."
+  },
+  {
+   "title": "Konsekwencja",
+   "text": "Regularność wygrywa z zapałem. Cokolwiek zaczynasz, trzymaj się tego przez co najmniej 21 tygodni."
+  },
+  {
+   "title": "Nie działaj sam",
+   "text": "Znajdź kogoś do współpracy i wspieraj cudze inicjatywy. Społeczność jest tym, co z niej zrobimy."
+  },
+  {
+   "title": "Sygnał, nie szum",
+   "text": "Dbamy o jakość. Mniej spamu i powtórek, więcej rzeczy, które się przydadzą."
+  }
+ ],
+ "more_html": "<h2>Wymogi sieci</h2><p>Żeby społeczność była na mapie TwentyOne, musi mówić lokalnym językiem, mieć aktywny „beacon”, który nadaje od co najmniej 21 tygodni, i otwartą grupę z co najmniej 21 członkami (<a href=\"https://github.com/twentyone-world/twentyone-world.github.io/blob/main/CONTRIBUTING.md\" rel=\"noopener\">CONTRIBUTING.md</a>). Wpis sieci dla Polski prowadzi na dwadziesciajeden.pl.</p><h2>Logo</h2><p>Logo sieci to słowo „twentyone” w lokalnym języku, złożone krojem The Bold Font, z małym symbolem Bitcoina. Polska wersja jest w <a href=\"https://twentyone.world/logo/\" rel=\"noopener\">galerii forków</a>.</p>"
+}
