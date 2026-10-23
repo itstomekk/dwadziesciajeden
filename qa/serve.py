@@ -2,10 +2,13 @@
 import functools, http.server, sys
 from pathlib import Path
 DOCS = Path(__file__).resolve().parent.parent / "docs"
-PREFIX = "/dwadziesciajeden"
+import os
+PREFIX = os.environ.get("DJ_BASE", "/dwadziesciajeden").rstrip("/")  # "" = custom-domain build
 class H(http.server.SimpleHTTPRequestHandler):
     def translate_path(self, path):
-        if path.startswith(PREFIX):
+        if not PREFIX:
+            pass
+        elif path.startswith(PREFIX):
             path = path[len(PREFIX):] or "/"
         else:
             path = "/__nope__"

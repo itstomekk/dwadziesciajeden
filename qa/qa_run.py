@@ -5,6 +5,7 @@ Run from the qa folder with an interpreter that has Playwright (Firefox):
 Writes qa/report.md (PASS/FAIL with evidence) and screenshots to qa/shots/.
 """
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -14,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 HERE = Path(__file__).resolve().parent
 DOCS = HERE.parent / "docs"
-BASE = "http://127.0.0.1:8721/dwadziesciajeden"
+BASE = "http://127.0.0.1:8721" + os.environ.get("DJ_BASE", "/dwadziesciajeden").rstrip("/")
 SHOTS = HERE / "shots"
 SHOTS.mkdir(exist_ok=True)
 

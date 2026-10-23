@@ -241,6 +241,8 @@ def build():
         shutil.rmtree(OUT)
     else:
         cname = None
+    if not BASE and "github.io" not in SITE_URL:
+        cname = SITE_URL.split("://", 1)[-1].split("/", 1)[0] + "\n"   # custom-domain build
     OUT.mkdir()
     if cname:
         (OUT / "CNAME").write_text(cname)
