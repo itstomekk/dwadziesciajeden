@@ -535,7 +535,7 @@ def build():
     # ---- kronika
     ks = sorted(kronika, key=lambda x: x["date"], reverse=True)
     years = sorted({k["date"][:4] for k in ks}, reverse=True)
-    filters = ["wszystko", "meetupy", "Standard Bitcoina", "zbiórki", "Bitcoin FilmFest"]
+    filters = ["wszystko", "meetupy", "społeczność", "edukacja", "technologia", "Standard Bitcoina", "zbiórki", "Bitcoin FilmFest"]
     fbar = "".join(f'<button type="button" data-filter="{"" if f == "wszystko" else "t-" + re.sub(r"[^a-z0-9]+", "-", f.lower())}"'
                    f'{" aria-pressed=true" if f == "wszystko" else " aria-pressed=false"}>{e(f)}</button>' for f in filters)
     blocks = ""
@@ -543,7 +543,7 @@ def build():
         blocks += f'<h2 class="tl-year">{y}</h2><ol class="tl">' + "".join(chronicle_item(x) for x in ks if x["date"][:4] == y) + "</ol>"
     gallery = [(x, i) for x in ks for i in x.get("images", [])]
     body = (page_head("Od 2022", "Kronika",
-                      f'Najważniejsze momenty społeczności, ze starej strony i z naszego konta na X. Zdjęcia: <a href="{X_URL}" rel="noopener">@21BitcoinPolska</a>, każde podpięte pod swój post.')
+                      f'Najważniejsze momenty społeczności: ze starej strony, z naszego konta na X i z czatu na Telegramie (bez nazwisk i cytatów). Zdjęcia: <a href="{X_URL}" rel="noopener">@21BitcoinPolska</a>, każde podpięte pod swój post.')
             + f'<div class="filters" role="group" aria-label="Filtruj">{fbar}</div><div class="tl-wrap">{blocks}</div>'
             + '<section class="gallery"><h2 class="sec-title">Zdjęcia</h2><div class="gallery__grid">'
             + "".join(f'<figure><a href="{b("/assets/kronika/" + i["file"])}"><img src="{b("/assets/kronika/" + i["file"])}" alt="{e(i["alt"])}" loading="lazy"></a>'
