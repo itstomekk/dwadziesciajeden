@@ -20,7 +20,7 @@ SHOTS = HERE / "shots"
 SHOTS.mkdir(exist_ok=True)
 
 PAGES = ["/", "/kim-jestesmy/", "/dolacz-do-nas/", "/zasady/", "/edukacja/", "/bitcoinowa-mapa-polski/", "/warszawa/", "/poznan/", "/wroclaw/",
-         "/bitcoinowa-mapa-polski/", "/projekty/", "/inicjatywy/", "/biblioteka/", "/kronika/", "/artykuly/",
+         "/bitcoinowa-mapa-polski/", "/projekty/", "/kronika/", "/artykuly/",
          "/standard-bitcoina-w-polskim-parlamencie/", "/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/",
          "/zbieramy-satki-na-wosp/", "/bitcoin-whitepaper/", "/slowniczek/", "/tag/zbiorki/"]
 

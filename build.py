@@ -47,7 +47,6 @@ NAV = [
     ("Edukacja", "/edukacja/"),
     ("Mapa i miasta", "/bitcoinowa-mapa-polski/"),
     ("Projekty", "/projekty/"),
-    ("Biblioteka", "/biblioteka/"),
     ("Kronika", "/kronika/"),
 ]
 
@@ -288,10 +287,9 @@ def build():
     sb = by_slug["standard-bitcoina-w-polskim-parlamencie"]
     latest_k = sorted(kronika, key=lambda x: x["date"], reverse=True)[:4]
     sections = [
-        ("Edukacja", "/edukacja/", "Czym jest Bitcoin, jak zacząć i jak nie dać się oszukać. Po polsku, bez sprzedawania."),
+        ("Edukacja", "/edukacja/", "Czym jest Bitcoin, jak zacząć, jak nie dać się oszukać. Plus biblioteka: książki, strony i nagrania po polsku."),
         ("Mapa i miasta", "/bitcoinowa-mapa-polski/", "Gdzie zapłacisz bitcoinem i gdzie się spotykamy: Warszawa, Kraków, Poznań, Wrocław, Katowice."),
         ("Projekty", "/projekty/", "Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
-        ("Biblioteka", "/biblioteka/", "Książki, strony, nagrania i whitepaper po polsku."),
         ("Kronika", "/kronika/", "Od pierwszego meetupu w 2022 do książek w Sejmie."),
     ]
     home = f"""
@@ -531,10 +529,8 @@ def build():
     for pr in projekty["projects"]:
         add_index(f"/projekty/#{pr['id']}", pr["name"], "projekt", pr["text"])
 
-    # ---- biblioteka
-    build_catalog("/biblioteka/", "Biblioteka", "Po polsku",
-                  "Książki, strony, nagrania i dokumenty o Bitcoinie w języku polskim. Zaczynasz? Weź whitepaper i „Standard Bitcoina”.",
-                  biblioteka, whitepaper=True)
+    # ---- biblioteka now lives inside /edukacja/
+    redirect("/biblioteka/", "/edukacja/#biblioteka")
 
     # ---- kronika
     ks = sorted(kronika, key=lambda x: x["date"], reverse=True)
@@ -559,7 +555,7 @@ def build():
         add_index("/kronika/", f'{x["title"]} ({pl_date(x["date"])})', "kronika", x["text"], x.get("tags", []))
 
     # ---- zasady
-    build_edukacja()
+    build_edukacja(biblioteka)
     build_zasady(zasady)
 
     # ---- słowniczek
@@ -600,33 +596,31 @@ def join_extra():
 </section>"""
 
 
-def build_catalog(path, title, kicker, lede, data, whitepaper=False):
-    body = page_head(kicker, title, lede)
+def catalog_html(path, label, data, whitepaper=False):
+    body = ""
     if whitepaper:
         body += (f'<section class="wp-strip"><div><p class="kicker">Zacznij tutaj</p><h2>Bitcoin: Elektroniczny System Pieniężny Typu Peer-to-Peer</h2>'
                  f'<p>Biała księga Satoshiego Nakamoto w tłumaczeniu Damiana Mee. Dziewięć stron, od których wszystko się zaczęło.</p></div>'
                  f'<p class="cta-row"><a class="btn btn--primary" href="{b("/assets/media/files/2023/02/bitcoin_pl.pdf")}" download>Pobierz PDF po polsku</a>'
                  f'<a class="btn btn--ghost" href="{b("/bitcoin-whitepaper/")}">Oryginał i więcej</a></p></section>')
     if not data:
-        body += '<p class="ph-block" data-placeholder="catalog">Katalog w przygotowaniu.</p>'
-    else:
-        cats = data["categories"]
-        body += '<nav class="toc" aria-label="Spis">' + "".join(f'<a href="#{c["id"]}">{e(c["title"])}</a>' for c in cats) + "</nav>"
-        for c in cats:
-            body += f'<section class="cat" id="{c["id"]}"><h2 class="sec-title">{e(c["title"])}</h2>'
-            if c.get("intro"):
-                body += f'<p class="cat__intro">{e(c["intro"])}</p>'
-            if c.get("layout") == "books":
-                body += '<div class="books">' + "".join(book_card(i) for i in c["items"]) + "</div>"
-            else:
-                body += '<div class="res-list">' + "".join(res_row(i) for i in c["items"]) + "</div>"
-            body += "</section>"
-            for i in c["items"]:
-                add_index(f"{path}#{c['id']}", i["title"], title.lower(), (i.get("author", "") + " " + i.get("description_pl", "")).strip())
-        if data.get("checked"):
-            body += f'<p class="note">Linki sprawdzone {pl_date(data["checked"])}. Brakuje czegoś? Napisz na <a href="{TG}" rel="noopener">czacie</a>.</p>'
-    write(path, layout(path, title, body, desc=lede))
-    add_index(path, title, "strona", lede)
+        return body + '<p class="ph-block" data-placeholder="catalog">Katalog w przygotowaniu.</p>'
+    cats = data["categories"]
+    body += '<nav class="toc" aria-label="Spis biblioteki">' + "".join(f'<a href="#{c["id"]}">{e(c["title"])}</a>' for c in cats) + "</nav>"
+    for c in cats:
+        body += f'<section class="cat" id="{c["id"]}"><h3 class="sec-title">{e(c["title"])}</h3>'
+        if c.get("intro"):
+            body += f'<p class="cat__intro">{e(c["intro"])}</p>'
+        if c.get("layout") == "books":
+            body += '<div class="books">' + "".join(book_card(i) for i in c["items"]) + "</div>"
+        else:
+            body += '<div class="res-list">' + "".join(res_row(i) for i in c["items"]) + "</div>"
+        body += "</section>"
+        for i in c["items"]:
+            add_index(f"{path}#{c['id']}", i["title"], label, (i.get("author", "") + " " + i.get("description_pl", "")).strip())
+    if data.get("checked"):
+        body += f'<p class="note proj-note">Linki sprawdzone {pl_date(data["checked"])}. Brakuje czegoś? Napisz na <a href="{TG}" rel="noopener">czacie</a>.</p>'
+    return body
 
 
 def book_card(i):
@@ -657,9 +651,9 @@ def res_row(i):
 
 
 
-def build_edukacja():
+def build_edukacja(biblioteka):
     steps = [
-        ("Zrozum, zanim kupisz", f'Zacznij od <a href="{b("/bitcoin-whitepaper/")}">whitepaperu po polsku</a> (dziewięć stron) i „Standardu Bitcoina”. Więcej w <a href="{b("/biblioteka/")}">bibliotece</a>.'),
+        ("Zrozum, zanim kupisz", f'Zacznij od <a href="{b("/bitcoin-whitepaper/")}">whitepaperu po polsku</a> (dziewięć stron) i „Standardu Bitcoina”. Więcej w <a href="#biblioteka">bibliotece</a> niżej.'),
         ("Zacznij od małej kwoty", "Kupuj tylko tyle, ile możesz spokojnie trzymać latami i czego utrata nie zrujnuje Ci życia. To nie jest porada inwestycyjna, tylko zdrowy rozsądek."),
         ("Weź klucze do siebie", "Wypłać bitcoiny z giełdy do portfela, w którym to Ty masz frazę odzyskiwania (seed). Not your keys, not your coins."),
         ("Zabezpiecz frazę odzyskiwania", "Zapisz ją offline: na papierze albo na stali. Nigdy zdjęcie, chmura ani menedżer haseł. Nikomu jej nie podawaj."),
@@ -676,20 +670,24 @@ def build_edukacja():
     body = page_head("Misja i edukacja", "Edukacja",
                      "Nasza misja jest prosta: żeby każdy w Polsce mógł zrozumieć Bitcoina po polsku i używać go samodzielnie. "
                      "Nie sprzedajemy kursów, sygnałów ani tokenów. Tłumaczymy, odpowiadamy na pytania i spotykamy się na żywo.")
+    body += ('<nav class="toc" aria-label="Na tej stronie"><a href="#podstawy">Czym jest Bitcoin</a><a href="#jak-zaczac">Jak zacząć</a>'
+             '<a href="#oszustwa">Uważaj na oszustów</a><a href="#biblioteka">Biblioteka</a></nav>')
     body += ('<section class="mission"><div><strong>Tłumaczymy</strong><span>Whitepaper, Bitcoin Core, SeedSigner i teksty, które warto znać, po polsku.</span></div>'
              f'<div><strong>Spotykamy się</strong><span>Meetupy i BitcoinWalki w pięciu miastach. <a href="{b("/bitcoinowa-mapa-polski/#miasta")}">Zobacz miasta</a>.</span></div>'
              f'<div><strong>Wnosimy Bitcoina tam, gdzie zapadają decyzje</strong><span>560 egzemplarzy „Standardu Bitcoina” w Sejmie i Senacie. <a href="{b("/bitcoin-w-parlamencie/")}">Historia akcji</a>.</span></div></section>')
-    body += ('<section class="prose-wide"><h2>Czym jest Bitcoin</h2>'
+    body += ('<section class="prose-wide" id="podstawy"><h2>Czym jest Bitcoin</h2>'
              '<p>Bitcoin to pieniądz i sieć płatności bez banku centralnego, bez prezesa i bez możliwości dodruku. Zasady są zapisane w otwartym kodzie, a pilnują ich tysiące niezależnych węzłów na całym świecie.</p>'
              '<p>Bitcoinów nigdy nie będzie więcej niż 21 milionów. Nowe bloki z transakcjami powstają średnio co dziesięć minut, a każdy z nich zabezpiecza praca górników (proof of work). Cofnięcie potwierdzonej historii jest praktycznie niemożliwe.</p>'
              '<p>Bitcoin nie ma konta, które ktoś może zamrozić. Masz klucze, masz bitcoiny. Dlatego najważniejsza lekcja to samodzielne przechowywanie.</p>'
              '<h2>Dlaczego tylko Bitcoin</h2>'
              '<p>Za większością innych „kryptowalut” stoi firma, fundacja albo założyciele z dużym zapasem monet. Bitcoin nie ma emitenta ani właściciela i właśnie dlatego jest wyjątkowy. Skupiamy się na nim w całości: na naszych spotkaniach i czatach nie promujemy altcoinów ani tokenów.</p></section>')
-    body += ('<section class="rules"><h2>Jak zacząć: sześć kroków</h2><ol>' + "".join(
+    body += ('<section class="rules" id="jak-zaczac"><h2>Jak zacząć: sześć kroków</h2><ol>' + "".join(
         f'<li><strong>{e(t)}</strong><span>{x}</span></li>' for t, x in steps) + "</ol></section>")
-    body += ('<section class="prose-wide"><div class="warn"><h2>Uważaj na oszustów</h2><ul>' + "".join(f"<li>{x}</li>" for x in scams) + "</ul></div>"
-             '<h2>Dalej</h2><ul>'
-             f'<li><a href="{b("/biblioteka/")}">Biblioteka</a>: książki, strony i nagrania po polsku.</li>'
+    body += ('<section class="prose-wide"><div class="warn" id="oszustwa"><h2>Uważaj na oszustów</h2><ul>' + "".join(f"<li>{x}</li>" for x in scams) + "</ul></div></section>")
+    body += ('<section class="lib-head" id="biblioteka"><p class="kicker">Po polsku</p><h2>Biblioteka</h2>'
+             '<p class="lede">Książki, strony, nagrania i dokumenty o Bitcoinie w języku polskim. Zaczynasz? Weź whitepaper i „Standard Bitcoina”.</p></section>'
+             + catalog_html("/edukacja/", "biblioteka", biblioteka, whitepaper=True))
+    body += ('<section class="prose-wide"><h2>Dalej</h2><ul>'
              f'<li><a href="{b("/slowniczek/")}">Słowniczek</a>: seed, sats, HODL i inne słowa, które usłyszysz na meetupie.</li>'
              f'<li><a href="{b("/bitcoinowa-mapa-polski/#miasta")}">Miasta</a>: przyjdź na spotkanie i zapytaj na żywo.</li>'
              f'<li><a href="{TG}" rel="noopener">Czat na Telegramie</a>: żadne pytanie nie jest głupie.</li></ul>'
