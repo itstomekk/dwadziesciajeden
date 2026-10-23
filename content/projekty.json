@@ -32,7 +32,7 @@
    "status": "co roku w Warszawie",
    "kind": "friends",
    "image": "projekty/bitcoin-filmfest.jpg",
-   "text": "Festiwal filmowy o Bitcoinie, pieniądzu i wolności, robiony przez bitcoinerów dla bitcoinerów. Rozmawialiśmy o nim już na meetupie w lutym 2023, a w 2024 dodaliśmy go do portalu sieci TwentyOne jako pierwsze polskie wydarzenie. Edycja 2025 wypadła w Bitcoin Pizza Day.",
+   "text": "Festiwal filmowy o Bitcoinie, pieniądzu i wolności, robiony przez bitcoinerów dla bitcoinerów. Wyrósł z Dwadzieścia Jeden: pierwsza edycja w 2023 powstała z ludzi i energii naszej społeczności. W 2024 dodaliśmy go do portalu sieci TwentyOne jako pierwsze polskie wydarzenie.",
    "links": [
     {
      "label": "bitcoinfilmfest.com",
@@ -43,7 +43,7 @@
      "url": "https://x.com/bitcoinfilmfest"
     }
    ],
-   "origin": "@21BitcoinPolska posts 2023-02, 2024-04, 2025-04; owner request 2026-10-23",
+   "origin": "@21BitcoinPolska posts 2023-02, 2024-04, 2025-04; owner request 2026-10-23; owner: BFF grew out of 21 (2026-10-23)",
    "image_alt": "Grafika: Bitcoin FilmFest"
   },
   {
@@ -221,6 +221,58 @@
    ],
    "origin": "owner request 2026-10-23; post 2025-11-01",
    "image_alt": "Grafika: Cryptosteel"
+  },
+  {
+   "id": "alby",
+   "name": "Alby",
+   "status": "zaprzyjaźniony",
+   "kind": "friends",
+   "image": "projekty/alby.jpg",
+   "image_alt": "Grafika: Alby",
+   "text": "Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.",
+   "links": [
+    {
+     "label": "getalby.com",
+     "url": "https://getalby.com/"
+    }
+   ],
+   "origin": "owner request 2026-10-23; og:image getalby.com"
+  },
+  {
+   "id": "deltabadger",
+   "name": "Deltabadger",
+   "status": "zaprzyjaźniony",
+   "kind": "friends",
+   "image": "projekty/deltabadger.jpg",
+   "image_alt": "Grafika: Deltabadger",
+   "text": "Polskie narzędzie do automatycznego, regularnego kupowania bitcoina (DCA) na wybranej giełdzie.",
+   "links": [
+    {
+     "label": "deltabadger.com",
+     "url": "https://deltabadger.com/"
+    }
+   ],
+   "origin": "owner request 2026-10-23; og:image deltabadger.com"
+  },
+  {
+   "id": "quark",
+   "name": "Quark Kantor Bitcoin Warszawa",
+   "status": "zaprzyjaźniony",
+   "kind": "friends",
+   "image": "projekty/quark.jpg",
+   "image_alt": "Strona kantoru Quark w Warszawie",
+   "text": "Pierwszy stacjonarny kantor bitcoina w Polsce, przy Świętokrzyskiej 18 w Warszawie. Kupisz i sprzedasz tu bitcoina za gotówkę. Przez Quark wymieniliśmy na złotówki satsy zebrane dla WOŚP.",
+   "links": [
+    {
+     "label": "bitcoinwarszawa.pl",
+     "url": "https://bitcoinwarszawa.pl/"
+    },
+    {
+     "label": "Sieć Quark",
+     "url": "https://quark.house/"
+    }
+   ],
+   "origin": "owner request 2026-10-23; WOŚP post 2024; screenshot bitcoinwarszawa.pl"
   },
   {
    "id": "bitcoin-district",
