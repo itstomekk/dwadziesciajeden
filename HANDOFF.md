@@ -4,7 +4,7 @@ Updated 2026-10-23.
 
 ## State
 
-- Preview live at https://itstomekk.github.io/dwadziesciajeden/ (noindex, robots Disallow all).
+- Live at https://dwadziesciajeden.pl (GitHub Pages custom domain). Old github.io preview URL redirects there.
 - 36 pages. QA: ALL PASS (old URLs 26/26, internal links, console errors, overflow, search, chronicle filter).
 - Done in round 2:
   - Friendly projects added: bitblik, Cryptosteel, Bitcoin District (`content/projekty.json`).
@@ -16,7 +16,14 @@ Updated 2026-10-23.
 
 - Round 3 (owner feedback): old site look restored (white, amber #F2A900, original "21 Bitcoin Polska" logo from Ghost, Montserrat headings to match the logo; old theme CSS in `source-archive/oldtheme/`). Armada Nostr community link added (header join grid, footer, inicjatywy). Poznań walks = meetup.com/poz21m ("Spacery ku wolności"). Added Laissez Faire, bitcoin.pl, PSB; removed YouTube Bitcoin Polska. DJP stays as friend and Bitcoin lawyer.
 
-## Domain cutover (dwadziesciajeden.pl), in progress 2026-10-23
+## Domain cutover (dwadziesciajeden.pl): LIVE since 2026-10-23
+
+- Live at http://dwadziesciajeden.pl (Pages cname set; DNS resolves to GitHub at Njalla, 1.1.1.1, 8.8.8.8). `www` works, 26/26 old URLs 200. HTTPS cert was pending at launch; enforce HTTPS once it is issued.
+- Default `python build.py` now builds the LIVE site (root base, indexable, CNAME). Never push a project-path preview build.
+- Open: Tomek clicks Verify for dwadziesciajeden.pl at github.com/settings/pages (API showed `protected_domain_state: unverified`; TXT record is in place).
+- Local QA `console-errors` fails only because mempool.space is unreachable from Tomek's network (block-height widget), not a site bug.
+
+History of the cutover:
 
 - Domain owner is Tomek's colleague. DNS at Njalla (njal.la), mail at Proton (MX + TXT must stay). Old web host (Ghost): A `151.115.73.132`, AAAA `2001:bc8:1d90:123:dc00:ff:fe09:69c7` (rollback values).
 - Tomek added `dwadziesciajeden.pl` under github.com/settings/pages (account itstomekk). Pending TXT, for the colleague to add: `_github-pages-challenge-itstomekk` = `dfe0834c3de16736ecf92e4cb1c948`. Then click Verify.
