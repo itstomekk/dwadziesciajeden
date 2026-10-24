@@ -18,9 +18,9 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
 C = ROOT / "content"
 
-BASE = os.environ.get("DJ_BASE", "/dwadziesciajeden").rstrip("/")
-SITE_URL = os.environ.get("DJ_SITE_URL", "https://itstomekk.github.io/dwadziesciajeden").rstrip("/")
-NOINDEX = os.environ.get("DJ_NOINDEX", "1") == "1"
+BASE = os.environ.get("DJ_BASE", "").rstrip("/")  # live on dwadziesciajeden.pl since 2026-10-23
+SITE_URL = os.environ.get("DJ_SITE_URL", "https://dwadziesciajeden.pl").rstrip("/")
+NOINDEX = os.environ.get("DJ_NOINDEX", "0") == "1"
 BUILT = date.today().isoformat()
 
 TG = "https://t.me/dwadziesciajeden"

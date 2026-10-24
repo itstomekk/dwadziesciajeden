@@ -2,18 +2,18 @@
 
 Static rebuild of dwadziesciajeden.pl, the Polish Bitcoin-only community in the TwentyOne network.
 
-- Preview: https://itstomekk.github.io/dwadziesciajeden/ (noindex until launch)
+- Live: https://dwadziesciajeden.pl (GitHub Pages custom domain, DNS at Njalla, owned by a colleague)
 - Repo: https://github.com/itstomekk/dwadziesciajeden (GitHub Pages from `docs/` on `main`)
 
 ## Build
 
 ```bash
 python build.py            # content/*.json + assets/ -> docs/ (stdlib only)
-python qa/serve.py &       # http://127.0.0.1:8721/dwadziesciajeden/
+python qa/serve.py &       # http://127.0.0.1:8721/
 cd qa && C:/Python314/python.exe qa_run.py   # Playwright Firefox gates
 ```
 
-`DJ_BASE=""` builds for a custom domain at the root. `NOINDEX` in `build.py` must be set to `False` at launch.
+Defaults build the live site (root base, indexable, `docs/CNAME`). The old project-path preview needs `DJ_BASE=/dwadziesciajeden DJ_SITE_URL=https://itstomekk.github.io/dwadziesciajeden DJ_NOINDEX=1` and must never be pushed.
 
 ## Content
 
