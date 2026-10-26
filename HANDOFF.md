@@ -39,7 +39,11 @@ History of the cutover:
 - A preview build (default env) never writes CNAME. Do not push a launch build before DNS points to GitHub: the github.io preview would redirect to a dead domain.
 - Port 8721 may be held by a stale preview server from another session; use another port via `DJ_QA_PORT`.
 
-## Round 4 (owner feedback 2026-10-26, built + QA ALL PASS, not yet pushed)
+## Round 4 (owner feedback 2026-10-26, QA ALL PASS, live: went out inside commit a59d7e3, which another session pushed with `git add -A`)
+
+- README.md is now a welcoming, human-facing Polish page (hero screenshot `.github/readme/home.jpg`); the technical notes moved to DEVELOPMENT.md.
+- Friend added: Cyfrowa Ekonomia (cyfrowaekonomia.pl, status "partner"; logo = their SVG rendered white on dark, `assets/projekty/cyfrowa-ekonomia.jpg`). Note: the portal also covers altcoins; listed at the owner's request.
+- QA gate `launch-indexable` now checks only the `User-agent: *` group (named AI-training bots are disallowed on purpose).
 
 - Founding = first message of Telegram group yellowpilled, 2021-04-05 16:56:13 UTC; chain tip then = block 677896 (`FOUNDING_BLOCK` in build.py). Home dateline says "Bitcoin Only od bloku #677 896" (the live current-block item there was removed; the shell `getblockcount` line still shows the live tip).
 - Facts bar starts at 2021; new `stages_html()` strip (2021 to 2026, each links to `/kronika/#rok-YYYY`, every claim backed by a kronika entry).

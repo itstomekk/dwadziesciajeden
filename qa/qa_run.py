@@ -81,7 +81,9 @@ if os.environ.get("DJ_BASE", ""):
 else:  # custom-domain launch build
     anyidx = any('content="noindex,nofollow"' in f.read_text(encoding="utf-8") for f in files if f.name == "index.html")
     cname = (DOCS / "CNAME").read_text().strip() if (DOCS / "CNAME").exists() else ""
-    gate("launch-indexable", "Disallow: /" not in robots and "Sitemap:" in robots and not anyidx and cname == "dwadziesciajeden.pl",
+    # only the catch-all group must allow; named AI-training bots are blocked on purpose (owner 2026-10-26)
+    star = re.split(r"\n\s*\n", robots.split("User-agent: *", 1)[-1], 1)[0] if "User-agent: *" in robots else robots
+    gate("launch-indexable", "Disallow: /" not in star and "Sitemap:" in robots and not anyidx and cname == "dwadziesciajeden.pl",
          f"robots allows + sitemap, no noindex pages, CNAME={cname!r}")
 
 # 5. placeholders listed
