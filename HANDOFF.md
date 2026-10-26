@@ -52,6 +52,11 @@ History of the cutover:
 - Newsletter column replaced by RSS: `/rss.xml` (60 newest articles + kronika entries; each kronika entry now has a stable id from `chron_id()`), `<link rel=alternate>` in every head.
 - Background: big Bitcoin mark (`BTC_MARK`, amber) fixed behind everything at 5% opacity; site.js sets `--sp` (scroll progress) and CSS turns/drifts/scales it slightly. Off for reduced motion and print.
 
+## Round 5 (2026-10-26)
+
+- Biblioteka: new section "Katalogi i listy" (`/edukacja/#katalogi`) with Awesome Bitcoin Culture and Awesome Bitcoin Events (owner request). Live, QA ALL PASS, commit 14a5b74.
+- Friendly-project candidates mined from both Telegram groups, checked live: `research/friendly-projects-candidates-2026-10-26.md`. Waiting for the owner to pick which go on `/projekty/`. Ask authors before listing member-built tools (old group rule: added with the author's consent).
+
 ## Owner rules
 
 - Owner 2026-10-23: the community started as Telegram group "yellowpilled" (created 2021-04-05); the current group was created 2022-06-06 as a redesign joining the 21 network. BFF grew out of 21. Topic restrictions: see private/NOTES.md (local only). Sometimes call altcoins "sh**coiny". Friends added: Alby, Deltabadger, Quark (Quark is NOT in YouBuyBitcoin Orange Pages as of 2026-10-23; its network notice says shops reopen 2026-11-02 after MiCA licensing).
