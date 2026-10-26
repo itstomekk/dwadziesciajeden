@@ -289,6 +289,22 @@
    ],
    "origin": "owner request 2026-10-23",
    "image_alt": "Grafika: Bitcoin District"
+  },
+  {
+   "id": "cyfrowa-ekonomia",
+   "name": "Cyfrowa Ekonomia",
+   "status": "partner",
+   "kind": "friends",
+   "image": "projekty/cyfrowa-ekonomia.jpg",
+   "image_alt": "Logo Cyfrowa Ekonomia",
+   "text": "Polski portal informacyjny, od 2013 roku pisze o Bitcoinie, regulacjach i historii pieniądza. Współpracuje z Polskim Stowarzyszeniem Bitcoin i Quarkiem, relacjonował „Standard Bitcoina” dla posłów i senatorów oraz Bitcoin FilmFest.",
+   "links": [
+    {
+     "label": "cyfrowaekonomia.pl",
+     "url": "https://cyfrowaekonomia.pl/"
+    }
+   ],
+   "origin": "owner request 2026-10-26; cyfrowaekonomia.pl home page (about, partners, video section) 2026-10-26; logo = site SVG on dark bg"
   }
  ]
 }

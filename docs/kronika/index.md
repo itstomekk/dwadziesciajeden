@@ -18,8 +18,6 @@ Najważniejsze momenty społeczności: ze starej strony, z naszego konta na X i 
 
 - 22 maja 2026 **Maxi meetup wraca** Warszawski meetup maksymalistów wraca na Bitcoin Pizza Day w SamoCentrum. Pierwsze 21 pizz po 1 sacie, dzięki Polskiemu Stowarzyszeniu Bitcoin. [Obraz: Ilustrowany plakat Bitcoin Pizza Dzień Warsaw z Pałacem Kultury](https://dwadziesciajeden.pl/assets/kronika/2026-05-15_2055184286177726543_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2055184286177726543)
 
-- 7 marca 2026 **Pomarańczowe tulipany w Poznaniu** Na Dzień Kobiet poznańska ekipa rozdaje 21 pomarańczowych tulipanów z zaproszeniem na spacery. [z czatu społeczności](https://t.me/dwadziesciajeden)
-
 - 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden)
 
 - 19 stycznia 2026 **Własny njump: njump.foo** Uruchamiamy społecznościową bramkę do podglądu wpisów z Nostra. W marcu trafia na listę przekierowań njump.to. [njump.foo](https://njump.foo) · [z czatu społeczności](https://t.me/dwadziesciajeden)

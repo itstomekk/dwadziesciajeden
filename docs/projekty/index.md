@@ -176,6 +176,16 @@ Bitcoinowa dzielnica w Próspera na wyspie Roatán w Hondurasie: miejsce do życ
 
 [thebitcoindistrict.com](https://thebitcoindistrict.com/)
 
+Obraz: Logo Cyfrowa Ekonomia
+
+partner · zaprzyjaźnieni
+
+## Cyfrowa Ekonomia
+
+Polski portal informacyjny, od 2013 roku pisze o Bitcoinie, regulacjach i historii pieniądza. Współpracuje z Polskim Stowarzyszeniem Bitcoin i Quarkiem, relacjonował „Standard Bitcoina” dla posłów i senatorów oraz Bitcoin FilmFest.
+
+[cyfrowaekonomia.pl](https://cyfrowaekonomia.pl/)
+
 ## Pomóż tłumaczyć
 
 Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.

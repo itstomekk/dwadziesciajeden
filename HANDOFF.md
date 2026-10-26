@@ -39,6 +39,15 @@ History of the cutover:
 - A preview build (default env) never writes CNAME. Do not push a launch build before DNS points to GitHub: the github.io preview would redirect to a dead domain.
 - Port 8721 may be held by a stale preview server from another session; use another port via `DJ_QA_PORT`.
 
+## Round 4 (owner feedback 2026-10-26, built + QA ALL PASS, not yet pushed)
+
+- Founding = first message of Telegram group yellowpilled, 2021-04-05 16:56:13 UTC; chain tip then = block 677896 (`FOUNDING_BLOCK` in build.py). Home dateline says "Bitcoin Only od bloku #677 896" (the live current-block item there was removed; the shell `getblockcount` line still shows the live tip).
+- Facts bar starts at 2021; new `stages_html()` strip (2021 to 2026, each links to `/kronika/#rok-YYYY`, every claim backed by a kronika entry).
+- YouTube links in lists (Edukacja/biblioteka `res_row`, initiative cards, project links) render as click-to-play thumbnails (`yt_frame()`, youtube-nocookie iframe only after click).
+- Removed kronika entry "Pomarańczowe tulipany w Poznaniu".
+- Newsletter column replaced by RSS: `/rss.xml` (60 newest articles + kronika entries; each kronika entry now has a stable id from `chron_id()`), `<link rel=alternate>` in every head.
+- Background: big Bitcoin mark (`BTC_MARK`, amber) fixed behind everything at 5% opacity; site.js sets `--sp` (scroll progress) and CSS turns/drifts/scales it slightly. Off for reduced motion and print.
+
 ## Owner rules
 
 - Owner 2026-10-23: the community started as Telegram group "yellowpilled" (created 2021-04-05); the current group was created 2022-06-06 as a redesign joining the 21 network. BFF grew out of 21. Topic restrictions: see private/NOTES.md (local only). Sometimes call altcoins "sh**coiny". Friends added: Alby, Deltabadger, Quark (Quark is NOT in YouBuyBitcoin Orange Pages as of 2026-10-23; its network notice says shops reopen 2026-11-02 after MiCA licensing).

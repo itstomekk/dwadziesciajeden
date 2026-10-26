@@ -33,6 +33,13 @@ NOSTR_URL = "https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv
 EMAIL = "kontakt@dwadziesciajeden.pl"
 GOATCOUNTER = "https://dwadziesciajeden.goatcounter.com/count"  # cookieless, no consent banner needed
 INDEXNOW_KEY = "5f1d2a9c8e7b4630a1c2d3e4f5a6b7c8"  # public by design (served as /<key>.txt)
+# training-only crawlers (search/answer bots like OAI-SearchBot, ChatGPT-User, Claude-User, PerplexityBot stay allowed)
+AI_TRAIN_BOTS = ["GPTBot", "ClaudeBot", "anthropic-ai", "Google-Extended", "Applebot-Extended", "CCBot",
+                 "meta-externalagent", "Bytespider", "Amazonbot", "cohere-training-data-crawler", "Diffbot", "omgili"]
+# Founding: first message of the Telegram group "yellowpilled", 2021-04-05 16:56:13 UTC (source-archive/telegram/yellowpilled.json).
+# Chain tip at that moment: block 677896 (mined 16:50:47 UTC; 677897 came at 16:57:35). Checked via mempool.space + blockstream.info.
+FOUNDING_BLOCK = 677896
+FOUNDING_BLOCK_TXT = "677&nbsp;896"
 
 # brand icons: Telegram + X from Simple Icons (CC0), Nostr from mbarulli/nostr-logo (CC0)
 def icon(name):
@@ -40,6 +47,7 @@ def icon(name):
         "telegram": ("0 0 24 24", "M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"),
         "x": ("0 0 24 24", "M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"),
         "nostr": ("44 44 172 172", "M210.8 199.4c0 3.1-2.5 5.7-5.7 5.7h-68c-3.1 0-5.7-2.5-5.7-5.7v-15.5c.3-19 2.3-37.2 6.5-45.5 2.5-5 6.7-7.7 11.5-9.1 9.1-2.7 24.9-.9 31.7-1.2 0 0 20.4.8 20.4-10.7s-9.1-8.6-9.1-8.6c-10 .3-17.7-.4-22.6-2.4-8.3-3.3-8.6-9.2-8.6-11.2-.4-23.1-34.5-25.9-64.5-20.1-32.8 6.2.4 53.3.4 116.1v8.4c0 3.1-2.6 5.6-5.7 5.6H57.7c-3.1 0-5.7-2.5-5.7-5.7v-144c0-3.1 2.5-5.7 5.7-5.7h31.7c3.1 0 5.7 2.5 5.7 5.7 0 4.7 5.2 7.2 9 4.5 11.4-8.2 26-12.5 42.4-12.5 36.6 0 64.4 21.4 64.4 68.7v83.2ZM150 99.3c0-6.7-5.4-12.1-12.1-12.1s-12.1 5.4-12.1 12.1 5.4 12.1 12.1 12.1S150 106 150 99.3Z"),
+        "rss": ("0 0 24 24", "M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"),
     }
     vb, d = paths[name]
     return f'<svg class="ico" viewBox="{vb}" aria-hidden="true" focusable="false"><path fill="currentColor" d="{d}"/></svg>'
@@ -135,8 +143,10 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
 <link rel="preload" href="{b('/assets/fonts/montserrat-latin.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{b('/assets/fonts/fonts.css')}">
 <link rel="stylesheet" href="{b('/assets/site.css')}?v={BUILT}">
+<link rel="alternate" type="application/rss+xml" title="Dwadzieścia Jeden: kronika i artykuły" href="{SITE_URL}/rss.xml">
 </head>
 <body class="k-{kind}" data-base="{BASE}">
+<div class="btc-bg" aria-hidden="true">{BTC_MARK}</div>
 <a class="skip" href="#tresc">Przejdź do treści</a>
 <header class="top">
   <div class="top__in">
@@ -177,8 +187,9 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
       <a href="https://github.com/itstomekk/dwadziesciajeden" rel="noopener">Kod strony na GitHubie</a>
     </div>
     <div class="foot__col">
-      <h2>Newsletter</h2>
-      <p class="muted">Zapisy wrócą wkrótce. <span class="ph" data-placeholder="newsletter">do ustalenia</span></p>
+      <h2>RSS</h2>
+      <a class="ico-link" href="{b('/rss.xml')}">{icon("rss")}Kanał RSS</a>
+      <p class="muted">Kronika i artykuły w Twoim czytniku. Bez zapisów i bez maili.</p>
       <p class="muted">Na bieżąco: <a href="{TG}" rel="noopener">Telegram</a>.</p>
     </div>
   </div>
@@ -383,12 +394,55 @@ def chronicle_item(en, show_images=True):
             f'<a href="{b("/assets/kronika/" + i["file"])}" class="tl__img"><img src="{b("/assets/kronika/" + i["file"])}" alt="{e(i["alt"])}" loading="lazy"></a>'
             for i in en["images"]) + "</div>"
     cls = " ".join("t-" + re.sub(r"[^a-z0-9]+", "-", t.lower()) for t in en.get("tags", []))
-    anchor = "standard-bitcoina" if "Standard Bitcoina" in en.get("tags", []) and en["date"] == "2025-10-31" else ""
-    if not anchor and "meetupy" in en.get("tags", []) and en["date"] == "2022-11-04":
-        anchor = "meetupy"
-    return (f'<li class="tl__item {cls}"{f" id={anchor}" if anchor else ""}><time datetime="{en["date"]}">{pl_date(en["date"])}</time>'
+    return (f'<li class="tl__item {cls}" id="{chron_id(en)}"><time datetime="{en["date"]}">{pl_date(en["date"])}</time>'
             f'<div class="tl__body"><h3>{e(en["title"])}</h3><p>{e(en["text"])}</p>{imgs}'
             f'<p class="tl__links">{" · ".join(link(l) for l in en.get("links", []))}</p></div></li>')
+
+
+def chron_id(en):
+    """Stable anchor for a chronicle entry (used by the page, the home stages and the RSS feed)."""
+    if "Standard Bitcoina" in en.get("tags", []) and en["date"] == "2025-10-31":
+        return "standard-bitcoina"
+    if "meetupy" in en.get("tags", []) and en["date"] == "2022-11-04":
+        return "meetupy"
+    return "k-" + en["date"] + "-" + slugify(en["title"])[:48].strip("-")
+
+
+# Bitcoin mark (public-domain logo), drawn in the site amber; shown at ~5% behind every page.
+BTC_MARK = ('<svg viewBox="0 0 64 64" focusable="false"><path fill="#F2A900" d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z"/>'
+            '<path fill="#fff" d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.511-.875-1.4 5.616c-.923-.23-1.871-.447-2.813-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.679 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.371-.092-2.296 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.019 4.569 1.139c.85.213 1.683.436 2.503.646l-1.453 5.834 3.507.875 1.439-5.772c.958.26 1.888.5 2.798.726l-1.434 5.745 3.511.875 1.453-5.823c5.987 1.133 10.489.676 12.384-4.739 1.527-4.36-.076-6.875-3.226-8.515 2.294-.529 4.022-2.038 4.483-5.155zM38.087 38.69c-1.085 4.36-8.426 2.003-10.806 1.412l1.928-7.729c2.38.594 10.012 1.77 8.878 6.317zm1.086-11.312c-.99 3.966-7.1 1.951-9.082 1.457l1.748-7.01c1.982.494 8.365 1.416 7.334 5.553z"/></svg>')
+
+
+# Stages of the community since the founding block; every claim is a kronika entry.
+STAGES = [
+    ("2021", "yellowpilled", "Grupa na Telegramie, pierwsze tłumaczenia (mempool.space, bitcoin-intro) i pierwsze piwo w Warszawie."),
+    ("2022", "Dwadzieścia Jeden", "Dołączamy do sieci TwentyOne, startuje strona i pierwszy meetup w Warszawie, potem Wrocław i Śląsk."),
+    ("2023", "Rośniemy", "Z naszej społeczności wyrasta Bitcoin FilmFest. Poznań, Trójmiasto, relay Nostr i Bitcoinowa Mapa Polski."),
+    ("2024", "Edukacja", "Przedmiot o Bitcoinie na PJATK, Bitcoin w Polskim Radiu, BitcoinWalki w Poznaniu."),
+    ("2025", "Standard Bitcoina", "Cotygodniowe BitcoinWalki w Warszawie i start zbiórki na książki dla Parlamentu."),
+    ("2026", "Książki w Sejmie", "560 egzemplarzy „Standardu Bitcoina” trafia do posłów, senatorów i Prezydenta."),
+]
+
+
+def stages_html():
+    items = "".join(f'<li><a href="{b("/kronika/#rok-" + y)}"><strong>{y}</strong><span class="stages__name">{e(n)}</span>'
+                    f'<span class="stages__text">{e(t)}</span></a></li>' for y, n, t in STAGES)
+    return (f'<section class="stages" aria-label="Etapy"><p class="kicker">Od bloku #{FOUNDING_BLOCK_TXT}, bez przerwy</p>'
+            f'<ol class="stages__list">{items}</ol></section>')
+
+
+YT_RE = re.compile(r"(?:youtube\.com/watch\?(?:.*&)?v=|youtu\.be/|youtube\.com/(?:embed|shorts|live)/)([A-Za-z0-9_-]{11})")
+
+
+def yt_id(url):
+    m = YT_RE.search(url or "")
+    return m.group(1) if m else None
+
+
+def yt_frame(vid, url, title):
+    """Click-to-play YouTube: thumbnail first, the iframe (youtube-nocookie) only after a click (assets/site.js)."""
+    return (f'<div class="video__frame" data-yt="{vid}"><a class="video__poster" href="{e(url)}" rel="noopener" aria-label="Odtwórz: {e(title)}">'
+            f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" loading="lazy"><span class="video__play" aria-hidden="true"></span></a></div>')
 
 
 def btcmap_embed(community=None, title="BTC Map"):
@@ -447,7 +501,7 @@ def build():
         ("Kronika", "/kronika/", "Od yellowpilled w 2021 do książek w Sejmie."),
     ]
     home = f"""
-<div class="dateline"><span>Warszawa · Kraków · Poznań · Wrocław · Katowice</span><span>Bitcoin Only od 2022</span><span>blok <b class="tip" data-tip>#…</b></span></div>
+<div class="dateline"><span>Warszawa · Kraków · Poznań · Wrocław · Katowice</span><span title="5 kwietnia 2021: zakładamy na Telegramie grupę yellowpilled">Bitcoin Only od bloku <b>#{FOUNDING_BLOCK_TXT}</b></span></div>
 <section class="hero">
   <div class="hero__text">
     <p class="kicker">Polska społeczność Bitcoin Only · sieć&nbsp;TwentyOne</p>
@@ -462,11 +516,13 @@ def build():
 </section>
 
 <section class="facts" aria-label="W liczbach">
-  <div><strong>2022</strong><span>pierwszy meetup w Warszawie</span></div>
+  <div><strong>2021</strong><span>start: grupa yellowpilled na Telegramie</span></div>
   <div><strong>560</strong><span>książek dla posłów i senatorów</span></div>
   <div><strong>5</strong><span>miast na naszej mapie</span></div>
   <div><strong>0</strong><span>altcoinów</span></div>
 </section>
+
+{stages_html()}
 
 <section class="feature">
   <div class="feature__img"><img src="{b('/assets/media/images/2025/10/IMG_1260.png')}" alt="Grafika kampanii Standard Bitcoina w polskim Parlamencie" loading="lazy"></div>
@@ -658,9 +714,11 @@ def build():
     def proj_card(pr):
         img = (f'<img src="{b("/assets/" + pr["image"])}" alt="{e(pr.get("image_alt", ""))}" loading="lazy">' if pr.get("image") else
                f'<span class="proj__mono" aria-hidden="true">{e(pr["name"][:1])}</span>')
+        vids = [(yt_id(l.get("url", "")), l) for l in pr["links"]]
+        vids = "".join(f'<figure class="video">{yt_frame(v, l["url"], l.get("label", pr["name"]))}</figure>' for v, l in vids if v)
         return (f'<article class="proj proj--{pr["kind"]}" id="{pr["id"]}"><div class="proj__img">{img}</div>'
                 f'<div class="proj__body"><p class="proj__status">{e(pr["status"])}{" · nasz projekt" if pr["kind"] == "ours" else " · zaprzyjaźnieni"}</p>'
-                f'<h2>{e(pr["name"])}</h2><p>{e(pr["text"])}</p><p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
+                f'<h2>{e(pr["name"])}</h2><p>{e(pr["text"])}</p>{vids}<p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
     groups = [("nasze", "Nasze projekty", [p for p in projekty["projects"] if p["kind"] == "ours"]),
               ("zaprzyjaznieni", "Zaprzyjaźnieni", [p for p in projekty["projects"] if p["kind"] != "ours"])]
     cats = (inicjatywy or {}).get("categories", [])
@@ -694,7 +752,7 @@ def build():
                    f'{" aria-pressed=true" if f == "wszystko" else " aria-pressed=false"}>{e(f)}</button>' for f in filters)
     blocks = ""
     for y in years:
-        blocks += f'<h2 class="tl-year">{y}</h2><ol class="tl">' + "".join(chronicle_item(x) for x in ks if x["date"][:4] == y) + "</ol>"
+        blocks += f'<h2 class="tl-year" id="rok-{y}">{y}</h2><ol class="tl">' + "".join(chronicle_item(x) for x in ks if x["date"][:4] == y) + "</ol>"
     gallery = [(x, i) for x in ks for i in x.get("images", [])]
     body = (page_head("Od 2021", "Kronika",
                       f'Najważniejsze momenty społeczności: ze starej strony, z naszego konta na X i z czatu na Telegramie (bez nazwisk i cytatów). Zdjęcia: <a href="{X_URL}" rel="noopener">@21BitcoinPolska</a>, każde podpięte pod swój post.')
@@ -725,8 +783,10 @@ def build():
                                          page_head("404", "Nie ma takiej strony", f'Spróbuj wyszukiwarki albo wróć na <a href="{b("/")}">stronę główną</a>.')),
                                   encoding="utf-8")
     (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n" if NOINDEX else
-                                    "# Content signals: search engines and AI answers may use this site.\n"
-                                    "User-agent: *\nContent-Signal: search=yes, ai-input=yes\nAllow: /\n\n"
+                                    "# Content signals: search and AI answers may use this site; AI training may not (owner 2026-10-26).\n"
+                                    "User-agent: *\nContent-Signal: search=yes, ai-input=yes, ai-train=no\nAllow: /\n\n"
+                                    "# Crawlers that collect training data\n"
+                                    + "".join(f"User-agent: {bot}\n" for bot in AI_TRAIN_BOTS) + "Disallow: /\n\n"
                                     f"Sitemap: {SITE_URL}/sitemap.xml\n# AI index: {SITE_URL}/llms.txt\n")
     if not NOINDEX:
         write_llms()
@@ -734,9 +794,32 @@ def build():
     urls = sorted({p["u"].split("#")[0] for p in pages_index})
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
                                      + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>\n", encoding="utf-8")
+    write_rss(posts, kronika)
     (OUT / "search.json").write_text(json.dumps(pages_index, ensure_ascii=False), encoding="utf-8")
     print(f"twins: {len(md_pages)} markdown pages")
     print(f"built {len(list(OUT.rglob('index.html')))} pages, {len(pages_index)} search records, base='{BASE}', noindex={NOINDEX}")
+
+
+def write_rss(posts, kronika):
+    """/rss.xml: articles + chronicle entries, newest first (replaces the newsletter placeholder)."""
+    from email.utils import format_datetime
+    from datetime import datetime, timezone
+    def when(d):
+        y, m, dd = (int(x) for x in d[:10].split("-"))
+        return format_datetime(datetime(y, m, dd, 12, 0, tzinfo=timezone.utc))
+    items = [(p["published"], p["title"], f'{SITE_URL}/{p["slug"]}/', p.get("excerpt", ""), "Artykuły") for p in posts]
+    items += [(k["date"], k["title"], f'{SITE_URL}/kronika/#{chron_id(k)}', k["text"], "Kronika") for k in kronika]
+    items.sort(key=lambda x: x[0], reverse=True)
+    x = html.escape
+    body = "".join(f"<item><title>{x(t)}</title><link>{x(u)}</link><guid isPermaLink=\"true\">{x(u)}</guid>"
+                   f"<pubDate>{when(d)}</pubDate><category>{c}</category><description>{x(s)}</description></item>\n"
+                   for d, t, u, s, c in items[:60])
+    (OUT / "rss.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n'
+        f"<title>Dwadzieścia Jeden: kronika i artykuły</title><link>{SITE_URL}/</link>"
+        f'<atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>'
+        "<description>Polska społeczność Bitcoin Only: nowe wpisy w kronice i artykuły.</description><language>pl</language>"
+        f"<lastBuildDate>{when(items[0][0])}</lastBuildDate>\n{body}</channel></rss>\n", encoding="utf-8")
 
 
 LLMS_SECTIONS = [
@@ -836,6 +919,11 @@ def ini_card(i):
     meta = " · ".join(x for x in [i.get("type_label", ""), i.get("author", "")] if x)
     host = re.sub(r"^https?://(www\.)?", "", i["url"]).split("/")[0]
     img = f'<img src="{b("/assets/" + i["image"])}" alt="" loading="lazy">' if i.get("image") else ""
+    vid = yt_id(i["url"])
+    if vid:
+        return (f'<div class="ini ini--video">{yt_frame(vid, i["url"], i["title"])}'
+                f'<span class="ini__body"><span class="res__meta">{e(meta)}</span><a class="ini__title" href="{e(i["url"])}" rel="noopener">{e(i["title"])}</a>'
+                f'<span class="res__desc">{e(i.get("description_pl", ""))}</span><span class="res__host">youtube.com</span></span></div>')
     return (f'<a class="ini" href="{e(i["url"])}" rel="noopener"><span class="ini__img">{img}</span>'
             f'<span class="ini__body"><span class="res__meta">{e(meta)}</span><span class="ini__title">{e(i["title"])}</span>'
             f'<span class="res__desc">{e(i.get("description_pl", ""))}</span><span class="res__host">{e(host)}</span></span></a>')
@@ -844,6 +932,11 @@ def ini_card(i):
 def res_row(i):
     meta = " · ".join(x for x in [i.get("type_label", ""), i.get("author", "")] if x)
     host = re.sub(r"^https?://(www\.)?", "", i["url"]).split("/")[0]
+    vid = yt_id(i["url"])
+    if vid:
+        return (f'<div class="res res--video">{yt_frame(vid, i["url"], i["title"])}<span class="res__meta">{e(meta)}</span>'
+                f'<a class="res__title" href="{e(i["url"])}" rel="noopener">{e(i["title"])}</a>'
+                f'<span class="res__desc">{e(i.get("description_pl", ""))}</span><span class="res__host">youtube.com</span></div>')
     return (f'<a class="res" href="{e(i["url"])}" rel="noopener"><span class="res__meta">{e(meta)}</span>'
             f'<span class="res__title">{e(i["title"])}</span><span class="res__desc">{e(i.get("description_pl", ""))}</span>'
             f'<span class="res__host">{e(host)}</span></a>')

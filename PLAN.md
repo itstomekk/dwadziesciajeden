@@ -22,7 +22,7 @@ dwadziesciajeden.pl serves this static site from GitHub Pages over HTTPS, indexe
 - [ ] mine Telegram exports: places accepting BTC, translation history, chronicle events (no member names)   @agent
 - [ ] Bitcoin w Parlamencie: press coverage, MP replies   @agent
 - [ ] design polish: post headlines, project thumbnails, BTC Map embed centering   @agent
-- [ ] ?? newsletter tool (Nostr long-form, Substack, Buttondown)   DECIDE
+- [x] newsletter replaced by RSS (`/rss.xml`, kronika + artykuły) — owner 2026-10-26
 - [ ] ask Gigi before using the Polish TwentyOne logo fork on merch   @tomek
 
 ## Backlog

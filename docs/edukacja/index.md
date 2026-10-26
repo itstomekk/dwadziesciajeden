@@ -90,7 +90,14 @@ Dla tych, którzy chcą zrozumieć protokół od środka albo na nim budować.
 
 ### Podcasty i nagrania
 
-[podcast · Mateusz Gadaj Bujać Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach. bujac.pl](https://bujac.pl/) · [archiwum podcastu Bujać! archiwum Wszystkie rozmowy Bujać! w jednym miejscu: 18 rozmów w 4 seriach, z playerami, opisami i wyszukiwarką. itstomekk.github.io](https://itstomekk.github.io/bujac-archiwum/) · [podcast Laissez Faire Polski podcast wolnościowy. Bitcoinowa seria „₿ujać – O Bitcoinie po polsku” wychodzi właśnie tutaj. truefans.fm](https://truefans.fm/laissez-faire) · [film Gdzie jest problem? (polski lektor) Film krok po kroku pokazujący, jak państwowy wpływ na pieniądz rodzi kolejne problemy. Polską wersję przygotowali bitcoinerzy z naszej społeczności. youtube.com](https://www.youtube.com/watch?v=3VupBwORhLk) · [wykład · Wiktor Lisowski Bitcoin: Odkrywanie Nowego Świata (wykład) Solidny wstęp do Bitcoina po polsku, polecany przez nas w 2024. youtube.com](https://www.youtube.com/watch?v=wECefAXbJWw) · [poradnik wideo · Dlaczego bitcoin? Jak połączyć Trezor One ze Sparrow Wallet? Praktyczny poradnik z polskojęzycznego kanału o samodzielnym przechowywaniu. youtu.be](https://youtu.be/Jnw-jwobIRU) · [audycja · Radio WNET Czy bitcoin to marnotrawstwo energii? Lech Wilczyński i Gracjan Pietras rozprawiają się z mitami o energii i Bitcoinie. wnet.fm](https://wnet.fm/2025/02/05/czy-bitcoin-to-marnotrawstwo-energii-wyjasniaja-lech-wilczynski-i-gracjan-pietras/)
+[podcast · Mateusz Gadaj Bujać Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach. bujac.pl](https://bujac.pl/) · [archiwum podcastu Bujać! archiwum Wszystkie rozmowy Bujać! w jednym miejscu: 18 rozmów w 4 seriach, z playerami, opisami i wyszukiwarką. itstomekk.github.io](https://itstomekk.github.io/bujac-archiwum/) · [podcast Laissez Faire Polski podcast wolnościowy. Bitcoinowa seria „₿ujać – O Bitcoinie po polsku” wychodzi właśnie tutaj. truefans.fm](https://truefans.fm/laissez-faire)
+
+film [Gdzie jest problem? (polski lektor)](https://www.youtube.com/watch?v=3VupBwORhLk)Film krok po kroku pokazujący, jak państwowy wpływ na pieniądz rodzi kolejne problemy. Polską wersję przygotowali bitcoinerzy z naszej społeczności. youtube.com
+
+wykład · Wiktor Lisowski [Bitcoin: Odkrywanie Nowego Świata (wykład)](https://www.youtube.com/watch?v=wECefAXbJWw)Solidny wstęp do Bitcoina po polsku, polecany przez nas w 2024. youtube.com
+
+poradnik wideo · Dlaczego bitcoin? [Jak połączyć Trezor One ze Sparrow Wallet?](https://youtu.be/Jnw-jwobIRU)Praktyczny poradnik z polskojęzycznego kanału o samodzielnym przechowywaniu. youtube.com
+[audycja · Radio WNET Czy bitcoin to marnotrawstwo energii? Lech Wilczyński i Gracjan Pietras rozprawiają się z mitami o energii i Bitcoinie. wnet.fm](https://wnet.fm/2025/02/05/czy-bitcoin-to-marnotrawstwo-energii-wyjasniaja-lech-wilczynski-i-gracjan-pietras/)
 
 Linki sprawdzone 23 października 2026. Brakuje czegoś? Napisz na [czacie](https://t.me/dwadziesciajeden).
 

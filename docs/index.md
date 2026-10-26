@@ -16,13 +16,27 @@ Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę m
 
 [Dołącz do czatu na Telegramie](https://t.me/dwadziesciajeden) · [Kim jesteśmy](https://dwadziesciajeden.pl/kim-jestesmy/)
 
-**2022** pierwszy meetup w Warszawie
+**2021** start: grupa yellowpilled na Telegramie
 
 **560** książek dla posłów i senatorów
 
 **5** miast na naszej mapie
 
 **0** altcoinów
+
+Od bloku #677 896, bez przerwy
+
+- [**2021** yellowpilled Grupa na Telegramie, pierwsze tłumaczenia (mempool.space, bitcoin-intro) i pierwsze piwo w Warszawie.](https://dwadziesciajeden.pl/kronika/#rok-2021)
+
+- [**2022** Dwadzieścia Jeden Dołączamy do sieci TwentyOne, startuje strona i pierwszy meetup w Warszawie, potem Wrocław i Śląsk.](https://dwadziesciajeden.pl/kronika/#rok-2022)
+
+- [**2023** Rośniemy Z naszej społeczności wyrasta Bitcoin FilmFest. Poznań, Trójmiasto, relay Nostr i Bitcoinowa Mapa Polski.](https://dwadziesciajeden.pl/kronika/#rok-2023)
+
+- [**2024** Edukacja Przedmiot o Bitcoinie na PJATK, Bitcoin w Polskim Radiu, BitcoinWalki w Poznaniu.](https://dwadziesciajeden.pl/kronika/#rok-2024)
+
+- [**2025** Standard Bitcoina Cotygodniowe BitcoinWalki w Warszawie i start zbiórki na książki dla Parlamentu.](https://dwadziesciajeden.pl/kronika/#rok-2025)
+
+- [**2026** Książki w Sejmie 560 egzemplarzy „Standardu Bitcoina” trafia do posłów, senatorów i Prezydenta.](https://dwadziesciajeden.pl/kronika/#rok-2026)
 
 Obraz: Grafika kampanii Standard Bitcoina w polskim Parlamencie
 
@@ -54,9 +68,9 @@ Zanim dołączysz, przeczytaj [zasady społeczności](https://dwadziesciajeden.p
 
 - 22 maja 2026 **Maxi meetup wraca** Warszawski meetup maksymalistów wraca na Bitcoin Pizza Day w SamoCentrum. Pierwsze 21 pizz po 1 sacie, dzięki Polskiemu Stowarzyszeniu Bitcoin. [Post na X](https://x.com/21BitcoinPolska/status/2055184286177726543)
 
-- 7 marca 2026 **Pomarańczowe tulipany w Poznaniu** Na Dzień Kobiet poznańska ekipa rozdaje 21 pomarańczowych tulipanów z zaproszeniem na spacery. [z czatu społeczności](https://t.me/dwadziesciajeden)
+- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden)
 
-- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden) · [Cała kronika](https://dwadziesciajeden.pl/kronika/)
+- 19 stycznia 2026 **Własny njump: njump.foo** Uruchamiamy społecznościową bramkę do podglądu wpisów z Nostra. W marcu trafia na listę przekierowań njump.to. [njump.foo](https://njump.foo) · [z czatu społeczności](https://t.me/dwadziesciajeden) · [Cała kronika](https://dwadziesciajeden.pl/kronika/)
 
 Sieć TwentyOne
 

@@ -9,6 +9,21 @@
       .catch(() => tips.forEach((t) => { t.textContent = t.textContent.startsWith("#") ? "po bloku" : "tick tock, next block"; }));
   }
 
+  // background Bitcoin mark: drifts, turns and grows a little with scroll progress (--sp, 0..1)
+  const bg = document.querySelector(".btc-bg");
+  if (bg && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const root = document.documentElement;
+    let queued = false;
+    const upd = () => {
+      queued = false;
+      const max = root.scrollHeight - innerHeight;
+      root.style.setProperty("--sp", max > 0 ? Math.min(1, Math.max(0, scrollY / max)).toFixed(4) : "0");
+    };
+    addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(upd); } }, { passive: true });
+    addEventListener("resize", upd);
+    upd();
+  }
+
   // mobile menu
   const menuBtn = document.querySelector(".menu-btn");
   const nav = document.getElementById("nav");
@@ -28,7 +43,7 @@
       f.src = `https://www.youtube-nocookie.com/embed/${box.dataset.yt}?autoplay=1`;
       f.allow = "autoplay; encrypted-media; picture-in-picture";
       f.allowFullscreen = true;
-      f.title = a.textContent.trim() || "YouTube";
+      f.title = (a.getAttribute("aria-label") || a.textContent).trim() || "YouTube";
       box.replaceChildren(f);
     });
   });
