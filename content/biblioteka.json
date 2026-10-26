@@ -5,7 +5,7 @@
    "id": "ksiazki",
    "title": "Książki o Bitcoinie i pieniądzu",
    "layout": "books",
-   "intro": "Polskie wydania, od których warto zacząć. Większość wydaje Freedom Publishing, które dostarczyło też książki do naszej kampanii w Parlamencie.",
+   "intro": "Głównie polskie wydania, od których warto zacząć. Większość wydaje Freedom Publishing, które dostarczyło też książki do naszej kampanii w Parlamencie.",
    "items": [
     {
      "title": "Zepsuty pieniądz. Dlaczego nasz system finansowy nas zawodzi i jak możemy go naprawić",
@@ -78,6 +78,14 @@
      "description_pl": "Zestaw dwóch książek Ammousa: „Standard Bitcoina” i „Standard pieniądza dekretowego”.",
      "image_local": "{B}/assets/books/pakiet-standard-x-2.jpg",
      "publisher": "Freedom Publishing"
+    },
+    {
+     "title": "Satoshi's Kitchen: Stay hungry, stack sats!",
+     "author": "David Goinda",
+     "url": "https://www.amazon.com/dp/B0DLPHX24Z",
+     "description_pl": "Książka kucharska z przepisami nadesłanymi przez bitcoinerów z całego świata, z historiami o jedzeniu i Bitcoinie. Po angielsku, 166 stron, listopad 2024.",
+     "image_local": "{B}/assets/books/satoshis-kitchen.jpg",
+     "publisher": "wydanie własne"
     }
    ]
   },

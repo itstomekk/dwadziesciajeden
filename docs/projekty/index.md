@@ -246,6 +246,16 @@ Pełnometrażowy dokument Instytutu Misesa o Carlu Mengerze, urodzonym w Nowym S
 
 [Film na YouTube](https://www.youtube.com/watch?v=QKI52d8PSCo) · [carlmenger.pl](https://carlmenger.pl/)
 
+Obraz: Zrzut ekranu: Nostr Social Wall
+
+Nostr · 2023 · zaprzyjaźnieni
+
+## Nostr Social Wall
+
+Ściana z wpisami z Nostra na ekran konferencji albo meetupu. Ustawiasz hasła wydarzenia, a publiczne notatki z tymi słowami, także zdjęcia i krótkie filmy, pojawiają się na projektorze. Mały projekt kogoś z naszej społeczności, od 2023.
+
+[nostrwall.com](https://nostrwall.com/)
+
 ## Pomóż tłumaczyć
 
 Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.

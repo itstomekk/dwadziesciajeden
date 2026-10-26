@@ -413,6 +413,22 @@
     }
    ],
    "origin": "yellowpilled 2022-02/04 crowdfunding links; mises.pl premiere notes; BFF 2024 archive; owner pick 2026-10-26; og:image carlmenger.pl"
+  },
+  {
+   "id": "nostrwall",
+   "name": "Nostr Social Wall",
+   "status": "Nostr · 2023",
+   "kind": "friends",
+   "image": "projekty/nostrwall.jpg",
+   "image_alt": "Zrzut ekranu: Nostr Social Wall",
+   "text": "Ściana z wpisami z Nostra na ekran konferencji albo meetupu. Ustawiasz hasła wydarzenia, a publiczne notatki z tymi słowami, także zdjęcia i krótkie filmy, pojawiają się na projektorze. Mały projekt kogoś z naszej społeczności, od 2023.",
+   "links": [
+    {
+     "label": "nostrwall.com",
+     "url": "https://nostrwall.com/"
+    }
+   ],
+   "origin": "Telegram dwadziesciajeden 2023-03-23 (author post, no name; also makers.bolt.fun/project/nostrwall); site text checked 2026-10-26; owner pick 2026-10-26; screenshot"
   }
  ]
 }
