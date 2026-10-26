@@ -244,6 +244,25 @@
      "description_pl": "Lech Wilczyński i Gracjan Pietras rozprawiają się z mitami o energii i Bitcoinie."
     }
    ]
+  },
+  {
+   "id": "katalogi",
+   "title": "Katalogi i listy",
+   "intro": "Otwarte, ręcznie kuratorowane listy na GitHubie. Po angielsku, z polskimi pozycjami w środku.",
+   "items": [
+    {
+     "title": "Awesome Bitcoin Culture",
+     "type_label": "katalog, EN",
+     "url": "https://awesomebitcoinculture.com/",
+     "description_pl": "Ludzka twórczość o Bitcoinie: filmy, książki, muzyka, sztuka, podcasty, gry, instytucje i wydarzenia. Lista na GitHubie plus galeria z wyszukiwarką."
+    },
+    {
+     "title": "Awesome Bitcoin Events",
+     "type_label": "kalendarz, EN",
+     "url": "https://itstomekk.github.io/awesome-bitcoin-events/",
+     "description_pl": "Kalendarz międzynarodowych wydarzeń bitcoinowych: konferencje, festiwale, meetupy. Szukasz, dokąd pojechać? Zacznij tutaj."
+    }
+   ]
   }
  ]
 }

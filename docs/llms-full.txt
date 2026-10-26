@@ -544,7 +544,7 @@ Zacznij tutaj
 
 Biała księga Satoshiego Nakamoto w tłumaczeniu Damiana Mee. Dziewięć stron, od których wszystko się zaczęło.
 
-[Pobierz PDF po polsku](https://dwadziesciajeden.pl/assets/media/files/2023/02/bitcoin_pl.pdf) · [Oryginał i więcej](https://dwadziesciajeden.pl/bitcoin-whitepaper/) · [Książki o Bitcoinie i pieniądzu][Technicznie][Strony i tłumaczenia][Podcasty i nagrania]
+[Pobierz PDF po polsku](https://dwadziesciajeden.pl/assets/media/files/2023/02/bitcoin_pl.pdf) · [Oryginał i więcej](https://dwadziesciajeden.pl/bitcoin-whitepaper/) · [Książki o Bitcoinie i pieniądzu][Technicznie][Strony i tłumaczenia][Podcasty i nagrania][Katalogi i listy]
 
 ### Książki o Bitcoinie i pieniądzu
 
@@ -572,6 +572,12 @@ wykład · Wiktor Lisowski [Bitcoin: Odkrywanie Nowego Świata (wykład)](https:
 
 poradnik wideo · Dlaczego bitcoin? [Jak połączyć Trezor One ze Sparrow Wallet?](https://youtu.be/Jnw-jwobIRU)Praktyczny poradnik z polskojęzycznego kanału o samodzielnym przechowywaniu. youtube.com
 [audycja · Radio WNET Czy bitcoin to marnotrawstwo energii? Lech Wilczyński i Gracjan Pietras rozprawiają się z mitami o energii i Bitcoinie. wnet.fm](https://wnet.fm/2025/02/05/czy-bitcoin-to-marnotrawstwo-energii-wyjasniaja-lech-wilczynski-i-gracjan-pietras/)
+
+### Katalogi i listy
+
+Otwarte, ręcznie kuratorowane listy na GitHubie. Po angielsku, z polskimi pozycjami w środku.
+
+[katalog, EN Awesome Bitcoin Culture Ludzka twórczość o Bitcoinie: filmy, książki, muzyka, sztuka, podcasty, gry, instytucje i wydarzenia. Lista na GitHubie plus galeria z wyszukiwarką. awesomebitcoinculture.com](https://awesomebitcoinculture.com/) · [kalendarz, EN Awesome Bitcoin Events Kalendarz międzynarodowych wydarzeń bitcoinowych: konferencje, festiwale, meetupy. Szukasz, dokąd pojechać? Zacznij tutaj. itstomekk.github.io](https://itstomekk.github.io/awesome-bitcoin-events/)
 
 Linki sprawdzone 23 października 2026. Brakuje czegoś? Napisz na [czacie](https://t.me/dwadziesciajeden).
 
