@@ -23,6 +23,7 @@ Updated 2026-10-23.
 - Open: Tomek clicks Verify for dwadziesciajeden.pl at github.com/settings/pages (API showed `protected_domain_state: unverified`; TXT record is in place).
 - HTTPS enforced (cert approved, expires 2027-01-24, GitHub renews).
 - Analytics + crawler doors (2026-10-26): GoatCounter site `dwadziesciajeden` (https://dwadziesciajeden.goatcounter.com, cookieless, created via the shared account API token; header "Dołącz" counts as event `dolacz-telegram-naglowek`). Every layout page gets a Markdown twin `<page>/index.md` + `<link rel="alternate" type="text/markdown">`; `/llms.txt` (index, sections in `LLMS_SECTIONS`) and `/llms-full.txt` (all twins). robots.txt: `Content-Signal: search=yes, ai-input=yes` (ai-train left unset until the owner decides). Home has JSON-LD Organization + WebSite. IndexNow key file `/<INDEXNOW_KEY>.txt`; sitemap submitted 2026-10-26 (202). GitHub Pages cannot send `X-Robots-Tag` for the .md twins.
+- GoatCounter check (2026-10-26): all 31 content pages carry the snippet; the 7 `Przeniesiono` meta-refresh stubs (`/author/jesterhodl/`, `/biblioteka/`, `/inicjatywy/`, `/mapa/`, `/meetupy/`, `/miasta/`, `/polskie-projekty/`) deliberately do not, because they redirect at once and would double-count the hit.
 - Someone edits `docs/CNAME` through the GitHub UI: always `git fetch` + rebase before pushing.
 - Local QA `console-errors` fails only because mempool.space is unreachable from Tomek's network (block-height widget), not a site bug.
 
