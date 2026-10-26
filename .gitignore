@@ -4,3 +4,7 @@ tools/*.ttf
 __pycache__/
 *.pyc
 qa/shots/
+
+# Private research (who built what, chat-derived notes). Never commit.
+private/
+research/friendly-projects-candidates-*.md

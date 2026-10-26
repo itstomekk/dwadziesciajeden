@@ -55,7 +55,7 @@ History of the cutover:
 ## Round 5 (2026-10-26)
 
 - Biblioteka: new section "Katalogi i listy" (`/edukacja/#katalogi`) with Awesome Bitcoin Culture and Awesome Bitcoin Events (owner request). Live, QA ALL PASS, commit 14a5b74.
-- Friendly-project candidates mined from both Telegram groups, checked live: `research/friendly-projects-candidates-2026-10-26.md`. Owner picked 1, 2, 4, 6, 7, 10: live (commit abf6107). Round 2 list (#11-17) is in the same file, waiting for a pick; the conversation continues in Telegram HERMES CONTROL CENTER, topic GENERAL 2 (4359). Ask authors before listing member-built tools (old group rule: added with the author's consent).
+- Friendly-project candidates mined from both Telegram groups, checked live: `private/friendly-projects-candidates-2026-10-26.md` (local only, not in git). Owner picked 1, 2, 4, 6, 7, 10: live (commit abf6107). Round 2 list (#11-17) is in the same file, waiting for a pick; the conversation continues in Telegram HERMES CONTROL CENTER, topic GENERAL 2 (4359). Ask authors before listing member-built tools (old group rule: added with the author's consent).
 
 ## Owner rules
 
