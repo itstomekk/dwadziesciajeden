@@ -407,7 +407,7 @@ def build():
     # DJ_SITE_URL) writes it, so a preview rebuild can never carry the domain by accident.
     cname = None
     if not BASE and "github.io" not in SITE_URL:
-        cname = SITE_URL.split("://", 1)[-1].split("/", 1)[0] + "\n"
+        cname = SITE_URL.split("://", 1)[-1].split("/", 1)[0]  # no trailing newline: matches the file GitHub's Pages UI writes
     OUT.mkdir()
     if cname:
         (OUT / "CNAME").write_text(cname)
