@@ -186,6 +186,66 @@ Polski portal informacyjny, od 2013 roku pisze o Bitcoinie, regulacjach i histor
 
 [cyfrowaekonomia.pl](https://cyfrowaekonomia.pl/)
 
+Obraz: Grafika: zencharts
+
+nowy · 2026 · zaprzyjaźnieni
+
+## zencharts
+
+Jeden wykres BTC i nic więcej: bez reklam, newsów i szumu, w terminalowym stylu. Zrobił go ktoś z naszej społeczności w październiku 2026. Masz pomysł, jak go rozwinąć? Napisz na czacie.
+
+[zencharts.vercel.app](https://zencharts.vercel.app/)
+
+Obraz: Zrzut ekranu: Cashu Redeem
+
+open source · zaprzyjaźnieni
+
+## Cashu Redeem
+
+Prosta strona do wymiany tokenów Cashu, czyli prywatnej cyfrowej gotówki opartej na bitcoinie, na satsy przez Lightning Address albo LNURL. Napisana od zera przez kogoś z naszej społeczności, dziś w oficjalnym repozytorium Cashu.
+
+[redeem.cashu.me](https://redeem.cashu.me/) · [Kod na GitHubie](https://github.com/cashubtc/cashu-redeem)
+
+Obraz: Grafika: portal Bitcoin Meetups
+
+portal meetupów · zaprzyjaźnieni
+
+## Bitcoin Meetups
+
+Katalog bitcoinowych meetupów: znajdź spotkanie blisko siebie. Portal prowadzą przyjaciele z niemieckiej sieci Einundzwanzig, a polska wersja działa pod naszą domeną od grudnia 2025.
+
+[portal.dwadziesciajeden.pl](https://portal.dwadziesciajeden.pl/) · [Einundzwanzig](https://einundzwanzig.space/)
+
+Obraz: Zrzut ekranu: npub.pl
+
+Nostr · zaprzyjaźnieni
+
+## npub.pl
+
+Darmowy adres NIP-05 w domenie npub.pl dla Twojego konta Nostr, czyli czytelny identyfikator zamiast długiego klucza. Do tego opcjonalnie adres Lightning. Polski projekt.
+
+[npub.pl](https://npub.pl/)
+
+Obraz: Zrzut ekranu: nostr.com.pl
+
+edukacja · zaprzyjaźnieni
+
+## nostr.com.pl
+
+Polskie wprowadzenie do Nostra: czym jest ten protokół, jakie są klienty i transmitery (relaye) i jak działają zapy, czyli napiwki w satsach.
+
+[nostr.com.pl](https://nostr.com.pl/)
+
+Obraz: Grafika filmu o Carlu Mengerze, Instytut Misesa
+
+film · 2023 · zaprzyjaźnieni
+
+## Carl Menger. Notatki na marginesie
+
+Pełnometrażowy dokument Instytutu Misesa o Carlu Mengerze, urodzonym w Nowym Sączu ojcu szkoły austriackiej. Zbiórkę na film polecaliśmy w grupie w 2022, a angielską premierę pokazał Bitcoin FilmFest 2024. Cały film jest za darmo na YouTube.
+
+[Film na YouTube](https://www.youtube.com/watch?v=QKI52d8PSCo) · [carlmenger.pl](https://carlmenger.pl/)
+
 ## Pomóż tłumaczyć
 
 Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.

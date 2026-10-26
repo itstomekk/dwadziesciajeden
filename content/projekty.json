@@ -305,6 +305,114 @@
     }
    ],
    "origin": "owner request 2026-10-26; cyfrowaekonomia.pl home page (about, partners, video section) 2026-10-26; logo = site SVG on dark bg"
+  },
+  {
+   "id": "zencharts",
+   "name": "zencharts",
+   "status": "nowy · 2026",
+   "kind": "friends",
+   "image": "projekty/zencharts.jpg",
+   "image_alt": "Grafika: zencharts",
+   "text": "Jeden wykres BTC i nic więcej: bez reklam, newsów i szumu, w terminalowym stylu. Zrobił go ktoś z naszej społeczności w październiku 2026. Masz pomysł, jak go rozwinąć? Napisz na czacie.",
+   "links": [
+    {
+     "label": "zencharts.vercel.app",
+     "url": "https://zencharts.vercel.app/"
+    }
+   ],
+   "origin": "Telegram dwadziesciajeden 2026-10-25 (author post, no name); owner pick 2026-10-26; image = own text card (chart data does not load on Tomek's network)"
+  },
+  {
+   "id": "cashu-redeem",
+   "name": "Cashu Redeem",
+   "status": "open source",
+   "kind": "friends",
+   "image": "projekty/cashu-redeem.jpg",
+   "image_alt": "Zrzut ekranu: Cashu Redeem",
+   "text": "Prosta strona do wymiany tokenów Cashu, czyli prywatnej cyfrowej gotówki opartej na bitcoinie, na satsy przez Lightning Address albo LNURL. Napisana od zera przez kogoś z naszej społeczności, dziś w oficjalnym repozytorium Cashu.",
+   "links": [
+    {
+     "label": "redeem.cashu.me",
+     "url": "https://redeem.cashu.me/"
+    },
+    {
+     "label": "Kod na GitHubie",
+     "url": "https://github.com/cashubtc/cashu-redeem"
+    }
+   ],
+   "origin": "Telegram dwadziesciajeden 2025-02-06 (author post); owner pick 2026-10-26; screenshot"
+  },
+  {
+   "id": "bitcoin-meetups-portal",
+   "name": "Bitcoin Meetups",
+   "status": "portal meetupów",
+   "kind": "friends",
+   "image": "projekty/portal-meetups.jpg",
+   "image_alt": "Grafika: portal Bitcoin Meetups",
+   "text": "Katalog bitcoinowych meetupów: znajdź spotkanie blisko siebie. Portal prowadzą przyjaciele z niemieckiej sieci Einundzwanzig, a polska wersja działa pod naszą domeną od grudnia 2025.",
+   "links": [
+    {
+     "label": "portal.dwadziesciajeden.pl",
+     "url": "https://portal.dwadziesciajeden.pl/"
+    },
+    {
+     "label": "Einundzwanzig",
+     "url": "https://einundzwanzig.space/"
+    }
+   ],
+   "origin": "Telegram dwadziesciajeden 2025-12-02; owner pick 2026-10-26; og:image of the portal"
+  },
+  {
+   "id": "npub-pl",
+   "name": "npub.pl",
+   "status": "Nostr",
+   "kind": "friends",
+   "image": "projekty/npub-pl.jpg",
+   "image_alt": "Zrzut ekranu: npub.pl",
+   "text": "Darmowy adres NIP-05 w domenie npub.pl dla Twojego konta Nostr, czyli czytelny identyfikator zamiast długiego klucza. Do tego opcjonalnie adres Lightning. Polski projekt.",
+   "links": [
+    {
+     "label": "npub.pl",
+     "url": "https://npub.pl/"
+    }
+   ],
+   "origin": "Telegram dwadziesciajeden 2025-12-01; owner pick 2026-10-26; screenshot"
+  },
+  {
+   "id": "nostr-com-pl",
+   "name": "nostr.com.pl",
+   "status": "edukacja",
+   "kind": "friends",
+   "image": "projekty/nostr-com-pl.jpg",
+   "image_alt": "Zrzut ekranu: nostr.com.pl",
+   "text": "Polskie wprowadzenie do Nostra: czym jest ten protokół, jakie są klienty i transmitery (relaye) i jak działają zapy, czyli napiwki w satsach.",
+   "links": [
+    {
+     "label": "nostr.com.pl",
+     "url": "https://nostr.com.pl/"
+    }
+   ],
+   "origin": "Telegram dwadziesciajeden 2025-12-01; owner pick 2026-10-26; screenshot"
+  },
+  {
+   "id": "carl-menger-film",
+   "name": "Carl Menger. Notatki na marginesie",
+   "status": "film · 2023",
+   "kind": "friends",
+   "image": "projekty/carlmenger.jpg",
+   "image_alt": "Grafika filmu o Carlu Mengerze, Instytut Misesa",
+   "text": "Pełnometrażowy dokument Instytutu Misesa o Carlu Mengerze, urodzonym w Nowym Sączu ojcu szkoły austriackiej. Zbiórkę na film polecaliśmy w grupie w 2022, a angielską premierę pokazał Bitcoin FilmFest 2024. Cały film jest za darmo na YouTube.",
+   "links": [
+    {
+     "label": "Film na YouTube",
+     "url": "https://www.youtube.com/watch?v=QKI52d8PSCo"
+    },
+    {
+     "label": "carlmenger.pl",
+     "url": "https://carlmenger.pl/"
+    }
+   ],
+   "origin": "yellowpilled 2022-02/04 crowdfunding links; mises.pl premiere notes; BFF 2024 archive; owner pick 2026-10-26; og:image carlmenger.pl"
   }
  ]
 }
