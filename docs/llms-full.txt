@@ -1,0 +1,1636 @@
+---
+title: Dwadzieścia Jeden: polska społeczność Bitcoin Only
+url: https://dwadziesciajeden.pl/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Polska społeczność Bitcoin Only · sieć TwentyOne
+
+# Dwadzieścia
+
+Jeden
+
+Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.
+
+[Dołącz do czatu na Telegramie](https://t.me/dwadziesciajeden) · [Kim jesteśmy](https://dwadziesciajeden.pl/kim-jestesmy/)
+
+**2022** pierwszy meetup w Warszawie
+
+**560** książek dla posłów i senatorów
+
+**5** miast na naszej mapie
+
+**0** altcoinów
+
+Obraz: Grafika kampanii Standard Bitcoina w polskim Parlamencie
+
+Zrealizowany projekt
+
+## Standard Bitcoina w polskim Parlamencie
+
+Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa. 8 stycznia 2026 trafiły z listem otwartym do każdego posła i senatora, a cztery dni później do Prezydenta RP. Zbiórkę wsparło 80 osób.
+
+[Przeczytaj całą historię](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Przebieg w kronice](https://dwadziesciajeden.pl/kronika/) · [Edukacja Czym jest Bitcoin, jak zacząć, jak nie dać się oszukać. Plus biblioteka: książki, strony i nagrania po polsku.](https://dwadziesciajeden.pl/edukacja/) · [Mapa i miasta Gdzie zapłacisz bitcoinem i gdzie się spotykamy: Warszawa, Kraków, Poznań, Wrocław, Katowice.](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/) · [Projekty Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce.](https://dwadziesciajeden.pl/projekty/) · [Kronika Od yellowpilled w 2021 do książek w Sejmie.](https://dwadziesciajeden.pl/kronika/)
+
+## Gdzie nas znaleźć
+
+Na czacie rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.
+
+[Telegram · główny czat **t.me/dwadziesciajeden**](https://t.me/dwadziesciajeden) · [Nostr · społeczność na Armadzie **Dwadzieścia Jeden na Armadzie**](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33) · [X **@21BitcoinPolska**](https://x.com/21BitcoinPolska)
+
+Nostr [profil](https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2) **npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc**
+
+Zanim dołączysz, przeczytaj [zasady społeczności](https://dwadziesciajeden.pl/zasady/).
+
+## Artykuły
+
+[Artykuły · 23 października 2026 Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Artykuły · 3 stycznia 2026 Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie](https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/) · [Zbiórki · 30 października 2025 Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/) · [Zbiórki · 15 stycznia 2024 Zbieramy satki na WOŚP! 🧡](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/) · [Meetupy · 8 lutego 2023 Meetup w Warszawie, 17 II 2023](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/) · [Wszystkie artykuły](https://dwadziesciajeden.pl/artykuly/)
+
+## Z kroniki
+
+- 27 maja 2026 **Testujemy społeczność na Nostrze** Sprawdzamy, czy da się przenieść rozmowy z Telegrama na Nostra: własny relay i klient webowy do testów. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 22 maja 2026 **Maxi meetup wraca** Warszawski meetup maksymalistów wraca na Bitcoin Pizza Day w SamoCentrum. Pierwsze 21 pizz po 1 sacie, dzięki Polskiemu Stowarzyszeniu Bitcoin. [Post na X](https://x.com/21BitcoinPolska/status/2055184286177726543)
+
+- 7 marca 2026 **Pomarańczowe tulipany w Poznaniu** Na Dzień Kobiet poznańska ekipa rozdaje 21 pomarańczowych tulipanów z zaproszeniem na spacery. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden) · [Cała kronika](https://dwadziesciajeden.pl/kronika/)
+
+Sieć TwentyOne
+
+Dwadzieścia Jeden to polska gałąź sieci [TwentyOne](https://twentyone.world/): niezależnych, lokalnych społeczności Bitcoin Only, które nazywają się „dwadzieścia jeden” we własnym języku. Einundzwanzig, Veintiuno, Huszonegy, Jednadvacet, Yirmibir i my.
+[Jak działa sieć i nasze zasady](https://dwadziesciajeden.pl/zasady/)
+
+
+---
+
+---
+title: Kim jesteśmy? · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/kim-jestesmy/
+language: pl
+---
+
+> Jeśli choć trochę obserwujesz świat i zachodzisz w głowę, dlaczego nagle nasze życie staje się groteskowe, to z pewnością szukasz tego przyczyn i zastanawiasz s
+
+# Kim jesteśmy?
+
+Jeśli choć trochę obserwujesz świat i zachodzisz w głowę, dlaczego nagle nasze życie staje się groteskowe, to z pewnością szukasz tego przyczyn i zastanawiasz się, jak postępować. Coś jest nie tak z naszymi państwami, mediami, ustrojami, rynkami. Coś jest nie tak ze społeczeństwem, jego wolnościami, realnym wpływem na rzeczywistość a przez to też z ambicjami, nadziejami i obawami. Coś jest nie tak z naszą kulturą, sztuką i obyczajami. Coś jest nie tak z pieniądzem, na którym tak bardzo polegamy.
+
+Nie jesteś sam. Istnieje grupa ludzi, której członkowie spędzili setki godzin na zgłębianiu wiedzy o historii monetarnej, psychologii, rynkach, cyklach pokoleniowych i technologicznych, rozkwitach i upadkach imperiów. Widzimy, tak samo jak przedstawiciele austriackiej szkoły ekonomii , że u podstaw tej degeneracji leży popsuty pieniądz. Pieniądz fiducjarny, którego naczelną funkcją jest możliwość bezszelestnej konfiskaty jego wartości. To jednak nie jest jedyny jego fatalny wpływ.
+
+Pieniądz bez pokrycia, którego podaż jest całkowicie arbitralna, ma wpływ o wiele dalej idący. Umożliwia nieograniczone zadłużanie się państw, niebilansowanie budżetów, złą alokację kapitału na szczeblu państwowym i prywatnym. Aż chce się pomarzyć o takim pieniądzu, który miałby zalety kruszcu, ale nie miał jego wad ani wad fiatu .
+
+Poświęć zatem dosłownie minutę na obejrzenie fragmentu wywiadu z Friedriechem von Hayekiem z 1984 r.
+
+[Friedrich August von Hayek predicting Bitcoin in 1984 - A Sly Roundabout Way](https://www.youtube.com/watch?v=nswOYo0zUcI) · [Friedrich von Hayek o wyrwaniu pieniądza z rąk rządów](https://www.youtube.com/watch?v=nswOYo0zUcI)
+
+Pieniądzem, który daje [szansę na odzyskanie wolności za naszego życia](https://jesterhodl.com/bitcoin-jest-najwieksza-szansa-na-osiagniecie-wolnosci-za-naszego-zycia/) jest naszym zdaniem Bitcoin.
+
+Tylko co zrobić w kraju nad Wisłą? Większość bardzo wartościowego materiału jest w języku angielskim; artykuły, wspaniałe podcasty, wywiady. w dodatku na konferencje trzeba jechać za granicę, a w rodzimych mediach króluje FUD albo cisza.
+
+Dwadzieścia Jeden to nazwa inicjatywy bitcoinowych maksymalistów, którzy stawiają sobie za cel przybliżanie Bitcoina w Polsce. Od tłumaczeń artykułów, książek, przez organizowanie meetupów i warsztatów, po shitpostowanie na Twitterze.
+
+Skąd tu Arystoteles z laser eyes ? Rozumiał on, w przeciwieństwie do Platona, że indywidualizm, własność prywatna i wolna wola są kluczowe dla pełnego doświadczania ludzkiego życia. Arystoteles, gdyby żył, na pewno zostałby bitcoinerem i razem z nami czekałby na 100k.
+
+Tekst: [@JesterHodl](https://dwadziesciajeden.pl/autor/jesterhodl/)
+
+Wyrazy kursywą możesz sprawdzić na stronie [Słowniczek](https://dwadziesciajeden.pl/slowniczek/)
+
+
+---
+
+---
+title: Zasady i sieć TwentyOne · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/zasady/
+language: pl
+---
+
+> Zasady społeczności Dwadzieścia Jeden i idea sieci TwentyOne.
+
+Społeczność
+
+# Zasady i sieć TwentyOne
+
+Dwadzieścia Jeden jest częścią TwentyOne: sieci lokalnych społeczności Bitcoin Only, które działają według wspólnych, prostych zasad.
+
+## Czym jest sieć TwentyOne
+
+TwentyOne ([twentyone.world](https://twentyone.world/)) to sieć otwartych, lokalnych społeczności bitcoinerów, zainicjowana przez Gigiego z niemieckiego EINUNDZWANZIG. Każda nazywa się „dwadzieścia jeden” w swoim języku i stoi na tym samym schemacie: stały sygnał (podcast, newsletter lub inna regularna publikacja), lokalny język i kultura oraz otwarta grupa, do której łatwo dołączyć.
+
+Treści dotyczą wyłącznie Bitcoina. Meetupy mogą wyrosnąć z takiej społeczności, ale zaczyna się od internetu, bo on się skaluje. Koncepcja jest open source: każdy może ją skopiować i dopasować do siebie. Polska jest na [liście sieci](https://twentyone.world/network.html) jako Dwadzieścia Jeden.
+
+## Zasady społeczności
+
+- **Tylko Bitcoin** Rozmawiamy o Bitcoinie. Altcoiny, tokeny i „okazje inwestycyjne” nie mają tu miejsca.
+
+- **Nie zarabiamy na uczestnikach** Jesteśmy tu dla idei, nie po to, żeby sprzedawać ludziom z grupy albo promować kolejny projekt.
+
+- **Gościnnie, ale czujnie** Witamy nowych, ale nie ufamy w ciemno. Nikt z nas nie poprosi Cię o seed, klucze ani przelew. Ktoś prosi? To scam: zgłoś go adminom.
+
+- **Otwarta grupa** Do społeczności łatwo dołączyć: czat na Telegramie jest publiczny.
+
+- **Po polsku** Tworzymy i tłumaczymy treści dla Polaków. Każda pomoc przy tłumaczeniach jest mile widziana.
+
+- **Najpierw internet, potem meetupy** Podstawą jest regularny sygnał i grupa online. Spotkania na żywo wyrastają z nich, a nie odwrotnie.
+
+- **Konsekwencja** Regularność wygrywa z zapałem. Cokolwiek zaczynasz, trzymaj się tego przez co najmniej 21 tygodni.
+
+- **Nie działaj sam** Znajdź kogoś do współpracy i wspieraj cudze inicjatywy. Społeczność jest tym, co z niej zrobimy.
+
+- **Sygnał, nie szum** Dbamy o jakość. Mniej spamu i powtórek, więcej rzeczy, które się przydadzą.
+
+## Wymogi sieci
+
+Żeby społeczność była na mapie TwentyOne, musi mówić lokalnym językiem, mieć aktywny „beacon”, który nadaje od co najmniej 21 tygodni, i otwartą grupę z co najmniej 21 członkami ([CONTRIBUTING.md](https://github.com/twentyone-world/twentyone-world.github.io/blob/main/CONTRIBUTING.md)). Wpis sieci dla Polski prowadzi na dwadziesciajeden.pl.
+
+## Logo
+
+Logo sieci to słowo „twentyone” w lokalnym języku, złożone krojem The Bold Font, z małym symbolem Bitcoina. Polska wersja jest w [galerii forków](https://twentyone.world/logo/).
+
+Źródło: [twentyone.world](https://twentyone.world/) (Gigi). Streszczenie i tłumaczenie nasze, stan na 23 października 2026.
+
+
+---
+
+---
+title: Dołącz do nas · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/dolacz-do-nas/
+language: pl
+---
+
+> Jeśli szukasz ludzi z którymi mógłbyś:   * podyskutować o bieżących wydarzeniach,  * zasięgnąć porady lub konsultacji,  * otworzyć kanał Lightning  * sprawdzić
+
+# Dołącz do nas
+
+Jeśli szukasz ludzi z którymi mógłbyś:
+
+- podyskutować o bieżących wydarzeniach,
+
+- zasięgnąć porady lub konsultacji,
+
+- otworzyć kanał Lightning
+
+- sprawdzić swoje memy przed publikowaniem,
+
+- zorganizować meetup,
+
+- zrobić jakiś Proof-of-Work dla społeczności (artykuły, kod, poradniki, ...),
+
+- poszukać optymizmu zamiast pobiadolić o upadku cywilizacji,
+
+- ostrzec przed scamem, etc...
+
+[Dołącz do naszej grupy na Telegramie](https://t.me/dwadziesciajeden)
+
+### Kontakt
+
+Twitter/x: [@21BitcoinPolska](https://twitter.com/21BitcoinPolska)
+
+Nostr: [npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc](https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2)
+
+Email: [kontakt@dwadziesciajeden.pl](https://dwadziesciajeden.pl/dolacz-do-nas/#kontakt)
+
+### Mapy
+
+Strona btcmap.org utrzymuje dane o miejscach gdzie można kupować za bitcoin. Opiekujemy się danymi dot. polskich lokalizacji. Używaj tych map i dołącz do nas jako weryfikator lub dodaj lokalizac: [https://btcmap.org/country/pl](https://btcmap.org/country/pl)
+
+## Zanim napiszesz pierwszą wiadomość
+
+Jesteśmy społecznością Bitcoin Only. Na czacie nie promujemy altcoinów, tokenów ani „okazji inwestycyjnych”, nie wysyłamy linków polecających bez kontekstu i nie prosimy nikogo o seed. Pełne zasady: [Zasady społeczności](https://dwadziesciajeden.pl/zasady/).
+
+
+---
+
+---
+title: Kronika · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/kronika/
+language: pl
+---
+
+> Kronika społeczności Dwadzieścia Jeden: meetupy, zbiórki, kampanie.
+
+Od 2021
+
+# Kronika
+
+Najważniejsze momenty społeczności: ze starej strony, z naszego konta na X i z czatu na Telegramie (bez nazwisk i cytatów). Zdjęcia: [@21BitcoinPolska](https://x.com/21BitcoinPolska), każde podpięte pod swój post.
+
+## 2026
+
+- 27 maja 2026 **Testujemy społeczność na Nostrze** Sprawdzamy, czy da się przenieść rozmowy z Telegrama na Nostra: własny relay i klient webowy do testów. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 22 maja 2026 **Maxi meetup wraca** Warszawski meetup maksymalistów wraca na Bitcoin Pizza Day w SamoCentrum. Pierwsze 21 pizz po 1 sacie, dzięki Polskiemu Stowarzyszeniu Bitcoin. [Obraz: Ilustrowany plakat Bitcoin Pizza Dzień Warsaw z Pałacem Kultury](https://dwadziesciajeden.pl/assets/kronika/2026-05-15_2055184286177726543_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2055184286177726543)
+
+- 7 marca 2026 **Pomarańczowe tulipany w Poznaniu** Na Dzień Kobiet poznańska ekipa rozdaje 21 pomarańczowych tulipanów z zaproszeniem na spacery. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 19 stycznia 2026 **Własny njump: njump.foo** Uruchamiamy społecznościową bramkę do podglądu wpisów z Nostra. W marcu trafia na listę przekierowań njump.to. [njump.foo](https://njump.foo) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 14 stycznia 2026 **Rozliczenie zbiórki** Publikujemy finansowe podsumowanie zbiórki. Z 625 egzemplarzy 560 trafiło do Sejmu i Senatu, 40 do Polskiego Stowarzyszenia Bitcoin, 2 do Prezydenta, 23 zostało na dalsze działania. 16 stycznia omawiamy kampanię na Spaces. [Post na X](https://x.com/21BitcoinPolska/status/2011514515821904156)
+
+- 12 stycznia 2026 **Standard Bitcoina dla Prezydenta** List otwarty i egzemplarz książki trafiają do Kancelarii Prezydenta RP. [Obraz: Tablica Kancelarii Prezydenta Rzeczypospolitej Polskiej przy wejściu](https://dwadziesciajeden.pl/assets/kronika/2026-01-12_2010747298523820470_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2010746380122517794)
+
+- 10 stycznia 2026 **Mroźny BitcoinWalk** Spacer w Ogrodzie Saskim przy minus jedenastu stopniach, w międzynarodowym gronie. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 8 stycznia 2026 **Wielki finał: książki w Sejmie i Senacie** Rano 560 egzemplarzy z listem otwartym trafia do biur podawczych Sejmu i Senatu RP. Zbiórkę na Geyser wsparło 80 osób. [Obraz: Pokój pełen kartonów z książkami przed dostawą](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_0.jpg) · [Obraz: Dostawczy samochód przed budynkiem w zimowej scenerii](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_1.jpg) · [Obraz: Wejście do punktu podawczego Kancelarii Sejmu i Senatu, Al. Na Skarpie 16](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_2.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2009269514953793771)
+
+- 4 stycznia 2026 **560 paczek gotowych** 3 stycznia drukujemy, pieczętujemy i pakujemy paczki w Warszawie. Do każdej książki dołączony list otwarty. Wysyłka rusza z nową sesją Sejmu. [Obraz: Książki rozłożone na regale przed wysyłką](https://dwadziesciajeden.pl/assets/kronika/2026-01-04_2007894977049944573_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2007894977049944573)
+
+- 3 stycznia 2026 **Genesis Day i Proof of Keys** Publikujemy poradnik: jak raz w roku sprawdzić, że Twoje bitcoiny naprawdę są Twoje. [Artykuł](https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/)
+
+## 2025
+
+- 17 grudnia 2025 **Cel zbiórki osiągnięty** Dociera do nas 625 egzemplarzy „Standardu Bitcoina”. 560 z nich trafi na początku stycznia do posłów i senatorów RP. [Obraz: Stos zaklejonych kartonów z książką Standard Bitcoina na wierzchu](https://dwadziesciajeden.pl/assets/kronika/2025-12-17_2001320953809121791_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2001320953809121791)
+
+- 13 grudnia 2025 **BitcoinWalk we Wrocławiu** Po rozmowie na Spaces o byciu „jedynym bitcoinerem w mieście” odbywa się BitcoinWalk we Wrocławiu: sobota, 13:00, Rynek. [Post na X](https://x.com/21BitcoinPolska/status/1998512892866605371)
+
+- 2 grudnia 2025 **Portal meetupów po polsku** Portal meetupów sieci działa pod adresem portal.dwadziesciajeden.pl, z kalendarzem wszystkich wydarzeń do subskrypcji. [Portal](https://portal.dwadziesciajeden.pl) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 1 grudnia 2025 **Weto ustawy o kryptoaktywach** Prezydent wetuje ustawę. Na czacie powtarzamy: Bitcoin to nie krypto. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 21 listopada 2025 **Cykl rozmów na X Spaces** W piątki o 12:30 rozmawiamy na X Spaces o postępach zbiórki, pieniądzu, wolności i nowościach ze świata Bitcoina. [Post na X](https://x.com/21BitcoinPolska/status/1991588879191949344)
+
+- 14 listopada 2025 **Osobiste dedykacje** Każdy darczyńca może napisać przesłanie do wybranego posła lub senatora. [Post na X](https://x.com/21BitcoinPolska/status/1989338167980204388)
+
+- 14 listopada 2025 **„Zepsuty pieniądz” nominowany** Polskie wydanie książki Lyn Alden, przy którym pomagaliśmy, dostaje nominację w ogólnopolskim plebiscycie książkowym. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 10 listopada 2025 **Polski tutorial RoboSats** Film instruktażowy przygotowany przez społeczność trafia na oficjalną stronę RoboSats. [learn.robosats.org](https://learn.robosats.org/watch/pl/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 5 listopada 2025 **Standard Bitcoina trafi też do bibliotek** Wydawca obiecuje dodatkowe egzemplarze dla bibliotek publicznych za każdą książkę oddaną przez parlamentarzystę. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 1 listopada 2025 **Pierwsi darczyńcy** Satsback i Cryptosteel wspierają kampanię. Zbiórka idzie wyłącznie w bitcoinie, a Freedom Publishing dostarcza książki po dobrej cenie. [Post na X](https://x.com/21BitcoinPolska/status/1984548718264430884)
+
+- 31 października 2025 **Startuje Standard Bitcoina w Parlamencie** W rocznicę whitepapera ruszamy ze zbiórką na Geyser i Spaces na X: 560 egzemplarzy „Standardu Bitcoina” Saifedeana Ammousa dla każdego posła i senatora, w 8 tygodni, ponad podziałami partyjnymi. [Obraz: Grafika kampanii Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/assets/kronika/2025-10-31_1984356197760450754_0.png) · [Post na X](https://x.com/21BitcoinPolska/status/1984261385359093847) · [O kampanii](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/)
+
+- 26 października 2025 **BitcoinWalk w Tarnowskich Górach** Pierwszy spacer na Górnym Śląsku, wokół jeziora. Potem rusza seria piątkowych spotkań. [bitcoinwalk.org](https://bitcoinwalk.org/tarnowskie-gory) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 15 października 2025 **Apel o weto ustawy o kryptoaktywach** Pomagamy zebrać podpisy organizacji i firm pod apelem do Prezydenta, opublikowanym przez Polskie Stowarzyszenie Bitcoin. [Apel](https://bitcoin.org.pl/apel-do-prezydenta-rzeczypospolitej-polskiej/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 15 lipca 2025 **God Bless Bitcoin z polskimi napisami** Społeczność przygotowuje polskie napisy do filmu. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 19 czerwca 2025 **Spotkanie sieci TwentyOne w Pradze** Przy BTC Prague sieć organizuje wieczór dla społeczności 21 z różnych krajów. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 31 maja 2025 **Startują cotygodniowe BitcoinWalki** Pierwszy warszawski spacer przy Bitcoin FilmFest. Od czerwca co sobotę w Ogrodzie Saskim i tak do dziś, prawie bez przerw. [bitcoinwalk.org/warszawa](https://bitcoinwalk.org/warszawa) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 22 maja 2025 **Bitcoin FilmFest na Pizza Day** Edycja 2025 festiwalu filmowego w Warszawie wypada w Bitcoin Pizza Day. Zapraszamy całą społeczność. [Post na X](https://x.com/21BitcoinPolska/status/1915347718672715998) · [Projekt](https://dwadziesciajeden.pl/projekty/#bitcoin-filmfest)
+
+- 1 maja 2025 **Follow pack Dwadzieścia Jeden** Zbieramy polskich bitcoinerów z Nostra w jedną listę do obserwowania. [Follow pack](https://following.space/d/zdnszpqkq9wa) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 12 kwietnia 2025 **BitcoinWalk w Krakowie** Pierwszy krakowski spacer z cyklu. Frekwencja przerosła oczekiwania. [bitcoinwalk.org](https://bitcoinwalk.org/cracow/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 11 kwietnia 2025 **Meetup na Pradze** Kolejne spotkanie w BarBazaar przy Ząbkowskiej 12, o 20:00. [Obraz: Plakat meetupu Dwadzieścia Jeden w BarBazaar, piątek 11.04, 20:00](https://dwadziesciajeden.pl/assets/kronika/2025-04-10_1910357810484851033_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/1910357810484851033)
+
+- 9 lutego 2025 **Zimowy BitcoinWalk w Poznaniu** Drugi spacer w 2025 roku. Wydarzenie ogłoszone na BitcoinWalk, Club Orange, Meetup i w Nostrze (Flockstr). [Obraz: Panorama Poznania z wieżą kościoła i czerwonymi dachami](https://dwadziesciajeden.pl/assets/kronika/2025-02-06_1887466636418163178_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/1887466636418163178)
+
+- 5 lutego 2025 **Mecenat polskiego wydania Broken Money** Zachęcamy do wsparcia Wydawnictwa Freedom Publishing przy polskim wydaniu książki Lyn Alden. Zbiórka się udała, a w kwietniu pierwsze egzemplarze „Zepsutego pieniądza” trafiają do czytelników. [Post na X](https://x.com/21BitcoinPolska/status/1887107891426975855) · [Biblioteka](https://dwadziesciajeden.pl/edukacja/#biblioteka)
+
+## 2024
+
+- 3 grudnia 2024 **Kancelaria na standardzie bitcoina** Warszawska kancelaria DJP dołącza BTC do rezerw firmy. Wcześniej przyjęła płatności w bitcoinie i stworzyła zespół Bitcoin desk. [Post na X](https://x.com/21BitcoinPolska/status/1864084608783917111)
+
+- 6 lipca 2024 **BitcoinWalk w Poznaniu** Bitcoinowy spacer z cyklu BitcoinWalk w Poznaniu, prowadzony przez Macieja Sołtysiaka. [Post na X](https://x.com/21BitcoinPolska/status/1808604096737251681) · [Strona Poznania](https://dwadziesciajeden.pl/poznan/)
+
+- 29 czerwca 2024 **Bitcoin & Nostr meetup** Wieczór w BarBazaar na Ząbkowskiej, z koncertem na żywo. Wstęp wolny, zasada jedna: bez shitcoinów. [Obraz: Plakat meetupu Dwadzieścia Jeden w BarBazaar](https://dwadziesciajeden.pl/assets/kronika/2024-06-29_1807052500127678678_0.png) · [Post na X](https://x.com/21BitcoinPolska/status/1807052500127678678)
+
+- 26 czerwca 2024 **Bitcoin dla Polonii w Lozannie** Spotkanie edukacyjne o Bitcoinie zorganizowane z polskim stowarzyszeniem w Szwajcarii. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 3 czerwca 2024 **Otwarta debata o spamie** Moderowana rozmowa na Jitsi o filtrowaniu spamu i inskrypcji. Spór na argumenty, otwarty dla wszystkich. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 27 maja 2024 **Kraków: dla kogo jest Bitcoin?** Spotkanie w Techies o tym, dla kogo jest Bitcoin oraz kiedy i jak go kupić. Krakowskie meetupy wracają też w lipcu. [Post na X](https://x.com/21BitcoinPolska/status/1794694392374342098)
+
+- 22 maja 2024 **Bitcoin Pizza Day 2024** Kameralne spotkanie pod Warszawą z zapisami przez BTCPay. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 10 maja 2024 **Zasady wobec sh**coinów** Po głosowaniu przyjmujemy zasadę: można zostać, ale bez promowania altcoinów. Dochodzą nowi administratorzy. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 20 kwietnia 2024 **European Halving Party** Spotykamy się na żywo przy Bitcoin FilmFest 2024 w Kinotece. Wiele osób znało się wcześniej tylko z czatu. [Strona wydarzenia](https://bitcoinfilmfest.com/europeanhalvingparty/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 8 kwietnia 2024 **Dołączamy do portalu sieci** Dodajemy Dwadzieścia Jeden do portalu Einundzwanzig, a Bitcoin FilmFest staje się tam pierwszym polskim wydarzeniem. [Post na X](https://x.com/21BitcoinPolska/status/1777342724582117574)
+
+- 6 kwietnia 2024 **Dwadzieścia Jeden na Geyserze** Zakładamy projekt społeczności na drobne wydatki: domenę, ulotki, naklejki. Rozliczenia są jawne. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 20 marca 2024 **Bitcoin w Polskim Radiu** Członek społeczności opowiada o Bitcoinie w audycji radiowej Jedynki. [Audycja](https://jedynka.polskieradio.pl/artykul/3352447,Bitcoiny-Na-czym-polega-fenomen-tej-kryptowaluty) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 6 marca 2024 **Uwagi do ustawy o kryptoaktywach** W czasie konsultacji projektu ustawy zbieramy uwagi i postulaty dla organizacji branżowych. [Projekt w RCL](https://legislacja.rcl.gov.pl/projekt/12382311/katalog/13040399) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 28 lutego 2024 **Kraków: regularne meetupy w Techies** Rusza seria spotkań w Techies Space, co kilka tygodni. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 28 stycznia 2024 **Satki dla WOŚP** Zbiórka na Geyser dla 32. Finału WOŚP: bitcoinerzy z zagranicy wspierają Orkiestrę, darczyńcy dostają odznakę na Nostrze, a na licytację trafia czapka European Bitcoiners. [Wpis o zbiórce](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/)
+
+- 25 stycznia 2024 **Kraków: Bitcoin w świetle teorii pieniądza** Otwarty wykład w auli na około 150 osób. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 19 stycznia 2024 **Przedmiot o Bitcoinie na PJATK** Wydział PJATK w Gdańsku zatwierdza przedmiot obieralny o Bitcoinie, z „Bitcoinem”, a nie „krypto” w nazwie. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 12 stycznia 2024 **Konto społeczności na Nostrze** Zakładamy oficjalne konto Dwadzieścia Jeden na Nostrze. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+## 2023
+
+- 18 grudnia 2023 **Polski leksykon Bitcoina** Zaczynamy wspólny słownik polskich terminów i spieramy się, jak przetłumaczyć „custodial”. [Słowniczek](https://dwadziesciajeden.pl/slowniczek/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 14 grudnia 2023 **Świąteczny meetup** Świąteczne spotkanie w BarBazaar z jedzeniem, prezentami i muzyką. Wpisowe w satsach przez wydarzenie na Nostrze. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 2 grudnia 2023 **Broken Money będzie po polsku** Wydawnictwo Freedom Publishing kupuje prawa do polskiego wydania książki Lyn Alden. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 19 października 2023 **Odmawiamy giełdzie** Giełda zainteresowana polskim rynkiem proponuje współpracę. Wspólnie odpowiadamy, że nie wspieramy firm, które żyją z handlu sh**coinami. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 20 września 2023 **Pierwszy meetup w Trójmieście** Pierwsze spotkanie Dwadzieścia Jeden w Gdańsku, w Starym Maneżu. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 4 września 2023 **Meetup pod gołym niebem** BarBazaar zamknięty, więc meetup Bitcoin Maxi & Nostr przenosi się na Pole Mokotowskie, z grillem. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 4 lipca 2023 **Ulotka dla lokalnego biznesu** Tłumaczymy ulotkę o przyjmowaniu płatności Lightning i udostępniamy ją w formacie A4. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 16 czerwca 2023 **Bitcoinowa mapa Polski** Przejmujemy opiekę nad polskimi danymi w BTC Map: profil ogólnopolski i lokalne dla Warszawy, Wrocławia, Poznania i Katowic. Każdy może dodać lub zweryfikować miejsce. [Mapa](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)
+
+- 8 czerwca 2023 **Reprezentujemy Polskę na BTC Prague** Jedziemy na BTC Prague 2023 jako polska gałąź sieci 21, z naszymi naklejkami. Wcześniej pomagamy przetłumaczyć stronę konferencji na polski. [z czatu społeczności](https://t.me/dwadziesciajeden) · [btcprague.com](https://btcprague.com/)
+
+- 22 maja 2023 **Pizza Day w Hackerspace** Świętujemy Bitcoin Pizza Day w warszawskim Hackerspace. [Post na X](https://x.com/21BitcoinPolska/status/1660610118952574977)
+
+- 22 maja 2023 **Wlepka „Tu zapłacisz bitcoinem”** Wspólnie projektujemy polską naklejkę dla sprzedawców przyjmujących bitcoina. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 13 maja 2023 **Poznań: meetup dla początkujących** Dwie krótkie prelekcje, pytania, wlepki i książki. Przyszło około 15 osób. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 10 maja 2023 **Katowice: meetup w Absurdalnej** Kameralne spotkania śląskiej ekipy, otwarte dla nowych osób z okolicy. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 20 kwietnia 2023 **Pierwszy meetup w Poznaniu** Pierwsze spotkanie Dwadzieścia Jeden w Poznaniu, zwołane w kilka dni. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 7 kwietnia 2023 **TimeChainCalendar po polsku** Po wspólnej dyskusji o terminologii wychodzi polska wersja kalendarza TimeChainCalendar. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 24 marca 2023 **Z Dwadzieścia Jeden wyrasta Bitcoin FilmFest** Pierwsza edycja festiwalu w Warszawie rodzi się w naszej społeczności: wolontariusze, promocja i wspólne Spaces BFF x Dwadzieścia Jeden. [bitcoinfilmfest.com](https://bitcoinfilmfest.com/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 6 marca 2023 **Pierwsze bluzy Dwadzieścia Jeden** Wspólne zamówienie 24 bluz z polskim logo, w całości rozliczone w bitcoinie. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 4 marca 2023 **Odznaka Dwadzieścia Jeden na Nostrze** Powstaje oficjalna odznaka społeczności na Nostrze. Pierwsze trafiają do członków tego samego dnia. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 25 lutego 2023 **BTCPay Server po polsku** Kończymy polskie tłumaczenie BTCPay Server, które trafia do kolejnego wydania. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 17 lutego 2023 **Bitcoiners in Poland, unite!** Meetup w BarBazaar, gdzie można płacić w BTC. W planie: wspólne zakładanie multisiga i rozmowa o planowanym w Warszawie Bitcoin FilmFest. [Wpis o meetupie](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/)
+
+- 15 lutego 2023 **Nasz relay Nostr** Społeczność utrzymuje własny relay pod adresem relay.dwadziesciajeden.pl. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 13 lutego 2023 **Sto osób i pierwsze wątki** Przekraczamy 100 członków i dzielimy czat na wątki tematyczne. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 10 lutego 2023 **Hostujemy whitepaper** Na stronie pojawia się biała księga Bitcoina: polskie tłumaczenie Damiana Mee i oryginał. [Bitcoin Whitepaper](https://dwadziesciajeden.pl/bitcoin-whitepaper/)
+
+- 30 stycznia 2023 **Polska na mapie TwentyOne** Polska zostaje oficjalnie dodana do sieci twentyone.world. [twentyone.world](https://twentyone.world/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 29 stycznia 2023 **Wspieramy Bitcoin in Polish** Zachęcamy do wsparcia zbiórki na tłumaczenia tekstów i aplikacji. Grupa liczy wtedy 84 osoby. [Geyser](https://geyser.fund/project/bitcoininpolish) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 26 stycznia 2023 **Warszawa: Beer & Bitcoin** Meetup w pubie Szyszka Chmielu: około 20 osób, piwo i pizza za satsy, rozmowy o adopcji i własnym kodzie. [Wydarzenie na Meetup](https://www.meetup.com/pl-PL/bitcoin-warsaw/events/291021346/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 26 stycznia 2023 **Kraków: czy Bitcoin jest ekologiczny?** Wykład o miningu na Uniwersytecie Ekonomicznym, razem z klubem Austriackiej Szkoły Ekonomii. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 24 stycznia 2023 **Ruszają wspólne tłumaczenia** Zbieramy listę 21 tekstów wartych przetłumaczenia na polski, chętni zgłaszają się do tłumaczenia i korekty. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 14 stycznia 2023 **Strona z projektami społeczności** Na dwadziesciajeden.pl powstaje podstrona z projektami: meetupy, Bitcoin in Polish i nasz relay Nostr. [Projekty dziś](https://dwadziesciajeden.pl/projekty/) · [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 12 stycznia 2023 **Meetup we Wrocławiu** Nowy rok zaczynamy we Wrocławiu, w Kawiarni Literatka na Rynku. Przyszło kilka nowych osób. [Wpis o meetupie](https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/)
+
+## 2022
+
+- 15 grudnia 2022 **Nostr trafia na czat** Zaczynamy testować Nostr: klienty, relaye i klucze. Powstaje polski kanał o Nostrze. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 2 grudnia 2022 **Grudniowy meetup w Warszawie** Drugie spotkanie przy Brackiej 20, przesunięte z soboty na piątek. W planie testy multisiga i płatności NFC; przychodzą też goście z zagranicy. [Wpis o meetupie](https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/)
+
+- 25 listopada 2022 **Śląsk: Katowice i Tarnowskie Góry** Dołącza ekipa ze Śląska. Spotykamy się w Katowicach, a 6 stycznia 2023 w Tarnowskich Górach. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 25 listopada 2022 **Pierwsze Spaces społeczności** Pierwsza rozmowa na X Spaces ze wspólnego konta. W grudniu ruszają cykliczne poniedziałkowe Spaces o nowościach w Bitcoinie. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 4 listopada 2022 **Pierwszy meetup w Warszawie** Społeczność Bitcoin Only spotyka się w Warszawie przy Brackiej 20: bez agendy, kilkanaście osób, rachunki płacone w satsach. Od tego czasu meetupy w stolicy odbywają się regularnie. [Wpis o meetupie](https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/)
+
+- 28 października 2022 **Startuje Dwadzieścia Jeden** Publikujemy pierwsze publiczne ogłoszenie: Dwadzieścia Jeden jest częścią sieci TwentyOne i zaprasza na meetup 4 listopada w Warszawie. Powstaje konto @21BitcoinPolska. [Profil na X](https://x.com/21BitcoinPolska)
+
+- 26 października 2022 **Pierwsza strona dwadziesciajeden.pl** Na domenie staje pierwsza prosta strona z linkami do czatu, X, podcastów, artykułów i książek. Później przenosimy ją na Ghost. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 25 października 2022 **Piwo we Wrocławiu** Spotykamy się we Wrocławiu w Browarze Stu Mostów, razem z kilkoma osobami spoza czatu.
+
+- 30 września 2022 **Tu rozmawiamy tylko o Bitcoinie** Ustalamy zasadę: tematy pozabitcoinowe, rynki, polityka i sh**coiny zostają w starszej grupie, a Dwadzieścia Jeden jest Bitcoin Only. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 24 września 2022 **Polska gałąź, nie kopia** Grupa należy do polskich administratorów. Koncept przyszedł od niemieckiej sieci Einundzwanzig, żeby nie zaczynać od zera. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 23 września 2022 **Przeprowadzka do Dwadzieścia Jeden** Stary czat od dawna nie ma administratora, więc nie da się nim zarządzać. Cała ekipa yellowpilled przenosi się do grupy Dwadzieścia Jeden, a stary czat zostaje na offtopy.
+
+- 1 września 2022 **„The Bullish Case for Bitcoin” po polsku** Ukazuje się polskie wydanie książki Vijaya Boyapatiego. Przetłumaczył ją ktoś z grupy, a wydawca rozdaje egzemplarze do dalszego polecania. [Wydawnictwo](https://wydawnictwofp.pl/ksiazki/dlaczego-bitcoin/)
+
+- 6 czerwca 2022 **Rejestrujemy dwadziesciajeden.pl** Adres 21.pl jest zajęty, więc rejestrujemy dwadziesciajeden.pl, opłacone w bitcoinie. Kilka miesięcy przed publicznym startem. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 6 czerwca 2022 **Redesign: dołączamy do kolektywu 21** Kilka dni po propozycji ludzi z niemieckiego Einundzwanzig powstaje nowa grupa Dwadzieścia Jeden, polska gałąź międzynarodowej sieci lokalnych społeczności 21. Przez wakacje to jeszcze mały zespół startowy. [z czatu społeczności](https://t.me/dwadziesciajeden) · [twentyone.world](https://twentyone.world/)
+
+- 29 maja 2022 **List do EPA po polsku** Tłumaczymy na polski list bitcoinowej społeczności do amerykańskiej Agencji Ochrony Środowiska, prostujący mity o energii i kopaniu, i wrzucamy go na Wykop.
+
+- 21 maja 2022 **Razem na Pizza Day w Pradze** Kilka osób z grupy jedzie na Bitcoin Pizza Day do Pragi i relacjonuje prelekcje na czacie.
+
+- 20 maja 2022 **Pomysł: zostańmy „dwadzieścia jeden”** Po polskim Space European Bitcoiners przychodzą nowe osoby. Dzień później pada pomysł, żeby przemianować grupę na „dwadzieścia jeden” i dołączyć do sieci 21.
+
+- 28 kwietnia 2022 **Pierwszy raz o twentyone.world** Na czacie pojawia się twentyone.world: mapa lokalnych społeczności Bitcoin Only i otwarty przepis, jak założyć taką u siebie. [twentyone.world](https://twentyone.world/)
+
+- 3 lutego 2022 **„21 Lekcji” po polsku** Polski przekład „21 Lekcji” Gigiego trafia na czat do wspólnej recenzji. Przez kolejne tygodnie zbieramy uwagi i szukamy dobrych polskich terminów.
+
+## 2021
+
+- 8 października 2021 **Bitcoinizujemy Weekend Kapitalizmu** Na Weekendzie Kapitalizmu w Warszawie lokal sprzedaje wszystko za bitcoina. Rozdajemy vouchery Lightning, pomagamy ustawić portfele i jako wolontariusze prowadzimy onboarding.
+
+- 16 sierpnia 2021 **Zrzutka na Bitcoiny Feniksa** Zrzucamy się na połowę wpisowego studenckiej drużyny na turniej Mistrzostwa Niewidzialnej Nogi. W zamian drużyna gra pod bitcoinową nazwą.
+
+- 8 sierpnia 2021 **Pomysł 100k party** Planujemy imprezę w ciągu miesiąca od przebicia 100 tys. USD za bitcoina. Wejście za 100 tys. satów, mecenat za 500 tys. Powstaje prosta strona i osobny czat.
+
+- 7 sierpnia 2021 **Pierwsze piwo w Warszawie** Kilka osób z czatu spotyka się w Warszawie przy Świetlicy Wolności. Pytamy lokale o płatności Lightning. Z tej rozmowy wychodzi pomysł 100k party.
+
+- 21 lipca 2021 **Bitcoin Czytanka** Rusza podcast yellowpill. Pierwsza „Bitcoin Czytanka” to lektorska wersja eseju Parkera Lewisa „Bitcoin nie jest pieniądzem bez pokrycia”. [Odcinek](https://anchor.fm/laissezfairepl/episodes/Bitcoin-Czytanka-Bitcoin-nie-jest-pienidzem-bez-pokrycia--Parker-Lewis-e14pnn1)
+
+- 15 lipca 2021 **Pierwszy Twitter Space yellowpilled** Pierwsza polska rozmowa grupy na Twitter Spaces: węzły Lightning, tłumaczenia, firmy przyjmujące BTC i edukacja. W sierpniu odbywa się druga.
+
+- 15 maja 2021 **Tłumaczenia w Archiwum Bitcoina** Ukazuje się polski przekład eseju „Ostatnie słowo o energii Bitcoina”, odpowiedź na energetyczny FUD. Latem dochodzą „Bitcoin is Venice” i tekst Saifedeana Ammousa. [Esej o energii](https://archiwumbitcoina.pl/ostatnie-slowo-na-temat-bitcoinowego-poboru-energii-elektrycznej/) · [archiwumbitcoina.pl](https://archiwumbitcoina.pl/)
+
+- 2 maja 2021 **Dlaczego żółta pigułka?** Pomarańczowa pigułka była już zajęta. Żółta ma mówić szerzej: Bitcoin, ale też wolność i samosuwerenność.
+
+- 25 kwietnia 2021 **mempool.space mówi po polsku** Polskie tłumaczenie interfejsu mempool.space trafia do aplikacji. Grupa pomaga dobrać terminy, na przykład „transfer do” i „transfer z” zamiast peg-in i peg-out. [mempool.space/pl](https://mempool.space/pl/)
+
+- 19 kwietnia 2021 **Kalkulator bitcoin500plus.pl** Z rozmowy na czacie powstaje kalkulator, który pokazuje, ile mieliby rodzice, gdyby odkładali 500+ w satoshi.
+
+- 12 kwietnia 2021 **bitcoin-intro.com po polsku** Ktoś z grupy tłumaczy na polski serwis bitcoin-intro.com, prosty wstęp do Bitcoina dla początkujących. Trafia do polskich materiałów Yellow Pill.
+
+- 5 kwietnia 2021 **Na początku był yellowpilled 🟡** Zakładamy na Telegramie grupę yellowpilled dla polskich bitcoinowych maksymalistów. Przez pierwszy tydzień wpadają tu tylko tweety konta Yellow Pill PL, a 12 kwietnia rusza prawdziwa rozmowa. Cel: naprawić polską scenę Bitcoina, bez sh**coinów i bez jałowych dyskusji.
+
+## Zdjęcia
+
+[Obraz: Ilustrowany plakat Bitcoin Pizza Dzień Warsaw z Pałacem Kultury](https://dwadziesciajeden.pl/assets/kronika/2026-05-15_2055184286177726543_0.jpg)22 maja 2026 · [źródło](https://x.com/21BitcoinPolska/status/2055184286177726543) · [Obraz: Tablica Kancelarii Prezydenta Rzeczypospolitej Polskiej przy wejściu](https://dwadziesciajeden.pl/assets/kronika/2026-01-12_2010747298523820470_0.jpg)12 stycznia 2026 · [źródło](https://x.com/21BitcoinPolska/status/2010746380122517794) · [Obraz: Pokój pełen kartonów z książkami przed dostawą](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_0.jpg)8 stycznia 2026 · [źródło](https://x.com/21BitcoinPolska/status/2009269514953793771) · [Obraz: Dostawczy samochód przed budynkiem w zimowej scenerii](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_1.jpg)8 stycznia 2026 · [źródło](https://x.com/21BitcoinPolska/status/2009269514953793771) · [Obraz: Wejście do punktu podawczego Kancelarii Sejmu i Senatu, Al. Na Skarpie 16](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_2.jpg)8 stycznia 2026 · [źródło](https://x.com/21BitcoinPolska/status/2009269514953793771) · [Obraz: Książki rozłożone na regale przed wysyłką](https://dwadziesciajeden.pl/assets/kronika/2026-01-04_2007894977049944573_0.jpg)4 stycznia 2026 · [źródło](https://x.com/21BitcoinPolska/status/2007894977049944573) · [Obraz: Stos zaklejonych kartonów z książką Standard Bitcoina na wierzchu](https://dwadziesciajeden.pl/assets/kronika/2025-12-17_2001320953809121791_0.jpg)17 grudnia 2025 · [źródło](https://x.com/21BitcoinPolska/status/2001320953809121791) · [Obraz: Grafika kampanii Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/assets/kronika/2025-10-31_1984356197760450754_0.png)31 października 2025 · [źródło](https://x.com/21BitcoinPolska/status/1984261385359093847) · [Obraz: Plakat meetupu Dwadzieścia Jeden w BarBazaar, piątek 11.04, 20:00](https://dwadziesciajeden.pl/assets/kronika/2025-04-10_1910357810484851033_0.jpg)11 kwietnia 2025 · [źródło](https://x.com/21BitcoinPolska/status/1910357810484851033) · [Obraz: Panorama Poznania z wieżą kościoła i czerwonymi dachami](https://dwadziesciajeden.pl/assets/kronika/2025-02-06_1887466636418163178_0.jpg)9 lutego 2025 · [źródło](https://x.com/21BitcoinPolska/status/1887466636418163178) · [Obraz: Plakat meetupu Dwadzieścia Jeden w BarBazaar](https://dwadziesciajeden.pl/assets/kronika/2024-06-29_1807052500127678678_0.png)29 czerwca 2024 · [źródło](https://x.com/21BitcoinPolska/status/1807052500127678678)
+
+
+---
+
+---
+title: Edukacja · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/edukacja/
+language: pl
+---
+
+> Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania.
+
+Misja i edukacja
+
+# Edukacja
+
+Nasza misja jest prosta: żeby każdy w Polsce mógł zrozumieć Bitcoina po polsku i używać go samodzielnie. Nie sprzedajemy kursów, sygnałów ani tokenów. Tłumaczymy, odpowiadamy na pytania i spotykamy się na żywo.
+
+[Czym jest Bitcoin][Jak zacząć][Uważaj na oszustów][Biblioteka]
+
+**Tłumaczymy** Whitepaper, Bitcoin Core, SeedSigner i teksty, które warto znać, po polsku.
+
+**Spotykamy się** Meetupy i BitcoinWalki w pięciu miastach. [Zobacz miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta).
+
+**Wnosimy Bitcoina tam, gdzie zapadają decyzje** 560 egzemplarzy „Standardu Bitcoina” w Sejmie i Senacie. [Historia akcji](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/).
+
+## Czym jest Bitcoin
+
+Bitcoin to pieniądz i sieć płatności bez banku centralnego, bez prezesa i bez możliwości dodruku. Zasady są zapisane w otwartym kodzie, a pilnują ich tysiące niezależnych węzłów na całym świecie.
+
+Bitcoinów nigdy nie będzie więcej niż 21 milionów. Nowe bloki z transakcjami powstają średnio co dziesięć minut, a każdy z nich zabezpiecza praca górników (proof of work). Cofnięcie potwierdzonej historii jest praktycznie niemożliwe.
+
+Bitcoin nie ma konta, które ktoś może zamrozić. Masz klucze, masz bitcoiny. Dlatego najważniejsza lekcja to samodzielne przechowywanie.
+
+## Dlaczego tylko Bitcoin
+
+Za większością innych „kryptowalut” stoi firma, fundacja albo założyciele z dużym zapasem monet. Bitcoin nie ma emitenta ani właściciela i właśnie dlatego jest wyjątkowy. Skupiamy się na nim w całości: na naszych spotkaniach i czatach nie promujemy altcoinów ani tokenów.
+
+## Jak zacząć: sześć kroków
+
+- **Zrozum, zanim kupisz** Zacznij od [whitepaperu po polsku](https://dwadziesciajeden.pl/bitcoin-whitepaper/) (dziewięć stron) i „Standardu Bitcoina”. Więcej w [bibliotece] niżej.
+
+- **Zacznij od małej kwoty** Kupuj tylko tyle, ile możesz spokojnie trzymać latami i czego utrata nie zrujnuje Ci życia. To nie jest porada inwestycyjna, tylko zdrowy rozsądek.
+
+- **Weź klucze do siebie** Wypłać bitcoiny z giełdy do portfela, w którym to Ty masz frazę odzyskiwania (seed). Not your keys, not your coins.
+
+- **Zabezpiecz frazę odzyskiwania** Zapisz ją offline: na papierze albo na stali. Nigdy zdjęcie, chmura ani menedżer haseł. Nikomu jej nie podawaj.
+
+- **Używaj** Zapłać bitcoinem przez Lightning, znajdź miejsca na [mapie](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/), przyjmuj satsy za swoją pracę.
+
+- **Weryfikuj sam** Uruchom własny węzeł, na przykład Bitcoin Core. Wtedy nie musisz nikomu wierzyć na słowo: don’t trust, verify.
+
+## Uważaj na oszustów
+
+- Nikt z nas nie napisze do Ciebie pierwszy w prywatnej wiadomości z ofertą albo „pomocą”.
+
+- Nikt nie potrzebuje Twojej frazy odzyskiwania: ani support, ani admin, ani doradca.
+
+- Obietnica stałego zysku, podwojenia środków albo gwarantowanego wyniku to oszustwo.
+
+- Nowa moneta „lepsza od Bitcoina” to zwykle sposób, żeby ktoś zarobił na Tobie.
+
+- Masz wątpliwość? Zapytaj na [czacie](https://t.me/dwadziesciajeden), zanim klikniesz albo coś wyślesz.
+
+Po polsku
+
+## Biblioteka
+
+Książki, strony, nagrania i dokumenty o Bitcoinie w języku polskim. Zaczynasz? Weź whitepaper i „Standard Bitcoina”.
+
+Zacznij tutaj
+
+## Bitcoin: Elektroniczny System Pieniężny Typu Peer-to-Peer
+
+Biała księga Satoshiego Nakamoto w tłumaczeniu Damiana Mee. Dziewięć stron, od których wszystko się zaczęło.
+
+[Pobierz PDF po polsku](https://dwadziesciajeden.pl/assets/media/files/2023/02/bitcoin_pl.pdf) · [Oryginał i więcej](https://dwadziesciajeden.pl/bitcoin-whitepaper/) · [Książki o Bitcoinie i pieniądzu][Technicznie][Strony i tłumaczenia][Podcasty i nagrania]
+
+### Książki o Bitcoinie i pieniądzu
+
+Polskie wydania, od których warto zacząć. Większość wydaje Freedom Publishing, które dostarczyło też książki do naszej kampanii w Parlamencie.
+
+[Obraz: Okładka: Zepsuty pieniądz. Dlaczego nasz system finansowy nas zawodzi i jak możemy go naprawić Lyn Alden Zepsuty pieniądz. Dlaczego nasz system finansowy nas zawodzi i jak możemy go naprawić Obszerna analiza historii pieniądza widzianej przez pryzmat technologii, która pokazuje, skąd wzięły się dzisiejsze problemy systemu finansowego i gdzie w tym wszystkim jest Bitcoin. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/zepsuty-pieniadz/) · [Obraz: Okładka: Standard Bitcoina. Zdecentralizowana alternatywa dla bankowości centralnej Saifedean Ammous Standard Bitcoina. Zdecentralizowana alternatywa dla bankowości centralnej Klasyczna książka tłumacząca, dlaczego twardy pieniądz ma znaczenie i czemu Bitcoin jest jego najnowszą, cyfrową odsłoną. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/standard-bitcoina/) · [Obraz: Okładka: Standard pieniądza dekretowego. Zniewolenie długiem jako alternatywa dla ludzkiej cywilizacji Saifedean Ammous Standard pieniądza dekretowego. Zniewolenie długiem jako alternatywa dla ludzkiej cywilizacji Kontynuacja „Standardu Bitcoina”, która rozkłada na części system pieniądza fiat: jak działa, kto na nim zyskuje i jakie skutki ma dla gospodarki oraz społeczeństwa. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/standard-pieniadza-dekretowego/) · [Obraz: Okładka: Dlaczego Bitcoin Vijay Boyapati Dlaczego Bitcoin Krótki, zwarty esej o tym, jak ewoluowały formy pieniądza i dlaczego Bitcoin ma szansę zostać jego najlepszą wersją. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/dlaczego-bitcoin/) · [Obraz: Okładka: Nasz pieniądz Bitcoin Michael Caras Nasz pieniądz Bitcoin Bajka dla dzieci o mieszkańcach miasteczka, którzy sami odkrywają, czym jest dobry pieniądz, i dzięki temu zaczynają rozumieć Bitcoina. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/nasz-pieniadz-bitcoin/) · [Obraz: Okładka: Zrozumieć Bitcoina Robert P. Murphy, Silas Barta Zrozumieć Bitcoina Przystępne wprowadzenie dla laika: czym jest Bitcoin, jak działa jego protokół i dlaczego miłośnicy wolności powinni się nim zainteresować. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/zrozumiec-bitcoina/) · [Obraz: Okładka: Standard złota w epoce pieniądza cyfrowego George Gilder Standard złota w epoce pieniądza cyfrowego Krótka książka o tym, czym jest bogactwo i jaką rolę w jego tworzeniu odgrywa pieniądz, napisana z perspektywy teorii informacji i argumentująca za złotem. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/standard-zlota-w-epoce-pieniadza-cyfrowego/) · [Obraz: Okładka: Pakiet „3 x Saifedean Ammous” Saifedean Ammous Pakiet „3 x Saifedean Ammous” Zestaw trzech książek Ammousa w jednym zamówieniu: „Standard Bitcoina”, „Standard pieniądza dekretowego” oraz „Zasady ekonomii”. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/pakiet-3-x-saifedean-ammous/) · [Obraz: Okładka: Pakiet „Standard Bitcoina + Standard pieniądza dekretowego” Saifedean Ammous Pakiet „Standard Bitcoina + Standard pieniądza dekretowego” Zestaw dwóch książek Ammousa: „Standard Bitcoina” i „Standard pieniądza dekretowego”. Freedom Publishing](https://wydawnictwofp.pl/ksiazki/pakiet-standard-x-2/)
+
+### Technicznie
+
+Dla tych, którzy chcą zrozumieć protokół od środka albo na nim budować.
+
+[Obraz: Okładka: Bitcoin. Ilustrowany przewodnik Kalle Rosenbaum Bitcoin. Ilustrowany przewodnik Bogato ilustrowany podręcznik, który krok po kroku tłumaczy techniczne podstawy Bitcoina: podpisy cyfrowe, dowód pracy i sieć peer-to-peer. Helion](https://helion.pl/ksiazki/bitcoin-ilustrowany-przewodnik-kalle-rosenbaum,bitilv.htm) · [Obraz: Okładka: Bitcoin. Wszystko, co musisz wiedzieć o programowaniu z użyciem otwartego łańcucha bloków. Wydanie III Andreas M. Antonopoulos, David A. Harding Bitcoin. Wszystko, co musisz wiedzieć o programowaniu z użyciem otwartego łańcucha bloków. Wydanie III Polskie wydanie trzecie „Mastering Bitcoin” – techniczny przewodnik po działaniu Bitcoina dla programistów i osób, które chcą zajrzeć pod maskę protokołu. Helion](https://helion.pl/ksiazki/bitcoin-wszystko-co-musisz-wiedziec-o-programowaniu-z-uzyciem-otwartego-lancucha-blokow-wydanie-i-andreas-antonopoulos-david-harding,bitws3.htm) · [Obraz: Okładka: Lightning Network dla praktyków. Protokół drugiej warstwy i jego wykorzystanie do obsługi płatności bitcoinami Andreas M. Antonopoulos, Olaoluwa Osuntokun, René Pickhardt Lightning Network dla praktyków. Protokół drugiej warstwy i jego wykorzystanie do obsługi płatności bitcoinami Techniczna książka o Lightning Network dla programistów i inżynierów, którzy chcą budować aplikacje płacące bitcoinem w drugiej warstwie. Helion](https://helion.pl/ksiazki/lightning-network-dla-praktykow-protokol-drugiej-warstwy-i-jego-wykorzystanie-do-obslugi-platnosci-andreas-m-antonopoulos-olaoluwa-osuntokun-rene,linepr.htm) · [Obraz: Okładka: Zrozumieć Bitcoin. Programowanie kryptowalut od podstaw Jimmy Song Zrozumieć Bitcoin. Programowanie kryptowalut od podstaw Podręcznik uczący Bitcoina przez pisanie kodu: od matematyki krzywych eliptycznych po transakcje i blok łańcucha. Helion](https://helion.pl/ksiazki/zrozumiec-bitcoin-programowanie-kryptowalut-od-podstaw-jimmy-song,zrobit.htm)
+
+### Strony i tłumaczenia
+
+[blog · Mato Archiwum Bitcoina Polskie tłumaczenia najważniejszych tekstów o Bitcoinie, zebrane w jednym miejscu. archiwumbitcoina.pl](https://archiwumbitcoina.pl/) · [strona edukacyjna · Polskie Stowarzyszenie Bitcoin Anatomia Bitcoina Materiały o Bitcoinie zebrane w jednym miejscu, po polsku. Projekt Polskiego Stowarzyszenia Bitcoin. anatomiabitcoina.pl](https://anatomiabitcoina.pl/) · [tekst · Parman, European Bitcoiners 10 przykazań dobrego bitcoinowania Krótki, praktyczny tekst o dobrych nawykach bitcoinera, w polskim tłumaczeniu. europeanbitcoiners.com](https://europeanbitcoiners.com/10-przykazan-dobrego-bitcoinowania/) · [kalendarium Timechain Calendar po polsku Historia Bitcoina dzień po dniu, w polskiej wersji. timechaincalendar.com](https://timechaincalendar.com/pl) · [strona Bitcoin.org po polsku Polska wersja klasycznej strony o Bitcoinie: jak działa, jak zacząć, jak wybrać portfel. bitcoin.org](https://bitcoin.org/pl/) · [PDF · tłum. Damian Mee Whitepaper po polsku na bitcoin.org To samo tłumaczenie białej księgi, które hostujemy u siebie, w wersji z bitcoin.org. bitcoin.org](https://bitcoin.org/files/bitcoin-paper/bitcoin_pl.pdf) · [artykuł · Gracjan Pietras Nostr: przyszłość sieci społecznościowych Polskie wprowadzenie do protokołu Nostr, polecane przez nas we wrześniu 2024. linkedin.com](https://www.linkedin.com/pulse/nostr-przysz%C5%82o%C5%9B%C4%87-sieci-spo%C5%82eczno%C5%9Bciowych-gracjan-pietras-thwpf/) · [raport, EN · Gracjan Pietras, Marcin Liszka Raport ODF o portfelach non-custodial Analiza wpływu regulacji UE i FATF na portfele, w których sam trzymasz klucze. Autorzy z polskiej społeczności. en.odfoundation.eu](https://en.odfoundation.eu/a/726702,impact-of-the-eu-and-fatf-regulatory-frameworks-on-non-custodial-crypto-assets-wallets/) · [portal Bitcoin.pl Polski portal z wiadomościami. Pisał też o naszej akcji „Standard Bitcoina” dla posłów i senatorów. bitcoin.pl](https://bitcoin.pl/) · [stowarzyszenie Polskie Stowarzyszenie Bitcoin Artykuły, apele i stanowiska PSB w sprawach Bitcoina w Polsce. bitcoin.org.pl](https://bitcoin.org.pl/)
+
+### Podcasty i nagrania
+
+[podcast · Mateusz Gadaj Bujać Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach. bujac.pl](https://bujac.pl/) · [archiwum podcastu Bujać! archiwum Wszystkie rozmowy Bujać! w jednym miejscu: 18 rozmów w 4 seriach, z playerami, opisami i wyszukiwarką. itstomekk.github.io](https://itstomekk.github.io/bujac-archiwum/) · [podcast Laissez Faire Polski podcast wolnościowy. Bitcoinowa seria „₿ujać – O Bitcoinie po polsku” wychodzi właśnie tutaj. truefans.fm](https://truefans.fm/laissez-faire) · [film Gdzie jest problem? (polski lektor) Film krok po kroku pokazujący, jak państwowy wpływ na pieniądz rodzi kolejne problemy. Polską wersję przygotowali bitcoinerzy z naszej społeczności. youtube.com](https://www.youtube.com/watch?v=3VupBwORhLk) · [wykład · Wiktor Lisowski Bitcoin: Odkrywanie Nowego Świata (wykład) Solidny wstęp do Bitcoina po polsku, polecany przez nas w 2024. youtube.com](https://www.youtube.com/watch?v=wECefAXbJWw) · [poradnik wideo · Dlaczego bitcoin? Jak połączyć Trezor One ze Sparrow Wallet? Praktyczny poradnik z polskojęzycznego kanału o samodzielnym przechowywaniu. youtu.be](https://youtu.be/Jnw-jwobIRU) · [audycja · Radio WNET Czy bitcoin to marnotrawstwo energii? Lech Wilczyński i Gracjan Pietras rozprawiają się z mitami o energii i Bitcoinie. wnet.fm](https://wnet.fm/2025/02/05/czy-bitcoin-to-marnotrawstwo-energii-wyjasniaja-lech-wilczynski-i-gracjan-pietras/)
+
+Linki sprawdzone 23 października 2026. Brakuje czegoś? Napisz na [czacie](https://t.me/dwadziesciajeden).
+
+## Dalej
+
+- [Słowniczek](https://dwadziesciajeden.pl/slowniczek/): seed, sats, HODL i inne słowa, które usłyszysz na meetupie.
+
+- [Miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta): przyjdź na spotkanie i zapytaj na żywo.
+
+- [Czat na Telegramie](https://t.me/dwadziesciajeden): żadne pytanie nie jest głupie.
+
+Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.
+
+
+---
+
+---
+title: Słowniczek · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/slowniczek/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Pojęcia
+
+# Słowniczek
+
+Słowa, które padają u nas najczęściej, wyjaśnione po ludzku.
+
+**Austriacka szkoła ekonomii**
+Nurt ekonomii (Menger, Mises, Hayek, Rothbard), który tłumaczy gospodarkę przez działania ludzi. Ostrzega przed sztucznym tworzeniem pieniądza i kredytu, bo to ono napędza cykle boomów i kryzysów.
+
+**Fiat (pieniądz fiducjarny)**
+Pieniądz bez pokrycia, który ma wartość, bo państwo tak zadekretowało. Jego podaż zależy od decyzji banku centralnego i rządu, więc może rosnąć bez ograniczeń.
+
+**FUD**
+Fear, Uncertainty, Doubt: strach, niepewność i wątpliwości. Tak nazywamy straszenie Bitcoinem bez rzetelnych argumentów.
+
+**Shitpostowanie**
+Publikowanie memów i lekkich, prowokacyjnych wpisów. W bitcoinowym świecie często najszybsza droga, żeby ktoś w ogóle zainteresował się tematem.
+
+**Meetup**
+Nieformalne spotkanie ludzi zainteresowanych Bitcoinem, zwykle w barze lub kawiarni. Bez sprzedaży, bez prelekcji na siłę.
+
+**Walk (BitcoinWalk)**
+Spacer połączony z rozmową o Bitcoinie. Alternatywa dla meetupu: świeże powietrze, mniej ekranów, więcej rozmowy.
+
+**Proof-of-Work**
+W Bitcoinie: mechanizm, w którym górnicy wydają realną energię, żeby dopisać blok. W społeczności: realna praca na rzecz innych, na przykład artykuł, tłumaczenie, kod albo poradnik.
+
+**Proof of Keys**
+Coroczna akcja 3 stycznia: wypłać bitcoiny z giełd i aplikacji do portfela, do którego tylko Ty masz klucze.
+
+**Self-custody**
+Samodzielne przechowywanie bitcoinów. Ty trzymasz klucze prywatne, więc nikt nie zamrozi ani nie zgubi Twoich środków za Ciebie.
+
+**Seed (fraza odzyskiwania)**
+12 lub 24 słowa, z których da się odtworzyć portfel. Zapisz je offline. Kto ma seed, ma bitcoiny.
+
+**Orange pill (orangepilling)**
+Moment, w którym ktoś naprawdę rozumie, czym jest Bitcoin i dlaczego zdrowy pieniądz ma znaczenie. Orangepilling to pomaganie innym dojść do tego momentu.
+
+**Bitcoin Only**
+Zasada, że zajmujemy się wyłącznie Bitcoinem. Bez altcoinów, tokenów i projektów, które próbują się pod niego podczepić.
+
+**Lightning Network**
+Druga warstwa Bitcoina do szybkich i tanich płatności. Dobrze sprawdza się w małych kwotach, napiwkach i płatnościach w sklepie.
+
+**Nostr**
+Otwarty protokół do publikowania wpisów bez centralnego serwera. Twoja tożsamość to para kluczy, a nie konto w czyjejś firmie.
+
+**Sats (satoshi)**
+Najmniejsza jednostka bitcoina: 1 BTC to 100 000 000 satoshi.
+
+**IOU**
+I owe you, czyli „jestem Ci winien”. Saldo na giełdzie to obietnica wypłaty, a nie bitcoin w Twoim posiadaniu.
+
+
+---
+
+---
+title: Bitcoin Whitepaper · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/bitcoin-whitepaper/
+language: pl
+---
+
+> Decydując się na hosting białej księgi Bitcoina, wyrażamy dla niego nasze poparcie. Poniżej znajdziesz linki do wersji po Polsku, tłumaczonej przez meeDamian (D
+
+# Bitcoin Whitepaper
+
+Decydując się na hosting białej księgi Bitcoina, wyrażamy dla niego nasze poparcie. Poniżej znajdziesz linki do wersji po Polsku, tłumaczonej przez [meeDamian (Damian Mee) · GitHub](https://github.com/meeDamian), oraz oryginalnej.
+
+### Bitcoin: Elektroniczny System Pieniężny Typu Peer-to-Peer
+[Bitcoin pl Bitcoin Whitepaper po Polsku · 191 KB](https://dwadziesciajeden.pl/assets/media/files/2023/02/bitcoin_pl.pdf)
+
+### Bitcoin: A Peer-to-Peer Electronic Cash System
+[Bitcoin Bitcoin Whitepaper · 180 KB](https://dwadziesciajeden.pl/assets/media/files/2023/02/bitcoin.pdf)
+
+
+---
+
+---
+title: Artykuły · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/artykuly/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Archiwum
+
+# Artykuły
+
+Wszystkie wpisy z dwadziesciajeden.pl, także te odtworzone z archiwum.
+
+[Artykuły · 23 października 2026 Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Artykuły · 3 stycznia 2026 Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie](https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/) · [Zbiórki · 30 października 2025 Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/) · [Zbiórki · 15 stycznia 2024 Zbieramy satki na WOŚP! 🧡](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/) · [Meetupy · 8 lutego 2023 Meetup w Warszawie, 17 II 2023](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/) · [Meetupy · 9 stycznia 2023 Meetup we Wrocławiu, 12 I 2023](https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/) · [Meetupy · 23 listopada 2022 Meetup w Warszawie, 2 XII 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/) · [Meetupy · 12 października 2022 Meetup w Warszawie, 4 XI 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/)
+
+
+---
+
+---
+title: Bitcoinowa Mapa Polski · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/
+language: pl
+---
+
+> Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność.
+
+Mapa i miasta
+
+# Bitcoinowa Mapa Polski
+
+Gdzie w Polsce zapłacisz bitcoinem i gdzie się spotykamy. [Przejdź do miast].
+
+Na stronie [btcmap.org](https://btcmap.org/country/pl) opiekujemy się mapą miejsc w Polsce, w których można kupować za pomocą bitcoina. Każdy może dodać lub zweryfikować istniejące miejsca.
+
+Powyższa mapa jest ogólnokrajowa, ale możesz zarówno korzystać lub pomóc budować mapy poszczególnych [miast](https://dwadziesciajeden.pl/miasta/).
+
+## Mapy miast
+
+- [Warszawa](https://btcmap.org/community/dwadzieścia-jeden-warszawa)
+
+- [Poznań](https://btcmap.org/community/dwadzieścia-jeden-poznań)
+
+- [Wrocław](https://btcmap.org/community/dwadzieścia-jeden-wrocław)
+
+- [Katowice](https://btcmap.org/community/dwadziścia-jedyn-katowice)
+
+## Jak pomóc
+
+- Otwórz miejsce na [btcmap.org/country/pl](https://btcmap.org/country/pl).
+
+- Byłeś tam niedawno i zapłaciłeś bitcoinem? Potwierdź je jednym kliknięciem.
+
+- Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.
+
+- Daj znać na [czacie](https://t.me/dwadziesciajeden), żebyśmy mogli pochwalić się nowym miejscem.
+
+## Miasta
+
+Jeśli szukasz ludzi w twoim mieście, z którymi mógłbyś porozmawiać o jakimkolwiek bitcoinowym temacie to zapraszamy na nasze meetupy , walki , etc. Spotkasz na nich osoby o szerokim przekroju doświadczeń, doświadczenia i wiedzy.
+
+Jeśli chcesz zorganizować bitcoinowe wydarzenie w swoim mieście to chętnie pomożemy z promocją i dotarciem do ludzi za pomocą grup lokalnych, Nostra, Orange Pill App, Twittera/X – [Daj znać!](https://dwadziesciajeden.pl/dolacz-do-nas/) · [Warszawa BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.](https://dwadziesciajeden.pl/warszawa/) · [Kraków Meetupy w Techies i wykłady. Terminy na czacie.](https://dwadziesciajeden.pl/krakow/) · [Poznań BitcoinWalki i własna grupa na Telegramie.](https://dwadziesciajeden.pl/poznan/) · [Wrocław Meetup od 2023 i BitcoinWalk od grudnia 2025.](https://dwadziesciajeden.pl/wroclaw/) · [Katowice Śląska społeczność na BTC Map: Dwadziścia Jedyn Katowice.](https://dwadziesciajeden.pl/katowice/)
+
+
+---
+
+---
+title: Warszawa · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/warszawa/
+language: pl
+---
+
+> BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.
+
+Miasto
+
+# Warszawa
+
+Zapraszamy do wspólnych spotkań w stolicy – to nie kolejna konferencja, a raczej luźna rozmowa o tym, co nas fascynuje. Jeśli bitcoin to dla Ciebie nie tylko cyfry, ale też pasja, dołącz do nas, aby podzielić się przemyśleniami, posłuchać innych i po prostu dobrze się bawić w przyjaznej atmosferze.
+
+Zobacz poniższą stronę meetup.com aby zobaczyć szczegóły i dołączyć do bitcoinerów.
+
+### Stałe spotkania
+
+[Soboty, 11:30 **BitcoinWalk Warszawa** Spacer i rozmowa o Bitcoinie. Zbiórka: Ogród Saski, Fontanna Wielka. Także po angielsku.](https://bitcoinwalk.org/warszawa) · [Poniedziałki, 18:00 **Bitcoin Café · Bitcoin Warsaw** Spotkanie w małych grupach, bez prezentacji: przychodzisz z pytaniami. Miejsce w wydarzeniu na Meetup.](https://www.meetup.com/bitcoin-warsaw/)
+
+Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjściem.
+
+### Meetup
+[Meetup Bitcoin Warsaw | Meetup A multi-lingual group for all bitcoin-related events in Warsaw. group: https://t.me/BitcoinWarsaw](https://www.meetup.com/bitcoin-warsaw/)
+
+### Z archiwum
+
+- [Meetup, 4 XI 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/)
+
+- [Meetup, 2 XII 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/)
+
+- [Meetup w BarBazaar, 17 II 2023](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/)
+
+- [Pozostałe spotkania w kronice](https://dwadziesciajeden.pl/kronika/)
+
+### BTCMap
+
+
+---
+
+---
+title: Kraków · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/krakow/
+language: pl
+---
+
+> Meetupy w Techies i wykłady. Terminy na czacie.
+
+Miasto
+
+# Kraków
+
+Zapraszamy do wspólnego spotkania w Krakowie – to nie kolejna konferencja, a raczej luźna rozmowa o tym, co nas fascynuje. Jeśli bitcoin to dla Ciebie nie tylko cyfry, ale też pasja, dołącz do nas, aby podzielić się przemyśleniami, posłuchać innych i po prostu dobrze się bawić w przyjaznej atmosferze.
+
+### Meetup
+
+Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na [czacie](https://t.me/dwadziesciajeden) i na X.
+
+### Z archiwum
+
+- [„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024](https://x.com/21BitcoinPolska/status/1794694392374342098)
+
+- [Meetup w Krakowie, 9 maja 2025](https://x.com/21BitcoinPolska/status/1919430740485304721)
+
+
+---
+
+---
+title: Poznań · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/poznan/
+language: pl
+---
+
+> BitcoinWalki i własna grupa na Telegramie.
+
+Miasto
+
+# Poznań
+
+W Poznaniu organizujemy się **Bitcoin Walk** - zobacz poniżej linki do stron:
+
+### Telegram
+[Telegram Dwadzieścia Jeden Bitcoin - Poznań Poznańska grupa społeczności bitcoinowych maksymalistów](https://t.me/DwadziesciaJedenPoznan)
+
+### Stałe spotkania
+
+[Spacery, terminy na Meetup **Poznań BitcoinWalk · Spacery ku wolności** Spacer i rozmowa o Bitcoinie. Zbiórka zwykle przy Skwerze Jana Suwarta, ul. Ewangelicka. Latem także grill i spacery nad Rusałką.](https://www.meetup.com/poz21m/) · [Na bieżąco **Dwadzieścia Jeden Poznań** Poznańska grupa na Telegramie. Tu ogłaszamy spacery i spotkania.](https://t.me/DwadziesciaJedenPoznan)
+
+Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjściem.
+
+### Meetup
+[Meetup Spacery ku wolności (Poznań BitcoinWalk) | Meetup Zapraszamy Cię na spacer, podczas którego entuzjaści Bitcoina spotykają się w naturze i rozmawiają o tym, czego nas w szkole nie nauczono – czyli o tym, czym jest i jak działa pieniądz, oraz jaką będzie jego przyszłość.…](https://www.meetup.com/poz21m/)
+
+### BitcoinWalk
+
+Formuła spacerów pochodzi z [bitcoinwalk.org](https://bitcoinwalk.org/). Terminy publikujemy na Meetup, Telegramie i X.
+
+### BTCMap
+
+
+---
+
+---
+title: Wrocław · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/wroclaw/
+language: pl
+---
+
+> Meetup od 2023 i BitcoinWalk od grudnia 2025.
+
+Miasto
+
+# Wrocław
+
+We Wrocławiu spotkaliśmy się pierwszy raz 12 stycznia 2023 w Kawiarni Literatka na Rynku. W grudniu 2025, po rozmowie na Spaces o byciu „jedynym bitcoinerem w mieście”, odbył się tu BitcoinWalk.
+
+### Z archiwum
+
+- [Meetup we Wrocławiu, 12 I 2023](https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/)
+
+- [BitcoinWalk we Wrocławiu, grudzień 2025 (post na X)](https://x.com/21BitcoinPolska/status/1998512892866605371)
+
+Chcesz, żeby spotkania we Wrocławiu odbywały się regularnie? Napisz na [naszym czacie](https://t.me/dwadziesciajeden), pomożemy z promocją.
+
+### BTC Map
+
+
+---
+
+---
+title: Katowice · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/katowice/
+language: pl
+---
+
+> Śląska społeczność na BTC Map: Dwadziścia Jedyn Katowice.
+
+Miasto
+
+# Katowice
+
+Na Śląsku działa społeczność **Dwadziścia Jedyn Katowice** w BTC Map, która dba o mapę miejsc przyjmujących bitcoin w regionie.
+
+Organizujesz spotkania na Śląsku? Daj znać na [naszym czacie](https://t.me/dwadziesciajeden), dopiszemy je tutaj.
+
+### BTC Map
+
+
+---
+
+---
+title: Projekty i inicjatywy · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/projekty/
+language: pl
+---
+
+> Projekty społeczności Dwadzieścia Jeden, zaprzyjaźnieni i polskie inicjatywy bitcoinowe.
+
+Co robimy
+
+# Projekty i inicjatywy
+
+Projekty i inicjatywy, które warto znać, wesprzeć albo do których warto dołączyć, jeśli zależy Ci na Bitcoinie w Polsce. Masz własny projekt i chcesz go robić z ludźmi ze społeczności albo pod szyldem Dwadzieścia Jeden? [Napisz do nas.](https://dwadziesciajeden.pl/dolacz-do-nas/) · [Nasze projekty][Zaprzyjaźnieni][Pomóż tłumaczyć][Organizacje i sieci][Wydarzenia i spotkania][Czaty i społeczności]
+
+## Nasze projekty
+
+Obraz: Wejście do punktu podawczego Kancelarii Sejmu i Senatu
+
+zrealizowany · 2025–2026 · nasz projekt
+
+## Standard Bitcoina w polskim Parlamencie
+
+Kampania edukacyjna: zebraliśmy w bitcoinie środki na 560 egzemplarzy „Standardu Bitcoina” Saifedeana Ammousa i list otwarty dla każdego posła i senatora. Książki trafiły do Sejmu i Senatu 8 stycznia 2026, a 12 stycznia kolejny egzemplarz dostał Prezydent RP.
+
+[O kampanii](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/) · [Zbiórka na Geyser](https://geyser.fund/project/bitcoinparliamentpl) · [Kronika kampanii](https://dwadziesciajeden.pl/kronika/#standard-bitcoina)
+
+Obraz: Grafika: BTC Map Polska
+
+trwa · nasz projekt
+
+## BTC Map Polska
+
+Dbamy o to, żeby światowa mapa miejsc, w których płacisz bitcoinem, była aktualna także w Polsce. Każdy może dodać nowe miejsce albo potwierdzić istniejące.
+
+[Mapa na naszej stronie](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/) · [Społeczność na btcmap.org](https://btcmap.org/community/dwadzie%C5%9Bcia-jeden)
+
+Obraz: Grafika: Satki dla WOŚP
+
+zrealizowany · 2024 · nasz projekt
+
+## Satki dla WOŚP
+
+Zbiórka w bitcoinie dla 32. Finału Wielkiej Orkiestry Świątecznej Pomocy, skierowana do bitcoinerów z zagranicy. Darczyńcy dostawali odznakę w sieci Nostr.
+
+[Wpis o zbiórce](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/) · [Zbiórka na Geyser](https://geyser.fund/project/greatorchestraofchristmascharity)
+
+Obraz: Plakat meetupu w BarBazaar
+
+trwa · nasz projekt
+
+## Meetupy i BitcoinWalki
+
+Spotkania w Warszawie, Krakowie, Poznaniu i Wrocławiu. Chcesz zorganizować meetup w swoim mieście? Pomożemy z promocją przez grupy lokalne, Nostra i X.
+
+[Miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta)
+
+Obraz: Grafika: Bitcoin In Polish
+
+archiwum · nasz projekt
+
+## Bitcoin In Polish
+
+Inicjatywa Mato (archiwumbitcoina.pl), JesterHodla (jesterhodl.com) i JoannyXLang: tłumaczenie wartościowych narzędzi i artykułów, żeby były gotowe po polsku, kiedy przyjdzie czas.
+
+[Zbiórka na Geyser](https://geyser.fund/project/bitcoininpolish)
+
+Obraz: Grafika: Relay Nostr
+
+eksperyment · nasz projekt
+
+## Relay Nostr
+
+JesterHodl postawił eksperymentalny relay Nostr społeczności.
+
+[wss://relay.dwadziesciajeden.pl](wss://relay.dwadziesciajeden.pl/)
+
+## Zaprzyjaźnieni
+
+Obraz: Grafika: Bitcoin FilmFest
+
+co roku w Warszawie · zaprzyjaźnieni
+
+## Bitcoin FilmFest
+
+Festiwal filmowy o Bitcoinie, pieniądzu i wolności, robiony przez bitcoinerów dla bitcoinerów. Wyrósł z Dwadzieścia Jeden: pierwsza edycja w 2023 powstała z ludzi i energii naszej społeczności. W 2024 dodaliśmy go do portalu sieci TwentyOne jako pierwsze polskie wydarzenie.
+
+[bitcoinfilmfest.com](https://bitcoinfilmfest.com/) · [@bitcoinfilmfest na X](https://x.com/bitcoinfilmfest)
+
+Obraz: Grafika: Satsback.com
+
+partner · zaprzyjaźnieni
+
+## Satsback.com
+
+Cashback w bitcoinie za zakupy online: ponad 600 polskich sklepów, w tym Allegro, Pyszne, Empik, Carrefour i MediaMarkt, oraz tysiące z całej Europy. Wypłaty idą przez Lightning. Satsback wsparł też kampanię Standard Bitcoina. Link poniżej to link partnerski.
+
+[satsback.com (link partnerski)](https://satsback.com/register/dlorDWND5JPeV7pw)
+
+Obraz: Grafika: Kancelaria DJP: Bitcoin desk
+
+nasz przyjaciel · prawnik bitcoinowy · zaprzyjaźnieni
+
+## Kancelaria DJP: Bitcoin desk
+
+Warszawska kancelaria prawna pod przewodnictwem Gracjana Pietrasa przyjmuje płatności w bitcoinie i stworzyła Bitcoin desk, zespół prawników-bitcoinerów. W grudniu 2024 dołączyła BTC do rezerw firmy.
+
+[djp.pl](https://djp.pl/) · [Nasz post z 2023](https://x.com/21BitcoinPolska/status/1669080872329379840)
+
+Obraz: Grafika: Filmweb
+
+2023 · zaprzyjaźnieni
+
+## Filmweb
+
+Największy polski serwis filmowy wprowadził płatności w bitcoinie, uruchomił węzeł Lightning i własny relay Nostr.
+
+[Nasz post z 2023](https://x.com/21BitcoinPolska/status/1669671420782080002)
+
+Obraz: Grafika: bitblik
+
+aplikacja, open source · zaprzyjaźnieni
+
+## bitblik
+
+Most między bitcoinem a BLIK-iem. Płacisz bitcoinem w Żabce, na Allegro czy w bankomacie, albo sprzedajesz kody BLIK za sats. Peer-to-peer, bez KYC, środki zablokowane w Lightning hold-invoice, a nie u pośrednika. Instalacja przez Zapstore, APK albo AltStore.
+
+[bitblik.app](https://bitblik.app/) · [Kod źródłowy](https://gitworkshop.dev/bitblik.app/relay.ngit.dev/bitblik)
+
+Obraz: Grafika: Cryptosteel
+
+partner · zaprzyjaźnieni
+
+## Cryptosteel
+
+Stalowe kapsuły i kasety na frazę odzyskiwania, odporne na ogień, wodę i czas. Cryptosteel był jednym z pierwszych darczyńców kampanii Standard Bitcoina w Parlamencie.
+
+[cryptosteel.com](https://cryptosteel.com/)
+
+Obraz: Grafika: Alby
+
+zaprzyjaźniony · zaprzyjaźnieni
+
+## Alby
+
+Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.
+
+[getalby.com](https://getalby.com/)
+
+Obraz: Grafika: Deltabadger
+
+zaprzyjaźniony · zaprzyjaźnieni
+
+## Deltabadger
+
+Polskie narzędzie do automatycznego, regularnego kupowania bitcoina (DCA) na wybranej giełdzie.
+
+[deltabadger.com](https://deltabadger.com/)
+
+Obraz: Strona kantoru Quark w Warszawie
+
+zaprzyjaźniony · zaprzyjaźnieni
+
+## Quark Kantor Bitcoin Warszawa
+
+Pierwszy stacjonarny kantor bitcoina w Polsce, przy Świętokrzyskiej 18 w Warszawie. Kupisz i sprzedasz tu bitcoina za gotówkę. Przez Quark wymieniliśmy na złotówki satsy zebrane dla WOŚP.
+
+[bitcoinwarszawa.pl](https://bitcoinwarszawa.pl/) · [Sieć Quark](https://quark.house/)
+
+Obraz: Grafika: Bitcoin District
+
+Próspera, Roatán · zaprzyjaźnieni
+
+## Bitcoin District
+
+Bitcoinowa dzielnica w Próspera na wyspie Roatán w Hondurasie: miejsce do życia, pracy i budowania na standardzie Bitcoina.
+
+[thebitcoindistrict.com](https://thebitcoindistrict.com/)
+
+## Pomóż tłumaczyć
+
+Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.
+
+[tłumaczenie SeedSigner na Transifex Otwarty projekt tłumaczenia SeedSignera, urządzenia do podpisywania transakcji, które zbudujesz sam. explore.transifex.com](https://explore.transifex.com/seedsigner/seedsigner/) · [tłumaczenie Bitcoin Core na Transifex Polska wersja interfejsu Bitcoin Core. Poprawki i aktualizacje zawsze się przydadzą. explore.transifex.com](https://explore.transifex.com/bitcoin/bitcoin/) · [Telegram Wątek Bitcoin po Polsku Tu ustalamy słownictwo, dzielimy się tłumaczeniami i szukamy rąk do pracy. t.me](https://t.me/dwadziesciajeden/7916)
+
+## Organizacje i sieci
+
+[stowarzyszenie, od 2013 Polskie Stowarzyszenie Bitcoin Najstarsza polska organizacja bitcoinowa, ze Szczecina. Przekazała 1 mln satoshi na naszą kampanię w Parlamencie i wsparła Bitcoin FilmFest 2026. bitcoin.org.pl](https://bitcoin.org.pl/) · [sieć społeczności · Gigi TwentyOne Międzynarodowa sieć lokalnych społeczności Bitcoin Only. Dwadzieścia Jeden jest jej polską gałęzią. twentyone.world](https://twentyone.world/)
+
+## Wydarzenia i spotkania
+
+[spacer, soboty 11:30 BitcoinWalk Warszawa Cotygodniowy spacer i rozmowa o Bitcoinie, zbiórka przy Fontannie Wielkiej w Ogrodzie Saskim. Mile widziani także anglojęzyczni. bitcoinwalk.org](https://bitcoinwalk.org/warszawa) · [Meetup, poniedziałki 18:00 Bitcoin Warsaw Wielojęzyczna grupa warszawskich wydarzeń. W poniedziałki Bitcoin Café: spotkanie w małych grupach, bez prezentacji, wokół Twoich pytań. meetup.com](https://www.meetup.com/bitcoin-warsaw/) · [spacer, Poznań Poznań BitcoinWalk · Spacery ku wolności Bitcoinowe spacery po Poznaniu. Zbiórka zwykle przy Skwerze Jana Suwarta (ul. Ewangelicka). Terminy na Meetup i na naszej poznańskiej grupie. meetup.com](https://www.meetup.com/poz21m/)
+
+## Czaty i społeczności
+
+[Telegram Dwadzieścia Jeden Nasz główny czat. Tu dzieje się większość rzeczy. t.me](https://t.me/dwadziesciajeden) · [Armada, Nostr Dwadzieścia Jeden na Nostrze Nasza społeczność na Armadzie: czat oparty na Nostrze, szyfrowany, bez właściciela serwera. Wystarczy klucz Nostr. armada.buzz](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33) · [Telegram Wątek Bitcoin w Polsce Polskie newsy, regulacje, miejsca akceptujące bitcoin i akcje społeczności. t.me](https://t.me/dwadziesciajeden/17350) · [Telegram Dwadzieścia Jeden Poznań Poznańska grupa społeczności. t.me](https://t.me/DwadziesciaJedenPoznan) · [Nostr (Flotilla) BitcoinWalk Warszawa na Nostrze Czat warszawskich spacerów, prowadzony na Nostrze. app.flotilla.social](https://app.flotilla.social/join?r=warszawa.bitcoinwalk.org&c=OWY8E116)
+
+Linki sprawdzone 23 października 2026. Grafiki pochodzą ze stron projektów. Brakuje czegoś? Napisz na [czacie](https://t.me/dwadziesciajeden).
+
+
+---
+
+---
+title: Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/bitcoin-w-parlamencie/
+language: pl
+---
+
+> Pełna historia kampanii Standard Bitcoina w polskim Parlamencie: skąd pomysł, jak zbieraliśmy, kto pomógł i co dalej.
+
+Artykuły
+
+# Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów
+
+[Artykuły](https://dwadziesciajeden.pl/tag/artykuly/) · [Zbiórki](https://dwadziesciajeden.pl/tag/zbiorki/)23 października 2026
+
+Jesienią 2025 polski Sejm pracował nad wdrożeniem unijnego rozporządzenia MiCA. Projekt liczył setki stron, przewidywał surowe kary i był pisany w atmosferze, w której o Bitcoinie mówi się albo źle, albo wcale. Postanowiliśmy dać każdemu parlamentarzyście coś lepszego niż kolejną notatkę: książkę.
+
+## Pomysł
+
+„Standard Bitcoina” Saifedeana Ammousa to jedna z najczęściej polecanych książek o pieniądzu i o tym, dlaczego Bitcoin ma znaczenie. Ma polskie wydanie (Freedom Publishing) i nie wymaga wiedzy technicznej. Cel był prosty: **560 egzemplarzy, po jednym dla każdego posła i senatora**, razem z listem otwartym.
+
+Od początku podkreślaliśmy, że to **kampania wiedzy, nie kampania polityczna**. Nie popieramy żadnej partii. Chcemy, żeby ludzie, którzy piszą prawo o cyfrowym pieniądzu, wiedzieli, czym jest pieniądz, skąd bierze się inflacja i co zmienia Bitcoin.
+
+## Zbiórka
+
+Kampanię uruchomiliśmy 31 października 2025, w 17. rocznicę publikacji whitepapera, z planem na osiem tygodni. Zbieraliśmy **wyłącznie w bitcoinie**, na platformie [Geyser](https://geyser.fund/project/bitcoinparliamentpl). Freedom Publishing dało nam bardzo dobrą cenę za książki.
+
+- Pierwszymi darczyńcami byli **Satsback** i **Cryptosteel**.
+
+- **Polskie Stowarzyszenie Bitcoin** przekazało 1 mln satoshi.
+
+- Każdy darczyńca mógł napisać **osobistą dedykację** do wybranego posła lub senatora.
+
+- W piątki w południe rozmawialiśmy o postępach na **X Spaces**.
+
+Po dziesięciu dniach mieliśmy 70% celu. Kampania odbiła się też za granicą: bitcoinerzy z innych krajów pytali, jak zrobić to samo u siebie.
+
+## Cel osiągnięty
+
+17 grudnia 2025 zbiórka była zamknięta. Wsparło ją **80 osób**. Do naszej ekipy dotarło 625 egzemplarzy: 560 dla parlamentarzystów i zapas na dalszą edukację.
+
+Obraz: Stos kartonów z książkami, na wierzchu egzemplarz Standardu BitcoinaGrudzień 2025: książki dotarły. Fot. [@21BitcoinPolska](https://x.com/21BitcoinPolska/status/2001320953809121791)
+
+## Dostawa
+
+4 stycznia 2026 wszystkie paczki były spakowane, każda z listem otwartym. **8 stycznia rano 560 egzemplarzy trafiło do biur podawczych Sejmu i Senatu RP**, na początku nowej sesji.
+
+Obraz: Wejście do punktu podawczego Kancelarii Sejmu i Senatu, Al. Na Skarpie 168 stycznia 2026, punkt podawczy Kancelarii Sejmu i Senatu. Fot. [@21BitcoinPolska](https://x.com/21BitcoinPolska/status/2009269514953793771)
+
+Cztery dni później, 12 stycznia, wysłaliśmy list otwarty i egzemplarz książki do **Prezydenta RP**.
+
+## List otwarty
+
+Do każdej książki dołączyliśmy list, w którym w duchu dialogu prosimy o refleksję nad kierunkiem polskiej polityki gospodarczej i technologicznej: żeby prawo o cyfrowym pieniądzu powstawało na podstawie wiedzy, a nie strachu.
+[List otwarty do Posłów i Senatorów PDF · 154 KB](https://dwadziesciajeden.pl/assets/media/files/2026/01/List-otwarty-do-Pos----w-i-Senator--w-Standard-Bitcoina-1.pdf)
+
+## Rozliczenie
+
+14 stycznia opublikowaliśmy [finansowe podsumowanie zbiórki](https://geyser.fund/project/bitcoinparliamentpl/posts/view/5447), a 16 stycznia omówiliśmy całą kampanię na Spaces, z udziałem osób, które ją prowadziły.
+
+## W mediach
+
+O akcji pisał portal Bitcoin.pl: [„Standard Bitcoina” dla posłów i senatorów](https://bitcoin.pl/standard-bitcoin-dla-poslow).
+
+## Co dalej
+
+Książka w biurze poselskim to dopiero początek rozmowy. Jeśli chcesz pomóc w kolejnym kroku, napisz na [naszym czacie](https://t.me/dwadziesciajeden). Pełny przebieg kampanii, dzień po dniu, jest w [kronice](https://dwadziesciajeden.pl/kronika/), a pierwotny opis i film na [stronie kampanii](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/).
+
+Dziękujemy wszystkim 80 darczyńcom, Freedom Publishing, Satsback, Cryptosteel i Polskiemu Stowarzyszeniu Bitcoin.
+
+
+---
+
+---
+title: JesterHodl · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/autor/jesterhodl/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Autor
+
+# JesterHodl
+
+Współtwórca Dwadzieścia Jeden. Pisze na [jesterhodl.com](https://jesterhodl.com/).
+
+[Artykuły · 3 stycznia 2026 Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie](https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/) · [Zbiórki · 30 października 2025 Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/) · [Zbiórki · 15 stycznia 2024 Zbieramy satki na WOŚP! 🧡](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/)
+
+
+---
+
+---
+title: Meetup w Warszawie, 17 II 2023 · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/
+language: pl
+---
+
+> ⚡ BITCOINERS IN POLAND, UNITE! ⚡ Luźne spotkanie w barze, integracja społeczności Bitcoin maxi w Warszawie. Jesteś zafascynowana/y rewolucją, jaka dzieje się na
+
+Meetupy
+
+# Meetup w Warszawie, 17 II 2023
+
+[Meetupy](https://dwadziesciajeden.pl/tag/meetupy/)8 lutego 2023
+
+### ⚡ BITCOINERS IN POLAND, UNITE! ⚡
+
+Luźne spotkanie w barze, integracja społeczności Bitcoin maxi w Warszawie.
+
+Jesteś zafascynowana/y rewolucją, jaka dzieje się na naszych oczach? Zgłębiasz lub chcesz zgłębić podstawy oraz tajniki Bitcoina? Boli Cię serce na widok popularności shitcoinów, drukowania pieniędzy i upadku wolności w Polsce? **Przyjdź na piwo!** W BarBazaar można płacić BTC!
+
+Spotkanie ma formę luźnej integracji, z inicjatywy grupy 21 Bitcoin Polska. Atrakcje:
+
+👉 założymy sobie multisiga
+
+👉 kto ma jakieś gadżety do pokazania: koszulki, wlepki, coldcardy itp. - weźcie, pochwalcie się!
+
+👉 porozmawiamy o planowanej dużej imprezie BTC w Warszawie, BitcoinFilmFest
+
+👉 w lokalu można płacić BTC
+
+👉 o 20:30 zaczyna się muzyczne jam session
+
+**PS. No shitcoins, ponzis, token casinos. It's about #bitcoin revolution of freedom and peace.**
+
+*Dołącz do społeczności Bitcoin Maxi:
+
+### Link do wydarzenia:
+
+- [Meetup](https://www.meetup.com/bitcoin-warsaw/events/291489270/)
+
+- [Facebook](https://www.facebook.com/events/919311642711816)
+
+### Miejsce
+
+[BarBazaar, ul. Ząbkowska 12, Warszawa: pokaż na mapie](https://www.openstreetmap.org/search?query=BarBazaar%20Ząbkowska%2012%20Warszawa)
+
+Wpis odtworzony z archiwum strony. [Kopia w Wayback Machine](https://web.archive.org/web/20231129093908/https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/).
+
+
+---
+
+---
+title: Meetup w Warszawie, 2 XII 2022 · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/
+language: pl
+---
+
+> Społeczność Bitcoin Only w grudniu 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej: Link do wydarzenia: Meetup.com Facebook Miejsce ul. Bracka 20
+
+Meetupy
+
+# Meetup w Warszawie, 2 XII 2022
+
+[Meetupy](https://dwadziesciajeden.pl/tag/meetupy/)23 listopada 2022
+
+Społeczność Bitcoin Only w grudniu 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej:
+
+### Link do wydarzenia:
+
+- **[Meetup.com](https://www.meetup.com/bitcoin-warsaw/events/289885182/)**
+
+- **[Facebook](https://www.facebook.com/events/855326005821518/)**
+
+### Miejsce
+
+[ul. Bracka 20, Warszawa: pokaż na mapie](https://www.openstreetmap.org/search?query=Bracka%2020%20Warszawa)
+
+Wpis odtworzony z archiwum strony. [Kopia w Wayback Machine](https://web.archive.org/web/20241205073657/https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/).
+
+
+---
+
+---
+title: Meetup w Warszawie, 4 XI 2022 · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/
+language: pl
+---
+
+> Społeczność Bitcoin Only w listopadzie 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej: Link do wydarzenia Meetup.com : 21 🟠 PL - Bitcoin maxis m
+
+Meetupy
+
+# Meetup w Warszawie, 4 XI 2022
+
+[Meetupy](https://dwadziesciajeden.pl/tag/meetupy/)12 października 2022
+
+Społeczność Bitcoin Only w listopadzie 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej:
+
+### Link do wydarzenia
+
+- **[Meetup.com](http://meetup.com/):** [21 🟠 PL - Bitcoin maxis meetup, Fri, Nov 4, 2022, 6:30 PM | Meetup](https://www.meetup.com/bitcoin-warsaw/events/289394282/)
+
+- **Facebook**: [https://www.facebook.com/events/362592066057327/](https://www.facebook.com/events/362592066057327/)
+
+### Miejsce
+
+[ul. Bracka 20, Warszawa: pokaż na mapie](https://www.openstreetmap.org/search?query=Bracka%2020%20Warszawa)
+
+Wpis odtworzony z archiwum strony. [Kopia w Wayback Machine](https://web.archive.org/web/20241013231525/https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/).
+
+
+---
+
+---
+title: Meetup we Wrocławiu, 12 I 2023 · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/
+language: pl
+---
+
+> Nowy rok rozpoczynamy meetupem we Wrocławiu! Widzimy sie w Kawiarni Literatka, Rynek 56/57. Szczegóły poniżej: Link do wydarzenia: Facebook Miejsce Kawiarnia Li
+
+Meetupy
+
+# Meetup we Wrocławiu, 12 I 2023
+
+[Meetupy](https://dwadziesciajeden.pl/tag/meetupy/)9 stycznia 2023
+
+Nowy rok rozpoczynamy meetupem we Wrocławiu! Widzimy sie w Kawiarni Literatka, Rynek 56/57. Szczegóły poniżej:
+
+### Link do wydarzenia:
+
+- [**Facebook**](https://www.facebook.com/events/856762258944332)
+
+### Miejsce
+
+[Kawiarnia Literatka, Rynek 56/57, Wrocław: pokaż na mapie](https://www.openstreetmap.org/search?query=Rynek%2056%20Wrocław)
+
+Wpis odtworzony z archiwum strony. [Kopia w Wayback Machine](https://web.archive.org/web/20240723215407/https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/).
+
+
+---
+
+---
+title: Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/
+language: pl
+---
+
+> Proof of Keys przypada 3 stycznia i polega na wypłaceniu bitcoinów z platform powierniczych (giełd, brokerów, aplikacji fintech) do portfela, którego klucze kon
+
+Artykuły
+
+# Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie
+
+[Artykuły](https://dwadziesciajeden.pl/tag/artykuly/)3 stycznia 2026
+
+Proof of Keys przypada 3 stycznia i polega na wypłaceniu bitcoinów z platform powierniczych (giełd, brokerów, aplikacji fintech ) do portfela, którego klucze kontrolujesz tylko Ty. Inicjatywę zaproponował Trace Mayer jako praktyczne przypomnienie, że sens Bitcoina to brak konieczności ufania pośrednikom.
+
+Ten tekst jest dla Ciebie jeśli:
+
+- Masz środki „u kogoś”, ale nie robisz Proof of Keys (z wygody, „bo działa”, „bo tylko trzymam”).
+
+- Nie wiesz, co to jest Proof of Keys i chcesz zrozumieć, o co chodzi.
+
+**Najpierw brutalna prawda: jeśli nie masz kluczy, nie masz monet**
+
+[Andreas Antonopoulos: "Not your keys, not your Bitcoin"](https://www.youtube.com/watch?v=gB4wrX2iICA)
+
+„Not your keys, not your coins”.
+
+Jeśli Twoje bitcoiny znajdują się na giełdzie/w aplikacji, to platforma posiada klucze prywatne, a Ty masz co najwyżej roszczenie w ich bazie danych (tzw. IOU ). Nazwa Proof of Keys wynika z tego, że aby posiadać środki, muszą one znajdować się pod adresem wygenerowanym z [klucza](https://youtu.be/gB4wrX2iICA?si=OqcwThKh6HPfrPor) prywatnego, który Ty posiadasz.
+
+Czy zdajesz sobie sprawę z ryzyka związanego z powierzaniem kontroli nad swoimi pieniędzmi komuś innemu? Oto kwestie do rozpatrzenia. Powiernik może:
+
+- stać się niewypłacalny,
+
+- zablokować wypłaty,
+
+- zmienić regulamin,
+
+- „pożyczać” Twoje środki,
+
+- paść ofiarą włamania oszustwa albo własnej głupoty,
+
+- zrealizować narzucone przez regulatora przepisy kontroli przepływu kapitału.
+
+Gdy któreś z powyższych ryzyk się zmaterializuje, możesz utracić swoje środki.
+
+Proof of Keys ma być regularnym, publicznym „sprawdzam” — czymś w rodzaju zaplanowanego „bank runu”, który ujawnia, czy powiernik naprawdę ma środki, które deklaruje i na żądanie je wypłaci.
+
+**Po co to robić, skoro „moja giełda jest spoko”?**
+
+Bo największe upadki zwykle nie zapowiadały się niemalże do ostatniego dnia. Przykład FTX dobrze obrazuje ryzyko powiernicze: depozyty klientów zostały użyte do ryzykownych działań i gdy doszło do wypłat — system się posypał.
+
+I teraz ważne: Proof of Keys działa jako presja na rynek, gdy ludzie faktycznie wypłacają środki, są gotowi wziąć odpowiedzialność w swoje ręce i pokazać, że od pośrednika, nawet tymczasowego, wymagają pełnego pokrycia, a nie tylko księgowych obietnic.
+
+**Dla kogo jest Proof of Keys?**
+
+Jeśli:
+
+- trzymasz środki na giełdzie (polskiej lub zagranicznej),
+
+- używasz aplikacji/fintechu,
+
+- masz długoterminowe oszczędności w bitcoinie,
+
+…to Proof of Keys jest dla Ciebie.
+
+**Jak to zrobić?**
+
+- Załóż portfel, w którym Ty masz seed/klucze (software lub hardware).
+
+- Zrób kopię seeda offline (nie w chmurze ani screenshotach).
+
+- Na giełdzie zrób wypłatę testową małej kwoty na swój adres.
+
+- Dopiero potem wypłać resztę.
+
+Cel jest prosty: Twoje bitcoiny mają być w portfelu, do którego tylko Ty masz klucze.
+
+Potraktuj to jako rytuał higieny finansowej. **Raz w roku** robisz porządej we własnych finansach, sprawdzasz, czy umiesz wypłacić (procedury, limity, 2FA) i weryfikujesz, czy backup seeda działa (bez narażania całości).
+
+**Checklista dla zaawansowanych**
+
+Jeśli już trzymasz w self-custody, Proof of Keys nadal ma sens jako test operacyjny:
+
+- Czy potrafisz odtworzyć portfel z seeda na czystym urządzeniu?
+
+- Czy masz sensowny model backupu (np. 2 kopie w różnych lokalizacjach)?
+
+- Czy rozumiesz, gdzie trzymasz „passphrase” (jeśli używasz) i co się stanie, gdy ją zgubisz?
+
+- Czy nie trzymasz dużych kwot na hot wallecie „bo tak jest wygodnie”?
+
+- Czy Twoje UTXO nie są skrajnie rozdrobnione (zwiększając koszty przyszłych transakcji)?
+
+I najważniejsze: Proof of Keys nie polega na tym, żeby „wypłacić i wrócić po godzinie”. Chodzi o to, by **realnie przenieść ryzyko z pośrednika na siebie** (a to oznacza: mieć opanowaną procedurę).
+
+**Najczęstsze błędy:**
+
+- Wypłata bez testu (zły adres).
+
+- Seed w chmurze / zdjęcie seeda (to proszenie się o kradzież).
+
+- Zostawienie wszystkiego na giełdzie, bo „istnieją KYC i regulacje” — regulacje nie gwarantują wypłacalności.
+
+- Mylisz „konto na giełdzie” z portfelem — konto to wpis w bazie danych, portfel to klucze.
+
+**Zrób jedną rzecz**
+
+3 stycznia wypłać bitcoina z platformy powierniczej na adres, którego klucze masz wyłącznie Ty. To jest cała idea Proof of Keys.
+
+Nie pozwól, by wygoda wygrała z bezpieczeństwem i odpowiedzialnością. To jest dokładnie ta słabość, na której żerują wszystkie przyszłe „niespodziewane” bankructwa i blokady wypłat.
+
+
+---
+
+---
+title: Standard Bitcoina w polskim Parlamencie · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/
+language: pl
+---
+
+> Chcemy wyposażyć parlamentarzystów w solidne podstawy wiedzy o naturze pieniądza i inflacji, oraz innowacji, jaką niesie Bitcoin, aby decyzje dotyczące przyszło
+
+Zbiórki
+
+# Standard Bitcoina w polskim Parlamencie
+
+[Zbiórki](https://dwadziesciajeden.pl/tag/zbiorki/)30 października 2025
+
+**Standard Bitcoina w Polskim Parlamencie** to kampania edukacyjna, której celem jest **sfinansowanie zakupu i przekazanie 560 egzemplarzy książki „Standard Bitcoina” Saifedeana Ammousa** – po jednym dla każdego polskiego posła i senatora.
+
+Chcemy **wyposażyć parlamentarzystów w solidną wiedzę o naturze pieniądza, inflacji oraz innowacji, jaką niesie ** [**Bitcoin**](https://dwadziesciajeden.pl/assets/media/files/2023/02/bitcoin_pl.pdf), by decyzje dotyczące przyszłości cyfrowych finansów w Polsce były podejmowane w sposób przemyślany, odpowiedzialny i sprzyjający rozwojowi.
+
+Książce towarzyszy **list otwarty**, w którym w duchu dialogu i konstruktywności apelujemy o refleksję nad kierunkiem polskiej polityki gospodarczej i technologicznej. To zaproszenie do rozmowy ponad podziałami o szansie, którą możemy wykorzystać, jeśli poznamy potencjał Bitcoina jako zdrowego, odpornego na inflację, pieniądza ery cyfrowej.
+
+## Przeczytaj list otwarty
+[List otwarty do Posłów i Senatorów Standard Bitcoina Plik w formacie PDF · 154 KB](https://dwadziesciajeden.pl/assets/media/files/2026/01/List-otwarty-do-Pos----w-i-Senator--w-Standard-Bitcoina-1.pdf)
+
+## Zobacz film
+
+[Bticoin dla Polski #BitcoinStandardPL #BitcoinWSejmie](https://www.youtube.com/watch?v=O6e7Lg7X62Y)
+
+## Skąd ten pomysł?
+Skąd ten pomysł?
+
+W ostatnich tygodniach w polskim Sejmie toczy się dyskusja nad krajową implementacją unijnych regulacji rynków kryptoaktywów (MiCA). Propozycje zawarte w projekcie liczącym setki stron budzą poważne obawy ze względu na ich złożoność oraz surowość przewidywanych kar.
+
+Takie podejście grozi zamrożeniem innowacji w usługach i produktach związanych z cyfrowym pieniądzem w Polsce na długie lata. W momencie, gdy świat coraz szybciej dostosowuje się do nowej, zdecentralizowanej rzeczywistości finansowej, Polska nie może pozwolić sobie na decyzje podejmowane w warunkach deficytu wiedzy i zrozumienia zjawiska, które już dziś kształtuje globalny system gospodarczy.
+
+**Dlaczego to ważne teraz?**
+
+Polska ma ogromny potencjał, by stać się miejscem, w którym innowacje finansowe rozwijają się w zgodzie z prawem, a nie pomimo niego. Rodzime firmy bitcoinowe już dziś płacą podatki, zatrudniają specjalistów i eksportują technologie wykorzystywane globalnie. Wystarczy nie przeszkadzać. Wystarczy tworzyć prawo oparte na wiedzy, a nie na strachu.
+
+Zbyt restrykcyjne regulacje nie zatrzymają rozwoju Bitcoina, ale zatrzymają jedynie polskich przedsiębiorców, inżynierów i twórców, którzy zamiast budować w kraju, będą zmuszeni działać za granicą. To strata, na którą nie możemy sobie pozwolić.
+
+**Nasze przesłanie**
+
+Nie prowadzimy kampanii politycznej. Prowadzimy **kampanię wiedzy** – bo tylko wiedza może uchronić Polskę przed błędami legislacyjnymi, które zamkną drzwi do epokowej szansy gospodarczej.
+
+**Dołącz do inicjatywy**
+
+Wspierając [kampanię na Geyser](https://geyser.fund/project/bitcoinparliamentpl), pomagasz w zakupie i wysyłce książek do wszystkich parlamentarzystów RP.
+
+Każdy egzemplarz to inwestycja w lepsze decyzje, w przyszłość innowacji i w Polskę, która potrafi rozumieć, zanim zacznie regulować.
+
+**Zespół inicjatywy „Standard Bitcoina w polskim parlamencie”**
+
+## Przebieg kampanii
+
+- 31 października 2025 **Startuje Standard Bitcoina w Parlamencie** W rocznicę whitepapera ruszamy ze zbiórką na Geyser i Spaces na X: 560 egzemplarzy „Standardu Bitcoina” Saifedeana Ammousa dla każdego posła i senatora, w 8 tygodni, ponad podziałami partyjnymi. [Obraz: Grafika kampanii Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/assets/kronika/2025-10-31_1984356197760450754_0.png) · [Post na X](https://x.com/21BitcoinPolska/status/1984261385359093847) · [O kampanii](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/)
+
+- 1 listopada 2025 **Pierwsi darczyńcy** Satsback i Cryptosteel wspierają kampanię. Zbiórka idzie wyłącznie w bitcoinie, a Freedom Publishing dostarcza książki po dobrej cenie. [Post na X](https://x.com/21BitcoinPolska/status/1984548718264430884)
+
+- 5 listopada 2025 **Standard Bitcoina trafi też do bibliotek** Wydawca obiecuje dodatkowe egzemplarze dla bibliotek publicznych za każdą książkę oddaną przez parlamentarzystę. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+- 14 listopada 2025 **Osobiste dedykacje** Każdy darczyńca może napisać przesłanie do wybranego posła lub senatora. [Post na X](https://x.com/21BitcoinPolska/status/1989338167980204388)
+
+- 21 listopada 2025 **Cykl rozmów na X Spaces** W piątki o 12:30 rozmawiamy na X Spaces o postępach zbiórki, pieniądzu, wolności i nowościach ze świata Bitcoina. [Post na X](https://x.com/21BitcoinPolska/status/1991588879191949344)
+
+- 17 grudnia 2025 **Cel zbiórki osiągnięty** Dociera do nas 625 egzemplarzy „Standardu Bitcoina”. 560 z nich trafi na początku stycznia do posłów i senatorów RP. [Obraz: Stos zaklejonych kartonów z książką Standard Bitcoina na wierzchu](https://dwadziesciajeden.pl/assets/kronika/2025-12-17_2001320953809121791_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2001320953809121791)
+
+- 4 stycznia 2026 **560 paczek gotowych** 3 stycznia drukujemy, pieczętujemy i pakujemy paczki w Warszawie. Do każdej książki dołączony list otwarty. Wysyłka rusza z nową sesją Sejmu. [Obraz: Książki rozłożone na regale przed wysyłką](https://dwadziesciajeden.pl/assets/kronika/2026-01-04_2007894977049944573_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2007894977049944573)
+
+- 8 stycznia 2026 **Wielki finał: książki w Sejmie i Senacie** Rano 560 egzemplarzy z listem otwartym trafia do biur podawczych Sejmu i Senatu RP. Zbiórkę na Geyser wsparło 80 osób. [Obraz: Pokój pełen kartonów z książkami przed dostawą](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_0.jpg) · [Obraz: Dostawczy samochód przed budynkiem w zimowej scenerii](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_1.jpg) · [Obraz: Wejście do punktu podawczego Kancelarii Sejmu i Senatu, Al. Na Skarpie 16](https://dwadziesciajeden.pl/assets/kronika/2026-01-08_2009269514953793771_2.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2009269514953793771)
+
+- 12 stycznia 2026 **Standard Bitcoina dla Prezydenta** List otwarty i egzemplarz książki trafiają do Kancelarii Prezydenta RP. [Obraz: Tablica Kancelarii Prezydenta Rzeczypospolitej Polskiej przy wejściu](https://dwadziesciajeden.pl/assets/kronika/2026-01-12_2010747298523820470_0.jpg) · [Post na X](https://x.com/21BitcoinPolska/status/2010746380122517794)
+
+- 14 stycznia 2026 **Rozliczenie zbiórki** Publikujemy finansowe podsumowanie zbiórki. Z 625 egzemplarzy 560 trafiło do Sejmu i Senatu, 40 do Polskiego Stowarzyszenia Bitcoin, 2 do Prezydenta, 23 zostało na dalsze działania. 16 stycznia omawiamy kampanię na Spaces. [Post na X](https://x.com/21BitcoinPolska/status/2011514515821904156)
+
+- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden)
+
+
+---
+
+---
+title: Artykuły · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/tag/artykuly/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Tag
+
+# Artykuły
+
+Teksty o Bitcoinie, bezpieczeństwie i pieniądzu.
+
+[Artykuły · 23 października 2026 Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Artykuły · 3 stycznia 2026 Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie](https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/)
+
+
+---
+
+---
+title: Meetupy · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/tag/meetupy/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Tag
+
+# Meetupy
+
+Oto koordynaty czasoprzestrzenne naszych meetupów w przestrzeni fizycznej.
+
+[Meetupy · 8 lutego 2023 Meetup w Warszawie, 17 II 2023](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/) · [Meetupy · 9 stycznia 2023 Meetup we Wrocławiu, 12 I 2023](https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/) · [Meetupy · 23 listopada 2022 Meetup w Warszawie, 2 XII 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/) · [Meetupy · 12 października 2022 Meetup w Warszawie, 4 XI 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/)
+
+
+---
+
+---
+title: Miasta · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/tag/miasta/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Tag
+
+# Miasta
+
+Strony miast, w których się spotykamy.
+
+[Warszawa BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.](https://dwadziesciajeden.pl/warszawa/) · [Kraków Meetupy w Techies i wykłady. Terminy na czacie.](https://dwadziesciajeden.pl/krakow/) · [Poznań BitcoinWalki i własna grupa na Telegramie.](https://dwadziesciajeden.pl/poznan/) · [Wrocław Meetup od 2023 i BitcoinWalk od grudnia 2025.](https://dwadziesciajeden.pl/wroclaw/) · [Katowice Śląska społeczność na BTC Map: Dwadziścia Jedyn Katowice.](https://dwadziesciajeden.pl/katowice/)
+
+
+---
+
+---
+title: Zasoby · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/tag/zasoby/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Tag
+
+# Zasoby
+
+Materiały do pobrania.
+
+[Zasoby · 10 lutego 2023 Bitcoin Whitepaper](https://dwadziesciajeden.pl/bitcoin-whitepaper/)
+
+
+---
+
+---
+title: Zbiórki · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/tag/zbiorki/
+language: pl
+---
+
+> Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+
+Tag
+
+# Zbiórki
+
+Nasze zbiórki w bitcoinie.
+
+[Artykuły · 23 października 2026 Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Zbiórki · 30 października 2025 Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/) · [Zbiórki · 15 stycznia 2024 Zbieramy satki na WOŚP! 🧡](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/)
+
+
+---
+
+---
+title: Zbieramy satki na WOŚP! 🧡 · Dwadzieścia Jeden
+url: https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/
+language: pl
+---
+
+> Już w niedzielę, 28. stycznia 2024, dołącz do nas w obchodach 32. finału Wielkiej Orkiestry Świątecznej Pomocy. Zainspirowało to nas do zrobienia eksperymentu ł
+
+Zbiórki
+
+# Zbieramy satki na WOŚP! 🧡
+
+[Zbiórki](https://dwadziesciajeden.pl/tag/zbiorki/)15 stycznia 2024
+
+Już w niedzielę, 28. stycznia 2024, dołącz do nas w obchodach 32. finału Wielkiej Orkiestry Świątecznej Pomocy. Zainspirowało to nas do zrobienia eksperymentu łączącego akcję charytatywną z orangepillingiem . W grupie polskich bitcoinerów szybko zapadła decyzja o tym, że połączymy pomoc "orkiestrze" z naszym nieznającym granic pieniądzem wolności - Bitcoinem.
+
+Polacy znają temat, a kanałów wpłaty jest wiele. Dlatego zdecydowaliśmy się sprawdzić niszę zagraniczną i wykorzystać bitcoin, nasze znajomości i "zasięgi", aby zebrać satoshi na tegoroczne cele fundacji. Celem drugorzędnym jest zwiększenie widoczności Bitcoina wśród rodaków jako bardzo skutecznego w crowdfundingu środka płatności. Orangepilling , który może zakiełkować zainteresowaniem o bitcoinie i tym, co on reprezentuje. Widzicie w przyszłości zbitcoinowany **Pol'and'rock**? 😉
+
+Zatem sięgamy do społeczności poza krajem!
+
+Na bitcoinowej platformie crowdfundingowej [Geyser](https://geyser.fund/), znajdziesz stronę naszej zbiórki, na której zawarliśmy masę informacji w języku angielskim. Zobacz ją koniecznie i przekaż znajomym bitcoinerom z zagranicy.
+
+### Strona zbiórki
+
+[https://geyser.fund/project/greatorchestraofchristmascharity](https://geyser.fund/project/greatorchestraofchristmascharity) · [Crowdfunding with Bitcoin Geyser Fund - Crowdfunding with Bitcoin Geyser is a bitcoin crowdfunding platform that enables campaign creators to launch their projects with rewards and engage their communities with posts and content.](https://geyser.fund/project/greatorchestraofchristmascharity)
+
+Twoje wsparcie zostanie docenione! Za każdą wpłatę większą lub równą 1$ otrzymasz specjalną odznakę ([Badge NIP-58](https://nostr-nips.com/nip-58)) w sieci Nostr jako potwierdzenie Twojego wkładu w szczytną sprawę! Tak wygląda moja odznaka:
+
+(Obraz z oryginalnego wpisu nie zachował się w archiwum.)
+
+Nasza zbiórka odznacza się efektywnością. Dzięki wykorzystaniu infrastruktury naszej społeczności, blisko 100% Twojej wpłaty trafia bezpośrednio na cele WOŚP, bez dodatkowych prowizji Geyser. Zebrane środki zostaną zamienione w [kantorze Quark](https://quark.house/) na złotówki i przekazane fundacji.
+
+Twój udział może sięgnąć dalej! Możesz przesłać informacje o niej w mediach społecznościowych. Oto wątek na ten temat na Twitterze:
+[X · @StackingSaunter Wątek o zbiórce na X January 14, 2024](https://x.com/StackingSaunter/status/1746556448379641961)
+
+Z nadzieją na Twoje zaangażowanie i z serdecznymi podziękowaniami,
+
+**JesterHodl**
+
+Wpis odtworzony z archiwum strony. [Kopia w Wayback Machine](https://web.archive.org/web/20241113143603/https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/).

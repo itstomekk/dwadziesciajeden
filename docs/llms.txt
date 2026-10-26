@@ -1,0 +1,53 @@
+# Dwadzieścia Jeden
+
+> Polska społeczność Bitcoin Only (21 Bitcoin Polska), część międzynarodowej sieci TwentyOne. Meetupy w polskich miastach, edukacja o Bitcoinie, tłumaczenia, projekty społeczności i kronika od 2021 roku. Edukacja, nie porady inwestycyjne.
+
+Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treść w jednym pliku: https://dwadziesciajeden.pl/llms-full.txt
+
+## O społeczności
+
+- [Dwadzieścia Jeden: polska społeczność Bitcoin Only](https://dwadziesciajeden.pl/index.md): Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
+- [Kim jesteśmy?](https://dwadziesciajeden.pl/kim-jestesmy/index.md): Jeśli choć trochę obserwujesz świat i zachodzisz w głowę, dlaczego nagle nasze życie staje się groteskowe, to z pewnością szukasz tego przyczyn i…
+- [Zasady i sieć TwentyOne](https://dwadziesciajeden.pl/zasady/index.md): Zasady społeczności Dwadzieścia Jeden i idea sieci TwentyOne.
+- [Dołącz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/index.md): Jeśli szukasz ludzi z którymi mógłbyś: podyskutować o bieżących wydarzeniach, zasięgnąć porady lub konsultacji, otworzyć kanał Lightning, sprawdzić
+- [Kronika](https://dwadziesciajeden.pl/kronika/index.md): Kronika społeczności Dwadzieścia Jeden: meetupy, zbiórki, kampanie.
+
+## Edukacja
+
+- [Edukacja](https://dwadziesciajeden.pl/edukacja/index.md): Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania.
+- [Słowniczek](https://dwadziesciajeden.pl/slowniczek/index.md)
+- [Bitcoin Whitepaper](https://dwadziesciajeden.pl/bitcoin-whitepaper/index.md): Decydując się na hosting białej księgi Bitcoina, wyrażamy dla niego nasze poparcie. Poniżej znajdziesz linki do wersji po Polsku, tłumaczonej przez…
+- [Artykuły](https://dwadziesciajeden.pl/artykuly/index.md)
+
+## Miasta, meetupy i projekty
+
+- [Bitcoinowa Mapa Polski](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/index.md): Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność.
+- [Warszawa](https://dwadziesciajeden.pl/warszawa/index.md): BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.
+- [Kraków](https://dwadziesciajeden.pl/krakow/index.md): Meetupy w Techies i wykłady. Terminy na czacie.
+- [Poznań](https://dwadziesciajeden.pl/poznan/index.md): BitcoinWalki i własna grupa na Telegramie.
+- [Wrocław](https://dwadziesciajeden.pl/wroclaw/index.md): Meetup od 2023 i BitcoinWalk od grudnia 2025.
+- [Katowice](https://dwadziesciajeden.pl/katowice/index.md): Śląska społeczność na BTC Map: Dwadziścia Jedyn Katowice.
+- [Projekty i inicjatywy](https://dwadziesciajeden.pl/projekty/index.md): Projekty społeczności Dwadzieścia Jeden, zaprzyjaźnieni i polskie inicjatywy bitcoinowe.
+- [Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/index.md): Pełna historia kampanii Standard Bitcoina w polskim Parlamencie: skąd pomysł, jak zbieraliśmy, kto pomógł i co dalej.
+
+## Optional
+
+- [JesterHodl](https://dwadziesciajeden.pl/autor/jesterhodl/index.md)
+- [Meetup w Warszawie, 17 II 2023](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/index.md): ⚡ BITCOINERS IN POLAND, UNITE! ⚡ Luźne spotkanie w barze, integracja społeczności Bitcoin maxi w Warszawie. Jesteś zafascynowana/y rewolucją, jaka…
+- [Meetup w Warszawie, 2 XII 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/index.md): Społeczność Bitcoin Only w grudniu 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej: Link do wydarzenia: Meetup.com Facebook Miejsce…
+- [Meetup w Warszawie, 4 XI 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/index.md): Społeczność Bitcoin Only w listopadzie 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej: Link do wydarzenia Meetup.com : 21 🟠 PL -…
+- [Meetup we Wrocławiu, 12 I 2023](https://dwadziesciajeden.pl/meetup-we-wroclawiu-12-i-2023/index.md): Nowy rok rozpoczynamy meetupem we Wrocławiu! Widzimy sie w Kawiarni Literatka, Rynek 56/57. Szczegóły poniżej: Link do wydarzenia: Facebook Miejsce…
+- [Proof of Keys (3 stycznia): doroczny „test zaufania” dla Bitcoina i dla Ciebie](https://dwadziesciajeden.pl/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/index.md): Proof of Keys przypada 3 stycznia i polega na wypłaceniu bitcoinów z platform powierniczych (giełd, brokerów, aplikacji fintech) do portfela, którego…
+- [Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/index.md): Chcemy wyposażyć parlamentarzystów w solidne podstawy wiedzy o naturze pieniądza i inflacji, oraz innowacji, jaką niesie Bitcoin, aby decyzje…
+- [Artykuły](https://dwadziesciajeden.pl/tag/artykuly/index.md)
+- [Meetupy](https://dwadziesciajeden.pl/tag/meetupy/index.md)
+- [Miasta](https://dwadziesciajeden.pl/tag/miasta/index.md)
+- [Zasoby](https://dwadziesciajeden.pl/tag/zasoby/index.md)
+- [Zbiórki](https://dwadziesciajeden.pl/tag/zbiorki/index.md)
+- [Zbieramy satki na WOŚP! 🧡](https://dwadziesciajeden.pl/zbieramy-satki-na-wosp/index.md): Już w niedzielę, 28. stycznia 2024, dołącz do nas w obchodach 32. finału Wielkiej Orkiestry Świątecznej Pomocy. Zainspirowało to nas do zrobienia…
+
+## Kontakt
+
+- Telegram: https://t.me/dwadziesciajeden
+- X: https://x.com/21BitcoinPolska
+- E-mail: kontakt@dwadziesciajeden.pl

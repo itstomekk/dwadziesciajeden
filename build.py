@@ -7,6 +7,7 @@ BASE: URL prefix. GitHub Pages project site = "/dwadziesciajeden"; custom domain
 NOINDEX stays True until the owner says go live.
 """
 import html
+import html.parser
 import json
 import os
 import re
@@ -30,6 +31,8 @@ NOSTR_NPUB = "npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc"
 NOSTR_ARMADA = "https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33"
 NOSTR_URL = "https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2"
 EMAIL = "kontakt@dwadziesciajeden.pl"
+GOATCOUNTER = "https://dwadziesciajeden.goatcounter.com/count"  # cookieless, no consent banner needed
+INDEXNOW_KEY = "5f1d2a9c8e7b4630a1c2d3e4f5a6b7c8"  # public by design (served as /<key>.txt)
 
 # brand icons: Telegram + X from Simple Icons (CC0), Nostr from mbarulli/nostr-logo (CC0)
 def icon(name):
@@ -118,7 +121,9 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
 <meta name="description" content="{e(desc)}">
 {robots}
 <link rel="canonical" href="{SITE_URL}{path}">
-<meta property="og:type" content="{'article' if kind == 'post' else 'website'}">
+{md_alt(path)}<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Dwadzieścia Jeden">
+{jsonld(path)}<meta property="og:type" content="{'article' if kind == 'post' else 'website'}">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:image" content="{SITE_URL}{og.replace(BASE, '', 1) if og.startswith(BASE) else og}">
@@ -139,7 +144,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
     <nav class="nav" id="nav" aria-label="Główne menu">{nav}</nav>
     <div class="top__act">
       <button class="icon-btn" type="button" data-search-open aria-label="Szukaj"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
-      <a class="btn btn--primary btn--sm" href="{TG}" rel="noopener">Dołącz</a>
+      <a class="btn btn--primary btn--sm" href="{TG}" rel="noopener" data-goatcounter-click="dolacz-telegram-naglowek" data-goatcounter-title="Dołącz (nagłówek)">Dołącz</a>
       <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -187,15 +192,164 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
   </div>
 </div>
 <script src="{b('/assets/site.js')}?v={BUILT}" defer></script>
+<script data-goatcounter="{GOATCOUNTER}" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
+
+
+def md_url(path):
+    """Markdown twin URL for a page path, or None (only directory pages get twins)."""
+    return path + "index.md" if path.endswith("/") else None
+
+
+def md_alt(path):
+    u = md_url(path)
+    return f'<link rel="alternate" type="text/markdown" href="{b(u)}">\n' if u else ""
+
+
+def jsonld(path):
+    if path != "/":
+        return ""
+    data = {"@context": "https://schema.org", "@graph": [
+        {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": "Dwadzieścia Jeden",
+         "alternateName": "21 Bitcoin Polska", "url": f"{SITE_URL}/", "logo": f"{SITE_URL}/assets/logo.jpg",
+         "email": EMAIL, "description": "Polska społeczność Bitcoin Only, część sieci TwentyOne.",
+         "sameAs": [X_URL, TG, "https://github.com/itstomekk/dwadziesciajeden", "https://twentyone.world/"]},
+        {"@type": "WebSite", "@id": f"{SITE_URL}/#site", "url": f"{SITE_URL}/", "name": "Dwadzieścia Jeden",
+         "inLanguage": "pl-PL", "publisher": {"@id": f"{SITE_URL}/#org"}}]}
+    return f'<script type="application/ld+json">{json.dumps(data, ensure_ascii=False)}</script>\n'
+
+
+class _MD(html.parser.HTMLParser):
+    """Small HTML -> Markdown converter for the <main> of a page (stdlib only)."""
+    SKIP = {"script", "style", "svg", "button", "iframe", "noscript", "form", "input"}
+    BLOCK = {"p", "div", "section", "article", "header", "ul", "ol", "dl", "table", "figure", "blockquote", "nav", "li", "dt", "dd", "tr", "br"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.out, self.skip, self.href, self.li = [], 0, [], 0
+        self.drop_tag, self.drop_depth = None, 0
+
+    def handle_starttag(self, tag, a):
+        a = dict(a)
+        if self.drop_tag:
+            self.drop_depth += tag == self.drop_tag
+            return
+        cls = (a.get("class") or "").split()
+        if a.get("aria-hidden") == "true" or {"shell", "dateline", "skip", "crumbs"} & set(cls):
+            if tag not in ("img", "br", "input"):
+                self.drop_tag, self.drop_depth = tag, 1
+            return
+        if tag in self.SKIP:
+            self.skip += 1
+            return
+        if self.skip:
+            return
+        if re.fullmatch(r"h[1-6]", tag):
+            self.out.append(" **" if self.li else "\n\n" + "#" * int(tag[1]) + " ")
+        elif tag == "li":
+            self.li += 1
+            self.out.append("\n- ")
+        elif self.li and tag in self.BLOCK:
+            self.out.append(" ")
+        elif tag == "dt":
+            self.out.append("\n\n**")
+        elif tag == "dd":
+            self.out.append("\n")
+        elif tag in self.BLOCK:
+            self.out.append("\n\n")
+        elif tag in ("strong", "b"):
+            self.out.append(" **")
+        elif tag == "a":
+            h = a.get("href") or ""
+            if h.startswith("/"):
+                h = SITE_URL + (h[len(BASE):] if BASE and h.startswith(BASE) else h)
+            self.href.append(h)
+            self.out.append("[")
+        elif tag == "img" and a.get("alt"):
+            self.out.append(f"Obraz: {a['alt']}")
+
+    def handle_endtag(self, tag):
+        if self.drop_tag:
+            if tag == self.drop_tag:
+                self.drop_depth -= 1
+                if not self.drop_depth:
+                    self.drop_tag = None
+            return
+        if tag in ("span", "small", "time", "em", "kbd", "code"):
+            self.out.append(" ")
+        if tag in self.SKIP:
+            self.skip = max(0, self.skip - 1)
+            return
+        if self.skip:
+            return
+        if tag == "a" and self.href:
+            h = self.href.pop()
+            self.out.append(f"]({h})" if h and not h.startswith("#") else "]")
+        elif tag in ("strong", "b"):
+            self.out.append("** ")
+        elif tag == "dt":
+            self.out.append("**")
+        elif tag == "li":
+            self.li = max(0, self.li - 1)
+            self.out.append("\n")
+        elif self.li and re.fullmatch(r"h[1-6]", tag):
+            self.out.append("** ")
+        elif self.li and tag in self.BLOCK:
+            self.out.append(" ")
+        elif re.fullmatch(r"h[1-6]", tag) or tag in self.BLOCK:
+            self.out.append("\n")
+
+    def handle_data(self, d):
+        if not self.skip and not self.drop_tag:
+            self.out.append(re.sub(r"\s+", " ", d))
+
+    def md(self):
+        t = "".join(self.out)
+        t = re.sub(r"\[\s*\]\([^)]*\)", "", t)          # empty links (image-only)
+        t = re.sub(r"\)\s*\[", ") · [", t)
+        t = re.sub(r"\*\* +([\]),.:;!?])", r"**\1", t)
+        t = re.sub(r"\[\s+", "[", t)
+        t = re.sub(r"\s+\]", "]", t)
+        t = re.sub(r"[ \t]{2,}", " ", t)
+        t = re.sub(r"[ \t]+\n", "\n", t)
+        t = re.sub(r"\n[ \t]+", "\n", t)
+        t = re.sub(r"\n- \n", "\n- ", t)
+        t = re.sub(r"\*\*\s*\*\*", "", t)
+        t = re.sub(r"\n{3,}", "\n\n", t)
+        return t.strip() + "\n"
+
+
+md_pages = []  # (path, title, description) for llms.txt
+
+
+def write_twin(path, doc):
+    u = md_url(path)
+    m = re.search(r'<main id="tresc">(.*)</main>', doc, re.S)
+    if not u or not m or 'name="robots" content="noindex' in doc:
+        return
+    title = html.unescape(re.search(r"<title>(.*?)</title>", doc, re.S).group(1))
+    desc = (html.unescape(re.search(r'<meta name="description" content="(.*?)"', doc, re.S).group(1)).strip()).replace("\n", " ")
+    p = _MD()
+    p.feed(m.group(1))
+    body = (f"---\ntitle: {title}\nurl: {SITE_URL}{path}\nlanguage: pl\n---\n\n"
+            f"> {desc}\n\n" + p.md())
+    (OUT / u.lstrip("/")).write_text(body, encoding="utf-8")
+    desc = re.sub(r"\s*\*\s+", ", ", re.sub(r"\s+", " ", desc)).replace(":,", ":").replace(",,", ",")
+    short = title.replace(" · Dwadzieścia Jeden", "")
+    if desc.startswith("Dwadzieścia Jeden: polska społeczność bitcoinowych") and path != "/":
+        desc = ""
+    if len(desc) > 150:
+        desc = desc[:150].rsplit(" ", 1)[0].rstrip(",.:;") + "…"
+    md_pages.append((path, short, desc))
 
 
 def write(path, doc):
     target = OUT / path.strip("/") / "index.html" if path.endswith("/") else OUT / path.lstrip("/")
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(doc, encoding="utf-8")
+    write_twin(path, doc)
 
 
 def add_index(path, title, kind, text, tags=()):
@@ -570,12 +724,57 @@ def build():
     (OUT / "404.html").write_text(layout("/404.html", "Nie ma takiej strony",
                                          page_head("404", "Nie ma takiej strony", f'Spróbuj wyszukiwarki albo wróć na <a href="{b("/")}">stronę główną</a>.')),
                                   encoding="utf-8")
-    (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n" if NOINDEX else f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+    (OUT / "robots.txt").write_text("User-agent: *\nDisallow: /\n" if NOINDEX else
+                                    "# Content signals: search engines and AI answers may use this site.\n"
+                                    "User-agent: *\nContent-Signal: search=yes, ai-input=yes\nAllow: /\n\n"
+                                    f"Sitemap: {SITE_URL}/sitemap.xml\n# AI index: {SITE_URL}/llms.txt\n")
+    if not NOINDEX:
+        write_llms()
+        (OUT / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY)
     urls = sorted({p["u"].split("#")[0] for p in pages_index})
     (OUT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
                                      + "".join(f"<url><loc>{SITE_URL}{u}</loc></url>" for u in urls) + "</urlset>\n", encoding="utf-8")
     (OUT / "search.json").write_text(json.dumps(pages_index, ensure_ascii=False), encoding="utf-8")
+    print(f"twins: {len(md_pages)} markdown pages")
     print(f"built {len(list(OUT.rglob('index.html')))} pages, {len(pages_index)} search records, base='{BASE}', noindex={NOINDEX}")
+
+
+LLMS_SECTIONS = [
+    ("O społeczności", ["/", "/kim-jestesmy/", "/zasady/", "/dolacz-do-nas/", "/kronika/"]),
+    ("Edukacja", ["/edukacja/", "/slowniczek/", "/bitcoin-whitepaper/", "/artykuly/"]),
+    ("Miasta, meetupy i projekty", ["/bitcoinowa-mapa-polski/", "/warszawa/", "/krakow/", "/poznan/", "/wroclaw/", "/katowice/", "/projekty/", "/bitcoin-w-parlamencie/"]),
+]
+
+
+def write_llms():
+    """llms.txt (index of Markdown twins) and llms-full.txt (all twins in one file)."""
+    known = {p: (t, d) for p, t, d in md_pages}
+    used, lines = set(), ["# Dwadzieścia Jeden", "",
+                          "> Polska społeczność Bitcoin Only (21 Bitcoin Polska), część międzynarodowej sieci TwentyOne. "
+                          "Meetupy w polskich miastach, edukacja o Bitcoinie, tłumaczenia, projekty społeczności i kronika od 2021 roku. "
+                          "Edukacja, nie porady inwestycyjne.", "",
+                          f"Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treść w jednym pliku: {SITE_URL}/llms-full.txt", ""]
+    for name, paths in LLMS_SECTIONS:
+        lines.append(f"## {name}\n")
+        for p in paths:
+            if p in known:
+                used.add(p)
+                t, d = known[p]
+                lines.append(f"- [{t}]({SITE_URL}{md_url(p)})" + (f": {d}" if d else ""))
+        lines.append("")
+    rest = [p for p, *_ in md_pages if p not in used]
+    if rest:
+        lines.append("## Optional\n")
+        for p in sorted(rest):
+            t, d = known[p]
+            lines.append(f"- [{t}]({SITE_URL}{md_url(p)})" + (f": {d}" if d else ""))
+        lines.append("")
+    lines.append("## Kontakt\n")
+    lines.append(f"- Telegram: {TG}\n- X: {X_URL}\n- E-mail: {EMAIL}\n")
+    (OUT / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
+    order = [p for _, ps in LLMS_SECTIONS for p in ps if p in known] + sorted(rest)
+    full = "\n\n---\n\n".join((OUT / md_url(p).lstrip("/")).read_text(encoding="utf-8") for p in order)
+    (OUT / "llms-full.txt").write_text(full, encoding="utf-8")
 
 
 def slugify(s):

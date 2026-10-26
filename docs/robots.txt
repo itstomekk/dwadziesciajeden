@@ -1,3 +1,7 @@
+# Content signals: search engines and AI answers may use this site.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes
 Allow: /
+
 Sitemap: https://dwadziesciajeden.pl/sitemap.xml
+# AI index: https://dwadziesciajeden.pl/llms.txt

@@ -3,7 +3,7 @@
 - PASS **old-urls**: 26/26 old dwadziesciajeden.pl paths return 200
 - PASS **internal-links**: 38 pages scanned; missing targets: 0
 - PASS **clean-markup**: leftovers: none
-- PASS **preview-noindex**: robots.txt Disallow all + meta noindex on every page
+- PASS **launch-indexable**: robots allows + sitemap, no noindex pages, CNAME='dwadziesciajeden.pl'
 - PASS **placeholders**: open placeholders: ['newsletter']
 - PASS **console-errors**: 38 page loads; pages with errors: 0; first: none
 - PASS **no-overflow**: horizontal overflow: none
