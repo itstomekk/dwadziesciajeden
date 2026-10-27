@@ -77,6 +77,12 @@ python build.py
 
 Literówka, nieaktualny link, nowe miejsce na mapie albo brakująca polska książka? Otwórz issue, pull request albo po prostu napisz na [czacie](https://t.me/dwadziesciajeden). Szczegóły techniczne: [DEVELOPMENT.md](DEVELOPMENT.md).
 
+## 📄 Licencje
+
+**Kod** (`build.py`, `qa/`, `tools/`, szablony, CSS i JS) jest na licencji [MIT](LICENSE).
+
+**Teksty napisane przez nas** (artykuł o Parlamencie, kronika, słowniczek) są na licencji [CC BY 4.0](LICENSE-CONTENT.md). Poza tą licencją zostają cudze teksty i cytaty, logo i znaki (w tym TwentyOne i logo projektów), okładki książek, zdjęcia, miniatury z YouTube oraz dane z mapy. [Pełna lista](LICENSE-CONTENT.md).
+
 ---
 
 <details>
@@ -84,7 +90,7 @@ Literówka, nieaktualny link, nowe miejsce na mapie albo brakująca polska ksią
 
 **Dwadzieścia Jeden** ("Twenty-One") is the Polish Bitcoin-only community and part of the [TwentyOne](https://twentyone.world/) network. Since block #677,896 (April 2021) we have been translating Bitcoin material into Polish, running meetups and BitcoinWalks in five cities, mapping places that accept bitcoin, and in January 2026 we delivered 560 copies of *The Bitcoin Standard* to every member of the Polish Parliament. No altcoins, nothing for sale, no investment advice.
 
-This repo holds the source of [dwadziesciajeden.pl](https://dwadziesciajeden.pl). Say hi on [Telegram](https://t.me/dwadziesciajeden).
+This repo holds the source of [dwadziesciajeden.pl](https://dwadziesciajeden.pl). Code is MIT ([LICENSE](LICENSE)); our own original texts are CC BY 4.0 ([LICENSE-CONTENT.md](LICENSE-CONTENT.md)). Say hi on [Telegram](https://t.me/dwadziesciajeden).
 
 </details>
 
