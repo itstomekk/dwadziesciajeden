@@ -61,7 +61,9 @@ History of the cutover:
 
 - GitHub Pages custom domain verified by the owner (API: protected_domain_state verified, https_enforced true).
 - Map page and all 5 city pages: btcmap.org iframes replaced by our Leaflet map + filters + grouped list (see DEVELOPMENT.md "Map"). Snapshot 2026-10-27 UTC: 302 places in PL (160 ATMs, 51 exchanges, 91 merchants); 5 places across the border dropped. QA ALL PASS.
-- Data is a snapshot: refresh = `python tools/fetch_btcmap.py && python build.py`. No cron yet (owner decision).
+- Data is a snapshot: manual refresh = `python tools/fetch_btcmap.py && python build.py`.
+- Monthly refresh (owner asked 2026-10-27): Hermes cron `bf6d33ac848f` `dwadziesciajeden-btcmap-monthly`, 1st of the month 04:00, no-agent, wrapper `%LOCALAPPDATA%\hermes\scripts\dj_btcmap_monthly.py` -> `tools/refresh_btcmap_monthly.py`. Works in a fresh clone (local edits never published), aborts if the place count drops >20%, commits only `content/btcmap-pl.json` + `docs/`, pushes, posts one line to HCC GENERAL 2 (silent when nothing changed).
+- 2026-10-27: map made compact (full content width, search + selects in one row, chips + payments in a second row) and ATMs + exchanges merged into one toggle chip "Bankomaty i kantory".
 
 ## Owner rules
 
