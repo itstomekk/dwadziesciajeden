@@ -95,21 +95,22 @@
         var b = el("button", { type: "button", "aria-pressed": on ? "true" : "false", "data-key": key },
           [el("span", { class: "bmap__lbl", text: label }), el("span", { class: "bmap__n" })]);
         b.addEventListener("click", function () {
-          var set = kind === "cat" ? st.cats : st.pays;
-          set[key] = !set[key]; b.setAttribute("aria-pressed", set[key] ? "true" : "false"); update(true);
+          var on;
+          if (kind === "exch") { on = !(st.cats.atm || st.cats.kantor); st.cats.atm = st.cats.kantor = on; }
+          else { var set = kind === "cat" ? st.cats : st.pays; on = set[key] = !set[key]; }
+          b.setAttribute("aria-pressed", on ? "true" : "false"); update(true);
         });
         box.appendChild(b);
       }
-      CATS.forEach(function (c) { if (all.some(function (p) { return p.c === c[0]; })) chip(catBox, c[0], c[1], st.cats[c[0]], "cat"); });
+      CATS.forEach(function (c) {
+        if (!DEFAULT_OFF[c[0]] && all.some(function (p) { return p.c === c[0]; })) chip(catBox, c[0], c[1], st.cats[c[0]], "cat");
+      });
+      // ATMs and exchanges: one switch for both
+      if (all.some(function (p) { return DEFAULT_OFF[p.c]; })) chip(catBox, "exch", "Bankomaty i kantory", st.cats.atm || st.cats.kantor, "exch");
       PAYS.forEach(function (p) { chip(payBox, p[0], p[1], st.pays[p[0]], "pay"); });
 
-      var row = el("div", { class: "bmap__row" }, [lockCity ? null : citySel, freshSel, groupSel, reset]);
-      tools.appendChild(search);
-      tools.appendChild(el("div", { class: "bmap__lbl-row", text: "rodzaj" }));
-      tools.appendChild(catBox);
-      tools.appendChild(el("div", { class: "bmap__lbl-row", text: "płatność (wszystkie zaznaczone naraz)" }));
-      tools.appendChild(payBox);
-      tools.appendChild(row);
+      tools.appendChild(el("div", { class: "bmap__row" }, [search, lockCity ? null : citySel, freshSel, groupSel]));
+      tools.appendChild(el("div", { class: "bmap__chiprow" }, [catBox, payBox, reset]));
 
       var t;
       search.addEventListener("input", function () { clearTimeout(t); t = setTimeout(function () { st.q = search.value; update(true); }, 150); });
@@ -121,7 +122,8 @@
         CATS.forEach(function (c) { st.cats[c[0]] = !DEFAULT_OFF[c[0]] || !!lockCity; });
         st.pays = {};
         root.querySelectorAll(".bmap__chips button").forEach(function (b) {
-          var k = b.getAttribute("data-key"); b.setAttribute("aria-pressed", (st.cats[k] || st.pays[k]) ? "true" : "false");
+          var k = b.getAttribute("data-key");
+          b.setAttribute("aria-pressed", (k === "exch" ? st.cats.atm : st.cats[k] || st.pays[k]) ? "true" : "false");
         });
         update(true);
       });
@@ -188,7 +190,9 @@
         // chip counts: what you would get with that chip on, given the other filters
         catBox.querySelectorAll("button").forEach(function (b) {
           var k = b.getAttribute("data-key");
-          b.querySelector(".bmap__n").textContent = all.filter(function (p) { return p.c === k && passes(p, "cat"); }).length;
+          b.querySelector(".bmap__n").textContent = all.filter(function (p) {
+            return (k === "exch" ? DEFAULT_OFF[p.c] : p.c === k) && passes(p, "cat");
+          }).length;
         });
         payBox.querySelectorAll("button").forEach(function (b) {
           var k = b.getAttribute("data-key");
