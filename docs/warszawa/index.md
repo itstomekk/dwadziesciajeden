@@ -33,4 +33,10 @@ Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjście
 
 - [Pozostałe spotkania w kronice](https://dwadziesciajeden.pl/kronika/)
 
-### BTCMap
+### Gdzie zapłacisz bitcoinem: Warszawa
+
+**btcmap --miasto warszawa…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Warszawa na BTC Map: [btcmap.org/community/dwadzieścia-jeden-warszawa](https://btcmap.org/community/dwadzieścia-jeden-warszawa).

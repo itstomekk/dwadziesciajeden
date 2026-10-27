@@ -28,4 +28,10 @@ Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjście
 
 Formuła spacerów pochodzi z [bitcoinwalk.org](https://bitcoinwalk.org/). Terminy publikujemy na Meetup, Telegramie i X.
 
-### BTCMap
+### Gdzie zapłacisz bitcoinem: Poznań
+
+**btcmap --miasto poznań…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Poznań na BTC Map: [btcmap.org/community/dwadzieścia-jeden-poznań](https://btcmap.org/community/dwadzieścia-jeden-poznań).

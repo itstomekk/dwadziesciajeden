@@ -57,6 +57,12 @@ History of the cutover:
 - Biblioteka: new section "Katalogi i listy" (`/edukacja/#katalogi`) with Awesome Bitcoin Culture and Awesome Bitcoin Events (owner request). Live, QA ALL PASS, commit 14a5b74.
 - Friendly-project candidates mined from both Telegram groups, checked live: `private/friendly-projects-candidates-2026-10-26.md` (local only, not in git). Owner picked 1, 2, 4, 6, 7, 10: live (commit abf6107). Round 2 list (#11-17) is in the same file, waiting for a pick; the conversation continues in Telegram HERMES CONTROL CENTER, topic GENERAL 2 (4359). Ask authors before listing member-built tools (old group rule: added with the author's consent).
 
+## Round 6 (2026-10-26): own BTC Map view
+
+- GitHub Pages custom domain verified by the owner (API: protected_domain_state verified, https_enforced true).
+- Map page and all 5 city pages: btcmap.org iframes replaced by our Leaflet map + filters + grouped list (see DEVELOPMENT.md "Map"). Snapshot 2026-10-27 UTC: 302 places in PL (160 ATMs, 51 exchanges, 91 merchants); 5 places across the border dropped. QA ALL PASS.
+- Data is a snapshot: refresh = `python tools/fetch_btcmap.py && python build.py`. No cron yet (owner decision).
+
 ## Owner rules
 
 - Owner 2026-10-23: the community started as Telegram group "yellowpilled" (created 2021-04-05); the current group was created 2022-06-06 as a redesign joining the 21 network. BFF grew out of 21. Topic restrictions: see private/NOTES.md (local only). Sometimes call altcoins "sh**coiny". Friends added: Alby, Deltabadger, Quark (Quark is NOT in YouBuyBitcoin Orange Pages as of 2026-10-23; its network notice says shops reopen 2026-11-02 after MiCA licensing).

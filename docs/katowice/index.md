@@ -14,4 +14,10 @@ Na Śląsku działa społeczność **Dwadziścia Jedyn Katowice** w BTC Map, kt�
 
 Organizujesz spotkania na Śląsku? Daj znać na [naszym czacie](https://t.me/dwadziesciajeden), dopiszemy je tutaj.
 
-### BTC Map
+### Gdzie zapłacisz bitcoinem: Katowice
+
+**btcmap --miasto katowice…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Katowice na BTC Map: [btcmap.org/community/dwadziścia-jedyn-katowice](https://btcmap.org/community/dwadziścia-jedyn-katowice).

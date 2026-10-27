@@ -732,9 +732,13 @@ Gdzie w Polsce zapłacisz bitcoinem i gdzie się spotykamy. [Przejdź do miast].
 
 Na stronie [btcmap.org](https://btcmap.org/country/pl) opiekujemy się mapą miejsc w Polsce, w których można kupować za pomocą bitcoina. Każdy może dodać lub zweryfikować istniejące miejsca.
 
+**btcmap --kraj pl…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
 Powyższa mapa jest ogólnokrajowa, ale możesz zarówno korzystać lub pomóc budować mapy poszczególnych [miast](https://dwadziesciajeden.pl/miasta/).
 
-## Mapy miast
+## Społeczności miast na BTC Map
 
 - [Warszawa](https://btcmap.org/community/dwadzieścia-jeden-warszawa)
 
@@ -798,7 +802,13 @@ Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjście
 
 - [Pozostałe spotkania w kronice](https://dwadziesciajeden.pl/kronika/)
 
-### BTCMap
+### Gdzie zapłacisz bitcoinem: Warszawa
+
+**btcmap --miasto warszawa…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Warszawa na BTC Map: [btcmap.org/community/dwadzieścia-jeden-warszawa](https://btcmap.org/community/dwadzieścia-jeden-warszawa).
 
 
 ---
@@ -826,6 +836,12 @@ Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie s
 - [„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024](https://x.com/21BitcoinPolska/status/1794694392374342098)
 
 - [Meetup w Krakowie, 9 maja 2025](https://x.com/21BitcoinPolska/status/1919430740485304721)
+
+### Gdzie zapłacisz bitcoinem: Kraków
+
+**btcmap --miasto kraków…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
 
 
 ---
@@ -860,7 +876,13 @@ Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjście
 
 Formuła spacerów pochodzi z [bitcoinwalk.org](https://bitcoinwalk.org/). Terminy publikujemy na Meetup, Telegramie i X.
 
-### BTCMap
+### Gdzie zapłacisz bitcoinem: Poznań
+
+**btcmap --miasto poznań…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Poznań na BTC Map: [btcmap.org/community/dwadzieścia-jeden-poznań](https://btcmap.org/community/dwadzieścia-jeden-poznań).
 
 
 ---
@@ -887,7 +909,13 @@ We Wrocławiu spotkaliśmy się pierwszy raz 12 stycznia 2023 w Kawiarni Literat
 
 Chcesz, żeby spotkania we Wrocławiu odbywały się regularnie? Napisz na [naszym czacie](https://t.me/dwadziesciajeden), pomożemy z promocją.
 
-### BTC Map
+### Gdzie zapłacisz bitcoinem: Wrocław
+
+**btcmap --miasto wrocław…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Wrocław na BTC Map: [btcmap.org/community/dwadzieścia-jeden-wrocław](https://btcmap.org/community/dwadzieścia-jeden-wrocław).
 
 
 ---
@@ -908,7 +936,13 @@ Na Śląsku działa społeczność **Dwadziścia Jedyn Katowice** w BTC Map, kt�
 
 Organizujesz spotkania na Śląsku? Daj znać na [naszym czacie](https://t.me/dwadziesciajeden), dopiszemy je tutaj.
 
-### BTC Map
+### Gdzie zapłacisz bitcoinem: Katowice
+
+**btcmap --miasto katowice…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Katowice na BTC Map: [btcmap.org/community/dwadziścia-jedyn-katowice](https://btcmap.org/community/dwadziścia-jedyn-katowice).
 
 
 ---

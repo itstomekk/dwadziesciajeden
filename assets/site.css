@@ -492,3 +492,72 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 .ini--video .video__frame{border-radius:0}
 .ini--video .ini__title{text-decoration:none}
 .proj .video{margin:12px 0}
+
+/* ---- Bitcoinowa Mapa Polski (assets/mapa.js): BTC Map snapshot, filters, grouped list ---- */
+.bmap{margin:24px 0 36px;border:1.5px solid var(--ink);background:#fff;box-shadow:10px 10px 0 var(--orange)}
+.bmap__bar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 14px;background:var(--shellbg);color:var(--shell-dim);font:12.5px/1.4 var(--mono)}
+.bmap__bar b{color:var(--shell-ink);font-weight:500}
+.bmap__bar b::before{content:"●  ";color:var(--orange)}
+.bmap__bar strong{color:var(--orange);font-weight:700}
+.bmap__tools{padding:14px 14px 6px;border-bottom:1.5px solid var(--ink);display:flex;flex-direction:column;gap:8px}
+.bmap__q{width:100%;font:500 15px var(--mono);padding:11px 12px;border:1.5px solid var(--ink);border-radius:0;background:var(--paper)}
+.bmap__q:focus{outline:3px solid var(--orange);outline-offset:0}
+.bmap__lbl-row{font:500 11.5px var(--mono);color:var(--muted);margin-top:2px}
+.bmap__lbl-row::before{content:"// ";color:var(--orange-ink)}
+.bmap__chips{display:flex;flex-wrap:wrap;gap:6px}
+.bmap__chips button{display:inline-flex;align-items:center;gap:8px;font:500 13px/1 var(--mono);padding:8px 10px;border:1px solid var(--ink);border-radius:0;background:#fff;color:var(--ink);cursor:pointer}
+.bmap__chips button:hover{background:var(--paper-2)}
+.bmap__chips button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.bmap__chips button[aria-pressed=true] .bmap__n{color:var(--orange)}
+.bmap__n{font:600 12px var(--mono);color:var(--muted)}
+.bmap__row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:4px 0 8px}
+.bmap__row select{font:500 13px var(--mono);padding:8px 28px 8px 10px;border:1px solid var(--ink);border-radius:0;background:#fff;color:var(--ink);max-width:100%}
+.bmap__reset{margin-left:auto;font:500 13px var(--mono);background:none;border:0;color:var(--ink-2);text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:3px;cursor:pointer;padding:8px 0}
+.bmap__body{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);min-height:560px}
+.bmap__map{min-height:560px;background:var(--paper-2);border-right:1.5px solid var(--ink)}
+.bmap__map .leaflet-tile-pane{filter:grayscale(1) contrast(.92) brightness(1.06)}
+.bmap__list{max-height:560px;overflow:auto;overscroll-behavior:contain;background:#fff}
+.bmap__empty{padding:18px;color:var(--muted);font-size:15px}
+.bmap__grp{border-bottom:1px solid var(--rule)}
+.bmap__grp summary{display:flex;justify-content:space-between;gap:10px;padding:11px 14px;cursor:pointer;font:600 14px var(--mono);background:var(--paper-2);position:sticky;top:0;z-index:1;list-style:none}
+.bmap__grp summary::-webkit-details-marker{display:none}
+.bmap__grp summary span:first-child::before{content:"+ ";color:var(--orange-ink)}
+.bmap__grp[open] summary span:first-child::before{content:"− "}
+.bmap__grp ul{list-style:none;margin:0;padding:0}
+.bmap__item{padding:12px 14px;border-top:1px solid var(--rule)}
+.bmap__item:hover{background:#FFF8E6}
+.bmap-card{display:flex;flex-direction:column;gap:3px;font-size:14px;line-height:1.4}
+.bmap-card__meta{font:500 11.5px var(--mono);color:var(--orange-ink);text-transform:uppercase;letter-spacing:.04em}
+.bmap-card strong,.bmap-card__go{font:600 16px/1.25 var(--serif);color:var(--ink)}
+.bmap-card__go{background:none;border:0;padding:0;text-align:left;cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
+.bmap-card__go:hover,.bmap-card__go:focus-visible{text-decoration-color:var(--orange)}
+.bmap-card__go::after{content:"  ↗ mapa";font:500 11px var(--mono);color:var(--muted)}
+.bmap-card__addr,.bmap-card__oh{color:var(--ink-2)}
+.bmap-card__oh{font:12px var(--mono)}
+.bmap-card__pay{font:500 12.5px var(--mono)}
+.bmap-card__v{font:12px var(--mono);color:var(--muted)}
+.bmap-card__v::before{content:"";display:inline-block;width:8px;height:8px;margin-right:6px;background:var(--orange);vertical-align:0}
+.bmap-card__v--f2::before{background:#C9B37A}
+.bmap-card__v--f3::before{background:none;border:1px solid var(--muted)}
+.bmap-card__links{display:flex;gap:12px;flex-wrap:wrap;font:500 12.5px var(--mono);margin-top:2px}
+.bmap-card__links a{color:var(--ink-2)}
+/* pins: square, amber = confirmed in the last year, pale = 1-2 years, hollow = older; exchanges/ATMs dark */
+.bmap-pin{background:var(--orange);border:2px solid var(--ink);box-shadow:2px 2px 0 rgba(21,23,26,.35)}
+.bmap-pin--f2{background:#E9D9A6}
+.bmap-pin--f3{background:#fff}
+.bmap-pin--atm,.bmap-pin--kantor{background:var(--ink);border-color:var(--ink)}
+.bmap-pin--atm.bmap-pin--f3,.bmap-pin--kantor.bmap-pin--f3{background:#8B9098}
+.bmap-cl{background:var(--ink);color:var(--orange);display:grid!important;place-items:center;font:700 13px/1 var(--mono);border:2px solid var(--orange)}
+.bmap-pop .leaflet-popup-content-wrapper{border-radius:0;border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--orange)}
+.bmap-pop .leaflet-popup-tip{border:1.5px solid var(--ink)}
+.bmap-pop .leaflet-popup-content{margin:14px 16px}
+.bmap .leaflet-bar a{border-radius:0!important;font-family:var(--mono)}
+.bmap .leaflet-control-attribution{font:10.5px var(--mono)}
+.bmap__legend{display:flex;flex-wrap:wrap;gap:6px 16px;padding:10px 14px;border-top:1.5px solid var(--ink);font:12px var(--mono);color:var(--ink-2)}
+.bmap__legend i{display:inline-block;width:12px;height:12px;border:2px solid var(--ink);margin-right:6px;vertical-align:-1px}
+@media (max-width:860px){
+  .bmap{box-shadow:6px 6px 0 var(--orange)}
+  .bmap__body{grid-template-columns:1fr}
+  .bmap__map{min-height:400px;border-right:0;border-bottom:1.5px solid var(--ink)}
+  .bmap__list{max-height:70vh}
+}

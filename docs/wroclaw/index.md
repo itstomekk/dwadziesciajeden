@@ -20,4 +20,10 @@ We Wrocławiu spotkaliśmy się pierwszy raz 12 stycznia 2023 w Kawiarni Literat
 
 Chcesz, żeby spotkania we Wrocławiu odbywały się regularnie? Napisz na [naszym czacie](https://t.me/dwadziesciajeden), pomożemy z promocją.
 
-### BTC Map
+### Gdzie zapłacisz bitcoinem: Wrocław
+
+**btcmap --miasto wrocław…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
+Społeczność Wrocław na BTC Map: [btcmap.org/community/dwadzieścia-jeden-wrocław](https://btcmap.org/community/dwadzieścia-jeden-wrocław).

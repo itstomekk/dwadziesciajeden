@@ -14,9 +14,13 @@ Gdzie w Polsce zapłacisz bitcoinem i gdzie się spotykamy. [Przejdź do miast].
 
 Na stronie [btcmap.org](https://btcmap.org/country/pl) opiekujemy się mapą miejsc w Polsce, w których można kupować za pomocą bitcoina. Każdy może dodać lub zweryfikować istniejące miejsca.
 
+**btcmap --kraj pl…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat
+
 Powyższa mapa jest ogólnokrajowa, ale możesz zarówno korzystać lub pomóc budować mapy poszczególnych [miast](https://dwadziesciajeden.pl/miasta/).
 
-## Mapy miast
+## Społeczności miast na BTC Map
 
 - [Warszawa](https://btcmap.org/community/dwadzieścia-jeden-warszawa)
 

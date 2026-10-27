@@ -452,6 +452,25 @@ def btcmap_embed(community=None, title="BTC Map"):
             f'src="{e(src)}"></iframe></div>')
 
 
+def btcmap_app(city=None):
+    """Own map of BTC Map places (snapshot content/btcmap-pl.json from tools/fetch_btcmap.py), drawn by assets/mapa.js."""
+    scope = f"--miasto {e(city.lower())}" if city else "--kraj pl"
+    legend = ('<div class="bmap__legend"><span><i style="background:var(--orange)"></i>potwierdzone w ostatnim roku</span>'
+              '<span><i style="background:#E9D9A6"></i>1 do 2 lat temu</span><span><i style="background:#fff"></i>dawniej</span>'
+              '<span><i style="background:var(--ink)"></i>kantor lub bankomat</span></div>')
+    return (f'<link rel="stylesheet" href="{b("/assets/vendor/leaflet/leaflet.css")}">'
+            f'<link rel="stylesheet" href="{b("/assets/vendor/markercluster/MarkerCluster.css")}">'
+            f'<section class="bmap" data-bmap data-src="{b("/assets/btcmap-pl.json")}?v={BUILT}"'
+            + (f' data-city="{e(city)}"' if city else "") + ' aria-label="Mapa miejsc, w których zapłacisz bitcoinem">'
+            f'<div class="bmap__bar"><b>btcmap {scope}</b><span><strong data-count>…</strong> miejsc · dane BTC Map z <span data-fetched>…</span></span></div>'
+            '<div class="bmap__tools"></div><div class="bmap__body"><div class="bmap__map"></div><div class="bmap__list" aria-live="polite">'
+            '<noscript><p class="bmap__empty">Mapa potrzebuje JavaScriptu. Zobacz ją na <a href="https://btcmap.org/country/pl">btcmap.org</a>.</p></noscript>'
+            f'</div></div>{legend}</section>'
+            f'<script src="{b("/assets/vendor/leaflet/leaflet.js")}" defer></script>'
+            f'<script src="{b("/assets/vendor/markercluster/leaflet.markercluster.js")}" defer></script>'
+            f'<script src="{b("/assets/mapa.js")}?v={BUILT}" defer></script>')
+
+
 # ---------------------------------------------------------------- pages
 
 def build():
@@ -467,6 +486,7 @@ def build():
         (OUT / "CNAME").write_text(cname)
     (OUT / ".nojekyll").write_text("")
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    shutil.copy(ROOT / "content" / "btcmap-pl.json", OUT / "assets" / "btcmap-pl.json")
 
     imported = load("imported.json", []) + load("artykuly.json", [])
     by_slug = {r["slug"]: r for r in imported}
@@ -683,9 +703,13 @@ def build():
             pub = by_slug[c["slug"]]["published"]
         else:
             h = fill(c["html"])
-            if c.get("btcmap"):
-                h += f'<h3 id="btcmap">BTC Map</h3>' + btcmap_embed(c["btcmap"], f"BTC Map: {c['name']}")
             pub = None
+        # own BTC Map view for the city, replacing the btcmap.org community iframe
+        h = re.sub(r'<h3 id="btcmap">[^<]*</h3>\s*<div class="map-embed">.*?</div>', "", h, flags=re.S)
+        h += f'<h3 id="btcmap">Gdzie zapłacisz bitcoinem: {e(c["name"])}</h3>' + btcmap_app(c["name"])
+        if c.get("btcmap"):
+            h += (f'<p class="note">Społeczność {e(c["name"])} na BTC Map: '
+                  f'<a href="https://btcmap.org/community/{e(c["btcmap"])}" rel="noopener">btcmap.org/community/{e(c["btcmap"])}</a>.</p>')
         body = (f'<article class="article"><p class="kicker">Miasto</p><h1>{e(c["name"])}</h1>'
                 f'<div class="prose">{h}</div></article>')
         write(f"/{c['slug']}/", layout(f"/{c['slug']}/", c["name"], body, desc=c["line"], crumbs=[("Mapa i miasta", "/bitcoinowa-mapa-polski/#miasta")]))
@@ -693,12 +717,12 @@ def build():
 
     # ---- mapa
     m = fill(by_slug["bitcoinowa-mapa-polski"]["html"])
-    m = re.sub(r'<div class="map-embed">.*?</div>', btcmap_embed(None, "BTC Map: Polska"), m, flags=re.S)
+    m = re.sub(r'<div class="map-embed">.*?</div>', lambda _: btcmap_app(None), m, flags=re.S)
     m = m.replace('href="https://btcmap.org/community/dwadzie%C5%9Bcia-jeden"', 'href="https://btcmap.org/country/pl"')
     city_maps = "".join(
         f'<li><a href="https://btcmap.org/community/{e(c["btcmap"])}" rel="noopener">{e(c["name"])}</a></li>'
         for c in miasta if c.get("btcmap"))
-    m += (f'<h2>Mapy miast</h2><ul class="city-maps">{city_maps}</ul>'
+    m += (f'<h2>Społeczności miast na BTC Map</h2><ul class="city-maps">{city_maps}</ul>'
           f'<h2>Jak pomóc</h2><ol><li>Otwórz miejsce na <a href="https://btcmap.org/country/pl" rel="noopener">btcmap.org/country/pl</a>.</li>'
           f'<li>Byłeś tam niedawno i zapłaciłeś bitcoinem? Potwierdź je jednym kliknięciem.</li>'
           f'<li>Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.</li>'

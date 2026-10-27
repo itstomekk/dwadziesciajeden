@@ -21,3 +21,9 @@ Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie s
 - [„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024](https://x.com/21BitcoinPolska/status/1794694392374342098)
 
 - [Meetup w Krakowie, 9 maja 2025](https://x.com/21BitcoinPolska/status/1919430740485304721)
+
+### Gdzie zapłacisz bitcoinem: Kraków
+
+**btcmap --miasto kraków…** miejsc · dane BTC Map z …
+
+potwierdzone w ostatnim roku 1 do 2 lat temu dawniej kantor lub bankomat

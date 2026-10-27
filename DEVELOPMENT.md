@@ -27,8 +27,28 @@ Defaults build the live site (root base, indexable, `docs/CNAME`). The old proje
 | `content/biblioteka.json` | Books, sites, recordings in Polish |
 | `content/zasady.json` | Community rules and the TwentyOne concept |
 | `content/miasta.json` | City index |
+| `content/btcmap-pl.json` | BTC Map snapshot for Poland (from `tools/fetch_btcmap.py`), drawn by `assets/mapa.js` |
 
 Generated extras: `/rss.xml` (articles + chronicle), `/llms.txt`, `/llms-full.txt`, Markdown twins (`<page>/index.md`), `sitemap.xml`, `search.json`.
 
 `source-archive/` (gitignored) holds raw captures: Ghost dump, Wayback, X media, and Telegram topic exports.
 See `HANDOFF.md` for state and the plan.
+
+## Map (Bitcoinowa Mapa Polski + city pages)
+
+`/bitcoinowa-mapa-polski/` and every city page render our own map (`btcmap_app()` in build.py, `assets/mapa.js`,
+styles `.bmap*` at the end of `assets/site.css`), not the btcmap.org iframe. Leaflet 1.9.4 and Leaflet.markercluster 1.5.3
+are vendored in `assets/vendor/` (licenses alongside). Tiles: OpenStreetMap standard, shown in grayscale by CSS
+(CARTO did not resolve from the owner's network).
+
+Refresh the data, then rebuild:
+
+```bash
+python tools/fetch_btcmap.py   # BTC Map v4 places inside the PL polygon; city/voivodeship from Nominatim, cached in source-archive/btcmap/
+python build.py
+```
+
+Filters: category (ATMs and exchanges off by default on the country map, on for city pages), payment (Lightning,
+on-chain, contactless; all selected must match), city, freshness (confirmed in 1 or 2 years), search; list grouped by
+city, voivodeship or category. Filter state lives in the query string (`?kat=…&platnosc=ln&miasto=…&grupuj=woj&q=…`).
+City pages lock the city by the name in `content/miasta.json`, which must match the Nominatim/OSM city name.
