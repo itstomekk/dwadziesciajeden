@@ -340,7 +340,7 @@
   {
    "id": "katalogi",
    "title": "Katalogi i listy",
-   "intro": "Otwarte, ręcznie kuratorowane listy na GitHubie. Po angielsku, z polskimi pozycjami w środku.",
+   "intro": "Ręcznie kuratorowane katalogi i listy, po angielsku. Na listach Awesome są też polskie pozycje.",
    "items": [
     {
      "title": "Awesome Bitcoin Culture",
@@ -353,6 +353,13 @@
      "type_label": "kalendarz, EN",
      "url": "https://itstomekk.github.io/awesome-bitcoin-events/",
      "description_pl": "Kalendarz międzynarodowych wydarzeń bitcoinowych: konferencje, festiwale, meetupy. Szukasz, dokąd pojechać? Zacznij tutaj."
+    },
+    {
+     "title": "Nakamoto Library",
+     "author": "Matteo Pellegrini",
+     "type_label": "katalog książek, EN",
+     "url": "https://nakamotolibrary.org/",
+     "description_pl": "Wszystkie książki o Bitcoinie wydane od 2014 roku (126 tytułów), ułożone według lat, z wyszukiwarką i linkami do zakupu."
     }
    ]
   }

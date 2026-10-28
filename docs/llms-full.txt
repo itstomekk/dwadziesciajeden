@@ -592,9 +592,9 @@ film · Żyćko po 40 [Zakupy w Lewiatanie za bitcoina](https://www.youtube.com/
 
 ### Katalogi i listy
 
-Otwarte, ręcznie kuratorowane listy na GitHubie. Po angielsku, z polskimi pozycjami w środku.
+Ręcznie kuratorowane katalogi i listy, po angielsku. Na listach Awesome są też polskie pozycje.
 
-[katalog, EN Awesome Bitcoin Culture Ludzka twórczość o Bitcoinie: filmy, książki, muzyka, sztuka, podcasty, gry, instytucje i wydarzenia. Lista na GitHubie plus galeria z wyszukiwarką. awesomebitcoinculture.com](https://awesomebitcoinculture.com/) · [kalendarz, EN Awesome Bitcoin Events Kalendarz międzynarodowych wydarzeń bitcoinowych: konferencje, festiwale, meetupy. Szukasz, dokąd pojechać? Zacznij tutaj. itstomekk.github.io](https://itstomekk.github.io/awesome-bitcoin-events/)
+[katalog, EN Awesome Bitcoin Culture Ludzka twórczość o Bitcoinie: filmy, książki, muzyka, sztuka, podcasty, gry, instytucje i wydarzenia. Lista na GitHubie plus galeria z wyszukiwarką. awesomebitcoinculture.com](https://awesomebitcoinculture.com/) · [kalendarz, EN Awesome Bitcoin Events Kalendarz międzynarodowych wydarzeń bitcoinowych: konferencje, festiwale, meetupy. Szukasz, dokąd pojechać? Zacznij tutaj. itstomekk.github.io](https://itstomekk.github.io/awesome-bitcoin-events/) · [katalog książek, EN · Matteo Pellegrini Nakamoto Library Wszystkie książki o Bitcoinie wydane od 2014 roku (126 tytułów), ułożone według lat, z wyszukiwarką i linkami do zakupu. nakamotolibrary.org](https://nakamotolibrary.org/)
 
 Linki sprawdzone 23 października 2026. Brakuje czegoś? Napisz na [czacie](https://t.me/dwadziesciajeden).
 
