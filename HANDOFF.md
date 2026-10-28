@@ -99,6 +99,6 @@ History of the cutover:
 5. Launch: point dwadziesciajeden.pl (Ghost today) at Pages, set `DJ_BASE=""`, `NOINDEX=False`, add CNAME, submit sitemap.
 6. TwentyOne logo: brand is open source; Gigi granted a licence privately (owner, 2026-10-27). Merch use is cleared.
 
-## Round 7 (2026-10-28): rotating hero headline
+## Round 7 (2026-10-28): headline of the day
 
-- Home h1 types phrases in turn (`HERO_PHRASES` in build.py, "|" = line break; typing in site.js). First phrase "Dwadzieścia Jeden" is the static HTML; the rest rotate in random order. Off for reduced motion. h1 is `white-space:nowrap` + min-height so the layout never jumps (checked 320 to 1920 px). Live, commit ea28db7, QA ALL PASS.
+- Home h1 shows one phrase per day, no animation (owner: "napisy nie mają się zmieniać, po prostu mogą być inne każdego dnia"). List in `HERO_PHRASES` (build.py, "|" = line break), cycled by the visitor's local date, so everyone sees the same phrase that day. Static HTML and crawlers get "Dwadzieścia Jeden"; an inline script right after the h1 swaps it before first paint (no flash). `text_of()` strips scripts so it stays out of search.json. h1 `white-space:nowrap` keeps the planned line break (checked 320 to 1920 px).

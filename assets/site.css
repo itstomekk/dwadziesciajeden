@@ -564,4 +564,4 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
   .bmap__row select{flex:1 1 140px}
   .prose .bmap{width:auto;left:auto;transform:none}
 }
-.hero h1[data-rotate]{min-height:1.9em;white-space:nowrap}
+.hero h1[data-phrases]{white-space:nowrap}

@@ -40,8 +40,9 @@ AI_TRAIN_BOTS = ["GPTBot", "ClaudeBot", "anthropic-ai", "Google-Extended", "Appl
 # Chain tip at that moment: block 677896 (mined 16:50:47 UTC; 677897 came at 16:57:35). Checked via mempool.space + blockstream.info.
 FOUNDING_BLOCK = 677896
 FOUNDING_BLOCK_TXT = "677&nbsp;896"
-# Home hero headline: site.js types these in turn ("|" = line break). The first one is
-# the static HTML (no JS, crawlers); the rest come in random order, then it starts over.
+# Home hero headline: one phrase per day ("|" = line break), same for every visitor that
+# day (visitor's local date), cycling through the list. The first one is the static HTML
+# (no JS, crawlers); a tiny inline script right after the h1 swaps it before first paint.
 HERO_PHRASES = ["Dwadzieścia|Jeden", "Technologia|Wolności", "Wolna|przyszłość",
                 "Wolnościowa|rewolucja", "Wolność,|która działa"]
 
@@ -105,6 +106,7 @@ def link(l):
 
 
 def text_of(h: str) -> str:
+    h = re.sub(r"<script\b.*?</script>", " ", h, flags=re.S)
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
 
 
@@ -529,7 +531,8 @@ def build():
 <section class="hero">
   <div class="hero__text">
     <p class="kicker">Polska społeczność Bitcoin Only · sieć&nbsp;TwentyOne</p>
-    <h1 data-rotate="{html.escape(json.dumps(HERO_PHRASES, ensure_ascii=False))}">Dwadzieścia<br>Jeden</h1>
+    <h1 id="hero-title" data-phrases="{html.escape(json.dumps(HERO_PHRASES, ensure_ascii=False))}">Dwadzieścia<br>Jeden</h1>
+    <script>(function(){{var h=document.getElementById("hero-title");try{{var l=JSON.parse(h.dataset.phrases),d=new Date(),n=Math.floor((d-d.getTimezoneOffset()*6e4)/864e5),p=l[n%l.length].split("|");h.textContent=p[0];if(p[1]){{h.appendChild(document.createElement("br"));h.appendChild(document.createTextNode(p[1]));}}}}catch(e){{}}}})();</script>
     <p class="lede">Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.</p>
     <p class="cta-row"><a class="btn btn--primary" href="{TG}" rel="noopener">Dołącz do czatu na Telegramie</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
   </div>
