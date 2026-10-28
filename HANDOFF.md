@@ -102,3 +102,4 @@ History of the cutover:
 ## Round 7 (2026-10-28): headline of the day
 
 - Home h1 shows one phrase per day (18 phrases: 5 first + 13 owner picks from a list of 30, 2026-10-28), no animation (owner: "napisy nie mają się zmieniać, po prostu mogą być inne każdego dnia"). List in `HERO_PHRASES` (build.py, "|" = line break), cycled by the visitor's local date, so everyone sees the same phrase that day. Static HTML and crawlers get "Dwadzieścia Jeden"; an inline script right after the h1 swaps it before first paint (no flash). `text_of()` strips scripts so it stays out of search.json. h1 `white-space:nowrap` keeps the planned line break (checked 320 to 1920 px).
+- Narrow phones (<375px): header tightened (smaller brand/buttons; <340px brand wraps to two lines), book grid uses minmax(0,1fr) + hyphens. All 37 pages have no horizontal scroll at 320px.
