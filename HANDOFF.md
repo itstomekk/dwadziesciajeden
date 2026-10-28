@@ -98,3 +98,7 @@ History of the cutover:
 4. Bitcoin w Parlamencie: add press coverage (bitcoin.pl, comparic.pl link is 404 now) and any replies from MPs.
 5. Launch: point dwadziesciajeden.pl (Ghost today) at Pages, set `DJ_BASE=""`, `NOINDEX=False`, add CNAME, submit sitemap.
 6. TwentyOne logo: brand is open source; Gigi granted a licence privately (owner, 2026-10-27). Merch use is cleared.
+
+## Round 7 (2026-10-28): rotating hero headline
+
+- Home h1 types phrases in turn (`HERO_PHRASES` in build.py, "|" = line break; typing in site.js). First phrase "Dwadzieścia Jeden" is the static HTML; the rest rotate in random order. Off for reduced motion. h1 is `white-space:nowrap` + min-height so the layout never jumps (checked 320 to 1920 px). Live, commit ea28db7, QA ALL PASS.
