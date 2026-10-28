@@ -24,6 +24,44 @@
     upd();
   }
 
+  // home hero: type the headline phrases in turn ("|" = line break); first is the static HTML
+  const rot = document.querySelector("h1[data-rotate]");
+  if (rot && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let list = [];
+    try { list = JSON.parse(rot.dataset.rotate); } catch { list = []; }
+    if (list.length > 1) {
+      rot.setAttribute("aria-label", list.map((p) => p.replace("|", " ")).join(". "));
+      const draw = (s) => {
+        const [a, b] = s.split("|");
+        const kids = [document.createTextNode(a)];
+        if (b !== undefined) kids.push(document.createElement("br"), document.createTextNode(b));
+        rot.replaceChildren(...kids);
+      };
+      const first = list[0];
+      const rest = list.slice(1);
+      let queue = [];
+      let cur = first;
+      const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+      const next = () => {
+        if (!queue.length) {
+          queue = rest.slice().sort(() => Math.random() - 0.5);
+          queue.push(first);
+        }
+        return queue.shift();
+      };
+      (async () => {
+        await wait(3200);
+        for (;;) {
+          for (let i = cur.length; i >= 0; i--) { draw(cur.slice(0, i)); await wait(38); }
+          await wait(280);
+          cur = next();
+          for (let i = 1; i <= cur.length; i++) { draw(cur.slice(0, i)); await wait(cur[i - 1] === "|" ? 160 : 75); }
+          await wait(3400);
+        }
+      })();
+    }
+  }
+
   // mobile menu
   const menuBtn = document.querySelector(".menu-btn");
   const nav = document.getElementById("nav");
