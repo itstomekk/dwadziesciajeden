@@ -52,7 +52,7 @@ Całą historię znajdziesz w [📜 Kronice](https://dwadziesciajeden.pl/kronika
 | | |
 |---|---|
 | 💬 Czat na Telegramie | [t.me/dwadziesciajeden](https://t.me/dwadziesciajeden) |
-| 🟣 Społeczność na Nostrze | [Armada](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33) |
+| 🟣 Społeczność na Nostrze | [Armada](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/6f327e5556b324781f4c9e48f575c8a2f7b1dc6c2a5b1e9463c93e1d3ef1e15b) |
 | 🚶 BitcoinWalk Warszawa | soboty 11:30, Ogród Saski (Fontanna Wielka), [bitcoinwalk.org](https://bitcoinwalk.org/warszawa) |
 | ☕ Bitcoin Café Warszawa | poniedziałki 18:00, [meetup.com/bitcoin-warsaw](https://www.meetup.com/bitcoin-warsaw/) |
 | 🌆 Inne miasta | [Mapa i miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta) |

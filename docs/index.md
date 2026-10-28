@@ -52,7 +52,7 @@ Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa.
 
 Na czacie rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.
 
-[Telegram · główny czat **t.me/dwadziesciajeden**](https://t.me/dwadziesciajeden) · [Nostr · społeczność na Armadzie **Dwadzieścia Jeden na Armadzie**](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/f4d9e9f10e294dbfab14539f02eafa16fecced2f08b37d3fcc88cce0dc4baf33) · [X **@21BitcoinPolska**](https://x.com/21BitcoinPolska)
+[Telegram · główny czat **t.me/dwadziesciajeden**](https://t.me/dwadziesciajeden) · [Nostr · społeczność na Armadzie **Dwadzieścia Jeden na Armadzie**](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/6f327e5556b324781f4c9e48f575c8a2f7b1dc6c2a5b1e9463c93e1d3ef1e15b) · [X **@21BitcoinPolska**](https://x.com/21BitcoinPolska)
 
 Nostr [profil](https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2) **npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc**
 
