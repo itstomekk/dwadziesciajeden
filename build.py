@@ -41,10 +41,14 @@ AI_TRAIN_BOTS = ["GPTBot", "ClaudeBot", "anthropic-ai", "Google-Extended", "Appl
 FOUNDING_BLOCK = 677896
 FOUNDING_BLOCK_TXT = "677&nbsp;896"
 # Home hero headline: one phrase per day ("|" = line break), same for every visitor that
-# day (visitor's local date), cycling through the list. The first one is the static HTML
+# day (visitor's local date), cycling through the list (mixed so similar phrases are not neighbours). The first one is the static HTML
 # (no JS, crawlers); a tiny inline script right after the h1 swaps it before first paint.
-HERO_PHRASES = ["Dwadzieścia|Jeden", "Technologia|Wolności", "Wolna|przyszłość",
-                "Wolnościowa|rewolucja", "Wolność,|która działa"]
+HERO_PHRASES = ["Dwadzieścia|Jeden", "Uczciwy|pieniądz", "Technologia|Wolności",
+                "Nie ufaj,|weryfikuj", "Cicha|rewolucja", "Wolność|od inflacji",
+                "Bądź swoim|bankiem", "Wolna|przyszłość", "Odporny|na cenzurę",
+                "Pieniądz|przyszłości", "Prywatność|to wolność", "Pokojowa|rewolucja",
+                "Sygnał,|nie szum", "Wolność|w kodzie", "Bez|pozwolenia",
+                "Wolnościowa|rewolucja", "Otwarty|dla każdego", "Wolność,|która działa"]
 
 # brand icons: Telegram + X from Simple Icons (CC0), Nostr from mbarulli/nostr-logo (CC0)
 def icon(name):
