@@ -55,7 +55,7 @@ History of the cutover:
 ## Round 5 (2026-10-26)
 
 - Biblioteka: new section "Katalogi i listy" (`/edukacja/#katalogi`) with Awesome Bitcoin Culture and Awesome Bitcoin Events (owner request). Live, QA ALL PASS, commit 14a5b74.
-- Friendly-project candidates mined from both Telegram groups, checked live: `private/friendly-projects-candidates-2026-10-26.md` (local only, not in git). Owner picked 1, 2, 4, 6, 7, 10: live (commit abf6107). Round 2 list (#11-17) is in the same file, waiting for a pick; the conversation continues in Telegram HERMES CONTROL CENTER, topic GENERAL 2 (4359). Ask authors before listing member-built tools (old group rule: added with the author's consent).
+- Friendly-project candidates mined from both Telegram groups, checked live: `private/friendly-projects-candidates-2026-10-26.md` (local only, not in git). Owner picked 1, 2, 4, 6, 7, 10: live (commit abf6107). Round 2 (#11-17): owner skipped WallAxe, cryptoproducts.cz, Clinch, Fedimint on Start9 (2026-10-27); lnalias stays on hold (TLS cert for the wrong host). Old git history keeps one public GitHub nick from an earlier candidate list: owner said leave it. the conversation continues in Telegram HERMES CONTROL CENTER, topic GENERAL 2 (4359). Ask authors before listing member-built tools (old group rule: added with the author's consent).
 
 ## Round 6 (2026-10-26): own BTC Map view
 
@@ -97,4 +97,4 @@ History of the cutover:
 3. Design polish: post headlines instead of repeated "Post na X", project thumbnails for letter placeholders (bitblik, Cryptosteel, Bitcoin District logos with permission), city pages BTC Map embed centering.
 4. Bitcoin w Parlamencie: add press coverage (bitcoin.pl, comparic.pl link is 404 now) and any replies from MPs.
 5. Launch: point dwadziesciajeden.pl (Ghost today) at Pages, set `DJ_BASE=""`, `NOINDEX=False`, add CNAME, submit sitemap.
-6. TwentyOne logo: no formal license; ask Gigi (dergigi.com/contact) before using the Polish fork on merch.
+6. TwentyOne logo: brand is open source; Gigi granted a licence privately (owner, 2026-10-27). Merch use is cleared.

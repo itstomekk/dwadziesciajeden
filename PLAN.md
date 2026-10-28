@@ -16,7 +16,7 @@ dwadziesciajeden.pl serves this static site from GitHub Pages over HTTPS, indexe
 - [x] launch build is the default, `docs/CNAME`, custom domain set in repo Pages settings
 - [x] domain owner switched A/AAAA at Njalla, added `www` CNAME, kept MX/TXT
 - [x] enforce HTTPS, re-run QA against https://dwadziesciajeden.pl, submit sitemap   @agent
-- [ ] keep Ghost backup until the new site is confirmed   @tomek
+- [x] Ghost backup: kept permanently as an archive (owner, 2026-10-27)
 
 ## Phase 3 — Content rounds   (NEXT)
 - [ ] mine Telegram exports: places accepting BTC, translation history, chronicle events (no member names)   @agent
@@ -24,7 +24,7 @@ dwadziesciajeden.pl serves this static site from GitHub Pages over HTTPS, indexe
 - [x] own BTC Map view with filters and grouping (replaces the iframes) 2026-10-26
 - [ ] design polish: post headlines   @agent
 - [x] newsletter replaced by RSS (`/rss.xml`, kronika + artykuły) — owner 2026-10-26
-- [ ] ask Gigi before using the Polish TwentyOne logo fork on merch   @tomek
+- [x] TwentyOne logo on merch: brand is open source and Gigi granted a licence privately (owner, 2026-10-27)
 
 ## Backlog
 
