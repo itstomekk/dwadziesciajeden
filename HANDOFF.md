@@ -3,6 +3,12 @@
 ## 2026-10-30: library shelf "Pieniądz, wolność i szkoła austriacka"
 
 - New category `wolnosc` in `content/biblioteka.json` (after `ksiazki`): Hayek "Denacjonalizacja pieniądza" (Animi2 / Fundacja Lethe, 2019, ISBN 9788366303010), Mises "Ludzkie działanie" (Instytut Misesa, sklep.mises.pl), Rand "Atlas zbuntowany" (Zysk i S-ka). Covers in `assets/books/` (Mises cover cropped from the shop's flat image and upscaled 2x; the others from lubimyczytac.pl). Links point to lubimyczytac.pl for Hayek and Rand because publisher shops do not sell them (Zysk shows it unavailable; Animi2 site unreachable). The `checked` date was not bumped. Built, QA ALL PASS on port 8811 (8741 is in a Windows reserved port range). Not committed, not deployed.
+## 2026-10-30: buying guide and Bitomat.com
+
+- Private, unpublished buying-guide draft: `private/poradnik-jak-kupic-bitcoin-draft.md`. Provider pages checked 2026-10-30; live P2P PLN liquidity and end-to-end purchase remain unverified. Recheck changing conditions and tax advice before publishing.
+- Bitomat.com added to friendly projects locally, with official logo. The site describes itself as a directory, not the machines' operator. No deploy in this session.
+- Build succeeded. QA on port 8796: ALL PASS on rerun. Earlier mobile overflow happened in a transient build containing concurrent support-widget markup with missing CSS; that work subsequently disappeared from the working tree, and the current source rebuild has no such markup. One rerun also hit a Firefox context-close error before a successful retry. Do not infer the support-widget work was fixed or deployed.
+
 Updated 2026-10-23.
 
 ## State

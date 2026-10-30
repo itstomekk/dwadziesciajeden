@@ -261,7 +261,7 @@
    "kind": "friends",
    "image": "projekty/quark.jpg",
    "image_alt": "Strona kantoru Quark w Warszawie",
-   "text": "Pierwszy stacjonarny kantor bitcoina w Polsce, przy Świętokrzyskiej 18 w Warszawie. Kupisz i sprzedasz tu bitcoina za gotówkę. Przez Quark wymieniliśmy na złotówki satsy zebrane dla WOŚP.",
+   "text": "Pierwszy stacjonarny kantor bitcoina w Polsce, przy Świętokrzyskiej 18 w Warszawie. Przez Quark wymieniliśmy na złotówki satsy zebrane dla WOŚP. Sieć informuje o czasowym zamknięciu kantorów: przed wizytą sprawdź aktualny status.",
    "links": [
     {
      "label": "bitcoinwarszawa.pl",
@@ -273,6 +273,22 @@
     }
    ],
    "origin": "owner request 2026-10-23; WOŚP post 2024; screenshot bitcoinwarszawa.pl"
+  },
+  {
+   "id": "bitomat-com",
+   "name": "Bitomat.com",
+   "status": "zaprzyjaźniony",
+   "kind": "friends",
+   "image": "projekty/bitomat-com.jpg",
+   "image_alt": "Logo Bitomat.com",
+   "text": "Mapa bitomatów i poradniki, które pomagają znaleźć urządzenie i sprawdzić warunki wymiany. Same transakcje i ewentualną weryfikację prowadzą operatorzy poszczególnych urządzeń.",
+   "links": [
+    {
+     "label": "bitomat.com",
+     "url": "https://www.bitomat.com/"
+    }
+   ],
+   "origin": "owner request 2026-10-30; bitomat.com operator explanation and logo"
   },
   {
    "id": "bitcoin-district",
