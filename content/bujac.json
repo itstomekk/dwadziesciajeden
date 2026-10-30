@@ -1,0 +1,480 @@
+{
+ "intro": {
+  "tagline": "Bo nikt nam nie może zabronić.",
+  "author": "Mateusz Gadaj",
+  "site": "https://bujac.pl/",
+  "spotify": "https://open.spotify.com/show/7JKCgH1nxriBsh6y9JlfOY",
+  "archive": "https://itstomekk.github.io/bujac-archiwum/",
+  "checked": "2026-10-30"
+ },
+ "episodes": [
+  {
+   "id": "s1-e01",
+   "number": "E01",
+   "series": "Sezon 1",
+   "series_id": "sezon-1",
+   "date": "2025-06-25",
+   "title": "Z Saunterem o NOSTR",
+   "guest": "Saunter",
+   "summary": "Premierowy odcinek projektu, nagrany przy okazji BTC Prague. Rozmowa o NOSTR i publikowaniu poza scentralizowanymi platformami.",
+   "topics": [
+    "NOSTR",
+    "BTC Prague",
+    "niezależne media"
+   ],
+   "image": "bujac/s1-e01.jpg",
+   "links": [
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=cNAFnAi0CCE"
+    }
+   ]
+  },
+  {
+   "id": "s1-e02",
+   "number": "E02",
+   "series": "Sezon 1",
+   "series_id": "sezon-1",
+   "date": "2025-06-28",
+   "title": "Z Markiem Szabelskim o społeczności Bitcoinerów",
+   "guest": "Marek Szabelski",
+   "summary": "Rozmowa z BTC Prague o społecznościach bitcoinerów w krajach niemieckojęzycznych. Oryginał zapowiadano z angielskimi napisami.",
+   "topics": [
+    "społeczność",
+    "BTC Prague",
+    "kraje niemieckojęzyczne"
+   ],
+   "image": "bujac/s1-e02.jpg",
+   "links": [
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=moKTN7KSjHs"
+    }
+   ]
+  },
+  {
+   "id": "s1-e03",
+   "number": "E03",
+   "series": "Sezon 1",
+   "series_id": "sezon-1",
+   "date": "2025-07-04",
+   "title": "Ze Stanisławem Wołochem o fiducjarnym biznesie i science-fiction",
+   "guest": "Stanisław Wołoch",
+   "summary": "Rozmowa nagrana podczas BTC Prague o ekonomii, inflacji, zaufaniu, prywatności i science-fiction.",
+   "topics": [
+    "fiat",
+    "biznes",
+    "science-fiction",
+    "prywatność"
+   ],
+   "image": "bujac/s1-e03.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/1yPoddBxKubqA64Cv86U8M"
+    },
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=jVer1d0UxaI"
+    },
+    {
+     "kind": "file",
+     "label": "Archiwalny plik (Wayback)",
+     "url": "https://web.archive.org/web/20250716201628id_/https://gadaj.yana.do/8496e1127ec9b58bdf007fce5b6d7a8a168971175a1339a98329aed9449f09bd.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s1-e04",
+   "number": "E04",
+   "series": "Sezon 1",
+   "series_id": "sezon-1",
+   "date": "2025-07-12",
+   "title": "Z Jesterem o języku i zimie",
+   "guest": "Jester",
+   "summary": "O języku polskiej edukacji bitcoinowej, Proof of Work, samowystarczalności, rolnictwie i lokalnej niezależności.",
+   "topics": [
+    "język",
+    "edukacja",
+    "Proof of Work",
+    "samowystarczalność"
+   ],
+   "image": "bujac/s1-e04.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/4uXbBzMW5ZcLrfA2qDZry5"
+    },
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=yeGrPElIa1o"
+    },
+    {
+     "kind": "file",
+     "label": "Archiwalny plik (Wayback)",
+     "url": "https://web.archive.org/web/20250715181347id_/https://gadaj.yana.do/e5888daa770b5e592b8605e3876097301d3e6a3deadbebc723329fedc83f7916.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s1-e05",
+   "number": "E05 / BONUS",
+   "series": "Sezon 1",
+   "series_id": "sezon-1",
+   "date": "2025-07-26",
+   "title": "Z Patrykiem z Bitchair o pracy jako radości",
+   "guest": "Patryk / Bitchair",
+   "summary": "O rzemiośle, pracy dającej radość, niezależności poza biurem i współpracy międzynarodowej.",
+   "topics": [
+    "praca",
+    "rzemiosło",
+    "Bitchair",
+    "współpraca"
+   ],
+   "image": "bujac/s1-e05.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/0LG9evPsMn2S3A1jnvMGYP"
+    }
+   ]
+  },
+  {
+   "id": "s2-e06",
+   "number": "E06",
+   "series": "Sezon 2",
+   "series_id": "sezon-2",
+   "date": "2025-09-10",
+   "title": "Z mec. Gracjanem Pietrasem o Proof of Work",
+   "guest": "mec. Gracjan Pietras",
+   "summary": "Rozwinięcie rozmowy z Community Stage Bitcoin FilmFest 2025: praca, energia, niepodrabialny koszt i odporność Bitcoina.",
+   "topics": [
+    "Proof of Work",
+    "energia",
+    "Bitcoin FilmFest",
+    "prawo"
+   ],
+   "image": "bujac/s2-e06.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/4Z5Yf8m8IL994Nc0qaWyuX"
+    },
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=bNMvaSHfk58"
+    }
+   ]
+  },
+  {
+   "id": "s2-e07",
+   "number": "E07",
+   "series": "Sezon 2",
+   "series_id": "sezon-2",
+   "date": "2025-09-15",
+   "title": "Z Ryszardem Zalskim o budowaniu biznesów na sieci Bitcoin",
+   "guest": "Ryszard Zalski",
+   "summary": "O biznesach budowanych na Bitcoinie, niezależnych mediach, Azji, cenzurze i równoległej gospodarce.",
+   "topics": [
+    "biznes",
+    "Azja",
+    "media",
+    "równoległa gospodarka"
+   ],
+   "image": "bujac/s2-e07.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/6EEgDLUKoqJqSz0lwC6QTx"
+    },
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=Y4vP8vD2KDM"
+    }
+   ]
+  },
+  {
+   "id": "s2-e08",
+   "number": "E08",
+   "series": "Sezon 2",
+   "series_id": "sezon-2",
+   "date": "2025-09-25",
+   "title": "Z Grzegorzem o filozofii P2P",
+   "guest": "Grzegorz",
+   "summary": "Sieci P2P, własne nody, internet pokolenia PlayStation, mining off-grid i pomidorowe node’y.",
+   "topics": [
+    "P2P",
+    "nody",
+    "off-grid",
+    "mining"
+   ],
+   "image": "bujac/s2-e08.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/1SbdK69gA9lOX06Z1QKnGP"
+    },
+    {
+     "kind": "youtube",
+     "label": "YouTube",
+     "url": "https://www.youtube.com/watch?v=rGbHxOOxUO8"
+    }
+   ]
+  },
+  {
+   "id": "s2-e09",
+   "number": "E09",
+   "series": "Sezon 2",
+   "series_id": "sezon-2",
+   "date": "2025-10-01",
+   "title": "Z Maciejem o prywatności, oszczędzaniu i po co komu Bitcoin",
+   "guest": "Maciej",
+   "summary": "Rozmowa dla ludzi spoza bańki: prywatność, oszczędzanie, nody, non-KYC, samodzielne klucze i BitcoinWalk.",
+   "topics": [
+    "prywatność",
+    "oszczędzanie",
+    "non-KYC",
+    "BitcoinWalk"
+   ],
+   "image": "bujac/s2-e09.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/52Z0m4lSbPr3QsJJf1gIHE"
+    },
+    {
+     "kind": "youtube",
+     "label": "YouTube",
+     "url": "https://www.youtube.com/watch?v=-iUx17r-l3Y"
+    },
+    {
+     "kind": "file",
+     "label": "Archiwalny plik (Wayback)",
+     "url": "https://web.archive.org/web/20251002092005id_/https://media.bujac.pl/46c48c1551f13d3e7ee9f08b747306fc6f5acad30d8f31ba8a955014e1226771.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s2-e10",
+   "number": "E10",
+   "series": "Sezon 2",
+   "series_id": "sezon-2",
+   "date": null,
+   "title": "Z Łukaszem o komedii, wolności i kradzionych pomidorach",
+   "guest": "Łukasz",
+   "summary": "Drylowanie o stand-upie, technologii audio, wolności słowa, cenzurze platform, NOSTR, satoshi i pomidorach.",
+   "topics": [
+    "komedia",
+    "wolność słowa",
+    "NOSTR",
+    "pomidory"
+   ],
+   "image": "bujac/s2-e10.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/7oDmuEgjUapjyPsCde070X"
+    },
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=Cv9OIzGlq9U"
+    }
+   ]
+  },
+  {
+   "id": "s2-e11",
+   "number": "E11",
+   "series": "Sezon 2",
+   "series_id": "sezon-2",
+   "date": "2025-11-05",
+   "title": "Z Robertem o hackerach, prawie do odmowy i odsieczy wiedeńskiej",
+   "guest": "Robert / Robson",
+   "summary": "O drodze do Bitcoina, hackerach, kryptowaluciarstwie, NOSTR, cenzurze, lokalnych społecznościach i prawie do odmowy.",
+   "topics": [
+    "hackerzy",
+    "NOSTR",
+    "prawo do odmowy",
+    "społeczność"
+   ],
+   "image": "bujac/s2-e11.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/2x7A9SkOd7vr5IF2zjCzbm"
+    },
+    {
+     "kind": "youtube",
+     "label": "Zwiastun na YouTube",
+     "url": "https://www.youtube.com/watch?v=93sxkmtsQfA"
+    },
+    {
+     "kind": "file",
+     "label": "Archiwalny plik (Wayback)",
+     "url": "https://web.archive.org/web/20251106002208id_/https://media.bujac.pl/14236fc3107ddc183e04420764896278be5dc3a9b80830a8075ca2531d528d88.mp4"
+    }
+   ]
+  },
+  {
+   "id": "docinek-001",
+   "number": "#001",
+   "series": "Docinki",
+   "series_id": "docinki",
+   "date": "2026-01-09",
+   "title": "Noworoczny docinek niefiducjarny",
+   "guest": "",
+   "summary": "Docinek nagrany w bloku 931401. Pełny opis nie zachował się w osobnym snapshotcie.",
+   "topics": [
+    "docinek",
+    "blok 931401"
+   ],
+   "image": "bujac/docinek-001.jpg",
+   "links": []
+  },
+  {
+   "id": "docinek-002",
+   "number": "#002",
+   "series": "Docinki",
+   "series_id": "docinki",
+   "date": "2026-01-10",
+   "title": "Bitcoin Standard w polskim parlamencie",
+   "guest": "",
+   "summary": "Komentarz do akcji Bitcoin Standard w polskim parlamencie, nagrany w bloku 931555. Dalsza część opisu nie zachowała się.",
+   "topics": [
+    "Bitcoin Standard",
+    "parlament",
+    "blok 931555"
+   ],
+   "image": "bujac/docinek-002.jpg",
+   "links": []
+  },
+  {
+   "id": "docinek-003",
+   "number": "#003",
+   "series": "Docinki",
+   "series_id": "docinki",
+   "date": "2026-01-15",
+   "title": "Co znaczy „fiducjarny”",
+   "guest": "",
+   "summary": "Pogaduchy o znaczeniu słowa „fiducjarny”, BitcoinWalku i budowaniu poza systemem, nagrane w bloku 932391.",
+   "topics": [
+    "fiat",
+    "BitcoinWalk",
+    "blok 932391"
+   ],
+   "image": "bujac/docinek-003.jpg",
+   "links": []
+  },
+  {
+   "id": "docinek-004",
+   "number": "#004",
+   "series": "Docinki",
+   "series_id": "docinki",
+   "date": "2026-01-20",
+   "title": "BigTech kontra FreedomTech",
+   "guest": "",
+   "summary": "O zależności mediów głównego nurtu, różnicach między BigTech i FreedomTech, skarbcu Bujać! oraz kupowaniu BTC bez KYC przez Bitblik. Nagrany w bloku 933089.",
+   "topics": [
+    "FreedomTech",
+    "BigTech",
+    "non-KYC",
+    "Bitblik"
+   ],
+   "image": "bujac/docinek-004.jpg",
+   "links": [
+    {
+     "kind": "youtube",
+     "label": "YouTube",
+     "url": "https://www.youtube.com/watch?v=3KxlYVUI9As"
+    }
+   ]
+  },
+  {
+   "id": "s3-e01",
+   "number": "S03E01",
+   "series": "Sezon 3",
+   "series_id": "sezon-3",
+   "date": "2026-07-10",
+   "title": "Z Tomkiem o Karaibach, crowdfundingu i Bitcoin FilmFest",
+   "guest": "Tomek",
+   "summary": "Karaiby, Bitcoin District na Roatánie, crowdfunding Bitcoin Areny, Bitcoin FilmFest, prywatność, Lightning i Alby.",
+   "topics": [
+    "Roatán",
+    "Bitcoin District",
+    "Bitcoin FilmFest",
+    "crowdfunding"
+   ],
+   "image": "bujac/s3-e01.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/5iRYmf6go9yyiAD3TEdluO"
+    }
+   ]
+  },
+  {
+   "id": "s3-e02",
+   "number": "S03E02",
+   "series": "Sezon 3",
+   "series_id": "sezon-3",
+   "date": "2026-07-17",
+   "title": "Z Maciejem o miłości do pieniądza i dziurce w systemowym baloniku",
+   "guest": "Maciej",
+   "summary": "O społeczności bitcoinowej, oszczędzaniu i płatnościach bez KYC, prywatnej komunikacji, pracy, godności i lokalnych mikroekonomiach.",
+   "topics": [
+    "pieniądz",
+    "non-KYC",
+    "praca",
+    "mikroekonomie"
+   ],
+   "image": "bujac/s3-e02.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/0l15IoP2fNf9blNj2oadJW"
+    }
+   ]
+  },
+  {
+   "id": "s3-e03",
+   "number": "S03E03",
+   "series": "Sezon 3",
+   "series_id": "sezon-3",
+   "date": "2026-07-24",
+   "title": "Z mec. Gracjanem Pietrasem o wolności wypowiedzi i spirali śmierci",
+   "guest": "mec. Gracjan Pietras",
+   "summary": "Wolność wypowiedzi, rola adwokata, KSeF i Chat Control, austriacka szkoła ekonomii, hashrate, halving i odporność Bitcoina na cenzurę.",
+   "topics": [
+    "wolność wypowiedzi",
+    "prawo",
+    "Chat Control",
+    "hashrate"
+   ],
+   "image": "bujac/s3-e03.jpg",
+   "links": [
+    {
+     "kind": "spotify",
+     "label": "Słuchaj na Spotify",
+     "url": "https://open.spotify.com/episode/47rlPi5qpJetXA4OKppARR"
+    }
+   ]
+  }
+ ]
+}

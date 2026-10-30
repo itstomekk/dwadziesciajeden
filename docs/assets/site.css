@@ -569,3 +569,19 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 /* very narrow phones (<375px): header fits without horizontal scroll */
 @media (max-width:374px){.top__in{gap:8px;padding-left:12px;padding-right:8px}.brand{gap:6px}.brand span{font-size:14px}.brand .mark{width:28px;height:28px}.icon-btn{width:32px}.top__act .btn--sm{padding:7px 10px;font-size:13px}}
 @media (max-width:339px){.brand{white-space:normal}.brand span{line-height:1.05;width:min-content}}
+
+/* /bujac/ podcast page */
+.bujac-hero{max-width:var(--w);margin:0 auto 12px;padding:0 var(--pad);display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center}
+.bujac-hero img{width:200px;height:200px;object-fit:cover;border:1px solid var(--rule)}
+.bujac-hero p{max-width:62ch}
+.ep-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,470px),1fr));gap:22px;margin-top:22px}
+.ep{display:grid;grid-template-columns:150px 1fr;gap:18px;border:1px solid var(--rule);background:#fff;padding:16px;scroll-margin-top:90px;transition:border-color .15s}
+.ep:hover,.ep:target{border-color:var(--orange)}
+.ep__img img{width:150px;height:150px;object-fit:cover;background:var(--paper-2)}
+.ep__meta{font:600 12.5px/1.4 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--orange-ink);margin:0 0 6px}
+.ep h3{font-size:19px;line-height:1.25;margin:0 0 8px}
+.ep__body>p{font-size:15px;margin:0 0 10px}
+.ep__topics{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.ep__topics li{padding:2px 9px;border:1px solid var(--rule);font-size:12.5px;color:var(--ink-2)}
+.ep__links{display:flex;flex-wrap:wrap;gap:8px;margin:0!important}
+@media (max-width:620px){.bujac-hero{grid-template-columns:1fr}.bujac-hero img{width:140px;height:140px}.ep{grid-template-columns:1fr}.ep__img img{width:100%;height:auto;aspect-ratio:1/1;max-width:260px}}

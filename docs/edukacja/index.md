@@ -90,7 +90,7 @@ Dla tych, którzy chcą zrozumieć protokół od środka albo na nim budować.
 
 ### Podcasty i nagrania
 
-[podcast · Mateusz Gadaj Bujać Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach. bujac.pl](https://bujac.pl/) · [archiwum podcastu Bujać! archiwum Wszystkie rozmowy Bujać! w jednym miejscu: 18 rozmów w 4 seriach, z playerami, opisami i wyszukiwarką. itstomekk.github.io](https://itstomekk.github.io/bujac-archiwum/) · [podcast Laissez Faire Polski podcast wolnościowy. Bitcoinowa seria „₿ujać – O Bitcoinie po polsku” wychodzi właśnie tutaj. truefans.fm](https://truefans.fm/laissez-faire)
+[podcast · Mateusz Gadaj Bujać! Polskie rozmowy o Bitcoinie, NOSTR, prywatności i wolności. Wszystkie 18 odcinków z opisami, miniaturami i linkami do Spotify na jednej stronie. dwadziesciajeden.pl](https://dwadziesciajeden.pl/bujac/) · [podcast Laissez Faire Polski podcast wolnościowy. Bitcoinowa seria „₿ujać – O Bitcoinie po polsku” wychodzi właśnie tutaj. truefans.fm](https://truefans.fm/laissez-faire)
 
 film [Gdzie jest problem? (polski lektor)](https://www.youtube.com/watch?v=3VupBwORhLk)Film krok po kroku pokazujący, jak państwowy wpływ na pieniądz rodzi kolejne problemy. Polską wersję przygotowali bitcoinerzy z naszej społeczności. youtube.com
 

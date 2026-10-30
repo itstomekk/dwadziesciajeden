@@ -103,3 +103,8 @@ History of the cutover:
 
 - Home h1 shows one phrase per day (18 phrases: 5 first + 13 owner picks from a list of 30, 2026-10-28), no animation (owner: "napisy nie mają się zmieniać, po prostu mogą być inne każdego dnia"). List in `HERO_PHRASES` (build.py, "|" = line break), cycled by the visitor's local date, so everyone sees the same phrase that day. Static HTML and crawlers get "Dwadzieścia Jeden"; an inline script right after the h1 swaps it before first paint (no flash). `text_of()` strips scripts so it stays out of search.json. h1 `white-space:nowrap` keeps the planned line break (checked 320 to 1920 px).
 - Narrow phones (<375px): header tightened (smaller brand/buttons; <340px brand wraps to two lines), book grid uses minmax(0,1fr) + hyphens. All 37 pages have no horizontal scroll at 320px.
+
+## Round 7 (2026-10-30): /bujac/ podcast page
+
+- New `/bujac/` (`build_bujac()` in build.py, data `content/bujac.json`, images `assets/bujac/`, styles `.bujac-hero`/`.ep*` at the end of site.css): 18 episodes in Sezon 1/2/Docinki/Sezon 3 with illustration thumbnails (captioned as illustrations, not official covers), tags, Spotify/YouTube-trailer/archive links. Listed in llms.txt (Edukacja) and the library entry in `/edukacja/` now links to it (`{B}/bujac/`, internal links in `res_row` supported). QA ALL PASS. NOT yet committed or pushed (deploy only on Tomek's word).
+- Gotcha: port 8733 is blocked by Windows here (WinError 10013); run QA on another port via `DJ_QA_PORT`.

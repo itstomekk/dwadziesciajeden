@@ -241,17 +241,11 @@
    "title": "Podcasty i nagrania",
    "items": [
     {
-     "title": "Bujać",
+     "title": "Bujać!",
      "author": "Mateusz Gadaj",
      "type_label": "podcast",
-     "url": "https://bujac.pl/",
-     "description_pl": "Polski podcast o Bitcoinie, dostępny też na Spotify i w innych aplikacjach."
-    },
-    {
-     "title": "Bujać! archiwum",
-     "type_label": "archiwum podcastu",
-     "url": "https://itstomekk.github.io/bujac-archiwum/",
-     "description_pl": "Wszystkie rozmowy Bujać! w jednym miejscu: 18 rozmów w 4 seriach, z playerami, opisami i wyszukiwarką."
+     "url": "{B}/bujac/",
+     "description_pl": "Polskie rozmowy o Bitcoinie, NOSTR, prywatności i wolności. Wszystkie 18 odcinków z opisami, miniaturami i linkami do Spotify na jednej stronie."
     },
     {
      "title": "Laissez Faire",

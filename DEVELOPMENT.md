@@ -25,6 +25,7 @@ Defaults build the live site (root base, indexable, `docs/CNAME`). The old proje
 | `content/projekty.json` | Our projects and friendly projects |
 | `content/inicjatywy.json` | Polish projects, organizations, events, translation work, chats |
 | `content/biblioteka.json` | Books, sites, recordings in Polish |
+| `content/bujac.json` | Podcast Bujać!: 18 episodes for `/bujac/` (curated from the `itstomekk/bujac-archiwum` repo `data/episodes.json`; thumbnails in `assets/bujac/` are the archive's no-text illustrations at 640px; E10 date deliberately empty, it is only a later Spotify date) |
 | `content/zasady.json` | Community rules and the TwentyOne concept |
 | `content/miasta.json` | City index |
 | `content/btcmap-pl.json` | BTC Map snapshot for Poland (from `tools/fetch_btcmap.py`), drawn by `assets/mapa.js` |

@@ -17,6 +17,7 @@ Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treś�
 - [Edukacja](https://dwadziesciajeden.pl/edukacja/index.md): Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania.
 - [Słowniczek](https://dwadziesciajeden.pl/slowniczek/index.md)
 - [Bitcoin Whitepaper](https://dwadziesciajeden.pl/bitcoin-whitepaper/index.md): Decydując się na hosting białej księgi Bitcoina, wyrażamy dla niego nasze poparcie. Poniżej znajdziesz linki do wersji po Polsku, tłumaczonej przez…
+- [Bujać!](https://dwadziesciajeden.pl/bujac/index.md): Podcast Bujać!: 18 polskich rozmów o Bitcoinie, NOSTR, prywatności i wolności, z opisami, miniaturami i linkami do odcinków.
 - [Artykuły](https://dwadziesciajeden.pl/artykuly/index.md)
 
 ## Miasta, meetupy i projekty

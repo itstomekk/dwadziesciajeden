@@ -804,6 +804,7 @@ def build():
     # ---- zasady
     build_edukacja(biblioteka)
     build_zasady(zasady)
+    build_bujac(load("bujac.json"))
 
     # ---- słowniczek
     dl = "".join(f'<div class="term" id="{slugify(t["term"])}"><dt>{e(t["term"])}</dt><dd>{e(t["def"])}</dd></div>' for t in slownik)
@@ -859,7 +860,7 @@ def write_rss(posts, kronika):
 
 LLMS_SECTIONS = [
     ("O społeczności", ["/", "/kim-jestesmy/", "/zasady/", "/dolacz-do-nas/", "/kronika/"]),
-    ("Edukacja", ["/edukacja/", "/slowniczek/", "/bitcoin-whitepaper/", "/artykuly/"]),
+    ("Edukacja", ["/edukacja/", "/slowniczek/", "/bitcoin-whitepaper/", "/bujac/", "/artykuly/"]),
     ("Miasta, meetupy i projekty", ["/bitcoinowa-mapa-polski/", "/warszawa/", "/krakow/", "/poznan/", "/wroclaw/", "/katowice/", "/projekty/", "/bitcoin-w-parlamencie/"]),
 ]
 
@@ -966,7 +967,9 @@ def ini_card(i):
 
 def res_row(i):
     meta = " · ".join(x for x in [i.get("type_label", ""), i.get("author", "")] if x)
-    host = re.sub(r"^https?://(www\.)?", "", i["url"]).split("/")[0]
+    internal = i["url"].startswith("{B}")
+    i = dict(i, url=fill(i["url"]))
+    host = "dwadziesciajeden.pl" if internal else re.sub(r"^https?://(www\.)?", "", i["url"]).split("/")[0]
     vid = yt_id(i["url"])
     if vid:
         return (f'<div class="res res--video">{yt_frame(vid, i["url"], i["title"])}<span class="res__meta">{e(meta)}</span>'
@@ -1037,6 +1040,53 @@ def build_zasady(z):
     write("/zasady/", layout("/zasady/", "Zasady i sieć TwentyOne", body,
                              desc="Zasady społeczności Dwadzieścia Jeden i idea sieci TwentyOne."))
     add_index("/zasady/", "Zasady i sieć TwentyOne", "strona", text_of(body))
+
+
+def bujac_link(l):
+    cls = {"spotify": "btn btn--primary btn--sm", "youtube": "btn btn--ghost btn--sm"}.get(l["kind"], "btn btn--ghost btn--sm")
+    return f'<a class="{cls}" href="{e(l["url"])}" rel="noopener">{e(l["label"])}</a>'
+
+
+def bujac_card(x, intro):
+    meta = " · ".join(t for t in [x["number"], pl_date(x["date"]) if x.get("date") else "data nieustalona", x.get("guest", "")] if t)
+    links = list(x["links"]) + [{"kind": "archive", "label": "Archiwum", "url": intro["archive"]}]
+    topics = "".join(f'<li>{e(t)}</li>' for t in x["topics"])
+    return (f'<article class="ep" id="{x["id"]}"><div class="ep__img"><img src="{b("/assets/" + x["image"])}" alt="" loading="lazy" width="320" height="320"></div>'
+            f'<div class="ep__body"><p class="ep__meta">{e(meta)}</p><h3>{e(x["title"])}</h3><p>{e(x["summary"])}</p>'
+            f'<ul class="ep__topics" aria-label="Tematy">{topics}</ul>'
+            f'<p class="ep__links">{"".join(bujac_link(l) for l in links)}</p></div></article>')
+
+
+def build_bujac(data):
+    if not data:
+        return
+    intro, eps = data["intro"], data["episodes"]
+    order = [("sezon-1", "Sezon 1", "Czerwiec–lipiec 2025. Nagrania z BTC Prague i pierwsze rozmowy."),
+             ("sezon-2", "Sezon 2", "Jesień 2025. Proof of Work, biznes na Bitcoinie, P2P, prywatność."),
+             ("docinki", "Docinki", "Krótkie formy ze stycznia 2026, nagrane w blokach 931401–932391."),
+             ("sezon-3", "Sezon 3", "Lipiec 2026. Rozmowy publikowane na Spotify.")]
+    body = page_head("Podcast", "Bujać!", f'{e(intro["tagline"])} Polskie rozmowy o pieniądzu, wolności i budowaniu poza systemem: Bitcoin, NOSTR, prywatność i własne drogi komunikacji.')
+    body += ('<section class="bujac-hero"><img src="' + b("/assets/bujac/okladka.jpg") + '" alt="Okładka podcastu Bujać!" width="240" height="240" loading="lazy">'
+             f'<div><p>Autor: <strong>{e(intro["author"])}</strong>. Zaprzyjaźniony projekt i dobre miejsce, żeby posłuchać Polaków, którzy żyją na standardzie Bitcoina. '
+             f'Tu zebraliśmy wszystkie {len(eps)} odcinki w jednym miejscu.</p>'
+             f'<p class="cta-row"><a class="btn btn--primary" href="{e(intro["spotify"])}" rel="noopener">Spotify</a>'
+             f'<a class="btn btn--ghost" href="{e(intro["site"])}" rel="noopener">bujac.pl</a>'
+             f'<a class="btn btn--ghost" href="{e(intro["archive"])}" rel="noopener">Pełne archiwum</a></p></div></section>')
+    body += '<nav class="toc" aria-label="Sezony">' + "".join(f'<a href="#{sid}">{e(t)}</a>' for sid, t, _ in order) + "</nav>"
+    for sid, t, lede in order:
+        items = [x for x in eps if x["series_id"] == sid]
+        if not items:
+            continue
+        body += (f'<section class="cat" id="{sid}"><h2 class="sec-title">{e(t)}</h2><p class="cat__intro">{e(lede)}</p>'
+                 '<div class="ep-list">' + "".join(bujac_card(x, intro) for x in items) + "</div></section>")
+        for x in items:
+            add_index(f"/bujac/#{x['id']}", f'Bujać! {x["number"]}: {x["title"]}', "podcast", f'{x.get("guest", "")} {x["summary"]}', x["topics"])
+    body += ('<p class="note proj-note">Grafiki odcinków to ilustracje z archiwum Bujać!, nie oficjalne okładki. '
+             f'Daty E03–E11 to daty pierwszej publikacji z zachowanego RSS, a data E10 nie przetrwała. Stan na {pl_date(intro["checked"])}. '
+             'Zwiastuny na YouTube to fragmenty, pełne rozmowy są na Spotify.</p>')
+    write("/bujac/", layout("/bujac/", "Bujać!", body, desc="Podcast Bujać!: 18 polskich rozmów o Bitcoinie, NOSTR, prywatności i wolności, z opisami, miniaturami i linkami do odcinków.",
+                            crumbs=[("Edukacja", "/edukacja/")]))
+    add_index("/bujac/", "Bujać! podcast", "strona", "podcast Bujać Mateusz Gadaj rozmowy o Bitcoinie NOSTR prywatności wolności")
 
 
 if __name__ == "__main__":
