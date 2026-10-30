@@ -1,5 +1,8 @@
 # Handoff
 
+## 2026-10-30: library shelf "Pieniądz, wolność i szkoła austriacka"
+
+- New category `wolnosc` in `content/biblioteka.json` (after `ksiazki`): Hayek "Denacjonalizacja pieniądza" (Animi2 / Fundacja Lethe, 2019, ISBN 9788366303010), Mises "Ludzkie działanie" (Instytut Misesa, sklep.mises.pl), Rand "Atlas zbuntowany" (Zysk i S-ka). Covers in `assets/books/` (Mises cover cropped from the shop's flat image and upscaled 2x; the others from lubimyczytac.pl). Links point to lubimyczytac.pl for Hayek and Rand because publisher shops do not sell them (Zysk shows it unavailable; Animi2 site unreachable). The `checked` date was not bumped. Built, QA ALL PASS on port 8811 (8741 is in a Windows reserved port range). Not committed, not deployed.
 Updated 2026-10-23.
 
 ## State

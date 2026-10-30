@@ -90,6 +90,38 @@
    ]
   },
   {
+   "id": "wolnosc",
+   "title": "Pieniądz, wolność i szkoła austriacka",
+   "layout": "books",
+   "intro": "Idee, z których wyrósł Bitcoin. Hayek o pieniądzu bez państwowego monopolu, Mises o logice ludzkich wyborów i Rand o tym, co się dzieje, gdy producenci przestają dźwigać świat.",
+   "items": [
+    {
+     "title": "Denacjonalizacja pieniądza. Wersja rozszerzona",
+     "author": "Friedrich August von Hayek",
+     "url": "https://lubimyczytac.pl/ksiazka/4906125/denacjonalizacja-pieniadza",
+     "description_pl": "Hayek dowodzi, że państwo nie powinno mieć monopolu na emisję pieniądza, i opisuje świat konkurujących walut prywatnych. Pierwszy polski przekład, ze wstępem tłumacza, który odnosi tę ideę do kryptowalut.",
+     "image_local": "{B}/assets/books/denacjonalizacja-pieniadza.jpg",
+     "publisher": "Animi2 / Fundacja Lethe"
+    },
+    {
+     "title": "Ludzkie działanie. Traktat o ekonomii",
+     "author": "Ludwig von Mises",
+     "url": "https://sklep.mises.pl/ludzkie-dzialanie-ludwig-von-mises",
+     "description_pl": "Opus magnum austriackiej szkoły ekonomii: wykład prakseologii, czyli nauki o ludzkich wyborach, i rozprawa z socjalizmem oraz interwencjonizmem. Podstawa, na której stoi cała reszta tej półki.",
+     "image_local": "{B}/assets/books/ludzkie-dzialanie.jpg",
+     "publisher": "Instytut Misesa"
+    },
+    {
+     "title": "Atlas zbuntowany",
+     "author": "Ayn Rand",
+     "url": "https://lubimyczytac.pl/ksiazka/5114428/atlas-zbuntowany",
+     "description_pl": "Powieść o świecie, w którym twórcy, przemysłowcy i myśliciele jeden po drugim znikają. Klasyk obiektywizmu, z mową o pieniądzu, którą bitcoinerzy cytują do dziś.",
+     "image_local": "{B}/assets/books/atlas-zbuntowany.jpg",
+     "publisher": "Zysk i S-ka"
+    }
+   ]
+  },
+  {
    "id": "technicznie",
    "title": "Technicznie",
    "layout": "books",
