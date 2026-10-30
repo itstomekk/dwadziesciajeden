@@ -255,26 +255,6 @@
    "origin": "owner request 2026-10-23; og:image deltabadger.com"
   },
   {
-   "id": "quark",
-   "name": "Quark Kantor Bitcoin Warszawa",
-   "status": "zaprzyjaźniony",
-   "kind": "friends",
-   "image": "projekty/quark.jpg",
-   "image_alt": "Strona kantoru Quark w Warszawie",
-   "text": "Pierwszy stacjonarny kantor bitcoina w Polsce, przy Świętokrzyskiej 18 w Warszawie. Przez Quark wymieniliśmy na złotówki satsy zebrane dla WOŚP. Sieć informuje o czasowym zamknięciu kantorów: przed wizytą sprawdź aktualny status.",
-   "links": [
-    {
-     "label": "bitcoinwarszawa.pl",
-     "url": "https://bitcoinwarszawa.pl/"
-    },
-    {
-     "label": "Sieć Quark",
-     "url": "https://quark.house/"
-    }
-   ],
-   "origin": "owner request 2026-10-23; WOŚP post 2024; screenshot bitcoinwarszawa.pl"
-  },
-  {
    "id": "bitomat-com",
    "name": "Bitomat.com",
    "status": "zaprzyjaźniony",
