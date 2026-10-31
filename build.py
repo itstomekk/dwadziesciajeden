@@ -12,8 +12,11 @@ import json
 import os
 import re
 import shutil
+import struct
 from datetime import date
 from pathlib import Path
+
+import whitepaper_page as wpp
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
@@ -244,18 +247,26 @@ def jsonld(path):
 
 class _MD(html.parser.HTMLParser):
     """Small HTML -> Markdown converter for the <main> of a page (stdlib only)."""
-    SKIP = {"script", "style", "svg", "button", "iframe", "noscript", "form", "input"}
+    SKIP = {"script", "style", "svg", "button", "iframe", "noscript", "form", "input", "math"}
     BLOCK = {"p", "div", "section", "article", "header", "ul", "ol", "dl", "table", "figure", "blockquote", "nav", "li", "dt", "dd", "tr", "br"}
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.out, self.skip, self.href, self.li = [], 0, [], 0
         self.drop_tag, self.drop_depth = None, 0
+        self.pre, self.pres = 0, []
 
     def handle_starttag(self, tag, a):
         a = dict(a)
         if self.drop_tag:
             self.drop_depth += tag == self.drop_tag
+            return
+        if tag == "math" and not self.skip:
+            self.out.append(f" `{a.get('alttext', '')}` ")
+        if tag == "pre" and not self.skip:
+            self.pre += 1
+            self.pres.append([])
+            self.out.append(f"\n\n\x00PRE{len(self.pres) - 1}\x00\n\n")
             return
         cls = (a.get("class") or "").split()
         if a.get("aria-hidden") == "true" or {"shell", "dateline", "skip", "crumbs"} & set(cls):
@@ -298,6 +309,9 @@ class _MD(html.parser.HTMLParser):
                 if not self.drop_depth:
                     self.drop_tag = None
             return
+        if tag == "pre" and self.pre:
+            self.pre -= 1
+            return
         if tag in ("span", "small", "time", "em", "kbd", "code"):
             self.out.append(" ")
         if tag in self.SKIP:
@@ -323,7 +337,9 @@ class _MD(html.parser.HTMLParser):
             self.out.append("\n")
 
     def handle_data(self, d):
-        if not self.skip and not self.drop_tag:
+        if self.pre and not self.drop_tag:
+            self.pres[-1].append(d)
+        elif not self.skip and not self.drop_tag:
             self.out.append(re.sub(r"\s+", " ", d))
 
     def md(self):
@@ -339,6 +355,8 @@ class _MD(html.parser.HTMLParser):
         t = re.sub(r"\n- \n", "\n- ", t)
         t = re.sub(r"\*\*\s*\*\*", "", t)
         t = re.sub(r"\n{3,}", "\n\n", t)
+        for i, chunks in enumerate(self.pres):
+            t = t.replace(f"\x00PRE{i}\x00", "```\n" + "".join(chunks).strip("\n") + "\n```")
         return t.strip() + "\n"
 
 
@@ -354,7 +372,7 @@ def write_twin(path, doc):
     desc = (html.unescape(re.search(r'<meta name="description" content="(.*?)"', doc, re.S).group(1)).strip()).replace("\n", " ")
     p = _MD()
     p.feed(m.group(1))
-    body = (f"---\ntitle: {title}\nurl: {SITE_URL}{path}\nlanguage: pl\n---\n\n"
+    body = (f"---\ntitle: {title}\nurl: {SITE_URL}{path}\nlanguage: {'en' if path.startswith('/bitcoin-whitepaper/en/') else 'pl'}\n---\n\n"
             f"> {desc}\n\n" + p.md())
     (OUT / u.lstrip("/")).write_text(body, encoding="utf-8")
     desc = re.sub(r"\s*\*\s+", ", ", re.sub(r"\s+", " ", desc)).replace(":,", ":").replace(",,", ",")
@@ -610,7 +628,7 @@ def build():
         if p["kind"] == "redirect":
             continue
         slug = p["slug"]
-        if slug in ("projekty", "bitcoinowa-mapa-polski", "miasta", "warszawa", "krakow", "poznan"):
+        if slug in ("projekty", "bitcoinowa-mapa-polski", "miasta", "warszawa", "krakow", "poznan", "bitcoin-whitepaper"):
             continue  # custom pages below
         body_html = fill(p["html"])
         if slug == "kim-jestesmy":
@@ -641,6 +659,8 @@ def build():
         write(f"/{slug}/", layout(f"/{slug}/", p["title"], body, desc=desc, kind="post" if is_post else "page",
                                   og_image=fill(p["feature_image"]) if p.get("feature_image") else None, crumbs=crumbs))
         add_index(f"/{slug}/", p["title"], "artykuł" if is_post else "strona", text_of(body_html), p["tags"])
+
+    build_whitepaper()
 
     # ---- artykuły + tags + author
     write("/artykuly/", layout("/artykuly/", "Artykuły",
@@ -834,6 +854,49 @@ def build():
     (OUT / "search.json").write_text(json.dumps(pages_index, ensure_ascii=False), encoding="utf-8")
     print(f"twins: {len(md_pages)} markdown pages")
     print(f"built {len(list(OUT.rglob('index.html')))} pages, {len(pages_index)} search records, base='{BASE}', noindex={NOINDEX}")
+
+
+
+def build_whitepaper():
+    """/bitcoin-whitepaper/ (Polish translation) and /bitcoin-whitepaper/en/ (original) as full-text pages."""
+    data = load("whitepaper.json")
+    px = {}
+    for png in (ROOT / "assets" / "whitepaper").glob("*.png"):
+        px[png.stem] = struct.unpack(">II", png.read_bytes()[16:24])
+
+    def card(lang, title, meta):
+        return (f'<a class="file-card" href="{b(wpp.PDF[lang])}" download><span class="file-card__icon" aria-hidden="true">PDF</span>'
+                f'<span class="file-card__body"><span class="file-card__title">{title}</span>'
+                f'<span class="file-card__meta">{meta} · {wpp.SIZE[lang]}</span></span></a>')
+
+    tr = "https://github.com/meeDamian/bitcoinwhitepaper"
+    pl = data["pl"]
+    body = ('<article class="article wp"><p class="kicker">Zasoby</p><h1>Bitcoin Whitepaper</h1>'
+            '<p class="lede">Decydując się na hosting białej księgi Bitcoina, wyrażamy dla niego nasze poparcie. '
+            'Poniżej cały tekst, z rysunkami, wzorami i źródłami. Można go czytać na telefonie i przeszukiwać.</p>'
+            + card("pl", "Bitcoin: Elektroniczny System Pieniężny Typu Peer-to-Peer", "Whitepaper po polsku")
+            + card("en", "Bitcoin: A Peer-to-Peer Electronic Cash System", "Whitepaper, oryginał")
+            + f'<p class="note">Tłumaczenie na polski: <a href="https://github.com/meeDamian" rel="noopener">meeDamian (Damian Mee)</a>, '
+              f'<a href="{tr}" rel="noopener">repozytorium tłumaczeń</a>. Plik PDF jest identyczny z wersją na bitcoin.org. '
+              f'Tekst oryginału po angielsku: <a href="{b("/bitcoin-whitepaper/en/")}">czytaj tutaj</a>.</p>'
+            + wpp.toc_html("pl", pl) + wpp.paper_html("pl", pl, b, px)
+            + wpp.footer_html("pl", b, b("/")) + "</article>")
+    write("/bitcoin-whitepaper/", layout("/bitcoin-whitepaper/", "Bitcoin Whitepaper", body,
+          desc="Biała księga Bitcoina po polsku: pełny tekst z rysunkami, wzorami i źródłami oraz PDF do pobrania. Tłumaczenie: meeDamian.",
+          crumbs=[("Edukacja", "/edukacja/")]))
+    add_index("/bitcoin-whitepaper/", "Bitcoin Whitepaper", "strona", text_of(body), ["Zasoby"])
+
+    en = data["en"]
+    body = ('<article class="article wp" lang="en"><p class="kicker">Original text</p><h1>Bitcoin Whitepaper</h1>'
+            '<p class="lede">The original paper by Satoshi Nakamoto, as plain text with its figures, equations and references.</p>'
+            + card("en", "Bitcoin: A Peer-to-Peer Electronic Cash System", "Whitepaper, original")
+            + f'<p class="note">Polish translation by meeDamian: <a href="{b("/bitcoin-whitepaper/")}" hreflang="pl">czytaj po polsku</a>.</p>'
+            + wpp.toc_html("en", en) + wpp.paper_html("en", en, b, px)
+            + wpp.footer_html("en", b, b("/")) + "</article>")
+    write("/bitcoin-whitepaper/en/", layout("/bitcoin-whitepaper/en/", "Bitcoin Whitepaper (English)", body,
+          desc="The Bitcoin white paper in English: full text with figures, equations and references, plus the original PDF.",
+          crumbs=[("Bitcoin Whitepaper", "/bitcoin-whitepaper/")]))
+    add_index("/bitcoin-whitepaper/en/", "Bitcoin Whitepaper (English)", "strona", text_of(body), ["Zasoby"])
 
 
 def write_rss(posts, kronika):

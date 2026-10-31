@@ -16,7 +16,7 @@ Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treś�
 
 - [Edukacja](https://dwadziesciajeden.pl/edukacja/index.md): Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania.
 - [Słowniczek](https://dwadziesciajeden.pl/slowniczek/index.md)
-- [Bitcoin Whitepaper](https://dwadziesciajeden.pl/bitcoin-whitepaper/index.md): Decydując się na hosting białej księgi Bitcoina, wyrażamy dla niego nasze poparcie. Poniżej znajdziesz linki do wersji po Polsku, tłumaczonej przez…
+- [Bitcoin Whitepaper](https://dwadziesciajeden.pl/bitcoin-whitepaper/index.md): Biała księga Bitcoina po polsku: pełny tekst z rysunkami, wzorami i źródłami oraz PDF do pobrania. Tłumaczenie: meeDamian.
 - [Bujać!](https://dwadziesciajeden.pl/bujac/index.md): Podcast Bujać!: 18 polskich rozmów o Bitcoinie, NOSTR, prywatności i wolności, z opisami, miniaturami i linkami do odcinków.
 - [Artykuły](https://dwadziesciajeden.pl/artykuly/index.md)
 
@@ -34,6 +34,7 @@ Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treś�
 ## Optional
 
 - [JesterHodl](https://dwadziesciajeden.pl/autor/jesterhodl/index.md)
+- [Bitcoin Whitepaper (English)](https://dwadziesciajeden.pl/bitcoin-whitepaper/en/index.md): The Bitcoin white paper in English: full text with figures, equations and references, plus the original PDF.
 - [Meetup w Warszawie, 17 II 2023](https://dwadziesciajeden.pl/meetup-w-warszawie-17-ii-2023/index.md): ⚡ BITCOINERS IN POLAND, UNITE! ⚡ Luźne spotkanie w barze, integracja społeczności Bitcoin maxi w Warszawie. Jesteś zafascynowana/y rewolucją, jaka…
 - [Meetup w Warszawie, 2 XII 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-2-xii-2022/index.md): Społeczność Bitcoin Only w grudniu 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej: Link do wydarzenia: Meetup.com Facebook Miejsce…
 - [Meetup w Warszawie, 4 XI 2022](https://dwadziesciajeden.pl/meetup-w-warszawie-4-xi-2022/index.md): Społeczność Bitcoin Only w listopadzie 2022 spotyka się w Warszawie na Brackiej 20. Szczegóły poniżej: Link do wydarzenia Meetup.com : 21 🟠 PL -…

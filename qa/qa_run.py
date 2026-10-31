@@ -22,7 +22,7 @@ SHOTS.mkdir(exist_ok=True)
 PAGES = ["/", "/kim-jestesmy/", "/dolacz-do-nas/", "/zasady/", "/edukacja/", "/bitcoinowa-mapa-polski/", "/warszawa/", "/poznan/", "/wroclaw/",
          "/bitcoinowa-mapa-polski/", "/projekty/", "/kronika/", "/artykuly/",
          "/standard-bitcoina-w-polskim-parlamencie/", "/proof-of-keys-3-stycznia-doroczny-test-zaufania-dla-bitcoina-i-dla-ciebie/",
-         "/zbieramy-satki-na-wosp/", "/bitcoin-whitepaper/", "/slowniczek/", "/tag/zbiorki/"]
+         "/zbieramy-satki-na-wosp/", "/bitcoin-whitepaper/", "/bitcoin-whitepaper/en/", "/slowniczek/", "/tag/zbiorki/"]
 
 OLD_URLS = ["/", "/dolacz-do-nas/", "/miasta/", "/bitcoinowa-mapa-polski/", "/projekty/", "/bitcoin-whitepaper/",
             "/kim-jestesmy/", "/standard-bitcoina-w-polskim-parlamencie/",

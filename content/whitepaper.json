@@ -1,0 +1,717 @@
+{
+ "pl": {
+  "lang": "pl",
+  "title": "Bitcoin: Elektroniczny System Pieniężny Typu Peer-to-Peer",
+  "author": "Satoshi Nakamoto",
+  "email": "satoshin@gmx.com",
+  "site": "www.bitcoin.org",
+  "note": [
+   "Tłumaczenie na język Polski z bitcoin.org/bitcoin.pdf",
+   "przez @meeDamian"
+  ],
+  "abstract": "Abstrakt. Pieniądz elektroniczny w formie czysto peer-to-peer umożliwiłby płatności online wysyłane bezpośrednio od nadawcy do odbiorcy bez pośrednictwa instytucji finansowej. Podpisy cyfrowe oferują częściowe rozwiązanie problemu, lecz tracimy ich główne korzyści, jeśli nadal potrzebna jest zaufana strona trzecia, by zapobiec fałszerstwu polegającym na podwójnym wydaniu tych samych środków. Proponujemy rozwiązanie problemu podwójnego wydatkowania przy użyciu sieci peer-to-peer. Sieć opatruje transakcje znacznikami czasu, haszując je na ciągły łańcuch algorytmu proof-of-work z wykorzystaniem skrótów kryptograficznych (ang. hash), tworząc zapis, którego nie da się zmienić bez wykonywania od nowa algorytmu proof-of-work. Najdłuższy łańcuch nie tylko służy jako dowód zaobserwowanego ciągu zdarzeń, ale i dowód, że pochodzi on z największej puli wykonanej pracy. Dopóki większość mocy obliczeniowej kontrolowana jest przez węzły, które nie współpracują w ataku na sieć, będą one generowały najdłuższy łańcuch i pozostawią atakujących w tyle. Sama sieć wymaga tylko minimalnej struktury. Wiadomości przekazywane są przy zachowaniu najwyższej staranności, a węzły mogą do woli opuszczać sieć i do niej wracać, akceptując najdłuższy łańcuch proof-of-work jako dowód tego, co miało miejsce pod ich nieobecność.",
+  "sections": [
+   {
+    "n": 1,
+    "title": "Wprowadzenie",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Handel w Internecie jest niemal całkowicie zależny od instytucji finansowych, pełniących rolę zaufanego pośrednika przetwarzającego płatności elektroniczne. Choć dla większości transakcji system ten się w miarę sprawdza, to nadal cierpi on z powodu nieodzownych słabości modelu opartego o zaufanie. Całkowicie nieodwracalne transakcje nie są tak naprawdę możliwe, jako że instytucje finansowe nie są w stanie uniknąć pośredniczenia w sporach. Koszty pośrednictwa zwiększają koszty transakcji, ograniczając minimalną praktyczną wartość transakcji i eliminując możliwość niewielkich, swobodnych transakcji, do tego dochodzą większe koszty w postaci utraty zdolności dokonywania nieodwracalnych płatności za nieodwracalne usługi. Wraz z możliwością cofania transakcji, rozpowszechnia się potrzeba zaufania. Sprzedawcy muszą być nieufni wobec swych klientów, żądając od nich więcej informacji, niż zwykle byłoby to konieczne. Pewien odsetek oszustw przyjmuje się jako nieunikniony. Owych kosztów i niepewnych płatności można uniknąć w transakcjach wykonywanych osobiście przy użyciu gotówki, nie istnieje jednak mechanizm umożliwiający płatności kanałem komunikacji bez udziału zaufanej strony trzeciej."
+     },
+     {
+      "type": "p",
+      "text": "Potrzebny jest wobec tego elektroniczny system płatności oparty o dowód kryptograficzny, a nie zaufanie, który pozwala dowolnym dwóm dobrowolnie podejmującym decyzje stronom na dokonywanie bezpośrednich transakcji między sobą bez potrzeby angażowania zaufanej strony trzeciej. Transakcje, których cofnięcie byłoby obliczeniowo niepraktyczne, chroniłyby sprzedawców przed oszustwem, zaś dla ochrony kupujących można byłoby wdrożyć rutynowe mechanizmy depozytowe. W niniejszej pracy proponujemy rozwiązanie problemu podwójnego wydania wykorzystujące serwer znaczników czasu typu peer-to-peer do generowania obliczeniowego dowodu porządku chronologicznego transakcji. System jest bezpieczny, o ile uczciwe węzły kolektywnie kontrolują większą moc obliczeniową niż jakakolwiek współpracująca grupa węzłów atakujących."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Transakcje",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Elektroniczną monetę definiujemy jako łańcuch podpisów cyfrowych. Każdy z właścicieli przekazuje monetę następnemu, podpisując cyfrowo hash poprzedniej transakcji oraz klucz publiczny następnego właściciela dopisując je na końcu monety. Odbiorca może zweryfikować podpisy celem zweryfikowania łańcucha własności."
+     },
+     {
+      "type": "fig",
+      "id": "transactions"
+     },
+     {
+      "type": "p",
+      "text": "Oczywiście problemem jest to, że odbiorca nie jest w stanie zweryfikować, czy jeden z właścicieli nie wydał monety podwójnie. W takim przypadku powszechnym rozwiązaniem jest wprowadzenie zaufanego organu centralnego, bądź mennicy, która sprawdza każdą transakcję pod kątem podwójnego wydatkowania. Po każdej transakcji moneta musi zostać zwrócona do mennicy celem wydania nowej monety, i jedynie monety wydane bezpośrednio przez mennicę można uznać za niewydane podwójnie. Problem takiego rozwiązania polega na tym, że los całego systemu pieniężnego zależny jest od firmy prowadzącej mennicę, gdzie każda transakcja musi przez nią przejść, tak jak w systemie bankowym."
+     },
+     {
+      "type": "p",
+      "text": "Musimy znaleźć sposób, który umożliwi odbiorcy sprawdzenie, czy poprzedni właściciele nie podpisali żadnych wcześniejszych transakcji. Na nasze potrzeby uznamy za istotną tylko najwcześniejszą transakcję, nie interesują nas zatem późniejsze próby podwójnego wydatkowania. Jedynym sposobem na potwierdzenie braku transakcji jest znajomość wszystkich transakcji. W modelu opartym o mennicę, to mennica była świadoma wszystkich transakcji i decydowała, która z nich była pierwsza. Aby tego dokonać bez zaufanej strony trzeciej, transakcje muszą być ogłaszane publicznie [1], i potrzebny nam jest system, w którym uczestnicy zgadzają się na jedną historię porządku transakcji, w jakim je otrzymywano. Odbiorca potrzebuje dowodu, iż w czasie każdej transakcji większość węzłów zgodnie uznaje ją za tą pierwszą."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Serwer Znaczników Czasu",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Proponowane przez nas rozwiązanie zaczyna się od serwera znaczników czasu. Serwer znaczników czasu działa poprzez opatrzenie znacznikiem czasu hasha bloku elementów i rozpowszechnienie hasha, przykładowo w gazecie lub poście na Usenecie [2-5]. Znacznik czasu stanowi dowód, iż dane musiały wówczas istnieć, rzecz jasna, aby znaleźć się w hashu. Każdy znacznik czasu zawiera poprzedni znacznik w swym hashu, tworząc łańcuch, gdzie każdy kolejny znacznik wzmacnia znaczniki go poprzedzające."
+     },
+     {
+      "type": "fig",
+      "id": "timestamp"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Proof-of-Work",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Aby zaimplementować serwer znaczników czasu na zasadzie peer-to-peer, potrzebny nam będzie system proof-of-work podobny do Hashcash Adama Back [6], a nie tylko gazeta czy posty na Usenecie. System proof-of-work szuka wartości, której hash, przykładowo SHA-256, rozpoczyna się serią bitów zerowych. Przeciętny nakład wymaganej pracy jest wykładniczy do wymaganej liczby bitów zerowych i można go zweryfikować przy wykonaniu pojedynczego hasha."
+     },
+     {
+      "type": "p",
+      "text": "W naszej sieci znaczników czasu zaimplementujemy system proof-of-work poprzez inkrementację parametru nonce w bloku, aż do uzyskania wartości, dla której hash bloku zyskuje wymagane bity zerowe. Kiedy już włożony wysiłek obliczeniowy spełni wymagania proof-of-work, bloku nie da się zmienić bez ponownego wykonania obliczeń. W miarę dołączania za nim kolejnych bloków, jego zmiana wymagałaby wykonania od nowa wszystkich bloków dodanych po nim."
+     },
+     {
+      "type": "fig",
+      "id": "pow"
+     },
+     {
+      "type": "p",
+      "text": "Algorytm proof-of-work rozwiązuje również problem ustalania reprezentacji przy podejmowaniu decyzji większości. Jeśli większość ustala się na zasadzie jednego adresu IP na jeden głos, oszukiwać mógłby każdy dysponujący wieloma adresami IP. Proof-of-work działa w praktyce na zasadzie jeden-procesor-jeden-głos. Decyzja większości reprezentowana jest przez najdłuższy łańcuch, który zgromadził największy wysiłek algorytmu proof-of-work. Jeśli większość mocy obliczeniowej kontrolowana jest przez uczciwe węzły, uczciwy łańcuch będzie rósł najszybciej i zostawi w tyle wszelkie konkurujące łańcuchy. Aby zmodyfikować wcześniejszy blok, atakujący musiałby wykonać od nowa proof-of-work dla tego bloku i wszystkich dodanych po nim, po czym dogonić i prześcignąć pracę uczciwych węzłów. Później pokażemy, iż prawdopodobieństwo nadgonienia przez wolniejszego atakującego spada wykładniczo wraz z dodawaniem kolejnych bloków."
+     },
+     {
+      "type": "p",
+      "text": "Aby zrekompensować wzrastającą szybkość sprzętową oraz zmieniające się z czasem zainteresowanie dbaniem o węzły, poziom trudności proof-of-work ustalany jest przy pomocy średniej ruchomej celującej w średnią liczbę bloków na godzinę. Jeśli są one generowane zbyt szybko, poziom trudności wzrasta."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Sieć",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Kroki potrzebne do funkcjonowania sieci są następujące:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "1) Nowe transakcje przekazywane są do wszystkich węzłów.",
+       "2) Każdy węzeł gromadzi nowe transakcje w blok.",
+       "3) Każdy węzeł pracuje nad znalezieniem trudnego proof-of-work dla swego bloku.",
+       "4) Kiedy węzeł odnajdzie proof-of-work, ogłasza blok do wszystkich węzłów.",
+       "5) Węzły akceptują blok wyłącznie wtedy, gdy wszystkie zawarte w nim transakcje są poprawne i nie zostały już wydane.",
+       "6) Węzły podejmują decyzję o akceptacji bloku, pracując nad stworzeniem następnego bloku w łańcuchu, używając hasha zaakceptowanego bloku jako hasha poprzednika."
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Węzły zawsze uznają najdłuższy łańcuch za ten prawidłowy i pracują ciągle nad jego wydłużeniem. Jeśli dwa węzły przekazują różne wersje następnego bloku równocześnie, niektóre węzły mogą odebrać jeden lub drugi wcześniej. W takim przypadku pracują nad pierwszym odebranym, ale zapisują drugą gałąź na wypadek, gdyby stała się dłuższa. Remis zostaje rozstrzygnięty, gdy następny proof-of-work zostanie wykryty i jedna z gałęzi stanie się dłuższa; węzły pracujące nad drugą gałęzią przestawią się wówczas na tą dłuższą."
+     },
+     {
+      "type": "p",
+      "text": "Informacja o nowych transakcjach nie musi koniecznie docierać do wszystkich węzłów. O ile dotrą one do wielu węzłów, w niedługim czasie trafią do bloku. Przekazy bloków tolerują również zagubione wiadomości. Jeśli węzeł nie odbierze bloku, zażąda go po odebraniu następnego bloku, kiedy zauważy zgubę."
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "Zachęty",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Zwyczajowo pierwsza transakcja w bloku to specjalna transakcja tworząca nową monetę dla twórcy bloku. Stanowi to dla węzłów zachętę do wspierania sieci, oraz daje sposób na wstępne wprowadzenie monet do obiegu, jako że nie istnieje organ centralny je wydający. Ciągłe dodawanie stałej ilości nowych monet jest analogiczne do poszukiwaczy złota zużywających zasoby, aby wprowadzić złoto do obiegu. W naszym przypadku to czas procesora i elektryczność są zużywane."
+     },
+     {
+      "type": "p",
+      "text": "Za zachętę mogą również posłużyć opłaty transakcyjne. Jeśli wartość wyjściowa transakcji jest niższa od jej wartości wejściowej, różnica stanowi opłatę za transakcję dodawaną do wartości zachęty bloku zawierającego transakcję. Kiedy już z góry ustalona liczba monet wejdzie do obiegu, zachęta może płynąć całkowicie z opłat transakcyjnych i być w pełni wolna od inflacji."
+     },
+     {
+      "type": "p",
+      "text": "Zachęta może pomóc motywować węzły do uczciwości. Jeśli chciwy atakujący jest w stanie zgromadzić więcej mocy obliczeniowej, niż wszystkie uczciwe węzły razem wzięte, musiałby wybierać pomiędzy wykorzystaniem jej do oszukania ludzi poprzez refundowanie swych płatności, lub przy jej użyciu tworzyć nowe monety. Bardziej opłacałoby się mu przestrzegać zasad, dzięki którym może zyskać więcej nowych monet, niż wszyscy inni razem, zamiast podkopywać system oraz wartość swego własnego majątku."
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "title": "Odzyskiwanie Przestrzeni Dyskowej",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Kiedy już najnowsza transakcja monety zostanie pogrzebana pod wystarczającą ilością bloków, wydane przed nią transakcje można usunąć celem oszczędności przestrzeni dyskowej. W celu ułatwienia tego procesu bez naruszania hasha bloku, transakcje haszowane są przy użyciu Drzewa Merkle (n/t: Drzewo Skrótów) [7][2][5], gdzie tylko korzeń zawarty jest w hashu bloku. Stare bloki można wówczas pomniejszyć, przycinając gałęzie drzewa. Haszów pośrednich nie trzeba przechowywać."
+     },
+     {
+      "type": "fig",
+      "id": "merkle"
+     },
+     {
+      "type": "p",
+      "text": "Nagłówek bloku bez transakcji zajmuje około 80 bajtów. Jeśli założymy, że bloki generowane są co 10 minut, 80 bajtów * 6 * 24 * 365 = 4,2MB rocznie. Wziąwszy pod uwagę, iż nowe komputery w roku 2008 zwykle mają 2GB pamięci RAM, a Prawo Moore'a przewiduje obecnie wzrost o 1,2GB rocznie, pamięć nie powinna stanowić problemu nawet, jeśli nagłówki bloków muszą być w niej przechowywane."
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "title": "Uproszczona Weryfikacja Płatności",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Weryfikacja płatności możliwa jest bez potrzeby korzystania z pełnego węzła sieciowego. Użytkownik przechowywać musi jedynie kopię nagłówków bloków najdłuższego łańcucha proof-of-work, którą może uzyskać przeszukując węzły sieci, aż uzna, iż znalazł najdłuższy łańcuch, skąd może uzyskać gałąź Merkle łączącą transakcję z blokiem, w którym został oznaczony znacznikiem czasu. Nie może on sam sprawdzić transakcji, ale łącząc ją do punktu na łańcuchu może dostrzec, iż węzeł sieciowy ją zaakceptował, a dodane później bloki jeszcze bardziej potwierdzają akceptację ze strony sieci."
+     },
+     {
+      "type": "fig",
+      "id": "spv"
+     },
+     {
+      "type": "p",
+      "text": "O ile uczciwe węzły kontrolują sieć, weryfikacja jest wiarygodna, jednak gdy sieć jest zdominowana przez atakującego, staje się podatna na ataki. Choć węzły sieci są w stanie same zweryfikować transakcje, uproszczona metoda może zostać zmylona przez sfabrykowane transakcje atakującego, tak długo jak atakujący jest w stanie dominować sieć. Sposobem na ochronę przed tego typu sytuacjami mogłoby być odbieranie ostrzeżeń od węzłów sieci, kiedy węzły te wykrywają nieprawidłowy blok, oprogramowanie użytkownika odpowiada pobierając cały blok i podejrzane transakcje celem potwierdzenia nieścisłości. Firmy odbierające często płatności zapewne i tak będą chciały mieć własne węzły dla bardziej niezależnej ochrony i szybszej weryfikacji."
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "title": "Łączenie i Dzielenie Wartości",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Chociaż możliwe byłoby zarządzanie indywidualnymi monetami, nieporęcznym jest dokonywanie osobnej transakcji dla każdego grosza transferu. Aby umożliwiać dzielenie i łączenie wartości, transakcje posiadają wiele wejść i wyjść. Zwykle będzie albo jedno wejście dla większej poprzedniej transakcji, albo wiele wejść łączących mniejsze kwoty, oraz najwyżej dwa wyjścia: jedno dla płatności i drugie dla zwrotu reszty wysyłającemu, jeśli taka wystąpi."
+     },
+     {
+      "type": "fig",
+      "id": "split"
+     },
+     {
+      "type": "p",
+      "text": "Należy zauważyć, iż zjawisko rozwidlania, gdzie transakcja zależy od kilku innych transakcji, a transakcje te zależą od wielu więcej, nie jest tutaj problemem. Nigdy nie ma potrzeby wydobycia kompletnej samodzielnej kopii historii transakcji."
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "title": "Prywatność",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Tradycyjny model bankowy osiąga pewien poziom prywatności ograniczając dostęp do informacji do zaangażowanych stron oraz zaufanej strony trzeciej. Konieczność ogłaszania wszystkich transakcji publicznie wyklucza tę metodę, nadal jednak można zachować prywatność przerywając przepływ informacji w innym miejscu: czyniąc klucze publiczne anonimowymi. Publika dostrzega, że ktoś przesyła komuś pewną kwotę, lecz bez informacji łączących transakcję z kimkolwiek. Przypomina to poziom informacji udostępniany przez giełdy papierów wartościowych, gdzie czas i rozmiar indywidualnych transakcji, czyli \"taśma\", są upubliczniane, ale bez ujawniania stron transakcji."
+     },
+     {
+      "type": "fig",
+      "id": "privacy"
+     },
+     {
+      "type": "p",
+      "text": "W ramach dodatkowego zabezpieczenia powinno się stosować nową parę kluczy dla każdej transakcji, aby nie dało się ich powiązać ze wspólnym właścicielem. Pewnego powiązania nie da się jednak uniknąć dla transakcji o wielu wejściach, które muszą ujawniać, że ich wejścia należały do tego samego właściciela. Ryzyko polega na tym, że jeśli właściciel klucza zostanie ujawniony, powiązanie mogłoby ujawnić inne transakcje należące do tego samego właściciela."
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "title": "Obliczenia",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Rozważmy scenariusz, w którym atakujący usiłuje wygenerować alternatywny łańcuch szybciej, niż uczciwy łańcuch. Nawet, jeśli mu się uda, system nie stanie się otwarty na samowolne zmiany, takie jak tworzenie wartości z powietrza lub przywłaszczanie pieniędzy nienależących do atakującego. Węzły nie zaakceptują nieprawidłowej transakcji jako płatności, a uczciwe węzły nigdy nie zaakceptują bloku je zawierającego. Atakujący może jedynie próbować zmienić jedną z własnych transakcji w celu odzyskania niedawno wydanych pieniędzy."
+     },
+     {
+      "type": "p",
+      "text": "Wyścig pomiędzy uczciwym łańcuchem, a łańcuchem atakującym można scharakteryzować jako Dwumianowe Błądzenie Losowe. Sytuacja sukcesu ma miejsce, gdy uczciwy łańcuch wydłuża się o jeden blok, zwiększając swą przewagę o +1, zaś sytuacja porażki ma miejsce, gdy łańcuch atakującego wydłuża się o jeden blok, redukując dystans o -1."
+     },
+     {
+      "type": "p",
+      "text": "Prawdopodobieństwo, że atakujący nadgoni przy danym deficycie jest analogiczne do problemu Ruiny Gracza. Załóżmy, że gracz o nieograniczonych zdolnościach kredytowych zaczyna na minusie i rozgrywa potencjalnie nieskończoną liczbę zagrań, starając się wyjść na zero. Możemy wyliczyć prawdopodobieństwo, że kiedykolwiek wyjdzie na zero, lub że atakujący kiedykolwiek nadgoni uczciwy łańcuch, w sposób następujący [8]:"
+     },
+     {
+      "type": "defs",
+      "id": "defs",
+      "lines": [
+       "p = prawdopodobieństwo, że uczciwy węzeł znajdzie następny blok",
+       "q = prawdopodobieństwo, że atakujący znajdzie następny blok",
+       "qz = prawdopodobieństwo, że atakujący kiedykolwiek nadrobi różnicę 𝑧bloków"
+      ]
+     },
+     {
+      "type": "eq",
+      "id": "q",
+      "lines": [
+       "q z={ 1",
+       "if pq}",
+       "if p≤q",
+       "q/ pz"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Przy założeniu, że p > q, prawdopodobieństwo spada wykładniczo wraz ze wzrostem liczby bloków, jakie atakujący musi nadrobić. Jako, że szanse są przeciwko niemu, jeśli dość wcześnie nie dokona on udanego skoku wprzód, jego szanse znacząco spadają w miarę zostawania coraz bardziej w tyle."
+     },
+     {
+      "type": "p",
+      "text": "Rozważmy teraz, jak długo odbiorca nowej transakcji musi czekać, aby mieć wystarczającą pewność, że nadawca nie może już zmienić transakcji. Zakładamy, że nadawca to atakujący chcący wmówić odbiorcy na jakiś czas, że mu zapłacił, a następnie zabrać sobie kwotę z powrotem po upłynięciu jakiegoś czasu. Odbiorca zostanie ostrzeżony w takiej sytuacji, ale nadawca liczy, iż będzie już wówczas za późno."
+     },
+     {
+      "type": "p",
+      "text": "Odbiorca generuje nową parę kluczy i daje klucz publiczny nadawcy krótko przed podpisaniem. Powstrzymuje to nadawcę przed wcześniejszym przygotowywaniem łańcucha bloków, poprzez ciągłą pracę nad nim, aż do momentu gdy poszczęści mu się wystarczająco by dostatecznie wysunąć się naprzód, a następnie w owej chwili wykonać transakcję. Po wysłaniu transakcji nieuczciwy nadawca zaczyna pracować w tajemnicy nad łańcuchem równoległym zawierającym alternatywną wersję tejże transakcji."
+     },
+     {
+      "type": "p",
+      "text": "Odbiorca czeka, aż transakcja zostanie dodana do bloku, a po nim dołączonych zostanie 𝑧 bloków. Nie zna on dokładnej wielkości postępów dokonanych przez atakującego, ale zakładając, że uczciwym blokom zajęło to przeciętny oczekiwany czas na blok, potencjalny postęp atakującego będzie rozkładem Poissona o wartości oczekiwanej:"
+     },
+     {
+      "type": "eq",
+      "id": "lambda",
+      "lines": [
+       "=z q",
+       "p"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Aby uzyskać prawdopodobieństwo, że atakujący wciąż może nadgonić, mnożymy gęstość rozkładu Poissona dla każdej wartości postępu, jaki mógłby dokonać, przez prawdopodobieństwo nadgonienia od tego miejsca:"
+     },
+     {
+      "type": "eq",
+      "id": "sum",
+      "lines": [
+       "k! ⋅{q/ p",
+       "if k z}",
+       "−",
+       "∞ke",
+       "z−k",
+       "if k ≤z",
+       "∑",
+       "1",
+       "k=0"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Przekształcamy celem uniknięcia sumowania nieskończonego ogona dystrybucji…"
+     },
+     {
+      "type": "eq",
+      "id": "tail",
+      "lines": [
+       "z k e",
+       "−",
+       "k! 1−q/ pz−k",
+       "1−∑",
+       "k=0"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Konwertujemy na kod C…"
+     },
+     {
+      "type": "pre",
+      "id": "code",
+      "text": "#include <math.h>\ndouble SzansaPowodzeniaAtaku(double q, int z)\n{\n    double p = 1.0 - q;\n    double lambda = z * (q / p);\n    double sum = 1.0;\n    int i, k;\n    for (k = 0; k <= z; k++)\n    {\n        double poisson = exp(-lambda);\n        for (i = 1; i <= k; i++)\n            poisson *= lambda / i;\n        sum -= poisson * (1 - pow(q / p, z - k));\n    }\n    return sum;\n}"
+     },
+     {
+      "type": "p",
+      "text": "Po sprawdzeniu wyników widać, że prawdopodobieństwo spada wykładniczo wraz ze wzrostem 𝑧."
+     },
+     {
+      "type": "pre",
+      "id": "t1",
+      "text": "q=0.1\nz=0    P=1.0000000\nz=1    P=0.2045873\nz=2    P=0.0509779\nz=3    P=0.0131722\nz=4    P=0.0034552\nz=5    P=0.0009137\nz=6    P=0.0002428\nz=7    P=0.0000647\nz=8    P=0.0000173\nz=9    P=0.0000046\nz=10   P=0.0000012"
+     },
+     {
+      "type": "pre",
+      "id": "t2",
+      "text": "q=0.3\nz=0    P=1.0000000\nz=5    P=0.1773523\nz=10   P=0.0416605\nz=15   P=0.0101008\nz=20   P=0.0024804\nz=25   P=0.0006132\nz=30   P=0.0001522\nz=35   P=0.0000379\nz=40   P=0.0000095\nz=45   P=0.0000024\nz=50   P=0.0000006"
+     },
+     {
+      "type": "p",
+      "text": "Wyniki dla P mniejszego niż 0.1%…"
+     },
+     {
+      "type": "pre",
+      "id": "t3",
+      "text": "P < 0.001\nq=0.10   z=5\nq=0.15   z=8\nq=0.20   z=11\nq=0.25   z=15\nq=0.30   z=24\nq=0.35   z=41\nq=0.40   z=89\nq=0.45   z=340"
+     }
+    ]
+   },
+   {
+    "n": 12,
+    "title": "Podsumowanie",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Zaproponowaliśmy system transakcji elektronicznych nieopierający się na zaufaniu. Zaczęliśmy od standardowych ram dla monet wykorzystujących podpisy cyfrowe, co daje silną kontrolę nad własnością, lecz jest niekompletne bez sposobu na zapobieganie podwójnemu wydatkowaniu. Aby to rozwiązać, zaproponowaliśmy sieć peer-to-peer wykorzystującą system proof-of-work do rejestrowania publicznej historii transakcji, której zmiana szybko staje się obliczeniowo niepraktyczna dla atakującego, jeśli uczciwe węzły kontrolują większość mocy obliczeniowej. Sieć jest imponująca w swej nieustrukturowanej prostocie. Wszystkie węzły działają jednocześnie bez większej koordynacji. Nie trzeba ich identyfikować, gdyż wiadomości nie są przesyłane w żadne konkretne miejsce i ważne jest, by dostarczyć je przy zachowaniu najwyższej staranności. Węzły mogą dowolnie opuszczać sieć i do niej wracać, akceptując łańcuch proof-of-work jako dowód tego, co miało miejsce pod ich nieobecność. Głosują one przy użyciu swej mocy obliczeniowej, gdzie wyrażają akceptację prawidłowych bloków pracując nad ich wydłużaniem i odrzucają nieprawidłowe bloki odmawiając pracy nad nimi. Wszelkie potrzebne zasady i zachęty można wyegzekwować wykorzystując ten mechanizm konsensusu."
+     }
+    ]
+   }
+  ],
+  "references": [
+   "[1] W. Dai, \"b-money,\" http://www.weidai.com/bmoney.txt, 1998 r.",
+   "[2] H. Massias, X.S. Avila i J.-J. Quisquater, \"Design of a secure timestamping service with minimal trust requirements,\" w 20th Symposium on Information Theory w the Benelux, maj 1999 r.",
+   "[3] S. Haber, W.S. Stornetta, \"How to time-stamp a digital document,\" w Journal of Cryptology, tom 3, nr 2, strony 99-111, 1991 r.",
+   "[4] D. Bayer, S. Haber, W.S. Stornetta, \"Improving the efficiency and reliability of digital time-stamping,\" w In Sequences II: Methods in Communication, Security and Computer Science, strony 329-334, 1993 r.",
+   "[5] S. Haber, W.S. Stornetta, \"Secure names for bit-strings,\" w Proceedings of the 4th ACM Conference on Computer and Communications Security, strony 28-35, kwiecień 1997 r.",
+   "[6] A. Back, \"Hashcash - a denial of service counter-measure,\" http://www.hashcash.org/papers/hashcash.pdf, 2002 r.",
+   "[7] R.C. Merkle, \"Protocols for public key cryptosystems,\" w 1980 Symposium on Security and Privacy, IEEE Computer Society, strony 122-133, kwiecień 1980 r.",
+   "[8] W. Feller, \"An introduction to probability theory and its applications,\" 1957 r."
+  ]
+ },
+ "en": {
+  "lang": "en",
+  "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+  "author": "Satoshi Nakamoto",
+  "email": "satoshin@gmx.com",
+  "site": "www.bitcoin.org",
+  "abstract": "Abstract. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.",
+  "sections": [
+   {
+    "n": 1,
+    "title": "Introduction",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Commerce on the Internet has come to rely almost exclusively on financial institutions serving as trusted third parties to process electronic payments. While the system works well enough for most transactions, it still suffers from the inherent weaknesses of the trust based model. Completely non-reversible transactions are not really possible, since financial institutions cannot avoid mediating disputes. The cost of mediation increases transaction costs, limiting the minimum practical transaction size and cutting off the possibility for small casual transactions, and there is a broader cost in the loss of ability to make non-reversible payments for non-reversible services. With the possibility of reversal, the need for trust spreads. Merchants must be wary of their customers, hassling them for more information than they would otherwise need. A certain percentage of fraud is accepted as unavoidable. These costs and payment uncertainties can be avoided in person by using physical currency, but no mechanism exists to make payments over a communications channel without a trusted party."
+     },
+     {
+      "type": "p",
+      "text": "What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party. Transactions that are computationally impractical to reverse would protect sellers from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. In this paper, we propose a solution to the double-spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions. The system is secure as long as honest nodes collectively control more CPU power than any cooperating group of attacker nodes."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "title": "Transactions",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "We define an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the signatures to verify the chain of ownership."
+     },
+     {
+      "type": "fig",
+      "id": "transactions"
+     },
+     {
+      "type": "p",
+      "text": "The problem of course is the payee can't verify that one of the owners did not double-spend the coin. A common solution is to introduce a trusted central authority, or mint, that checks every transaction for double spending. After each transaction, the coin must be returned to the mint to issue a new coin, and only coins issued directly from the mint are trusted not to be double-spent. The problem with this solution is that the fate of the entire money system depends on the company running the mint, with every transaction having to go through them, just like a bank."
+     },
+     {
+      "type": "p",
+      "text": "We need a way for the payee to know that the previous owners did not sign any earlier transactions. For our purposes, the earliest transaction is the one that counts, so we don't care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions. In the mint based model, the mint was aware of all transactions and decided which arrived first. To accomplish this without a trusted party, transactions must be publicly announced [1], and we need a system for participants to agree on a single history of the order in which they were received. The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "title": "Timestamp Server",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "The solution we propose begins with a timestamp server. A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash, such as in a newspaper or Usenet post [2-5]. The timestamp proves that the data must have existed at the time, obviously, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it."
+     },
+     {
+      "type": "fig",
+      "id": "timestamp"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "title": "Proof-of-Work",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a proof-of-work system similar to Adam Back's Hashcash [6], rather than newspaper or Usenet posts. The proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash."
+     },
+     {
+      "type": "p",
+      "text": "For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block until a value is found that gives the block's hash the required zero bits. Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it."
+     },
+     {
+      "type": "fig",
+      "id": "pow"
+     },
+     {
+      "type": "p",
+      "text": "The proof-of-work also solves the problem of determining representation in majority decision making. If the majority were based on one-IP-address-one-vote, it could be subverted by anyone able to allocate many IPs. Proof-of-work is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest proof-of-work effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains. To modify a past block, an attacker would have to redo the proof-of-work of the block and all blocks after it and then catch up with and surpass the work of the honest nodes. We will show later that the probability of a slower attacker catching up diminishes exponentially as subsequent blocks are added."
+     },
+     {
+      "type": "p",
+      "text": "To compensate for increasing hardware speed and varying interest in running nodes over time, the proof-of-work difficulty is determined by a moving average targeting an average number of blocks per hour. If they're generated too fast, the difficulty increases."
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "title": "Network",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "The steps to run the network are as follows:"
+     },
+     {
+      "type": "list",
+      "items": [
+       "1) New transactions are broadcast to all nodes.",
+       "2) Each node collects new transactions into a block.",
+       "3) Each node works on finding a difficult proof-of-work for its block.",
+       "4) When a node finds a proof-of-work, it broadcasts the block to all nodes.",
+       "5) Nodes accept the block only if all transactions in it are valid and not already spent.",
+       "6) Nodes express their acceptance of the block by working on creating the next block in the chain, using the hash of the accepted block as the previous hash."
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Nodes always consider the longest chain to be the correct one and will keep working on extending it. If two nodes broadcast different versions of the next block simultaneously, some nodes may receive one or the other first. In that case, they work on the first one they received, but save the other branch in case it becomes longer. The tie will be broken when the next proof-of-work is found and one branch becomes longer; the nodes that were working on the other branch will then switch to the longer one."
+     },
+     {
+      "type": "p",
+      "text": "New transaction broadcasts do not necessarily need to reach all nodes. As long as they reach many nodes, they will get into a block before long. Block broadcasts are also tolerant of dropped messages. If a node does not receive a block, it will request it when it receives the next block and realizes it missed one."
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "title": "Incentive",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "By convention, the first transaction in a block is a special transaction that starts a new coin owned by the creator of the block. This adds an incentive for nodes to support the network, and provides a way to initially distribute coins into circulation, since there is no central authority to issue them. The steady addition of a constant of amount of new coins is analogous to gold miners expending resources to add gold to circulation. In our case, it is CPU time and electricity that is expended."
+     },
+     {
+      "type": "p",
+      "text": "The incentive can also be funded with transaction fees. If the output value of a transaction is less than its input value, the difference is a transaction fee that is added to the incentive value of the block containing the transaction. Once a predetermined number of coins have entered circulation, the incentive can transition entirely to transaction fees and be completely inflation free."
+     },
+     {
+      "type": "p",
+      "text": "The incentive may help encourage nodes to stay honest. If a greedy attacker is able to assemble more CPU power than all the honest nodes, he would have to choose between using it to defraud people by stealing back his payments, or using it to generate new coins. He ought to find it more profitable to play by the rules, such rules that favour him with more new coins than everyone else combined, than to undermine the system and the validity of his own wealth."
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "title": "Reclaiming Disk Space",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block's hash, transactions are hashed in a Merkle Tree [7][2][5], with only the root included in the block's hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored."
+     },
+     {
+      "type": "fig",
+      "id": "merkle"
+     },
+     {
+      "type": "p",
+      "text": "A block header with no transactions would be about 80 bytes. If we suppose blocks are generated every 10 minutes, 80 bytes * 6 * 24 * 365 = 4.2MB per year. With computer systems typically selling with 2GB of RAM as of 2008, and Moore's Law predicting current growth of 1.2GB per year, storage should not be a problem even if the block headers must be kept in memory."
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "title": "Simplified Payment Verification",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest proof-of-work chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. He can't check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it."
+     },
+     {
+      "type": "fig",
+      "id": "spv"
+     },
+     {
+      "type": "p",
+      "text": "As such, the verification is reliable as long as honest nodes control the network, but is more vulnerable if the network is overpowered by an attacker. While network nodes can verify transactions for themselves, the simplified method can be fooled by an attacker's fabricated transactions for as long as the attacker can continue to overpower the network. One strategy to protect against this would be to accept alerts from network nodes when they detect an invalid block, prompting the user's software to download the full block and alerted transactions to confirm the inconsistency. Businesses that receive frequent payments will probably still want to run their own nodes for more independent security and quicker verification."
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "title": "Combining and Splitting Value",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender."
+     },
+     {
+      "type": "fig",
+      "id": "split"
+     },
+     {
+      "type": "p",
+      "text": "It should be noted that fan-out, where a transaction depends on several transactions, and those transactions depend on many more, is not a problem here. There is never the need to extract a complete standalone copy of a transaction's history."
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "title": "Privacy",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone. This is similar to the level of information released by stock exchanges, where the time and size of individual trades, the \"tape\", is made public, but without telling who the parties were."
+     },
+     {
+      "type": "fig",
+      "id": "privacy"
+     },
+     {
+      "type": "p",
+      "text": "As an additional firewall, a new key pair should be used for each transaction to keep them from being linked to a common owner. Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner. The risk is that if the owner of a key is revealed, linking could reveal other transactions that belonged to the same owner."
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "title": "Calculations",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "We consider the scenario of an attacker trying to generate an alternate chain faster than the honest chain. Even if this is accomplished, it does not throw the system open to arbitrary changes, such as creating value out of thin air or taking money that never belonged to the attacker. Nodes are not going to accept an invalid transaction as payment, and honest nodes will never accept a block containing them. An attacker can only try to change one of his own transactions to take back money he recently spent."
+     },
+     {
+      "type": "p",
+      "text": "The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk. The success event is the honest chain being extended by one block, increasing its lead by +1, and the failure event is the attacker's chain being extended by one block, reducing the gap by -1."
+     },
+     {
+      "type": "p",
+      "text": "The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem. Suppose a gambler with unlimited credit starts at a deficit and plays potentially an infinite number of trials to try to reach breakeven. We can calculate the probability he ever reaches breakeven, or that an attacker ever catches up with the honest chain, as follows [8]:"
+     },
+     {
+      "type": "defs",
+      "id": "defs",
+      "lines": [
+       "p = probability an honest node finds the next block",
+       "q = probability the attacker finds the next block",
+       "qz = probability the attacker will ever catch up from z blocks behind"
+      ]
+     },
+     {
+      "type": "eq",
+      "id": "q",
+      "lines": [
+       "1",
+       "if p≤q",
+       "q z={",
+       "if pq}",
+       "z",
+       "q/ p"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Given our assumption that p > q, the probability drops exponentially as the number of blocks the attacker has to catch up with increases. With the odds against him, if he doesn't make a lucky lunge forward early on, his chances become vanishingly small as he falls further behind."
+     },
+     {
+      "type": "p",
+      "text": "We now consider how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can't change the transaction. We assume the sender is an attacker who wants to make the recipient believe he paid him for a while, then switch it to pay back to himself after some time has passed. The receiver will be alerted when that happens, but the sender hopes it will be too late."
+     },
+     {
+      "type": "p",
+      "text": "The receiver generates a new key pair and gives the public key to the sender shortly before signing. This prevents the sender from preparing a chain of blocks ahead of time by working on it continuously until he is lucky enough to get far enough ahead, then executing the transaction at that moment. Once the transaction is sent, the dishonest sender starts working in secret on a parallel chain containing an alternate version of his transaction."
+     },
+     {
+      "type": "p",
+      "text": "The recipient waits until the transaction has been added to a block and z blocks have been linked after it. He doesn't know the exact amount of progress the attacker has made, but assuming the honest blocks took the average expected time per block, the attacker's potential progress will be a Poisson distribution with expected value:"
+     },
+     {
+      "type": "eq",
+      "id": "lambda",
+      "lines": [
+       "=z q",
+       "p"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "To get the probability the attacker could still catch up now, we multiply the Poisson density for each amount of progress he could have made by the probability he could catch up from that point:"
+     },
+     {
+      "type": "eq",
+      "id": "sum",
+      "lines": [
+       "ke",
+       "−",
+       "z−k",
+       "∞",
+       "q/ p",
+       "if k≤z",
+       "k! ⋅{",
+       "if kz}",
+       "∑",
+       "1",
+       "k=0"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Rearranging to avoid summing the infinite tail of the distribution..."
+     },
+     {
+      "type": "eq",
+      "id": "tail",
+      "lines": [
+       "k e",
+       "z ",
+       "−",
+       "z−k",
+       "1−∑",
+       "1−q/ p",
+       "k!",
+       "k=0"
+      ]
+     },
+     {
+      "type": "p",
+      "text": "Converting to C code..."
+     },
+     {
+      "type": "pre",
+      "id": "code",
+      "text": "#include <math.h>\ndouble AttackerSuccessProbability(double q, int z)\n{\n    double p = 1.0 - q;\n    double lambda = z * (q / p);\n    double sum = 1.0;\n    int i, k;\n    for (k = 0; k <= z; k++)\n    {\n        double poisson = exp(-lambda);\n        for (i = 1; i <= k; i++)\n            poisson *= lambda / i;\n        sum -= poisson * (1 - pow(q / p, z - k));\n    }\n    return sum;\n}"
+     },
+     {
+      "type": "p",
+      "text": "Running some results, we can see the probability drop off exponentially with z."
+     },
+     {
+      "type": "pre",
+      "id": "t1",
+      "text": "q=0.1\nz=0    P=1.0000000\nz=1    P=0.2045873\nz=2    P=0.0509779\nz=3    P=0.0131722\nz=4    P=0.0034552\nz=5    P=0.0009137\nz=6    P=0.0002428\nz=7    P=0.0000647\nz=8    P=0.0000173\nz=9    P=0.0000046\nz=10   P=0.0000012"
+     },
+     {
+      "type": "pre",
+      "id": "t2",
+      "text": "q=0.3\nz=0    P=1.0000000\nz=5    P=0.1773523\nz=10   P=0.0416605\nz=15   P=0.0101008\nz=20   P=0.0024804\nz=25   P=0.0006132\nz=30   P=0.0001522\nz=35   P=0.0000379\nz=40   P=0.0000095\nz=45   P=0.0000024\nz=50   P=0.0000006"
+     },
+     {
+      "type": "p",
+      "text": "Solving for P less than 0.1%..."
+     },
+     {
+      "type": "pre",
+      "id": "t3",
+      "text": "P < 0.001\nq=0.10   z=5\nq=0.15   z=8\nq=0.20   z=11\nq=0.25   z=15\nq=0.30   z=24\nq=0.35   z=41\nq=0.40   z=89\nq=0.45   z=340"
+     }
+    ]
+   },
+   {
+    "n": 12,
+    "title": "Conclusion",
+    "blocks": [
+     {
+      "type": "p",
+      "text": "We have proposed a system for electronic transactions without relying on trust. We started with the usual framework of coins made from digital signatures, which provides strong control of ownership, but is incomplete without a way to prevent double-spending. To solve this, we proposed a peer-to-peer network using proof-of-work to record a public history of transactions that quickly becomes computationally impractical for an attacker to change if honest nodes control a majority of CPU power. The network is robust in its unstructured simplicity. Nodes work all at once with little coordination. They do not need to be identified, since messages are not routed to any particular place and only need to be delivered on a best effort basis. Nodes can leave and rejoin the network at will, accepting the proof-of-work chain as proof of what happened while they were gone. They vote with their CPU power, expressing their acceptance of valid blocks by working on extending them and rejecting invalid blocks by refusing to work on them. Any needed rules and incentives can be enforced with this consensus mechanism."
+     }
+    ]
+   }
+  ],
+  "references": [
+   "[1] W. Dai, \"b-money,\" http://www.weidai.com/bmoney.txt, 1998.",
+   "[2] H. Massias, X.S. Avila, and J.-J. Quisquater, \"Design of a secure timestamping service with minimal trust requirements,\" In 20th Symposium on Information Theory in the Benelux, May 1999.",
+   "[3] S. Haber, W.S. Stornetta, \"How to time-stamp a digital document,\" In Journal of Cryptology, vol 3, no 2, pages 99-111, 1991.",
+   "[4] D. Bayer, S. Haber, W.S. Stornetta, \"Improving the efficiency and reliability of digital time-stamping,\" In Sequences II: Methods in Communication, Security and Computer Science, pages 329-334, 1993.",
+   "[5] S. Haber, W.S. Stornetta, \"Secure names for bit-strings,\" In Proceedings of the 4th ACM Conference on Computer and Communications Security, pages 28-35, April 1997.",
+   "[6] A. Back, \"Hashcash - a denial of service counter-measure,\" http://www.hashcash.org/papers/hashcash.pdf, 2002.",
+   "[7] R.C. Merkle, \"Protocols for public key cryptosystems,\" In Proc. 1980 Symposium on Security and Privacy, IEEE Computer Society, pages 122-133, April 1980.",
+   "[8] W. Feller, \"An introduction to probability theory and its applications,\" 1957."
+  ]
+ }
+}

@@ -1,5 +1,13 @@
 # Handoff
 
+## 2026-10-31: white paper as full text (local, NOT deployed)
+
+- `/bitcoin-whitepaper/` (Polish, meeDamian's translation) and new `/bitcoin-whitepaper/en/` (original) are now readable text pages with section anchors, 7 figures (PNG crops of the PDF pages), 4 equations (MathML), the C listing, result tables and linked references. Both PDFs stay as downloads, unchanged (SHA-256 on the page; PL equals bitcoin.org).
+- Source of the text: `content/whitepaper.json`, made by `tools/extract_whitepaper.py` from the hosted PDFs (also exports `assets/whitepaper/*.png`). Rendering: `whitepaper_page.py`, called from `build.py` (`build_whitepaper`); CSS block `.wp-*` at the end of `assets/site.css`. The old imported page is skipped in the import loop.
+- Fidelity gate: prose tokens vs PDF text, 99.7% (PL) / 99.8% (EN) of page tokens match in order; the rest are figure labels, equations, code and tables, which are not prose. Build 39 pages, QA ALL PASS (port 8721).
+- Not committed, not pushed. Deploy only on Tomek's word.
+- Markdown twins: `<math>` becomes an inline alt text and `<pre>` a fenced block (`_MD` in `build.py`).
+
 ## 2026-10-30: library shelf "Pieniądz, wolność i szkoła austriacka"
 
 - New category `wolnosc` in `content/biblioteka.json` (after `ksiazki`): Hayek "Denacjonalizacja pieniądza" (Animi2 / Fundacja Lethe, 2019, ISBN 9788366303010), Mises "Ludzkie działanie" (Instytut Misesa, sklep.mises.pl), Rand "Atlas zbuntowany" (Zysk i S-ka). Covers in `assets/books/` (Mises cover cropped from the shop's flat image and upscaled 2x; the others from lubimyczytac.pl). Links point to lubimyczytac.pl for Hayek and Rand because publisher shops do not sell them (Zysk shows it unavailable; Animi2 site unreachable). The `checked` date was not bumped. Built, QA ALL PASS on port 8811 (8741 is in a Windows reserved port range). Not committed, not deployed.
