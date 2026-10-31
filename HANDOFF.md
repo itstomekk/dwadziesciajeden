@@ -5,7 +5,10 @@
 - `/bitcoin-whitepaper/` (Polish, meeDamian's translation) and new `/bitcoin-whitepaper/en/` (original) are now readable text pages with section anchors, 7 figures (PNG crops of the PDF pages), 4 equations (MathML), the C listing, result tables and linked references. Both PDFs stay as downloads, unchanged (SHA-256 on the page; PL equals bitcoin.org).
 - Source of the text: `content/whitepaper.json`, made by `tools/extract_whitepaper.py` from the hosted PDFs (also exports `assets/whitepaper/*.png`). Rendering: `whitepaper_page.py`, called from `build.py` (`build_whitepaper`); CSS block `.wp-*` at the end of `assets/site.css`. The old imported page is skipped in the import loop.
 - Fidelity gate: prose tokens vs PDF text, 99.7% (PL) / 99.8% (EN) of page tokens match in order; the rest are figure labels, equations, code and tables, which are not prose. Build 39 pages, QA ALL PASS (port 8721).
-- Not committed, not pushed. Deploy only on Tomek's word.
+- DEPLOYED 2026-10-31 (commit cccd162, live-checked: PL and EN pages, figures, PDFs return 200 with new strings).
+- Posts 2026-10-31 (Tomek approved exact text, drafts in `private/social/2026-10-31-whitepaper/v3/`): X https://x.com/21BitcoinPolska/status/2116575008679944319 (card ok, @meeDamian links to /meeDamian); Nostr https://njump.me/e4ffc06983e6145b3adda85066a49260928e27d3f415a2b094f7bd82d9f01e38 (primal.net and nos.lol read back, damus.io connection closed; p-tag meeDamian).
+- 2026-10-31 OG: /bitcoin-whitepaper/ and /en/ use `assets/whitepaper/og-18.jpg` (gpt-image-2 art from PDF screenshots + site style, text composed in code; sources in `Hermes/image-gen/2026-10-31-21-whitepaper-18/`, chosen variant F2). Homepage OG (`assets/og.jpg`) unchanged; redesign options still open.
+- Accounts wired: X session `x-21`, Nostr identity `21` (see social-media-tools).
 - Markdown twins: `<math>` becomes an inline alt text and `<pre>` a fenced block (`_MD` in `build.py`).
 
 ## 2026-10-30: library shelf "Pieniądz, wolność i szkoła austriacka"

@@ -883,7 +883,7 @@ def build_whitepaper():
             + wpp.footer_html("pl", b, b("/")) + "</article>")
     write("/bitcoin-whitepaper/", layout("/bitcoin-whitepaper/", "Bitcoin Whitepaper", body,
           desc="Biała księga Bitcoina po polsku: pełny tekst z rysunkami, wzorami i źródłami oraz PDF do pobrania. Tłumaczenie: meeDamian.",
-          crumbs=[("Edukacja", "/edukacja/")]))
+          crumbs=[("Edukacja", "/edukacja/")], og_image=b("/assets/whitepaper/og-18.jpg")))
     add_index("/bitcoin-whitepaper/", "Bitcoin Whitepaper", "strona", text_of(body), ["Zasoby"])
 
     en = data["en"]
@@ -895,7 +895,7 @@ def build_whitepaper():
             + wpp.footer_html("en", b, b("/")) + "</article>")
     write("/bitcoin-whitepaper/en/", layout("/bitcoin-whitepaper/en/", "Bitcoin Whitepaper (English)", body,
           desc="The Bitcoin white paper in English: full text with figures, equations and references, plus the original PDF.",
-          crumbs=[("Bitcoin Whitepaper", "/bitcoin-whitepaper/")]))
+          crumbs=[("Bitcoin Whitepaper", "/bitcoin-whitepaper/")], og_image=b("/assets/whitepaper/og-18.jpg")))
     add_index("/bitcoin-whitepaper/en/", "Bitcoin Whitepaper (English)", "strona", text_of(body), ["Zasoby"])
 
 
