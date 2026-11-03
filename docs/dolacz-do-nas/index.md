@@ -26,8 +26,6 @@ Jeśli szukasz ludzi z którymi mógłbyś:
 
 - ostrzec przed scamem, etc...
 
-[Dołącz do naszej grupy na Telegramie](https://t.me/dwadziesciajeden)
-
 ### Kontakt
 
 Twitter/x: [@21BitcoinPolska](https://twitter.com/21BitcoinPolska)
@@ -40,6 +38,6 @@ Email: [kontakt@dwadziesciajeden.pl](https://dwadziesciajeden.pl/dolacz-do-nas/#
 
 Strona btcmap.org utrzymuje dane o miejscach gdzie można kupować za bitcoin. Opiekujemy się danymi dot. polskich lokalizacji. Używaj tych map i dołącz do nas jako weryfikator lub dodaj lokalizac: [https://btcmap.org/country/pl](https://btcmap.org/country/pl)
 
-## Zanim napiszesz pierwszą wiadomość
+## Poproś o zaproszenie
 
-Jesteśmy społecznością Bitcoin Only. Na czacie nie promujemy altcoinów, tokenów ani „okazji inwestycyjnych”, nie wysyłamy linków polecających bez kontekstu i nie prosimy nikogo o seed. Pełne zasady: [Zasady społeczności](https://dwadziesciajeden.pl/zasady/).
+Podaj adres e-mail albo npub. Wyślemy Ci prywatne zaproszenie do społeczności.

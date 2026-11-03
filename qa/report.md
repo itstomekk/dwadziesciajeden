@@ -9,3 +9,4 @@
 - PASS **no-overflow**: horizontal overflow: none
 - PASS **search**: {"proof of keys": true, "poznan": true, "standard": true, "fiat": true}
 - PASS **chronicle-filter**: 11 of 111 entries visible after 'Standard Bitcoina' filter
+- PASS **invitation-form**: Dziękujemy. Prośba dotarła; skontaktujemy się w sprawie zaproszenia.

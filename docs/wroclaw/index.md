@@ -18,7 +18,7 @@ We Wrocławiu spotkaliśmy się pierwszy raz 12 stycznia 2023 w Kawiarni Literat
 
 - [BitcoinWalk we Wrocławiu, grudzień 2025 (post na X)](https://x.com/21BitcoinPolska/status/1998512892866605371)
 
-Chcesz, żeby spotkania we Wrocławiu odbywały się regularnie? Napisz na [naszym czacie](https://t.me/dwadziesciajeden), pomożemy z promocją.
+Chcesz, żeby spotkania we Wrocławiu odbywały się regularnie? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite), pomożemy z promocją.
 
 ### Gdzie zapłacisz bitcoinem: Wrocław
 

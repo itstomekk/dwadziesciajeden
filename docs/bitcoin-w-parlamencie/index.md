@@ -63,6 +63,6 @@ O akcji pisał portal Bitcoin.pl: [„Standard Bitcoina” dla posłów i senato
 
 ## Co dalej
 
-Książka w biurze poselskim to dopiero początek rozmowy. Jeśli chcesz pomóc w kolejnym kroku, napisz na [naszym czacie](https://t.me/dwadziesciajeden). Pełny przebieg kampanii, dzień po dniu, jest w [kronice](https://dwadziesciajeden.pl/kronika/), a pierwotny opis i film na [stronie kampanii](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/).
+Książka w biurze poselskim to dopiero początek rozmowy. Jeśli chcesz pomóc w kolejnym kroku, napisz na naszym czacie. Pełny przebieg kampanii, dzień po dniu, jest w [kronice](https://dwadziesciajeden.pl/kronika/), a pierwotny opis i film na [stronie kampanii](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/).
 
 Dziękujemy wszystkim 80 darczyńcom, Freedom Publishing, Satsback, Cryptosteel i Polskiemu Stowarzyszeniu Bitcoin.

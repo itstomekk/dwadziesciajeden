@@ -56,7 +56,7 @@ Za większością innych „kryptowalut” stoi firma, fundacja albo założycie
 
 - Nowa moneta „lepsza od Bitcoina” to zwykle sposób, żeby ktoś zarobił na Tobie.
 
-- Masz wątpliwość? Zapytaj na [czacie](https://t.me/dwadziesciajeden), zanim klikniesz albo coś wyślesz.
+- Masz wątpliwość? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite), zanim klikniesz albo coś wyślesz.
 
 Po polsku
 
@@ -128,7 +128,7 @@ Ręcznie kuratorowane katalogi i listy, po angielsku. Na listach Awesome są te�
 
 [katalog, EN Awesome Bitcoin Culture Ludzka twórczość o Bitcoinie: filmy, książki, muzyka, sztuka, podcasty, gry, instytucje i wydarzenia. Lista na GitHubie plus galeria z wyszukiwarką. awesomebitcoinculture.com](https://awesomebitcoinculture.com/) · [kalendarz, EN Awesome Bitcoin Events Kalendarz międzynarodowych wydarzeń bitcoinowych: konferencje, festiwale, meetupy. Szukasz, dokąd pojechać? Zacznij tutaj. itstomekk.github.io](https://itstomekk.github.io/awesome-bitcoin-events/) · [katalog książek, EN · Matteo Pellegrini Nakamoto Library Wszystkie książki o Bitcoinie wydane od 2014 roku (126 tytułów), ułożone według lat, z wyszukiwarką i linkami do zakupu. nakamotolibrary.org](https://nakamotolibrary.org/)
 
-Linki sprawdzone 23 października 2026. Brakuje czegoś? Napisz na [czacie](https://t.me/dwadziesciajeden).
+Linki sprawdzone 23 października 2026. Brakuje czegoś? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
 
 ## Dalej
 
@@ -136,6 +136,6 @@ Linki sprawdzone 23 października 2026. Brakuje czegoś? Napisz na [czacie](http
 
 - [Miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta): przyjdź na spotkanie i zapytaj na żywo.
 
-- [Czat na Telegramie](https://t.me/dwadziesciajeden): żadne pytanie nie jest głupie.
+- [Poproś o zaproszenie](https://dwadziesciajeden.pl/dolacz-do-nas/#invite): żadne pytanie nie jest głupie.
 
 Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.

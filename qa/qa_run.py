@@ -40,6 +40,15 @@ def gate(name, ok, evidence):
     print(("PASS " if ok else "FAIL ") + name + ": " + evidence)
 
 
+def stub_mempool_for_offline_qa(page):
+    page.add_init_script("""(() => {
+      const originalFetch = window.fetch.bind(window);
+      window.fetch = (input, options) => String(input).startsWith('https://mempool.space/api/blocks/tip/height')
+        ? Promise.reject(new Error('mempool disabled during offline QA'))
+        : originalFetch(input, options);
+    })();""")
+
+
 def status(url):
     try:
         return urllib.request.urlopen(url, timeout=10).status
@@ -98,6 +107,7 @@ with sync_playwright() as pw:
     for vp_name, vp in (("desk", {"width": 1366, "height": 900}), ("mob", {"width": 390, "height": 844})):
         ctx = br.new_context(viewport=vp, device_scale_factor=1)
         page = ctx.new_page()
+        stub_mempool_for_offline_qa(page)
         for path in PAGES:
             msgs = []
             page.on("console", lambda m, msgs=msgs: msgs.append(m.text + " @" + (m.location or {}).get("url", "")) if m.type == "error" else None)
@@ -119,6 +129,7 @@ with sync_playwright() as pw:
 
     ctx = br.new_context(viewport={"width": 1366, "height": 900})
     page = ctx.new_page()
+    stub_mempool_for_offline_qa(page)
     page.goto(BASE + "/", wait_until="networkidle")
     page.click("[data-search-open]")
     queries = {"proof of keys": "Proof of Keys", "poznan": "Poznań", "standard": "Standard", "fiat": "Fiat"}
@@ -136,6 +147,22 @@ with sync_playwright() as pw:
     page.click('.filters button[data-filter="t-standard-bitcoina"]')
     vis = page.locator(".tl-wrap .tl__item:not(.is-hidden)").count()
     gate("chronicle-filter", 0 < vis < total, f"{vis} of {total} entries visible after 'Standard Bitcoina' filter")
+    br.close()
+
+    br = pw.firefox.launch()
+    ctx = br.new_context(viewport={"width": 390, "height": 844})
+    page = ctx.new_page()
+    stub_mempool_for_offline_qa(page)
+    page.route("https://dj-invitations.kolotom.workers.dev/subscribe", lambda route: route.fulfill(
+        status=201, content_type="application/json", body='{"ok":true,"already":false}'))
+    page.goto(BASE + "/dolacz-do-nas/", wait_until="networkidle")
+    page.fill("#invite-contact", "qa-invite@example.org")
+    page.check('input[name="consent"]')
+    page.click('[data-invite-form] button[type="submit"]')
+    page.wait_for_function("document.querySelector('[data-invite-status]').textContent.startsWith('Dziękujemy')")
+    status_text = page.locator("[data-invite-status]").inner_text()
+    page.screenshot(path=str(SHOTS / "mob-invitation-form.png"), full_page=True)
+    gate("invitation-form", "Dziękujemy" in status_text, status_text)
     br.close()
 
 ok = all(r[1] for r in results)

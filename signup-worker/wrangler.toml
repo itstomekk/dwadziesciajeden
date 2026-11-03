@@ -1,0 +1,14 @@
+name = "dj-invitations"
+main = "src/index.js"
+compatibility_date = "2026-11-03"
+workers_dev = true
+
+[vars]
+BLOCKLIST = ""
+NOSTR_NOTIFY_TO_NPUBS = "npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc,npub14wxtsrj7g2jugh70pfkzjln43vgn4p7655pgky9j9w9d75u465pqvagcye"
+NOSTR_RELAYS = "wss://relay.primal.net,wss://nos.lol,wss://nostr.mom"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "dj-invitations"
+database_id = "7eda3543-1ef6-4ad4-964a-d3521ea533f3"

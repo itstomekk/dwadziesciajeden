@@ -1,6 +1,6 @@
 # Development
 
-Static rebuild of dwadziesciajeden.pl, the Polish Bitcoin-only community in the TwentyOne network.
+Static rebuild of dwadziesciajeden.pl, the Polish Bitcoin-only community in the TwentyOne network. Invitation requests use a separate Cloudflare Worker + D1 project in `signup-worker/`.
 
 - Live: https://dwadziesciajeden.pl (GitHub Pages custom domain, DNS at Njalla, owned by a colleague)
 - Repo: https://github.com/itstomekk/dwadziesciajeden (GitHub Pages from `docs/` on `main`)
@@ -8,12 +8,15 @@ Static rebuild of dwadziesciajeden.pl, the Polish Bitcoin-only community in the 
 ## Build
 
 ```bash
-python build.py            # content/*.json + assets/ -> docs/ (stdlib only)
-python qa/serve.py &       # http://127.0.0.1:8721/
+python3 build.py           # content/*.json + assets/ -> docs/ (stdlib only)
+python3 qa/serve.py &      # http://127.0.0.1:8721/
 cd qa && C:/Python314/python.exe qa_run.py   # Playwright Firefox gates
 ```
 
 Defaults build the live site (root base, indexable, `docs/CNAME`). The old project-path preview needs `DJ_BASE=/dwadziesciajeden DJ_SITE_URL=https://itstomekk.github.io/dwadziesciajeden DJ_NOINDEX=1` and must never be pushed.
+
+`python` in the interactive shell may resolve to Python 3.11; use `python3` (3.14) for the build.
+The invitation Worker (`https://dj-invitations.kolotom.workers.dev`) stores requests in D1 and sends no e-mail. See `signup-worker/README.md`; check `/health` returns `ready: true` before publishing the site form.
 
 ## Content
 
@@ -31,6 +34,18 @@ Defaults build the live site (root base, indexable, `docs/CNAME`). The old proje
 | `content/btcmap-pl.json` | BTC Map snapshot for Poland (from `tools/fetch_btcmap.py`), drawn by `assets/mapa.js` |
 
 Generated extras: `/rss.xml` (articles + chronicle), `/llms.txt`, `/llms-full.txt`, Markdown twins (`<page>/index.md`), `sitemap.xml`, `search.json`.
+
+## Invitation Worker
+
+The Worker and its D1 schema live in `signup-worker/`.
+
+```bash
+cd signup-worker
+npm install
+npm test
+```
+
+Requests are stored only; read them with `GET /admin/export` (Bearer `ADMIN_KEY`, `?format=csv` for CSV). Nostr DM pings are optional. Secrets are kept outside the repository.
 
 `source-archive/` (gitignored) holds raw captures: Ghost dump, Wayback, X media, and Telegram topic exports.
 See `HANDOFF.md` for state and the plan.

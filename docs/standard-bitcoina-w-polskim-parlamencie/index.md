@@ -56,7 +56,7 @@ Każdy egzemplarz to inwestycja w lepsze decyzje, w przyszłość innowacji i w 
 
 - 1 listopada 2025 **Pierwsi darczyńcy** Satsback i Cryptosteel wspierają kampanię. Zbiórka idzie wyłącznie w bitcoinie, a Freedom Publishing dostarcza książki po dobrej cenie. [Post na X](https://x.com/21BitcoinPolska/status/1984548718264430884)
 
-- 5 listopada 2025 **Standard Bitcoina trafi też do bibliotek** Wydawca obiecuje dodatkowe egzemplarze dla bibliotek publicznych za każdą książkę oddaną przez parlamentarzystę. [z czatu społeczności](https://t.me/dwadziesciajeden)
+- 5 listopada 2025 **Standard Bitcoina trafi też do bibliotek** Wydawca obiecuje dodatkowe egzemplarze dla bibliotek publicznych za każdą książkę oddaną przez parlamentarzystę. z czatu społeczności
 
 - 14 listopada 2025 **Osobiste dedykacje** Każdy darczyńca może napisać przesłanie do wybranego posła lub senatora. [Post na X](https://x.com/21BitcoinPolska/status/1989338167980204388)
 
@@ -72,4 +72,4 @@ Każdy egzemplarz to inwestycja w lepsze decyzje, w przyszłość innowacji i w 
 
 - 14 stycznia 2026 **Rozliczenie zbiórki** Publikujemy finansowe podsumowanie zbiórki. Z 625 egzemplarzy 560 trafiło do Sejmu i Senatu, 40 do Polskiego Stowarzyszenia Bitcoin, 2 do Prezydenta, 23 zostało na dalsze działania. 16 stycznia omawiamy kampanię na Spaces. [Post na X](https://x.com/21BitcoinPolska/status/2011514515821904156)
 
-- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. [z czatu społeczności](https://t.me/dwadziesciajeden)
+- 26 lutego 2026 **Standard Bitcoina w NBP** Po jednym egzemplarzu książki z listem otwartym trafia do każdego z dziewięciu członków zarządu Narodowego Banku Polskiego. z czatu społeczności

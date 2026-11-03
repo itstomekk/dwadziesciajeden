@@ -12,7 +12,7 @@ Miasto
 
 Na Śląsku działa społeczność **Dwadziścia Jedyn Katowice** w BTC Map, która dba o mapę miejsc przyjmujących bitcoin w regionie.
 
-Organizujesz spotkania na Śląsku? Daj znać na [naszym czacie](https://t.me/dwadziesciajeden), dopiszemy je tutaj.
+Organizujesz spotkania na Śląsku? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite), dopiszemy je tutaj.
 
 ### Gdzie zapłacisz bitcoinem: Katowice
 

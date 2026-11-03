@@ -38,10 +38,10 @@ Powyższa mapa jest ogólnokrajowa, ale możesz zarówno korzystać lub pomóc b
 
 - Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.
 
-- Daj znać na [czacie](https://t.me/dwadziesciajeden), żebyśmy mogli pochwalić się nowym miejscem.
+- [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite), żebyśmy mogli pochwalić się nowym miejscem.
 
 ## Miasta
 
 Jeśli szukasz ludzi w twoim mieście, z którymi mógłbyś porozmawiać o jakimkolwiek bitcoinowym temacie to zapraszamy na nasze meetupy , walki , etc. Spotkasz na nich osoby o szerokim przekroju doświadczeń, doświadczenia i wiedzy.
 
-Jeśli chcesz zorganizować bitcoinowe wydarzenie w swoim mieście to chętnie pomożemy z promocją i dotarciem do ludzi za pomocą grup lokalnych, Nostra, Orange Pill App, Twittera/X – [Daj znać!](https://dwadziesciajeden.pl/dolacz-do-nas/) · [Warszawa BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.](https://dwadziesciajeden.pl/warszawa/) · [Kraków Meetupy w Techies i wykłady. Terminy na czacie.](https://dwadziesciajeden.pl/krakow/) · [Poznań BitcoinWalki i własna grupa na Telegramie.](https://dwadziesciajeden.pl/poznan/) · [Wrocław Meetup od 2023 i BitcoinWalk od grudnia 2025.](https://dwadziesciajeden.pl/wroclaw/) · [Katowice Śląska społeczność na BTC Map: Dwadziścia Jedyn Katowice.](https://dwadziesciajeden.pl/katowice/)
+Jeśli chcesz zorganizować bitcoinowe wydarzenie w swoim mieście to chętnie pomożemy z promocją i dotarciem do ludzi za pomocą grup lokalnych, Nostra, Orange Pill App, Twittera/X – [Daj znać!](https://dwadziesciajeden.pl/dolacz-do-nas/) · [Warszawa BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.](https://dwadziesciajeden.pl/warszawa/) · [Kraków Meetupy w Techies i wykłady. Terminy na czacie.](https://dwadziesciajeden.pl/krakow/) · [Poznań BitcoinWalki i lokalna społeczność.](https://dwadziesciajeden.pl/poznan/) · [Wrocław Meetup od 2023 i BitcoinWalk od grudnia 2025.](https://dwadziesciajeden.pl/wroclaw/) · [Katowice Śląska społeczność na BTC Map: Dwadziścia Jedyn Katowice.](https://dwadziesciajeden.pl/katowice/)

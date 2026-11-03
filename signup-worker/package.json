@@ -1,0 +1,11 @@
+{
+  "name": "dj-invitations-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "nostr-tools": "^2.25.4"
+  }
+}

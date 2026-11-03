@@ -21,7 +21,7 @@ Zobacz poniższą stronę meetup.com aby zobaczyć szczegóły i dołączyć do 
 Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjściem.
 
 ### Meetup
-[Meetup Bitcoin Warsaw | Meetup A multi-lingual group for all bitcoin-related events in Warsaw. group: https://t.me/BitcoinWarsaw](https://www.meetup.com/bitcoin-warsaw/)
+[Meetup Bitcoin Warsaw | Meetup A multi-lingual group for all bitcoin-related events in Warsaw. group:](https://www.meetup.com/bitcoin-warsaw/)
 
 ### Z archiwum
 

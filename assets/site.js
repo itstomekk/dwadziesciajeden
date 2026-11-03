@@ -55,6 +55,29 @@
     setTimeout(() => { btn.textContent = "Kopiuj"; }, 2000);
   }));
 
+  // invitation request (e-mail or npub)
+  const inviteForm = document.querySelector("[data-invite-form]");
+  if (inviteForm) {
+    const status = inviteForm.querySelector("[data-invite-status]");
+    const submit = inviteForm.querySelector('button[type="submit"]');
+    inviteForm.addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      submit.disabled = true;
+      status.textContent = "Wysyłamy prośbę…";
+      try {
+        const response = await fetch(inviteForm.action, { method: "POST", body: new FormData(inviteForm) });
+        const result = await response.json();
+        if (!response.ok || !result.ok) throw new Error(result.error || "Nie udało się wysłać prośby.");
+        inviteForm.reset();
+        status.textContent = "Dziękujemy. Prośba dotarła; skontaktujemy się w sprawie zaproszenia.";
+      } catch (error) {
+        status.textContent = error.message || "Nie udało się wysłać prośby. Spróbuj ponownie później.";
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  }
+
   // chronicle filters
   const filters = document.querySelectorAll(".filters button");
   filters.forEach((btn) => btn.addEventListener("click", () => {

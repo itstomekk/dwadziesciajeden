@@ -27,8 +27,8 @@ SITE_URL = os.environ.get("DJ_SITE_URL", "https://dwadziesciajeden.pl").rstrip("
 NOINDEX = os.environ.get("DJ_NOINDEX", "0") == "1"
 BUILT = date.today().isoformat()
 
-TG = "https://t.me/dwadziesciajeden"
-TG_POZNAN = "https://t.me/DwadziesciaJedenPoznan"
+INVITE_ENDPOINT = "https://dj-invitations.kolotom.workers.dev/subscribe"
+INVITE_PAGE = "/dolacz-do-nas/#invite"
 X_URL = "https://x.com/21BitcoinPolska"
 NOSTR_NPUB = "npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc"
 NOSTR_ARMADA = "https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/6f327e5556b324781f4c9e48f575c8a2f7b1dc6c2a5b1e9463c93e1d3ef1e15b"
@@ -97,6 +97,10 @@ def fill(h: str) -> str:
     return h.replace("{B}", BASE)
 
 
+def strip_telegram_urls(text: str) -> str:
+    return re.sub(r"""https?://(?:t\.me|telegram\.me|telegram\.dog)/[^\s"'<>)]*""", "", text, flags=re.I)
+
+
 def pl_date(d: str) -> str:
     parts = d.split("-")
     if len(parts) == 3:
@@ -113,6 +117,7 @@ def link(l):
 
 
 def text_of(h: str) -> str:
+    h = strip_telegram_urls(h)
     h = re.sub(r"<script\b.*?</script>", " ", h, flags=re.S)
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
 
@@ -167,7 +172,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
     <nav class="nav" id="nav" aria-label="Główne menu">{nav}</nav>
     <div class="top__act">
       <button class="icon-btn" type="button" data-search-open aria-label="Szukaj"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
-      <a class="btn btn--primary btn--sm" href="{TG}" rel="noopener" data-goatcounter-click="dolacz-telegram-naglowek" data-goatcounter-title="Dołącz (nagłówek)">Dołącz</a>
+      <a class="btn btn--primary btn--sm" href="{b(INVITE_PAGE)}" data-goatcounter-click="dolacz-zaproszenie-naglowek" data-goatcounter-title="Dołącz (nagłówek)">Dołącz</a>
       <button class="icon-btn menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -184,11 +189,10 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
     </div>
     <div class="foot__col">
       <h2>Społeczność</h2>
-      <a class="ico-link" href="{TG}" rel="noopener">{icon("telegram")}Czat na Telegramie</a>
       <a class="ico-link" href="{X_URL}" rel="noopener">{icon("x")}@21BitcoinPolska na X</a>
       <a class="ico-link" href="{NOSTR_ARMADA}" rel="noopener">{icon("nostr")}Społeczność na Nostrze (Armada)</a>
       <a class="ico-link" href="{NOSTR_URL}" rel="noopener">{icon("nostr")}Profil na Nostrze</a>
-      <a href="{b('/dolacz-do-nas/#kontakt')}">Kontakt</a>
+      <a href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a>
     </div>
     <div class="foot__col">
       <h2>Strona</h2>
@@ -203,7 +207,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
       <h2>RSS</h2>
       <a class="ico-link" href="{b('/rss.xml')}">{icon("rss")}Kanał RSS</a>
       <p class="muted">Kronika i artykuły w Twoim czytniku. Bez zapisów i bez maili.</p>
-      <p class="muted">Na bieżąco: <a href="{TG}" rel="noopener">Telegram</a>.</p>
+
     </div>
   </div>
   <p class="foot__fine">Nie udzielamy porad inwestycyjnych. Not your keys, not your coins.</p>
@@ -239,7 +243,7 @@ def jsonld(path):
         {"@type": "Organization", "@id": f"{SITE_URL}/#org", "name": "Dwadzieścia Jeden",
          "alternateName": "21 Bitcoin Polska", "url": f"{SITE_URL}/", "logo": f"{SITE_URL}/assets/logo.jpg",
          "email": EMAIL, "description": "Polska społeczność Bitcoin Only, część sieci TwentyOne.",
-         "sameAs": [X_URL, TG, "https://github.com/itstomekk/dwadziesciajeden", "https://twentyone.world/"]},
+         "sameAs": [X_URL, "https://github.com/itstomekk/dwadziesciajeden", "https://twentyone.world/"]},
         {"@type": "WebSite", "@id": f"{SITE_URL}/#site", "url": f"{SITE_URL}/", "name": "Dwadzieścia Jeden",
          "inLanguage": "pl-PL", "publisher": {"@id": f"{SITE_URL}/#org"}}]}
     return f'<script type="application/ld+json">{json.dumps(data, ensure_ascii=False)}</script>\n'
@@ -387,12 +391,14 @@ def write_twin(path, doc):
 def write(path, doc):
     target = OUT / path.strip("/") / "index.html" if path.endswith("/") else OUT / path.lstrip("/")
     target.parent.mkdir(parents=True, exist_ok=True)
+    doc = re.sub(r"""<a\b(?=[^>]*\bhref\s*=\s*["']https?://(?:www\.)?(?:t\.me|telegram\.me|telegram\.dog)/[^"']*["'])[^>]*>(.*?)</a>""", r"\1", doc, flags=re.I | re.S)
+    doc = strip_telegram_urls(doc)
     target.write_text(doc, encoding="utf-8")
     write_twin(path, doc)
 
 
 def add_index(path, title, kind, text, tags=()):
-    pages_index.append({"u": path, "t": title, "k": kind, "x": text[:1200], "g": list(tags)})
+    pages_index.append({"u": path, "t": title, "k": kind, "x": strip_telegram_urls(text)[:1200], "g": list(tags)})
 
 
 def page_head(kicker, title, lede=""):
@@ -556,11 +562,11 @@ def build():
     <h1 id="hero-title" data-phrases="{html.escape(json.dumps(HERO_PHRASES, ensure_ascii=False))}">Dwadzieścia<br>Jeden</h1>
     <script>(function(){{var h=document.getElementById("hero-title");try{{var l=JSON.parse(h.dataset.phrases),d=new Date(),n=Math.floor((d-d.getTimezoneOffset()*6e4)/864e5),p=l[n%l.length].split("|");h.textContent=p[0];if(p[1]){{h.appendChild(document.createElement("br"));h.appendChild(document.createTextNode(p[1]));}}}}catch(e){{}}}})();</script>
     <p class="lede">Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.</p>
-    <p class="cta-row"><a class="btn btn--primary" href="{TG}" rel="noopener">Dołącz do czatu na Telegramie</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
+    <p class="cta-row"><a class="btn btn--primary" href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
   </div>
   <div class="shell">
     <div class="shell__bar"><span>~/dwadziesciajeden</span><span>bash</span></div>
-    <pre class="shell__body"><span class="l"><i>$</i> whoami</span><span class="l o">dwadziescia_jeden: polska społeczność bitcoin only</span><span class="l"><i>$</i> cat zasady.txt</span><span class="l o">bitcoin only · zero altcoinów · nic nie sprzedajemy</span><span class="l"><i>$</i> bitcoin-cli getblockcount</span><span class="l o"><b class="tip" data-tip>…</b></span><span class="l"><i>$</i> ./dolacz.sh</span><span class="l o">→ <a href="{TG}" rel="noopener">t.me/dwadziesciajeden</a></span><span class="l"><i>$</i> <span class="cur" aria-hidden="true"></span></span></pre>
+    <pre class="shell__body"><span class="l"><i>$</i> whoami</span><span class="l o">dwadziescia_jeden: polska społeczność bitcoin only</span><span class="l"><i>$</i> cat zasady.txt</span><span class="l o">bitcoin only · zero altcoinów · nic nie sprzedajemy</span><span class="l"><i>$</i> bitcoin-cli getblockcount</span><span class="l o"><b class="tip" data-tip>…</b></span><span class="l"><i>$</i> ./dolacz.sh</span><span class="l o">→ poproś o zaproszenie na stronie</span><span class="l"><i>$</i> <span class="cur" aria-hidden="true"></span></span></pre>
   </div>
 </section>
 
@@ -590,9 +596,9 @@ def build():
 <section class="join">
   <div class="join__in">
     <h2>Gdzie nas znaleźć</h2>
-    <p>Na czacie rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.</p>
+    <p>Rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.</p>
     <div class="join__grid">
-      <a class="join__card join__card--main" href="{TG}" rel="noopener"><span>{icon("telegram")}Telegram · główny czat</span><strong>t.me/dwadziesciajeden</strong></a>
+      <a class="join__card join__card--main" href="{b(INVITE_PAGE)}"><span>Dołącz do społeczności</span><strong>Poproś o zaproszenie</strong></a>
       <a class="join__card" href="{NOSTR_ARMADA}" rel="noopener"><span>{icon("nostr")}Nostr · społeczność na Armadzie</span><strong>Dwadzieścia Jeden na Armadzie</strong></a>
       <a class="join__card" href="{X_URL}" rel="noopener"><span>{icon("x")}X</span><strong>@21BitcoinPolska</strong></a>
       <div class="join__card join__card--nostr"><span class="npub">{icon("nostr")}Nostr <a href="{NOSTR_URL}" rel="noopener">profil</a><button class="copy-btn" type="button" data-copy="{NOSTR_NPUB}">Kopiuj</button></span><strong>{NOSTR_NPUB}</strong></div>
@@ -647,6 +653,7 @@ def build():
             archived = (f'<p class="note">Wpis odtworzony z archiwum strony. <a href="{e(p["source"])}" rel="noopener">Kopia w Wayback Machine</a>.</p>')
         extra = ""
         if slug == "dolacz-do-nas":
+            body_html = re.sub(r'<p class="cta-row"><a class="btn btn--primary" href="https://t[.]me/[^"]*">Dołącz do naszej grupy na Telegramie</a></p>', "", body_html)
             extra = join_extra()
         if slug == "standard-bitcoina-w-polskim-parlamencie":
             ks = [x for x in kronika if "Standard Bitcoina" in x.get("tags", [])]
@@ -707,18 +714,18 @@ def build():
             h = fill(by_slug[c["slug"]]["html"])
             h = h.replace("dwadzieścia-jeden-poznań", "dwadzie%C5%9Bcia-jeden-pozna%C5%84")
             # dead bitcoinwalk.org city page (404 on 2026-10-23)
-            h = re.sub(r'<h3 id="bitcoinwalk">BitcoinWalk</h3><a class="link-card" href="https://bitcoinwalk\.org/poznan/".*?</a>',
-                       '<h3 id="bitcoinwalk">BitcoinWalk</h3><p>Formuła spacerów pochodzi z <a href="https://bitcoinwalk.org/" rel="noopener">bitcoinwalk.org</a>. Terminy publikujemy na Meetup, Telegramie i X.</p>', h, flags=re.S)
+            h = re.sub(r'<h3 id="bitcoinwalk">BitcoinWalk</h3><a class="link-card" href="https://bitcoinwalk\\.org/poznan/".*?</a>',
+                       '<h3 id="bitcoinwalk">BitcoinWalk</h3><p>Formuła spacerów pochodzi z <a href="https://bitcoinwalk.org/" rel="noopener">bitcoinwalk.org</a>. Terminy publikujemy na Meetup i na X.</p>', h, flags=re.S)
             if c["slug"] == "krakow":
                 # meetup.com/krakow-bitcoin-meetup returns "Group not found" (checked 2026-10-23)
                 h = re.sub(r'<a class="link-card" href="https://www\.meetup\.com/pl-PL/krakow-bitcoin-meetup/".*?</a>',
-                           '<p class="note">Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na <a href="https://t.me/dwadziesciajeden" rel="noopener">czacie</a> i na X.</p>', h, flags=re.S)
+                           f'<p class="note">Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. <a href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a>.</p>', h, flags=re.S)
                 h += ('<h3>Z archiwum</h3><ul><li><a href="https://x.com/21BitcoinPolska/status/1794694392374342098" rel="noopener">„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024</a></li>'
                       '<li><a href="https://x.com/21BitcoinPolska/status/1919430740485304721" rel="noopener">Meetup w Krakowie, 9 maja 2025</a></li></ul>')
             if c["slug"] == "poznan":
+                h = re.sub(r'<h3 id="telegram">Telegram</h3><a class="link-card" href="https://t[.]me/[^"]*">.*?</a>', "", h, flags=re.S)
                 h = h.replace('<h3 id="meetup">', '<h3 id="stale">Stałe spotkania</h3><div class="regulars">'
                               '<a class="regular" href="https://www.meetup.com/poz21m/" rel="noopener"><span class="regular__when">Spacery, terminy na Meetup</span><strong>Poznań BitcoinWalk · Spacery ku wolności</strong><span>Spacer i rozmowa o Bitcoinie. Zbiórka zwykle przy Skwerze Jana Suwarta, ul. Ewangelicka. Latem także grill i spacery nad Rusałką.</span></a>'
-                              '<a class="regular" href="https://t.me/DwadziesciaJedenPoznan" rel="noopener"><span class="regular__when">Na bieżąco</span><strong>Dwadzieścia Jeden Poznań</strong><span>Poznańska grupa na Telegramie. Tu ogłaszamy spacery i spotkania.</span></a>'
                               '</div><p class="note">Terminy i miejsca mogą się zmienić. Zawsze sprawdź wydarzenie przed wyjściem.</p><h3 id="meetup">', 1)
                 h = h.replace('https://www.meetup.com/pl-PL/pozna%C5%84-bitcoinwalk/', 'https://www.meetup.com/poz21m/').replace('Poznań BitcoinWalk | Meetup', 'Spacery ku wolności (Poznań BitcoinWalk) | Meetup')
             if c["slug"] == "warszawa":
@@ -757,7 +764,7 @@ def build():
           f'<h2>Jak pomóc</h2><ol><li>Otwórz miejsce na <a href="https://btcmap.org/country/pl" rel="noopener">btcmap.org/country/pl</a>.</li>'
           f'<li>Byłeś tam niedawno i zapłaciłeś bitcoinem? Potwierdź je jednym kliknięciem.</li>'
           f'<li>Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.</li>'
-          f'<li>Daj znać na <a href="{TG}" rel="noopener">czacie</a>, żebyśmy mogli pochwalić się nowym miejscem.</li></ol>')
+          f'<li><a href="{b(INVITE_PAGE)}">Napisz do nas</a>, żebyśmy mogli pochwalić się nowym miejscem.</li></ol>')
     body = (f'<article class="article"><p class="kicker">Mapa i miasta</p><h1>Bitcoinowa Mapa Polski</h1>'
             f'<p class="lede">Gdzie w Polsce zapłacisz bitcoinem i gdzie się spotykamy. <a href="#miasta">Przejdź do miast</a>.</p>'
             f'<div class="prose">{m}</div></article>' + miasta_section)
@@ -773,7 +780,7 @@ def build():
         vids = "".join(f'<figure class="video">{yt_frame(v, l["url"], l.get("label", pr["name"]))}</figure>' for v, l in vids if v)
         return (f'<article class="proj proj--{pr["kind"]}" id="{pr["id"]}"><div class="proj__img">{img}</div>'
                 f'<div class="proj__body"><p class="proj__status">{e(pr["status"])}{" · nasz projekt" if pr["kind"] == "ours" else " · zaprzyjaźnieni"}</p>'
-                f'<h2>{e(pr["name"])}</h2><p>{e(pr["text"])}</p>{vids}<p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
+                f'<h2><a class="proj__anchor" href="#{pr["id"]}">{e(pr["name"])}</a></h2><p>{e(pr["text"])}</p>{vids}<p class="proj__links">{" · ".join(link(l) for l in pr["links"])}</p></div></article>')
     groups = [("nasze", "Nasze projekty", [p for p in projekty["projects"] if p["kind"] == "ours"]),
               ("zaprzyjaznieni", "Zaprzyjaźnieni", [p for p in projekty["projects"] if p["kind"] != "ours"])]
     cats = (inicjatywy or {}).get("categories", [])
@@ -790,7 +797,7 @@ def build():
         for i in c["items"]:
             add_index(f"/projekty/#{c['id']}", i["title"], "inicjatywa", i.get("description_pl", ""))
     if inicjatywy and inicjatywy.get("checked"):
-        body += f'<p class="note proj-note">Linki sprawdzone {pl_date(inicjatywy["checked"])}. Grafiki pochodzą ze stron projektów. Brakuje czegoś? Napisz na <a href="{TG}" rel="noopener">czacie</a>.</p>'
+        body += f'<p class="note proj-note">Linki sprawdzone {pl_date(inicjatywy["checked"])}. Grafiki pochodzą ze stron projektów. Brakuje czegoś? <a href="{b(INVITE_PAGE)}">Napisz do nas</a>.</p>'
     write("/projekty/", layout("/projekty/", "Projekty i inicjatywy", body, desc="Projekty społeczności Dwadzieścia Jeden, zaprzyjaźnieni i polskie inicjatywy bitcoinowe."))
     add_index("/projekty/", "Projekty i inicjatywy", "strona", "projekty inicjatywy stowarzyszenia wydarzenia czaty")
     for pr in projekty["projects"]:
@@ -951,8 +958,17 @@ def write_llms():
             t, d = known[p]
             lines.append(f"- [{t}]({SITE_URL}{md_url(p)})" + (f": {d}" if d else ""))
         lines.append("")
+    projs = [p for p in pages_index if p["k"] == "projekt"]
+    if projs:
+        lines.append("## Projekty\n")
+        for p in projs:
+            d = re.sub(r"\s+", " ", p["x"]).strip()
+            if len(d) > 150:
+                d = d[:150].rsplit(" ", 1)[0].rstrip(".,:;") + "…"
+            lines.append(f"- [{p['t']}]({SITE_URL}{p['u']}): {d}")
+        lines.append("")
     lines.append("## Kontakt\n")
-    lines.append(f"- Telegram: {TG}\n- X: {X_URL}\n- E-mail: {EMAIL}\n")
+    lines.append(f"- Zaproszenie: {SITE_URL}{INVITE_PAGE}\n- X: {X_URL}\n- E-mail: {EMAIL}\n")
     (OUT / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
     order = [p for _, ps in LLMS_SECTIONS for p in ps if p in known] + sorted(rest)
     full = "\n\n---\n\n".join((OUT / md_url(p).lstrip("/")).read_text(encoding="utf-8") for p in order)
@@ -971,9 +987,22 @@ def city_grid(miasta):
 
 
 def join_extra():
-    return f"""<section class="prose-wide">
+    return f"""<section class="prose-wide invite" id="invite">
+<h2>Poproś o zaproszenie</h2>
+<p>Podaj adres e-mail albo npub. Wyślemy Ci prywatne zaproszenie do społeczności.</p>
+<form method="POST" action="{INVITE_ENDPOINT}" data-invite-form>
+  <label for="invite-contact">Adres e-mail albo npub</label>
+  <input id="invite-contact" type="text" name="contact" autocomplete="off" maxlength="254" required>
+  <label class="invite__consent"><input type="checkbox" name="consent" value="yes" required><span>Zgadzam się, aby podany kontakt został użyty wyłącznie w sprawie zaproszenia.</span></label>
+  <label class="invite__honeypot" aria-hidden="true">Nie wypełniaj tego pola<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+  <button class="btn btn--primary" type="submit">Poproś o zaproszenie</button>
+  <p class="invite__status" data-invite-status aria-live="polite"></p>
+</form>
+<p class="note">Dane wykorzystamy wyłącznie do kontaktu w sprawie zaproszenia. Kontakt: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+</section>
+<section class="prose-wide">
 <h2>Zanim napiszesz pierwszą wiadomość</h2>
-<p>Jesteśmy społecznością Bitcoin Only. Na czacie nie promujemy altcoinów, tokenów ani „okazji inwestycyjnych”, nie wysyłamy linków polecających bez kontekstu i nie prosimy nikogo o seed. Pełne zasady: <a href="{b('/zasady/')}">Zasady społeczności</a>.</p>
+<p>Jesteśmy społecznością Bitcoin Only. Nie promujemy altcoinów, tokenów ani „okazji inwestycyjnych”, nie wysyłamy linków polecających bez kontekstu i nie prosimy nikogo o seed. Pełne zasady: <a href="{b('/zasady/')}">Zasady społeczności</a>.</p>
 </section>"""
 
 
@@ -1000,7 +1029,7 @@ def catalog_html(path, label, data, whitepaper=False):
         for i in c["items"]:
             add_index(f"{path}#{c['id']}", i["title"], label, (i.get("author", "") + " " + i.get("description_pl", "")).strip())
     if data.get("checked"):
-        body += f'<p class="note proj-note">Linki sprawdzone {pl_date(data["checked"])}. Brakuje czegoś? Napisz na <a href="{TG}" rel="noopener">czacie</a>.</p>'
+        body += f'<p class="note proj-note">Linki sprawdzone {pl_date(data["checked"])}. Brakuje czegoś? <a href="{b(INVITE_PAGE)}">Napisz do nas</a>.</p>'
     return body
 
 
@@ -1058,7 +1087,7 @@ def build_edukacja(biblioteka):
         "Nikt nie potrzebuje Twojej frazy odzyskiwania: ani support, ani admin, ani doradca.",
         "Obietnica stałego zysku, podwojenia środków albo gwarantowanego wyniku to oszustwo.",
         "Nowa moneta „lepsza od Bitcoina” to zwykle sposób, żeby ktoś zarobił na Tobie.",
-        f'Masz wątpliwość? Zapytaj na <a href="{TG}" rel="noopener">czacie</a>, zanim klikniesz albo coś wyślesz.',
+        f'Masz wątpliwość? <a href="{b(INVITE_PAGE)}">Napisz do nas</a>, zanim klikniesz albo coś wyślesz.',
     ]
     body = page_head("Misja i edukacja", "Edukacja",
                      "Nasza misja jest prosta: żeby każdy w Polsce mógł zrozumieć Bitcoina po polsku i używać go samodzielnie. "
@@ -1083,7 +1112,7 @@ def build_edukacja(biblioteka):
     body += ('<section class="prose-wide"><h2>Dalej</h2><ul>'
              f'<li><a href="{b("/slowniczek/")}">Słowniczek</a>: seed, sats, HODL i inne słowa, które usłyszysz na meetupie.</li>'
              f'<li><a href="{b("/bitcoinowa-mapa-polski/#miasta")}">Miasta</a>: przyjdź na spotkanie i zapytaj na żywo.</li>'
-             f'<li><a href="{TG}" rel="noopener">Czat na Telegramie</a>: żadne pytanie nie jest głupie.</li></ul>'
+             f'<li><a href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a>: żadne pytanie nie jest głupie.</li></ul>'
              '<p class="note">Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.</p></section>')
     write("/edukacja/", layout("/edukacja/", "Edukacja", body,
                                desc="Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania."))

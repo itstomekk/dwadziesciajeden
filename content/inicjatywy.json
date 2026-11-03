@@ -19,13 +19,6 @@
      "url": "https://explore.transifex.com/bitcoin/bitcoin/",
      "description_pl": "Polska wersja interfejsu Bitcoin Core. Poprawki i aktualizacje zawsze się przydadzą.",
      "image": "projekty/bitcoin-core.jpg"
-    },
-    {
-     "title": "Wątek Bitcoin po Polsku",
-     "type_label": "Telegram",
-     "url": "https://t.me/dwadziesciajeden/7916",
-     "description_pl": "Tu ustalamy słownictwo, dzielimy się tłumaczeniami i szukamy rąk do pracy.",
-     "image": "projekty/tg-main.jpg"
     }
    ]
   },
@@ -81,13 +74,7 @@
    "id": "spolecznosci",
    "title": "Czaty i społeczności",
    "items": [
-    {
-     "title": "Dwadzieścia Jeden",
-     "type_label": "Telegram",
-     "url": "https://t.me/dwadziesciajeden",
-     "description_pl": "Nasz główny czat. Tu dzieje się większość rzeczy.",
-     "image": "projekty/tg-main.jpg"
-    },
+
     {
      "title": "Dwadzieścia Jeden na Nostrze",
      "type_label": "Armada, Nostr",
@@ -95,20 +82,7 @@
      "description_pl": "Nasza społeczność na Armadzie: czat oparty na Nostrze, szyfrowany, bez właściciela serwera. Wystarczy klucz Nostr.",
      "image": "projekty/armada.jpg"
     },
-    {
-     "title": "Wątek Bitcoin w Polsce",
-     "type_label": "Telegram",
-     "url": "https://t.me/dwadziesciajeden/17350",
-     "description_pl": "Polskie newsy, regulacje, miejsca akceptujące bitcoin i akcje społeczności.",
-     "image": "projekty/tg-main.jpg"
-    },
-    {
-     "title": "Dwadzieścia Jeden Poznań",
-     "type_label": "Telegram",
-     "url": "https://t.me/DwadziesciaJedenPoznan",
-     "description_pl": "Poznańska grupa społeczności.",
-     "image": "projekty/tg-poz.jpg"
-    },
+
     {
      "title": "BitcoinWalk Warszawa na Nostrze",
      "type_label": "Nostr (Flotilla)",
