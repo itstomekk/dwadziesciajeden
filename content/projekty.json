@@ -425,6 +425,26 @@
     }
    ],
    "origin": "Telegram dwadziesciajeden 2023-03-23 (author post, no name; also makers.bolt.fun/project/nostrwall); site text checked 2026-10-26; owner pick 2026-10-26; screenshot"
+  },
+  {
+   "id": "bitcoinwalk",
+   "name": "BitcoinWalk",
+   "status": "partner",
+   "kind": "friends",
+   "image": "projekty/bitcoinwalk.jpg",
+   "image_alt": "Logo BitcoinWalk",
+   "text": "Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.",
+   "links": [
+    {
+     "label": "bitcoinwalk.org",
+     "url": "https://bitcoinwalk.org/"
+    },
+    {
+     "label": "Aplikacja Walkie Talkie",
+     "url": "https://bitcoinwalk.org/app"
+    }
+   ],
+   "origin": "owner request 2026-11-03; bitcoinwalk.org + bitcoinwalk.org/app"
   }
  ]
 }

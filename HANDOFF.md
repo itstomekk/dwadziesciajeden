@@ -1,9 +1,10 @@
 # Handoff
 
-## 2026-11-03: BitcoinWalk partner (local, NOT deployed)
+## 2026-11-03: BitcoinWalk partner + project anchor links (deployed)
 
 - Added BitcoinWalk as a "partner" in `content/projekty.json` (status "partner", kind "friends"), linking bitcoinwalk.org and the Walkie Talkie companion app (bitcoinwalk.org/app). Card image `assets/projekty/bitcoinwalk.jpg` (official horizontal lockup centred on white); raw logos in `source-archive/project-images/` (gitignored).
-- Built 39 pages; QA ALL PASS (11 gates, port 8917). Not committed, not pushed (deploy only on Tomek's word).
+- Each project heading on /projekty/ is now a self-link (`#id`, `#` marker) and llms.txt gained a "## Projekty" section listing every project with an anchor URL; those build.py/site.css edits went out inside the invitation-form commit 3d26804. search.json indexes projects by their `#id`.
+- Built 39 pages; QA ALL PASS (11 gates). Deployed on Tomek's word.
 
 ## 2026-11-03: invitation-request flow (DEPLOYED, commit 3d26804)
 

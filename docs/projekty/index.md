@@ -256,6 +256,16 @@ Nostr · 2023 · zaprzyjaźnieni
 
 [nostrwall.com](https://nostrwall.com/)
 
+Obraz: Logo BitcoinWalk
+
+partner · zaprzyjaźnieni
+
+## [BitcoinWalk]
+
+Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.
+
+[bitcoinwalk.org](https://bitcoinwalk.org/) · [Aplikacja Walkie Talkie](https://bitcoinwalk.org/app)
+
 ## Pomóż tłumaczyć
 
 Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.

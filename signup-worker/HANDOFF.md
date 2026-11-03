@@ -7,4 +7,5 @@
 - Local copy of all values (outside the repo): `C:\Users\Lenovo\.secrets\dj-invitations\secrets.json`, incl. dedicated bot key (bot npub `npub1ql790228j6jc9lkydvn49wgrev7456avw95nrqjfk5ur0de09h0s3lpkg4`).
 - Live-tested 2026-11-03: `/health` ready:true; POST 201 then 200 on repeat; 422 invalid contact and missing consent; honeypot 200 without write; foreign origin 403; export 401 without key and 200 with it. Test row deleted (D1 empty).
 - Personal Nostr recipient confirmed 2026-11-03: `npub14wxtsrj7…` in `wrangler.toml` matches `nostr-personal` in `social-media-tools/CONNECTIONS.json`.
-- Next: check `/admin/export` periodically. Optionally replace the bot npub's metadata/follow it so DMs are recognisable in clients.
+- Bot profile published 2026-11-03 (kind 0: "Dwadzieścia Jeden: zaproszenia", bot flag, site icon as picture; read back from primal, nos.lol, nostr.mom; damus.io refused the connection).
+- Next: check `/admin/export` periodically.
