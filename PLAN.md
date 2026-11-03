@@ -22,7 +22,7 @@ dwadziesciajeden.pl serves this static site from GitHub Pages over HTTPS, indexe
 - [x] Build email/npub invitation request form and standalone Cloudflare Worker; local build, QA, and Worker tests pass (2026-11-03).
 - [x] Remote D1 created, Worker deployed and live-tested (storage only, no e-mail; 2026-11-03).
 - [x] Tomek's Nostr notification recipient confirmed (personal npub, 2026-11-03).
-- [x] Invitation form published on the site (commit 3d26804, 2026-11-03). Optional: enable Nostr DM pings (set `NOSTR_NOTIFY_SK_HEX`).
+- [x] Invitation form published on the site (commit 3d26804, 2026-11-03). Nostr DM pings enabled and live-verified.
 - [ ] Finish buying-Bitcoin guide: verify Polish service availability and conditions, assess KYC/privacy and P2P risks; private draft in `private/poradnik-jak-kupic-bitcoin-draft.md`.
 - [ ] mine Telegram exports: places accepting BTC, translation history, chronicle events (no member names)   @agent
 - [ ] Bitcoin w Parlamencie: press coverage, MP replies   @agent
