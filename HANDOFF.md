@@ -5,12 +5,12 @@
 - Added BitcoinWalk as a "partner" in `content/projekty.json` (status "partner", kind "friends"), linking bitcoinwalk.org and the Walkie Talkie companion app (bitcoinwalk.org/app). Card image `assets/projekty/bitcoinwalk.jpg` (official horizontal lockup centred on white); raw logos in `source-archive/project-images/` (gitignored).
 - Built 39 pages; QA ALL PASS (11 gates, port 8917). Not committed, not pushed (deploy only on Tomek's word).
 
-## 2026-11-03: invitation-request flow (local, NOT deployed)
+## 2026-11-03: invitation-request flow (DEPLOYED, commit 3d26804)
 
 - `/dolacz-do-nas/#invite` now has an email-or-npub invitation request form; public Telegram destination URLs are stripped from generated site pages. The form posts to `https://dj-invitations.kolotom.workers.dev/subscribe`.
 - Added `signup-worker/`: D1 schema, origin allowlist, validation, consent, honeypot, blocklist, per-IP rate limit, idempotency, protected export, optional NIP-04 DM ping, and automated tests. No e-mail is sent (Resend dropped). Worker is separate from the BFF signup Worker.
 - Verified: build 39 pages; site QA ALL PASS (11 gates); invitation-flow tests 2/2; Worker tests 5/5; local Wrangler end-to-end tests passed. Local QA/Wrangler processes have been stopped.
-- Worker DEPLOYED 2026-11-03 (`https://dj-invitations.kolotom.workers.dev`, live-tested, D1 `dj-invitations`). Site changes NOT committed or pushed; publish only on Tomek's explicit word. Nostr DM pings off (secret `NOSTR_NOTIFY_SK_HEX` not set; local copy in `C:\Users\Lenovo\.secrets\dj-invitations\`).
+- Worker AND site DEPLOYED 2026-11-03 (commit `3d26804`, live-checked: form + action on /dolacz-do-nas/, no t.me links on home or join page, live POST from the site origin returned 201; test row deleted). Nostr DM pings off (secret `NOSTR_NOTIFY_SK_HEX` not set; local copy in `C:\Users\Lenovo\.secrets\dj-invitations\`). Read requests with `GET /admin/export`.
 - Collected requests are read with `GET /admin/export` (Bearer ADMIN_KEY, `?format=csv`).
 - Personal Nostr recipient confirmed by Tomek 2026-11-03; `signup-worker/wrangler.toml` matches `nostr-personal` in `social-media-tools/CONNECTIONS.json`. Open: dedicated bot key to sign the DMs.
 - Next: confirm Nostr recipient/signing identity; complete D1, secrets, and sender setup; deploy and live-test the Worker; rerun site build/QA; publish only on Tomek's explicit instruction.
