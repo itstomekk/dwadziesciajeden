@@ -192,7 +192,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None):
       <a class="ico-link" href="{X_URL}" rel="noopener">{icon("x")}@21BitcoinPolska na X</a>
       <a class="ico-link" href="{NOSTR_ARMADA}" rel="noopener">{icon("nostr")}Społeczność na Nostrze (Armada)</a>
       <a class="ico-link" href="{NOSTR_URL}" rel="noopener">{icon("nostr")}Profil na Nostrze</a>
-      <a href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a>
+      <a href="{b(INVITE_PAGE)}">Dołącz do Telegrama</a>
     </div>
     <div class="foot__col">
       <h2>Strona</h2>
@@ -562,7 +562,7 @@ def build():
     <h1 id="hero-title" data-phrases="{html.escape(json.dumps(HERO_PHRASES, ensure_ascii=False))}">Dwadzieścia<br>Jeden</h1>
     <script>(function(){{var h=document.getElementById("hero-title");try{{var l=JSON.parse(h.dataset.phrases),d=new Date(),n=Math.floor((d-d.getTimezoneOffset()*6e4)/864e5),p=l[n%l.length].split("|");h.textContent=p[0];if(p[1]){{h.appendChild(document.createElement("br"));h.appendChild(document.createTextNode(p[1]));}}}}catch(e){{}}}})();</script>
     <p class="lede">Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.</p>
-    <p class="cta-row"><a class="btn btn--primary" href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
+    <p class="cta-row"><a class="btn btn--primary" href="{b(INVITE_PAGE)}">Dołącz do Telegrama</a><a class="btn btn--ghost" href="{b('/kim-jestesmy/')}">Kim jesteśmy</a></p>
   </div>
   <div class="shell">
     <div class="shell__bar"><span>~/dwadziesciajeden</span><span>bash</span></div>
@@ -598,7 +598,7 @@ def build():
     <h2>Gdzie nas znaleźć</h2>
     <p>Rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.</p>
     <div class="join__grid">
-      <a class="join__card join__card--main" href="{b(INVITE_PAGE)}"><span>Dołącz do społeczności</span><strong>Poproś o zaproszenie</strong></a>
+      <a class="join__card join__card--main" href="{b(INVITE_PAGE)}"><span>Dołącz do społeczności</span><strong>Dołącz do Telegrama</strong></a>
       <a class="join__card" href="{NOSTR_ARMADA}" rel="noopener"><span>{icon("nostr")}Nostr · społeczność na Armadzie</span><strong>Dwadzieścia Jeden na Armadzie</strong></a>
       <a class="join__card" href="{X_URL}" rel="noopener"><span>{icon("x")}X</span><strong>@21BitcoinPolska</strong></a>
       <div class="join__card join__card--nostr"><span class="npub">{icon("nostr")}Nostr <a href="{NOSTR_URL}" rel="noopener">profil</a><button class="copy-btn" type="button" data-copy="{NOSTR_NPUB}">Kopiuj</button></span><strong>{NOSTR_NPUB}</strong></div>
@@ -719,7 +719,7 @@ def build():
             if c["slug"] == "krakow":
                 # meetup.com/krakow-bitcoin-meetup returns "Group not found" (checked 2026-10-23)
                 h = re.sub(r'<a class="link-card" href="https://www\.meetup\.com/pl-PL/krakow-bitcoin-meetup/".*?</a>',
-                           f'<p class="note">Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. <a href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a>.</p>', h, flags=re.S)
+                           f'<p class="note">Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. <a href="{b(INVITE_PAGE)}">Dołącz do Telegrama</a>.</p>', h, flags=re.S)
                 h += ('<h3>Z archiwum</h3><ul><li><a href="https://x.com/21BitcoinPolska/status/1794694392374342098" rel="noopener">„Dla kogo jest Bitcoin, kiedy i jak go kupić?”, Techies, maj 2024</a></li>'
                       '<li><a href="https://x.com/21BitcoinPolska/status/1919430740485304721" rel="noopener">Meetup w Krakowie, 9 maja 2025</a></li></ul>')
             if c["slug"] == "poznan":
@@ -1112,7 +1112,7 @@ def build_edukacja(biblioteka):
     body += ('<section class="prose-wide"><h2>Dalej</h2><ul>'
              f'<li><a href="{b("/slowniczek/")}">Słowniczek</a>: seed, sats, HODL i inne słowa, które usłyszysz na meetupie.</li>'
              f'<li><a href="{b("/bitcoinowa-mapa-polski/#miasta")}">Miasta</a>: przyjdź na spotkanie i zapytaj na żywo.</li>'
-             f'<li><a href="{b(INVITE_PAGE)}">Poproś o zaproszenie</a>: żadne pytanie nie jest głupie.</li></ul>'
+             f'<li><a href="{b(INVITE_PAGE)}">Dołącz do Telegrama</a>: żadne pytanie nie jest głupie.</li></ul>'
              '<p class="note">Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.</p></section>')
     write("/edukacja/", layout("/edukacja/", "Edukacja", body,
                                desc="Czym jest Bitcoin, dlaczego tylko Bitcoin i jak zacząć bezpiecznie. Po polsku, bez sprzedawania."))

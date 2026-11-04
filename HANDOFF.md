@@ -1,5 +1,10 @@
 # Handoff
 
+## 2026-11-03: partners reorder, Freedom Publishing, "Dołącz do Telegrama" label (deployed)
+
+- /projekty/ Zaprzyjaźnieni: Filmweb removed; BitcoinWalk moved under bitblik; Alby moved under Cyfrowa Ekonomia; Freedom Publishing added at the end (publisher of the Polish "Standard Bitcoina", gave the campaign a good price; logo = their SVG rendered black on white, `assets/projekty/freedom-publishing.jpg`).
+- Every "Poproś o zaproszenie" CTA (hero, join card, footer, edukacja, Kraków note) now reads "Dołącz do Telegrama" but still links to `/dolacz-do-nas/#invite` (owner chose label-only change). The form page keeps its own heading and button. Note: the label now promises Telegram while the link goes to the invitation form.
+
 ## 2026-11-03: BitcoinWalk partner + project anchor links (deployed)
 
 - Added BitcoinWalk as a "partner" in `content/projekty.json` (status "partner", kind "friends"), linking bitcoinwalk.org and the Walkie Talkie companion app (bitcoinwalk.org/app). Card image `assets/projekty/bitcoinwalk.jpg` (official horizontal lockup centred on white); raw logos in `source-archive/project-images/` (gitignored).

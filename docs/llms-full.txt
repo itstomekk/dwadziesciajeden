@@ -14,7 +14,7 @@ Jeden
 
 Bitcoinowi maksymaliści w Polsce. Tłumaczymy, spotykamy się, budujemy mapę miejsc i wnosimy Bitcoina tam, gdzie zapadają decyzje. Bez altcoinów, bez sprzedawania czegokolwiek.
 
-[Poproś o zaproszenie](https://dwadziesciajeden.pl/dolacz-do-nas/#invite) · [Kim jesteśmy](https://dwadziesciajeden.pl/kim-jestesmy/)
+[Dołącz do Telegrama](https://dwadziesciajeden.pl/dolacz-do-nas/#invite) · [Kim jesteśmy](https://dwadziesciajeden.pl/kim-jestesmy/)
 
 **2021** start: grupa yellowpilled na Telegramie
 
@@ -52,7 +52,7 @@ Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa.
 
 Rozmawiamy o bieżących sprawach, sprawdzamy memy przed publikacją, otwieramy kanały Lightning, organizujemy meetupy i ostrzegamy przed scamem.
 
-[Dołącz do społeczności **Poproś o zaproszenie**](https://dwadziesciajeden.pl/dolacz-do-nas/#invite) · [Nostr · społeczność na Armadzie **Dwadzieścia Jeden na Armadzie**](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/6f327e5556b324781f4c9e48f575c8a2f7b1dc6c2a5b1e9463c93e1d3ef1e15b) · [X **@21BitcoinPolska**](https://x.com/21BitcoinPolska)
+[Dołącz do społeczności **Dołącz do Telegrama**](https://dwadziesciajeden.pl/dolacz-do-nas/#invite) · [Nostr · społeczność na Armadzie **Dwadzieścia Jeden na Armadzie**](https://armada.buzz/c/50bb9c75a72e30c95c2a0cd7e3b4bf39e6e3b81faa9d5bf65aa25a10dc5b21c6/4e95853f368df5a47d306a7ab7233e3c5451b7ef55279417498fa9be7c7c5c4d/m/6f327e5556b324781f4c9e48f575c8a2f7b1dc6c2a5b1e9463c93e1d3ef1e15b) · [X **@21BitcoinPolska**](https://x.com/21BitcoinPolska)
 
 Nostr [profil](https://primal.net/p/nprofile1qqsvqakqcq93r06sn26ks6626n8yw83jx90cv0csvnq24x57mwpwh4gx83su2) **npub1cpmvpsqtzxl4px44dp4544xwgu0ryv2lscl3qexq42dfakuza02s4fsapc**
 
@@ -610,7 +610,7 @@ Linki sprawdzone 23 października 2026. Brakuje czegoś? [Napisz do nas](https:/
 
 - [Miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta): przyjdź na spotkanie i zapytaj na żywo.
 
-- [Poproś o zaproszenie](https://dwadziesciajeden.pl/dolacz-do-nas/#invite): żadne pytanie nie jest głupie.
+- [Dołącz do Telegrama](https://dwadziesciajeden.pl/dolacz-do-nas/#invite): żadne pytanie nie jest głupie.
 
 Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.
 
@@ -1391,7 +1391,7 @@ Zapraszamy do wspólnego spotkania w Krakowie – to nie kolejna konferencja, a 
 
 ### Meetup
 
-Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. [Poproś o zaproszenie](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
+Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. [Dołącz do Telegrama](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
 
 ### Z archiwum
 
@@ -1616,16 +1616,6 @@ Warszawska kancelaria prawna pod przewodnictwem Gracjana Pietrasa przyjmuje pła
 
 [djp.pl](https://djp.pl/) · [Nasz post z 2023](https://x.com/21BitcoinPolska/status/1669080872329379840)
 
-Obraz: Grafika: Filmweb
-
-2023 · zaprzyjaźnieni
-
-## [Filmweb]
-
-Największy polski serwis filmowy wprowadził płatności w bitcoinie, uruchomił węzeł Lightning i własny relay Nostr.
-
-[Nasz post z 2023](https://x.com/21BitcoinPolska/status/1669671420782080002)
-
 Obraz: Grafika: bitblik
 
 aplikacja, open source · zaprzyjaźnieni
@@ -1636,6 +1626,16 @@ Most między bitcoinem a BLIK-iem. Płacisz bitcoinem w Żabce, na Allegro czy w
 
 [bitblik.app](https://bitblik.app/) · [Kod źródłowy](https://gitworkshop.dev/bitblik.app/relay.ngit.dev/bitblik)
 
+Obraz: Logo BitcoinWalk
+
+partner · zaprzyjaźnieni
+
+## [BitcoinWalk]
+
+Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.
+
+[bitcoinwalk.org](https://bitcoinwalk.org/) · [Aplikacja Walkie Talkie](https://bitcoinwalk.org/app)
+
 Obraz: Grafika: Cryptosteel
 
 partner · zaprzyjaźnieni
@@ -1645,16 +1645,6 @@ partner · zaprzyjaźnieni
 Stalowe kapsuły i kasety na frazę odzyskiwania, odporne na ogień, wodę i czas. Cryptosteel był jednym z pierwszych darczyńców kampanii Standard Bitcoina w Parlamencie.
 
 [cryptosteel.com](https://cryptosteel.com/)
-
-Obraz: Grafika: Alby
-
-zaprzyjaźniony · zaprzyjaźnieni
-
-## [Alby]
-
-Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.
-
-[getalby.com](https://getalby.com/)
 
 Obraz: Grafika: Deltabadger
 
@@ -1695,6 +1685,16 @@ partner · zaprzyjaźnieni
 Polski portal informacyjny, od 2013 roku pisze o Bitcoinie, regulacjach i historii pieniądza. Współpracuje z Polskim Stowarzyszeniem Bitcoin i Quarkiem, relacjonował „Standard Bitcoina” dla posłów i senatorów oraz Bitcoin FilmFest.
 
 [cyfrowaekonomia.pl](https://cyfrowaekonomia.pl/)
+
+Obraz: Grafika: Alby
+
+zaprzyjaźniony · zaprzyjaźnieni
+
+## [Alby]
+
+Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.
+
+[getalby.com](https://getalby.com/)
 
 Obraz: Grafika: zencharts
 
@@ -1766,15 +1766,15 @@ Nostr · 2023 · zaprzyjaźnieni
 
 [nostrwall.com](https://nostrwall.com/)
 
-Obraz: Logo BitcoinWalk
+Obraz: Logo Freedom Publishing
 
 partner · zaprzyjaźnieni
 
-## [BitcoinWalk]
+## [Freedom Publishing]
 
-Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.
+Polskie wydawnictwo z Wrocławia, od 2021 roku wydaje książki o wolności, ekonomii i biznesie. To oni wydali polskie „Standard Bitcoina” Saifedeana Ammousa i dali nam dobrą cenę na 560 egzemplarzy dla posłów i senatorów.
 
-[bitcoinwalk.org](https://bitcoinwalk.org/) · [Aplikacja Walkie Talkie](https://bitcoinwalk.org/app)
+[wydawnictwofp.pl](https://wydawnictwofp.pl/)
 
 ## Pomóż tłumaczyć
 

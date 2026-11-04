@@ -14,7 +14,7 @@ Zapraszamy do wspólnego spotkania w Krakowie – to nie kolejna konferencja, a 
 
 ### Meetup
 
-Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. [Poproś o zaproszenie](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
+Grupa Kraków Bitcoin Meetup na meetup.com nie jest już dostępna. Krakowskie spotkania ogłaszamy na X. [Dołącz do Telegrama](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
 
 ### Z archiwum
 

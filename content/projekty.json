@@ -171,22 +171,6 @@
    "image_alt": "Grafika: Kancelaria DJP: Bitcoin desk"
   },
   {
-   "id": "filmweb",
-   "name": "Filmweb",
-   "status": "2023",
-   "kind": "friends",
-   "image": "projekty/filmweb.jpg",
-   "text": "Największy polski serwis filmowy wprowadził płatności w bitcoinie, uruchomił węzeł Lightning i własny relay Nostr.",
-   "links": [
-    {
-     "label": "Nasz post z 2023",
-     "url": "https://x.com/21BitcoinPolska/status/1669671420782080002"
-    }
-   ],
-   "origin": "old /projekty/",
-   "image_alt": "Grafika: Filmweb"
-  },
-  {
    "id": "bitblik",
    "name": "bitblik",
    "status": "aplikacja, open source",
@@ -207,6 +191,26 @@
    "image_alt": "Grafika: bitblik"
   },
   {
+   "id": "bitcoinwalk",
+   "name": "BitcoinWalk",
+   "status": "partner",
+   "kind": "friends",
+   "image": "projekty/bitcoinwalk.jpg",
+   "image_alt": "Logo BitcoinWalk",
+   "text": "Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.",
+   "links": [
+    {
+     "label": "bitcoinwalk.org",
+     "url": "https://bitcoinwalk.org/"
+    },
+    {
+     "label": "Aplikacja Walkie Talkie",
+     "url": "https://bitcoinwalk.org/app"
+    }
+   ],
+   "origin": "owner request 2026-11-03; bitcoinwalk.org + bitcoinwalk.org/app"
+  },
+  {
    "id": "cryptosteel",
    "name": "Cryptosteel",
    "status": "partner",
@@ -221,22 +225,6 @@
    ],
    "origin": "owner request 2026-10-23; post 2025-11-01",
    "image_alt": "Grafika: Cryptosteel"
-  },
-  {
-   "id": "alby",
-   "name": "Alby",
-   "status": "zaprzyjaźniony",
-   "kind": "friends",
-   "image": "projekty/alby.jpg",
-   "image_alt": "Grafika: Alby",
-   "text": "Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.",
-   "links": [
-    {
-     "label": "getalby.com",
-     "url": "https://getalby.com/"
-    }
-   ],
-   "origin": "owner request 2026-10-23; og:image getalby.com"
   },
   {
    "id": "deltabadger",
@@ -301,6 +289,22 @@
     }
    ],
    "origin": "owner request 2026-10-26; cyfrowaekonomia.pl home page (about, partners, video section) 2026-10-26; logo = site SVG on dark bg"
+  },
+  {
+   "id": "alby",
+   "name": "Alby",
+   "status": "zaprzyjaźniony",
+   "kind": "friends",
+   "image": "projekty/alby.jpg",
+   "image_alt": "Grafika: Alby",
+   "text": "Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.",
+   "links": [
+    {
+     "label": "getalby.com",
+     "url": "https://getalby.com/"
+    }
+   ],
+   "origin": "owner request 2026-10-23; og:image getalby.com"
   },
   {
    "id": "zencharts",
@@ -427,24 +431,20 @@
    "origin": "Telegram dwadziesciajeden 2023-03-23 (author post, no name; also makers.bolt.fun/project/nostrwall); site text checked 2026-10-26; owner pick 2026-10-26; screenshot"
   },
   {
-   "id": "bitcoinwalk",
-   "name": "BitcoinWalk",
+   "id": "freedom-publishing",
+   "name": "Freedom Publishing",
    "status": "partner",
    "kind": "friends",
-   "image": "projekty/bitcoinwalk.jpg",
-   "image_alt": "Logo BitcoinWalk",
-   "text": "Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.",
+   "image": "projekty/freedom-publishing.jpg",
+   "image_alt": "Logo Freedom Publishing",
+   "text": "Polskie wydawnictwo z Wrocławia, od 2021 roku wydaje książki o wolności, ekonomii i biznesie. To oni wydali polskie „Standard Bitcoina” Saifedeana Ammousa i dali nam dobrą cenę na 560 egzemplarzy dla posłów i senatorów.",
    "links": [
     {
-     "label": "bitcoinwalk.org",
-     "url": "https://bitcoinwalk.org/"
-    },
-    {
-     "label": "Aplikacja Walkie Talkie",
-     "url": "https://bitcoinwalk.org/app"
+     "label": "wydawnictwofp.pl",
+     "url": "https://wydawnictwofp.pl/"
     }
    ],
-   "origin": "owner request 2026-11-03; bitcoinwalk.org + bitcoinwalk.org/app"
+   "origin": "owner request 2026-11-03; wydawnictwofp.pl"
   }
  ]
 }

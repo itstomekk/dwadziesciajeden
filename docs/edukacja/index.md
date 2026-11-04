@@ -136,6 +136,6 @@ Linki sprawdzone 23 października 2026. Brakuje czegoś? [Napisz do nas](https:/
 
 - [Miasta](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/#miasta): przyjdź na spotkanie i zapytaj na żywo.
 
-- [Poproś o zaproszenie](https://dwadziesciajeden.pl/dolacz-do-nas/#invite): żadne pytanie nie jest głupie.
+- [Dołącz do Telegrama](https://dwadziesciajeden.pl/dolacz-do-nas/#invite): żadne pytanie nie jest głupie.
 
 Nie udzielamy porad inwestycyjnych. Wszystko na tej stronie to edukacja, nie rekomendacja.

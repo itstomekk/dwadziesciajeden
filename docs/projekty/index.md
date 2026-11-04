@@ -106,16 +106,6 @@ Warszawska kancelaria prawna pod przewodnictwem Gracjana Pietrasa przyjmuje pła
 
 [djp.pl](https://djp.pl/) · [Nasz post z 2023](https://x.com/21BitcoinPolska/status/1669080872329379840)
 
-Obraz: Grafika: Filmweb
-
-2023 · zaprzyjaźnieni
-
-## [Filmweb]
-
-Największy polski serwis filmowy wprowadził płatności w bitcoinie, uruchomił węzeł Lightning i własny relay Nostr.
-
-[Nasz post z 2023](https://x.com/21BitcoinPolska/status/1669671420782080002)
-
 Obraz: Grafika: bitblik
 
 aplikacja, open source · zaprzyjaźnieni
@@ -126,6 +116,16 @@ Most między bitcoinem a BLIK-iem. Płacisz bitcoinem w Żabce, na Allegro czy w
 
 [bitblik.app](https://bitblik.app/) · [Kod źródłowy](https://gitworkshop.dev/bitblik.app/relay.ngit.dev/bitblik)
 
+Obraz: Logo BitcoinWalk
+
+partner · zaprzyjaźnieni
+
+## [BitcoinWalk]
+
+Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.
+
+[bitcoinwalk.org](https://bitcoinwalk.org/) · [Aplikacja Walkie Talkie](https://bitcoinwalk.org/app)
+
 Obraz: Grafika: Cryptosteel
 
 partner · zaprzyjaźnieni
@@ -135,16 +135,6 @@ partner · zaprzyjaźnieni
 Stalowe kapsuły i kasety na frazę odzyskiwania, odporne na ogień, wodę i czas. Cryptosteel był jednym z pierwszych darczyńców kampanii Standard Bitcoina w Parlamencie.
 
 [cryptosteel.com](https://cryptosteel.com/)
-
-Obraz: Grafika: Alby
-
-zaprzyjaźniony · zaprzyjaźnieni
-
-## [Alby]
-
-Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.
-
-[getalby.com](https://getalby.com/)
 
 Obraz: Grafika: Deltabadger
 
@@ -185,6 +175,16 @@ partner · zaprzyjaźnieni
 Polski portal informacyjny, od 2013 roku pisze o Bitcoinie, regulacjach i historii pieniądza. Współpracuje z Polskim Stowarzyszeniem Bitcoin i Quarkiem, relacjonował „Standard Bitcoina” dla posłów i senatorów oraz Bitcoin FilmFest.
 
 [cyfrowaekonomia.pl](https://cyfrowaekonomia.pl/)
+
+Obraz: Grafika: Alby
+
+zaprzyjaźniony · zaprzyjaźnieni
+
+## [Alby]
+
+Portfel i narzędzia do płacenia bitcoinem przez Lightning w przeglądarce i aplikacjach, także w wersji do samodzielnego hostowania (Alby Hub). W zespole pracuje sporo Polaków.
+
+[getalby.com](https://getalby.com/)
 
 Obraz: Grafika: zencharts
 
@@ -256,15 +256,15 @@ Nostr · 2023 · zaprzyjaźnieni
 
 [nostrwall.com](https://nostrwall.com/)
 
-Obraz: Logo BitcoinWalk
+Obraz: Logo Freedom Publishing
 
 partner · zaprzyjaźnieni
 
-## [BitcoinWalk]
+## [Freedom Publishing]
 
-Cotygodniowe spacery w realu dla bitcoinerów na całym świecie. Towarzysząca im aplikacja Walkie Talkie pomaga znaleźć spacer w swojej okolicy, dołączyć do lokalnej grupy i zostać w kontakcie między spotkaniami przez Nostra. W Warszawie spacerujemy razem w soboty.
+Polskie wydawnictwo z Wrocławia, od 2021 roku wydaje książki o wolności, ekonomii i biznesie. To oni wydali polskie „Standard Bitcoina” Saifedeana Ammousa i dali nam dobrą cenę na 560 egzemplarzy dla posłów i senatorów.
 
-[bitcoinwalk.org](https://bitcoinwalk.org/) · [Aplikacja Walkie Talkie](https://bitcoinwalk.org/app)
+[wydawnictwofp.pl](https://wydawnictwofp.pl/)
 
 ## Pomóż tłumaczyć
 
