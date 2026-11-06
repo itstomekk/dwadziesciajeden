@@ -1,5 +1,28 @@
 # Handoff
 
+## 2026-11-06: partner social media, Telegram chat cards, Laissez Faire + Bujać cards, footer (local, NOT deployed)
+
+- Social media on partners: new `social` list in `content/projekty.json` (`kind` = x, nostr, instagram, youtube, facebook, linkedin, github, tiktok, spotify, applepodcasts, rss; optional `label`). Cards on /projekty/ show an icon row (`social_row()`), partner subpages a "Social media" list, and the URLs go into the page's JSON-LD `sameAs`. Sources: each partner's own site footer (2026-11-06), plus web search for BitcoinWalk (@BitcoinWalkOrg) and Free Market Simpson (Instagram @freemarketsimpson). Telegram profiles of partners are left out because the build strips every t.me link. New CC0 icons from Simple Icons in `icon()`. BFF's X link moved from `links` to `social`.
+- New friends cards: "Laissez Faire · Yellow Pill" (`/projekty/laissez-faire/`, story from the podcast's RSS feed: since 2019-07-19, 228 episodes, 14 Yellow Pill episodes 2021-2025) and "Bujać!" (`page: "/bujac/"`, so the card links to the existing /bujac/ page and no subpage is generated; `partner_path()` honours `page`). Images letterboxed from the official covers (`assets/projekty/laissez-faire.jpg`, `bujac.jpg`; raw Laissez Faire cover in `source-archive/project-images/`).
+- Laissez Faire's podhome page links Tomek's X; both cards are under Zaprzyjaźnieni until the owner says they are "ours".
+- /projekty/ inicjatywy: "Pomóż tłumaczyć" moved to the end; "Czaty i społeczności" gets two Telegram cards (main chat and Poznań, both "na zaproszenie", link = invitation form; `ini_card()` now accepts `{B}` internal URLs). Card images `assets/projekty/telegram-21.jpg`, `telegram-poznan.jpg` rendered from HTML. Initiative blocks are wider (`.cat .ini-grid` minmax 250px, 4 per row at 1280).
+- Footer: "Zasady i sieć TwentyOne" link removed (the /zasady/ page stays; the brand line "Część sieci TwentyOne" stays).
+- Satsback link `satsback.com/register/dlorDWND5JPeV7pw` is the referral link from the old Ghost page "Nasze projekty", which said it was a partner link; the "ponad 600 polskich sklepów" claim comes from the same old page.
+- Built 60 pages, 254 search records; QA ALL PASS (10 gates, port 8771). Not committed, not pushed.
+
+## 2026-11-06: partner subpages + 🟠 two-line header (local, NOT deployed)
+
+- Header/footer brand: logo image replaced by an 🟠 emoji (`LOGO` in build.py, `.mark--dot` in site.css) and the wordmark set on two lines "Dwadzieścia / Jeden" (owner picked option 2 of the mockups in `Hermes/image-gen/2026-11-06-dj-header-logo-variants/`).
+- Every non-"ours" project (20) now has its own page `/projekty/<id>/` (`build_partner_pages`): card text, image, 2-3 paragraph Polish story (`story` in projekty.json), links (`links` + `more_links`), "U nas na stronie" list of kronika entries and pages that mention it (`match` terms), chips to other friends, WebPage+about JSON-LD. Card heading on /projekty/ links to the page. Pages are in search.json, sitemap.xml and llms.txt under ## Projekty.
+- Stories come from 4 research subagents (private notes + sources in `private/partner-research/out-*.json`, gitignored); all 44 extra links returned 200 on 2026-11-06, key claims spot-checked. Card claims NOT confirmed by research: Satsback "600 polskich sklepów", DJP "pod przewodnictwem Gracjana Pietrasa" (he is one of the Bitcoin Desk partners), Alby's Polish team members, Freedom Publishing "od 2021", Nostrwall/zencharts author and date.
+- Free Market Simpson card image re-made: the source photo had a ~30 px strip of another picture under the painting (rows 741+), now cropped off before compositing.
+- Built 59 pages; QA ALL PASS (10 gates, port 8763). Not committed, not pushed.
+
+## 2026-11-06: Free Market Simpson art project (local, NOT deployed)
+
+- Added Free Market Simpson (Polish free-market painter and muralist, free-market-simpson.is; his site links back to 21) at the end of Zaprzyjaźnieni in `content/projekty.json` (status "sztuka", kind "friends"), links: home + murals page. Card image `assets/projekty/free-market-simpson.jpg` = his painting "The old world recipe" letterboxed on a blurred copy; raw images in `source-archive/project-images/fms-*.jpg`.
+- Built 39 pages, 251 search records; QA ALL PASS (10 PASS gates, port 8761). Anchor, llms.txt, llms-full.txt and search.json entries checked. Not committed, not pushed (deploy only on Tomek's word).
+
 ## 2026-11-03: partners reorder, Freedom Publishing, "Dołącz do Telegrama" label (deployed)
 
 - /projekty/ Zaprzyjaźnieni: Filmweb removed; BitcoinWalk moved under bitblik; Alby moved under Cyfrowa Ekonomia; Freedom Publishing added at the end (publisher of the Polish "Standard Bitcoina", gave the campaign a good price; logo = their SVG rendered black on white, `assets/projekty/freedom-publishing.jpg`).
@@ -149,3 +172,9 @@ History of the cutover:
 
 - New `/bujac/` (`build_bujac()` in build.py, data `content/bujac.json`, images `assets/bujac/`, styles `.bujac-hero`/`.ep*` at the end of site.css): 18 episodes in Sezon 1/2/Docinki/Sezon 3 with illustration thumbnails (captioned as illustrations, not official covers), tags, Spotify/YouTube-trailer/archive links. Listed in llms.txt (Edukacja) and the library entry in `/edukacja/` now links to it (`{B}/bujac/`, internal links in `res_row` supported). QA ALL PASS. NOT yet committed or pushed (deploy only on Tomek's word).
 - Gotcha: port 8733 is blocked by Windows here (WinError 10013); run QA on another port via `DJ_QA_PORT`.
+
+## Round (2026-11-06): Ryszard Zalski as partner
+
+- New friends card + subpage `/projekty/ryszard-zalski/` (status `partner`, schema Person), appended last in `content/projekty.json`. Owner: "friend of the site, make him the partner". Sources: youtube.com/@RyszardZalski about page + RSS (channel "Gospodarka & Geopolityka", joined 6 Apr 2025), wnet.fm 2025-03-07 (Pomarańczowe Studio Radia Wnet, "Prowadzi Ryszard Zalski"), wnet.fm Poranek Wnet 2022 (Studio Tajpej), `content/bujac.json` s2-e07. Image `assets/projekty/ryszard-zalski.jpg` = channel avatar (Radio Wnet studio photo) letterboxed over blur; raw in `source-archive/project-images/`.
+- `build.py`: optional `name_with` field (instrumental case) for the partner-page note ("historię z Ryszardem Zalskim"); falls back to `name`.
+- Build: 61 pages, 255 search records. QA 10 PASS, ALL PASS. Local only, NOT committed or pushed (deploy on Tomek's word).

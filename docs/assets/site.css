@@ -47,6 +47,8 @@ p{margin:0 0 1em}
 .top__in{max-width:var(--w);margin:0 auto;padding:12px var(--pad);display:flex;align-items:center;gap:24px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 18px/1 var(--serif);letter-spacing:-.01em;white-space:nowrap}
 .brand .mark{width:44px;height:44px;flex:none;object-fit:contain}
+.brand span{line-height:1.02}
+.brand .mark.mark--dot{width:auto;height:auto;font:normal 32px/1 "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
 .nav{display:flex;gap:4px;margin-left:auto}
 .nav a{text-decoration:none;font:500 15px/1 var(--sans);padding:9px 11px;border-radius:8px;color:var(--ink-2)}
 .nav a:hover,.nav a[aria-current]{color:var(--ink);background:var(--paper-2)}
@@ -342,6 +344,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
   .brand{gap:8px}
   .brand span{font-size:16px}
   .brand .mark{width:30px;height:30px}
+  .brand .mark.mark--dot{width:auto;height:auto;font-size:28px}
   .icon-btn{width:36px}
   .hero h1{font-size:clamp(38px,12.5vw,60px)}
   .top__act .btn--sm{padding:8px 12px}
@@ -581,7 +584,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 }
 .hero h1[data-phrases]{white-space:nowrap}
 /* very narrow phones (<375px): header fits without horizontal scroll */
-@media (max-width:374px){.top__in{gap:8px;padding-left:12px;padding-right:8px}.brand{gap:6px}.brand span{font-size:14px}.brand .mark{width:28px;height:28px}.icon-btn{width:32px}.top__act .btn--sm{padding:7px 10px;font-size:13px}}
+@media (max-width:374px){.top__in{gap:8px;padding-left:12px;padding-right:8px}.brand{gap:6px}.brand span{font-size:14px}.brand .mark{width:28px;height:28px}.brand .mark.mark--dot{width:auto;height:auto;font-size:24px}.icon-btn{width:32px}.top__act .btn--sm{padding:7px 10px;font-size:13px}}
 @media (max-width:339px){.brand{white-space:normal}.brand span{line-height:1.05;width:min-content}}
 
 /* /bujac/ podcast page */
@@ -631,3 +634,28 @@ figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.45}
 .wp-foot code{font:13px var(--mono)}
 .wp-foot__home{font-size:13px;color:var(--muted);margin-bottom:0}
 .wp-foot__home a{color:var(--muted)}
+
+/* Partner / friend subpages /projekty/<id>/ (build_partner_pages) */
+.proj__anchor--page::before{content:none}
+.proj__anchor--page::after{content:" \2192";color:var(--orange-ink);opacity:.55}
+.proj__anchor--page:hover::after{opacity:1}
+.partner__img{margin:28px 0 8px}
+.partner__img img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--rule)}
+.prose .partner__links,.prose .partner__mentions{list-style:none;padding:0;margin:0 0 1em}
+.prose .partner__links li,.prose .partner__mentions li{display:flex;margin:0;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:10px 0;border-top:1px solid var(--rule)}
+.partner__links li:last-child,.partner__mentions li:last-child{border-bottom:1px solid var(--rule)}
+.partner__links a{font-weight:600}
+.partner__links small,.partner__mentions small{font:12.5px/1.3 var(--mono);color:var(--muted)}
+.partner .note{margin-top:28px}
+.partner__others{margin-top:36px;padding-top:20px;border-top:1.5px solid var(--ink);display:flex;flex-wrap:wrap;gap:8px}
+.partner__others .kicker{width:100%;margin:0 0 6px;font-size:12.5px}
+.partner__others a{padding:4px 10px;border:1px solid var(--rule);font:13px/1.4 var(--mono);color:var(--ink-2);text-decoration:none}
+.partner__others a:hover{border-color:var(--orange-ink);color:var(--orange-ink)}
+
+/* Social icons on project cards and partner pages; wider initiative blocks on /projekty/ (owner 2026-11-06) */
+.proj__social{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.proj__social a{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid var(--rule);color:var(--ink-2);text-decoration:none}
+.proj__social a:hover{border-color:var(--orange-ink);color:var(--orange-ink)}
+.proj__social .ico{margin:0;width:16px;height:16px}
+.partner__social .ico-link{gap:0}
+.cat .ini-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}

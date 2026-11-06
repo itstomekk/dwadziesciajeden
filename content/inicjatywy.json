@@ -2,27 +2,6 @@
  "checked": "2026-10-23",
  "categories": [
   {
-   "id": "tlumaczenia",
-   "title": "Pomóż tłumaczyć",
-   "intro": "Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.",
-   "items": [
-    {
-     "title": "SeedSigner na Transifex",
-     "type_label": "tłumaczenie",
-     "url": "https://explore.transifex.com/seedsigner/seedsigner/",
-     "description_pl": "Otwarty projekt tłumaczenia SeedSignera, urządzenia do podpisywania transakcji, które zbudujesz sam.",
-     "image": "projekty/seedsigner.jpg"
-    },
-    {
-     "title": "Bitcoin Core na Transifex",
-     "type_label": "tłumaczenie",
-     "url": "https://explore.transifex.com/bitcoin/bitcoin/",
-     "description_pl": "Polska wersja interfejsu Bitcoin Core. Poprawki i aktualizacje zawsze się przydadzą.",
-     "image": "projekty/bitcoin-core.jpg"
-    }
-   ]
-  },
-  {
    "id": "organizacje",
    "title": "Organizacje i sieci",
    "items": [
@@ -74,7 +53,20 @@
    "id": "spolecznosci",
    "title": "Czaty i społeczności",
    "items": [
-
+    {
+     "title": "Dwadzieścia Jeden na Telegramie",
+     "type_label": "Telegram, na zaproszenie",
+     "url": "{B}/dolacz-do-nas/#invite",
+     "description_pl": "Nasz główny czat, z wątkami o meetupach, Bitcoinie po polsku, Nostrze, technologii, P2P i memach. Wchodzi się z zaproszenia: zostaw e-mail albo npub w formularzu, a odezwiemy się z linkiem.",
+     "image": "projekty/telegram-21.jpg"
+    },
+    {
+     "title": "Dwadzieścia Jeden Poznań na Telegramie",
+     "type_label": "Telegram, na zaproszenie",
+     "url": "{B}/dolacz-do-nas/#invite",
+     "description_pl": "Lokalny czat poznańskich bitcoinerów o spacerach i spotkaniach w mieście. Też na zaproszenie przez formularz: kiedy się odezwiemy, napisz, że chcesz do grupy poznańskiej.",
+     "image": "projekty/telegram-poznan.jpg"
+    },
     {
      "title": "Dwadzieścia Jeden na Nostrze",
      "type_label": "Armada, Nostr",
@@ -82,13 +74,33 @@
      "description_pl": "Nasza społeczność na Armadzie: czat oparty na Nostrze, szyfrowany, bez właściciela serwera. Wystarczy klucz Nostr.",
      "image": "projekty/armada.jpg"
     },
-
     {
      "title": "BitcoinWalk Warszawa na Nostrze",
      "type_label": "Nostr (Flotilla)",
      "url": "https://app.flotilla.social/join?r=warszawa.bitcoinwalk.org&c=OWY8E116",
      "description_pl": "Czat warszawskich spacerów, prowadzony na Nostrze.",
      "image": "projekty/flotilla.jpg"
+    }
+   ]
+  },
+  {
+   "id": "tlumaczenia",
+   "title": "Pomóż tłumaczyć",
+   "intro": "Wątek „Bitcoin po Polsku” na naszym czacie od 2023 roku koordynuje tłumaczenia portfeli, narzędzi i tekstów. Przy części materiałów z tej strony pomagaliśmy jako tłumacze. Każdy może dołożyć kilka zdań.",
+   "items": [
+    {
+     "title": "SeedSigner na Transifex",
+     "type_label": "tłumaczenie",
+     "url": "https://explore.transifex.com/seedsigner/seedsigner/",
+     "description_pl": "Otwarty projekt tłumaczenia SeedSignera, urządzenia do podpisywania transakcji, które zbudujesz sam.",
+     "image": "projekty/seedsigner.jpg"
+    },
+    {
+     "title": "Bitcoin Core na Transifex",
+     "type_label": "tłumaczenie",
+     "url": "https://explore.transifex.com/bitcoin/bitcoin/",
+     "description_pl": "Polska wersja interfejsu Bitcoin Core. Poprawki i aktualizacje zawsze się przydadzą.",
+     "image": "projekty/bitcoin-core.jpg"
     }
    ]
   }

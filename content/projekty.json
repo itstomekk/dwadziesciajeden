@@ -37,14 +37,64 @@
     {
      "label": "bitcoinfilmfest.com",
      "url": "https://bitcoinfilmfest.com/"
-    },
-    {
-     "label": "@bitcoinfilmfest na X",
-     "url": "https://x.com/bitcoinfilmfest"
     }
    ],
    "origin": "@21BitcoinPolska posts 2023-02, 2024-04, 2025-04; owner request 2026-10-23; owner: BFF grew out of 21 (2026-10-23)",
-   "image_alt": "Grafika: Bitcoin FilmFest"
+   "image_alt": "Grafika: Bitcoin FilmFest",
+   "match": [
+    "Bitcoin FilmFest",
+    "bitcoinfilmfest.com",
+    "BFF"
+   ],
+   "schema": "Event",
+   "story": [
+    "Bitcoin FilmFest to festiwal filmowy o Bitcoinie i kulturze, którego główna edycja odbywa się w Warszawie. Tworzą go niewielki zespół, partnerzy i przyjaciele projektu.",
+    "W programie są pokazy filmów, rozmowy i warsztaty. Festiwal prowadzi też katalog filmów i twórców związanych z Bitcoinem.",
+    "Pierwsza edycja festiwalu w 2023 roku rodziła się w naszej społeczności, przy udziale wolontariuszy i we wspólnej promocji. W 2024 roku spotkaliśmy się przy Bitcoin FilmFest w Kinotece na European Halving Party."
+   ],
+   "more_links": [
+    {
+     "label": "O festiwalu",
+     "url": "https://bitcoinfilmfest.com/about/"
+    },
+    {
+     "label": "Katalog filmów",
+     "url": "https://bitcoinfilmfest.com/cinema/"
+    },
+    {
+     "label": "Relacja z edycji 2026",
+     "url": "https://bitcoinfilmfest.com/26/"
+    },
+    {
+     "label": "Włącz się w projekt",
+     "url": "https://bitcoinfilmfest.com/join/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/bitcoinfilmfest"
+    },
+    {
+     "kind": "nostr",
+     "url": "https://primal.net/p/npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a",
+     "label": "Bitcoin FilmFest"
+    },
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/bitcoin_filmfest"
+    },
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/company/bitcoin-filmfest",
+     "label": "Bitcoin FilmFest"
+    },
+    {
+     "kind": "github",
+     "url": "https://github.com/itstomekk/bitcoinfilmfest-com",
+     "label": "kod strony"
+    }
+   ]
   },
   {
    "id": "btcmap",
@@ -148,7 +198,45 @@
     }
    ],
    "origin": "old /projekty/",
-   "image_alt": "Grafika: Satsback.com"
+   "image_alt": "Grafika: Satsback.com",
+   "match": [
+    "Satsback"
+   ],
+   "story": [
+    "Satsback.com to serwis oferujący zwrot części wydatków w bitcoinie za zakupy online. Zespół Satsback opisuje go jako usługę działającą od 2020 roku.",
+    "Przed zakupem użytkownik przechodzi do sklepu przez serwis, a po zatwierdzeniu zwrotu może otrzymać saty przez Lightning. Satsback udostępnia też katalog sklepów i rozszerzenie do przeglądarki, które przypomina o dostępnych zwrotach.",
+    "W listopadzie 2025 Satsback znalazł się wśród pierwszych darczyńców naszej kampanii Standard Bitcoina w Parlamencie. Wspólnie zbieraliśmy bitcoiny na książki dla posłów i senatorów."
+   ],
+   "more_links": [
+    {
+     "label": "Katalog sklepów",
+     "url": "https://satsback.com/stores"
+    },
+    {
+     "label": "Blog Satsback",
+     "url": "https://satsback.com/blog"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/Satsback"
+    },
+    {
+     "kind": "nostr",
+     "url": "https://njump.me/hello@satsback.com",
+     "label": "hello@satsback.com"
+    },
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/satsback_com"
+    },
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/company/satsback",
+     "label": "Satsback"
+    }
+   ]
   },
   {
    "id": "djp",
@@ -168,7 +256,38 @@
     }
    ],
    "origin": "old /projekty/ + post 2024-12-03",
-   "image_alt": "Grafika: Kancelaria DJP: Bitcoin desk"
+   "image_alt": "Grafika: Kancelaria DJP: Bitcoin desk",
+   "match": [
+    "DJP",
+    "djp.pl"
+   ],
+   "story": [
+    "DJP to warszawska kancelaria adwokatów i radców prawnych. Jej Bitcoin Desk współtworzą Gracjan Pietras, Marcin Liszka i Jarosław Jerszyński.",
+    "Zespół doradza firmom działającym na rynku Bitcoina, między innymi w sprawach regulacji, umów i podatków. Pomaga też we wdrażaniu płatności bitcoinowych, a sama kancelaria przyjmuje płatności w bitcoinie.",
+    "W grudniu 2024 odnotowaliśmy w naszej kronice dołączenie bitcoina do rezerw kancelarii. Wcześniej DJP zaczęła przyjmować płatności w bitcoinie i stworzyła Bitcoin Desk."
+   ],
+   "more_links": [
+    {
+     "label": "Bitcoin Desk",
+     "url": "https://djp.pl/obszary/bitcoin-desk/"
+    },
+    {
+     "label": "Zespół kancelarii",
+     "url": "https://djp.pl/zespol/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "nostr",
+     "url": "https://njump.me/npub1pmkfhz7rxtze0qrveggx2gz32s4hgynjxhx6fuc6rks4xkp6mkgsrqdckt",
+     "label": "djplegal"
+    },
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/company/doktor-jerszynski-pietras-djp",
+     "label": "DJP"
+    }
+   ]
   },
   {
    "id": "bitblik",
@@ -188,7 +307,37 @@
     }
    ],
    "origin": "owner request 2026-10-23; bitblik.app",
-   "image_alt": "Grafika: bitblik"
+   "image_alt": "Grafika: bitblik",
+   "story": [
+    "bitblik to aplikacja open source, która łączy posiadaczy bitcoinów z osobami korzystającymi z BLIKA. Projekt udostępnia swój kod źródłowy do wglądu.",
+    "Użytkownicy mogą wymieniać kody BLIK na bitcoiny lub użyć bitcoina, by zapłacić BLIKIEM. W rozliczeniu wykorzystują Lightning i hold invoice, które blokuje środki na czas transakcji. Aplikację można pobrać przez Zapstore lub ze strony wydań na GitHubie."
+   ],
+   "more_links": [
+    {
+     "label": "BitBlik w Zapstore",
+     "url": "https://zapstore.dev/apps/app.bitblik"
+    },
+    {
+     "label": "Wydania aplikacji",
+     "url": "https://github.com/bit-blik/bitblik/releases"
+    },
+    {
+     "label": "Wersja przeglądarkowa, eksperymentalna",
+     "url": "https://app.bitblik.app/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "nostr",
+     "url": "https://njump.me/npub1k3g092rlzvn7nftz3jte9pkx63zp705nh78r6hjpjm55fjg7r2cqx8stj3",
+     "label": "BitBlik"
+    },
+    {
+     "kind": "github",
+     "url": "https://github.com/bit-blik/bitblik",
+     "label": "bit-blik/bitblik"
+    }
+   ]
   },
   {
    "id": "bitcoinwalk",
@@ -208,7 +357,34 @@
      "url": "https://bitcoinwalk.org/app"
     }
    ],
-   "origin": "owner request 2026-11-03; bitcoinwalk.org + bitcoinwalk.org/app"
+   "origin": "owner request 2026-11-03; bitcoinwalk.org + bitcoinwalk.org/app",
+   "match": [
+    "BitcoinWalk",
+    "BitcoinWalki",
+    "bitcoinwalk.org"
+   ],
+   "story": [
+    "BitcoinWalk pomaga organizować lokalne spacery dla osób zainteresowanych Bitcoinem. To okazja do spotkania innych bitcoinerów i rozmowy na świeżym powietrzu.",
+    "Na stronie można znaleźć spacer lub zgłosić własny. Aplikacja Walkie Talkie pokazuje lokalne spacery i grupy, a do korzystania z niej nie trzeba podawać numeru telefonu.",
+    "W lipcu 2024 roku odbył się BitcoinWalk w Poznaniu, prowadzony przez Macieja Sołtysiaka. W maju 2025 roku ruszył warszawski spacer przy Bitcoin FilmFest, a od czerwca spotkania odbywały się co sobotę w Ogrodzie Saskim."
+   ],
+   "more_links": [
+    {
+     "label": "Zorganizuj spacer",
+     "url": "https://bitcoinwalk.org/start"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/BitcoinWalkOrg"
+    },
+    {
+     "kind": "github",
+     "url": "https://github.com/BitcoinWalk/walkie-talkie",
+     "label": "BitcoinWalk/walkie-talkie"
+    }
+   ]
   },
   {
    "id": "cryptosteel",
@@ -224,7 +400,53 @@
     }
    ],
    "origin": "owner request 2026-10-23; post 2025-11-01",
-   "image_alt": "Grafika: Cryptosteel"
+   "image_alt": "Grafika: Cryptosteel",
+   "match": [
+    "Cryptosteel"
+   ],
+   "story": [
+    "Cryptosteel tworzy stalowe nośniki do przechowywania kopii zapasowej frazy odzyskiwania. Za marką stoi firma Sword Ltd, a jej produkty powstają w Unii Europejskiej.",
+    "W ofercie są między innymi Capsule, Cassette oraz modele Seed12 i Seed24. Użytkownik układa zapis z dołączonych stalowych znaków, bez zapisywania go na urządzeniu podłączonym do sieci.",
+    "W listopadzie 2025 Cryptosteel znalazł się wśród pierwszych darczyńców naszej kampanii Standard Bitcoina w Parlamencie. Zbiórka na książki dla posłów i senatorów odbywała się w bitcoinie."
+   ],
+   "more_links": [
+    {
+     "label": "Sklep Cryptosteel",
+     "url": "https://cryptosteel.com/shop/"
+    },
+    {
+     "label": "Jak działają produkty",
+     "url": "https://cryptosteel.com/how-it-works/"
+    },
+    {
+     "label": "Historia Cryptosteel",
+     "url": "https://cryptosteel.com/our-story"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/cryptosteel"
+    },
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/cryptosteel"
+    },
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/@Cryptosteel",
+     "label": "@Cryptosteel"
+    },
+    {
+     "kind": "facebook",
+     "url": "https://www.facebook.com/cryptosteel"
+    },
+    {
+     "kind": "github",
+     "url": "https://github.com/cryptosteel",
+     "label": "cryptosteel"
+    }
+   ]
   },
   {
    "id": "deltabadger",
@@ -240,7 +462,27 @@
      "url": "https://deltabadger.com/"
     }
    ],
-   "origin": "owner request 2026-10-23; og:image deltabadger.com"
+   "origin": "owner request 2026-10-23; og:image deltabadger.com",
+   "story": [
+    "Deltabadger to narzędzie do automatycznego inwestowania. Projekt udostępnia kod źródłowy i pozwala uruchomić program na własnym serwerze.",
+    "Można za jego pomocą ustawić regularne zakupy bitcoina na obsługiwanej giełdzie. Program łączy się z kontem giełdowym za pomocą kluczy API."
+   ],
+   "more_links": [
+    {
+     "label": "Kod źródłowy na GitHubie",
+     "url": "https://github.com/deltabadger/deltabadger"
+    },
+    {
+     "label": "Strona po polsku",
+     "url": "https://deltabadger.com/pl"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/deltabadgerapp"
+    }
+   ]
   },
   {
    "id": "bitomat-com",
@@ -256,7 +498,51 @@
      "url": "https://www.bitomat.com/"
     }
    ],
-   "origin": "owner request 2026-10-30; bitomat.com operator explanation and logo"
+   "origin": "owner request 2026-10-30; bitomat.com operator explanation and logo",
+   "match": [
+    "Bitomat"
+   ],
+   "story": [
+    "Bitomat.com pomaga znaleźć i porównać bitomaty. Serwis zbiera informacje o urządzeniach w Polsce i innych krajach.",
+    "Na mapie można wybrać kraj i sprawdzić lokalizacje urządzeń. Strona podaje także informacje o kursach, opłatach i godzinach otwarcia. Ceny i obsługę transakcji zapewnia operator wybranego urządzenia."
+   ],
+   "more_links": [
+    {
+     "label": "Mapa bitomatów",
+     "url": "https://www.bitomat.com/map"
+    },
+    {
+     "label": "Lokalizacje na świecie",
+     "url": "https://www.bitomat.com/mapa/bitcoin-atms-world"
+    },
+    {
+     "label": "Kanały społecznościowe",
+     "url": "https://linktr.ee/bitomatcom"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/BitomatCom"
+    },
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/bitomat_official"
+    },
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/channel/UCkEvjeyN-QgI6Qpysww8VuA",
+     "label": "Bitomat.com"
+    },
+    {
+     "kind": "facebook",
+     "url": "https://www.facebook.com/bitomat.official"
+    },
+    {
+     "kind": "tiktok",
+     "url": "https://www.tiktok.com/@bitomat.tv"
+    }
+   ]
   },
   {
    "id": "bitcoin-district",
@@ -272,7 +558,40 @@
     }
    ],
    "origin": "owner request 2026-10-23",
-   "image_alt": "Grafika: Bitcoin District"
+   "image_alt": "Grafika: Bitcoin District",
+   "match": [
+    "Bitcoin District",
+    "thebitcoindistrict.com"
+   ],
+   "story": [
+    "Bitcoin District to społeczność budowana w Próspera na wyspie Roatán w Hondurasie. Projekt wyrósł ze spotkań i inicjatyw osób, które chciały rozwijać tam życie i działalność opartą na Bitcoinie.",
+    "Zespół organizuje spotkania, warsztaty i wyjazdy dla społeczności. Prowadzi też Bitcoin Workaway, program, w którym uczestnicy pomagają przy lokalnych projektach w zamian za zakwaterowanie."
+   ],
+   "more_links": [
+    {
+     "label": "O projekcie i aktualności",
+     "url": "https://thebitcoindistrict.com/infopage"
+    },
+    {
+     "label": "Wydarzenia",
+     "url": "https://thebitcoindistrict.com/events"
+    },
+    {
+     "label": "Bitcoin Workaway",
+     "url": "https://thebitcoindistrict.com/bitcoin-workaway"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/bitcoinprospera"
+    },
+    {
+     "kind": "nostr",
+     "url": "https://primal.net/p/npub1r7dky4udgx664qf2rrnvpp65sp2ruq9dv9pt0pwnvlvar53ajawstht8k3",
+     "label": "Bitcoin District Prospera"
+    }
+   ]
   },
   {
    "id": "cyfrowa-ekonomia",
@@ -288,7 +607,49 @@
      "url": "https://cyfrowaekonomia.pl/"
     }
    ],
-   "origin": "owner request 2026-10-26; cyfrowaekonomia.pl home page (about, partners, video section) 2026-10-26; logo = site SVG on dark bg"
+   "origin": "owner request 2026-10-26; cyfrowaekonomia.pl home page (about, partners, video section) 2026-10-26; logo = site SVG on dark bg",
+   "match": [
+    "Cyfrowa Ekonomia",
+    "cyfrowaekonomia.pl"
+   ],
+   "story": [
+    "Cyfrowa Ekonomia to polskojęzyczny portal informacyjny piszący między innymi o Bitcoinie. Serwis podaje, że publikuje informacje od 2013 roku.",
+    "Redakcja udostępnia archiwum publikacji i materiały o regulacjach. Na stronie można też znaleźć cykl o historii pieniądza, w tym tekst Jacka Walewskiego o dawnych poglądach na pieniądz i inflację."
+   ],
+   "more_links": [
+    {
+     "label": "Archiwum publikacji",
+     "url": "https://cyfrowaekonomia.pl/archiwum/"
+    },
+    {
+     "label": "Historia pieniądza",
+     "url": "https://cyfrowaekonomia.pl/historia-pieniadza-cz-3-sredniowieczne-myslenie/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/cyfrowaekonomia"
+    },
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/@cyfrowaekonomia",
+     "label": "@cyfrowaekonomia"
+    },
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/cyfrowaekonomia"
+    },
+    {
+     "kind": "facebook",
+     "url": "https://www.facebook.com/CyfrowaEkonomia"
+    },
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/company/cyfrowaekonomia",
+     "label": "Cyfrowa Ekonomia"
+    }
+   ]
   },
   {
    "id": "alby",
@@ -304,7 +665,49 @@
      "url": "https://getalby.com/"
     }
    ],
-   "origin": "owner request 2026-10-23; og:image getalby.com"
+   "origin": "owner request 2026-10-23; og:image getalby.com",
+   "match": [
+    "Alby",
+    "getalby.com"
+   ],
+   "story": [
+    "Alby tworzy portfele i narzędzia do płatności bitcoinowych przez Lightning. Jednym z produktów zespołu jest Alby Hub, portfel pozwalający użytkownikowi samodzielnie przechowywać klucze.",
+    "Alby Hub można uruchomić na komputerze, własnym serwerze albo w chmurze. Rozszerzenie Alby pozwala połączyć portfel z przeglądarką, a aplikacja Alby Go służy do płatności mobilnych."
+   ],
+   "more_links": [
+    {
+     "label": "Alby Hub",
+     "url": "https://getalby.com/alby-hub"
+    },
+    {
+     "label": "Rozszerzenie do przeglądarki",
+     "url": "https://getalby.com/alby-extension"
+    },
+    {
+     "label": "Poradnik Alby Hub",
+     "url": "https://guides.getalby.com/user-guide/alby-hub"
+    },
+    {
+     "label": "Kod projektów na GitHubie",
+     "url": "https://github.com/getAlby"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/getAlby"
+    },
+    {
+     "kind": "nostr",
+     "url": "https://primal.net/p/nprofile1qqsyv47lazt9h6ycp2fsw270khje5egjgsrdkrupjg27u796g7f5k0s8jq7y6",
+     "label": "Alby"
+    },
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/@getalbycom",
+     "label": "@getalbycom"
+    }
+   ]
   },
   {
    "id": "zencharts",
@@ -320,7 +723,11 @@
      "url": "https://zencharts.vercel.app/"
     }
    ],
-   "origin": "Telegram dwadziesciajeden 2026-10-25 (author post, no name); owner pick 2026-10-26; image = own text card (chart data does not load on Tomek's network)"
+   "origin": "Telegram dwadziesciajeden 2026-10-25 (author post, no name); owner pick 2026-10-26; image = own text card (chart data does not load on Tomek's network)",
+   "story": [
+    "zencharts to przeglądarkowy wykres kursu bitcoina. Strona stawia wykres w centrum i ma oszczędny wygląd.",
+    "Można wybrać interwał od 15 minut do tygodnia. Dostępna jest też konsola konfiguracji, otwierana przyciskiem w rogu strony."
+   ]
   },
   {
    "id": "cashu-redeem",
@@ -340,7 +747,33 @@
      "url": "https://github.com/cashubtc/cashu-redeem"
     }
    ],
-   "origin": "Telegram dwadziesciajeden 2025-02-06 (author post); owner pick 2026-10-26; screenshot"
+   "origin": "Telegram dwadziesciajeden 2025-02-06 (author post); owner pick 2026-10-26; screenshot",
+   "match": [
+    "Cashu Redeem",
+    "redeem.cashu.me"
+   ],
+   "story": [
+    "Cashu Redeem to aplikacja internetowa do wymiany tokenów Cashu na środki w portfelu Lightning. Jej otwarty kod znajduje się w repozytorium organizacji Cashu na GitHubie.",
+    "W aplikacji można wkleić token oraz podać Lightning Address lub LNURL. Autorzy repozytorium ostrzegają, że projekt może zawierać błędy prowadzące do utraty środków."
+   ],
+   "more_links": [
+    {
+     "label": "Protokół Cashu",
+     "url": "https://cashu.space/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/CashuBTC",
+     "label": "@CashuBTC (protokół Cashu)"
+    },
+    {
+     "kind": "github",
+     "url": "https://github.com/cashubtc",
+     "label": "cashubtc"
+    }
+   ]
   },
   {
    "id": "bitcoin-meetups-portal",
@@ -360,7 +793,32 @@
      "url": "https://einundzwanzig.space/"
     }
    ],
-   "origin": "Telegram dwadziesciajeden 2025-12-02; owner pick 2026-10-26; og:image of the portal"
+   "origin": "Telegram dwadziesciajeden 2025-12-02; owner pick 2026-10-26; og:image of the portal",
+   "match": [
+    "portal.dwadziesciajeden.pl",
+    "portalu Einundzwanzig",
+    "portal Einundzwanzig",
+    "Portal meetupów"
+   ],
+   "story": [
+    "Bitcoin Meetups to portal z katalogiem spotkań bitcoinowych. Jest związany z niemieckojęzyczną społecznością Einundzwanzig, która odsyła do niego ze swojej listy meetupów.",
+    "Można w nim przeglądać spotkania i sprawdzać terminy wydarzeń. Portal udostępnia też widok mapy i możliwość subskrypcji kalendarza.",
+    "W kwietniu 2024 dodaliśmy Dwadzieścia Jeden do portalu Einundzwanzig, a Bitcoin FilmFest stał się tam pierwszym polskim wydarzeniem. Od grudnia 2025 portal meetupów działa po polsku pod naszą domeną."
+   ],
+   "more_links": [
+    {
+     "label": "Portal Einundzwanzig",
+     "url": "https://portal.einundzwanzig.space/de/meetups"
+    },
+    {
+     "label": "Kod portalu na GitHubie",
+     "url": "https://github.com/HolgerHatGarKeineNode/einundzwanzig-portal"
+    },
+    {
+     "label": "Lista meetupów Einundzwanzig",
+     "url": "https://einundzwanzig.space/meetups"
+    }
+   ]
   },
   {
    "id": "npub-pl",
@@ -376,7 +834,11 @@
      "url": "https://npub.pl/"
     }
    ],
-   "origin": "Telegram dwadziesciajeden 2025-12-01; owner pick 2026-10-26; screenshot"
+   "origin": "Telegram dwadziesciajeden 2025-12-01; owner pick 2026-10-26; screenshot",
+   "story": [
+    "npub.pl to serwis oferujący darmowy adres NIP-05 dla konta Nostr. Adres korzysta z domeny npub.pl.",
+    "Na stronie można rozpocząć rejestrację takiego adresu. Formularz zawiera też opcję ustawienia adresu Lightning."
+   ]
   },
   {
    "id": "nostr-com-pl",
@@ -392,7 +854,29 @@
      "url": "https://nostr.com.pl/"
     }
    ],
-   "origin": "Telegram dwadziesciajeden 2025-12-01; owner pick 2026-10-26; screenshot"
+   "origin": "Telegram dwadziesciajeden 2025-12-01; owner pick 2026-10-26; screenshot",
+   "story": [
+    "nostr.com.pl to polskojęzyczna strona wprowadzająca w protokół Nostr. Wyjaśnia, że Nostr jest protokołem, a nie pojedynczą aplikacją.",
+    "Znajdziemy tu opisy klientów i transmiterów oraz przykłady aplikacji. Osobna sekcja tłumaczy, czym są zapy, czyli napiwki przesyłane przez Lightning."
+   ],
+   "more_links": [
+    {
+     "label": "Podstawy protokołu",
+     "url": "https://nostr.com.pl/start.html"
+    },
+    {
+     "label": "Klienci Nostr",
+     "url": "https://nostr.com.pl/klienci/aplikacje.html"
+    },
+    {
+     "label": "Transmitery",
+     "url": "https://nostr.com.pl/klienci/transmitery.html"
+    },
+    {
+     "label": "Zapy",
+     "url": "https://nostr.com.pl/zaps/zapy.html"
+    }
+   ]
   },
   {
    "id": "carl-menger-film",
@@ -412,7 +896,23 @@
      "url": "https://carlmenger.pl/"
     }
    ],
-   "origin": "yellowpilled 2022-02/04 crowdfunding links; mises.pl premiere notes; BFF 2024 archive; owner pick 2026-10-26; og:image carlmenger.pl"
+   "origin": "yellowpilled 2022-02/04 crowdfunding links; mises.pl premiere notes; BFF 2024 archive; owner pick 2026-10-26; og:image carlmenger.pl",
+   "match": [
+    "Carl Menger",
+    "carlmenger.pl"
+   ],
+   "schema": "Movie",
+   "story": [
+    "„Carl Menger. Notatki na marginesie” to dokument o założycielu austriackiej szkoły ekonomii. Film powstał z inicjatywy Instytutu Misesa i środowiska austriackiej szkoły ekonomii.",
+    "Opowieść łączy historię życia Mengera z rozmową o jego ideach i ich współczesnym znaczeniu. Zdjęcia powstały w Austrii, Czechach, Polsce i Francji, a film pokazano między innymi na Bitcoin FilmFest 2024."
+   ],
+   "social": [
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/@MisesInstitutePL",
+     "label": "Instytut Misesa"
+    }
+   ]
   },
   {
    "id": "nostrwall",
@@ -428,7 +928,21 @@
      "url": "https://nostrwall.com/"
     }
    ],
-   "origin": "Telegram dwadziesciajeden 2023-03-23 (author post, no name; also makers.bolt.fun/project/nostrwall); site text checked 2026-10-26; owner pick 2026-10-26; screenshot"
+   "origin": "Telegram dwadziesciajeden 2023-03-23 (author post, no name; also makers.bolt.fun/project/nostrwall); site text checked 2026-10-26; owner pick 2026-10-26; screenshot",
+   "match": [
+    "nostrwall",
+    "Nostr Social Wall"
+   ],
+   "story": [
+    "Nostr Social Wall to mała aplikacja do pokazywania publicznych wpisów z Nostra na ekranie. Jest przeznaczona między innymi do wyświetlania treści na projektorze.",
+    "Operator wybiera słowa i frazy, a także może filtrować wpisy według języka i rodzaju treści. Ściana pozwala wyświetlać teksty oraz wpisy ze zdjęciami i filmami."
+   ],
+   "more_links": [
+    {
+     "label": "Otwórz ścianę wpisów",
+     "url": "https://nostrwall.com/wall"
+    }
+   ]
   },
   {
    "id": "freedom-publishing",
@@ -444,7 +958,249 @@
      "url": "https://wydawnictwofp.pl/"
     }
    ],
-   "origin": "owner request 2026-11-03; wydawnictwofp.pl"
+   "origin": "owner request 2026-11-03; wydawnictwofp.pl",
+   "match": [
+    "Freedom Publishing",
+    "wydawnictwofp.pl"
+   ],
+   "story": [
+    "Freedom Publishing to wydawnictwo, które udostępnia polskim czytelnikom książki o wolności, ekonomii i biznesie. W jego katalogu są również książki poświęcone Bitcoinowi i pieniądzowi.",
+    "Wśród nich znajduje się polski „Standard Bitcoina” Saifedeana Ammousa. Wydawnictwo oferuje także „Zepsuty pieniądz” Lyn Alden.",
+    "W 2025 roku zachęcaliśmy do wsparcia polskiego wydania „Zepsutego pieniądza”. Zbiórka się udała, a pierwsze egzemplarze trafiły do czytelników w kwietniu."
+   ],
+   "more_links": [
+    {
+     "label": "O wydawnictwie",
+     "url": "https://wydawnictwofp.pl/o-wydawnictwie/"
+    },
+    {
+     "label": "Książki o Bitcoinie",
+     "url": "https://wydawnictwofp.pl/temat/ekonomia/bitcoin/"
+    },
+    {
+     "label": "Standard Bitcoina",
+     "url": "https://wydawnictwofp.pl/ksiazki/standard-bitcoina/"
+    },
+    {
+     "label": "Zepsuty pieniądz",
+     "url": "https://wydawnictwofp.pl/ksiazki/zepsuty-pieniadz/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "x",
+     "url": "https://x.com/wydawnictwofp"
+    },
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/wydawnictwofp"
+    },
+    {
+     "kind": "facebook",
+     "url": "https://www.facebook.com/wydawnictwofp"
+    },
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/@freedompublishing355",
+     "label": "Freedom Publishing"
+    },
+    {
+     "kind": "linkedin",
+     "url": "https://www.linkedin.com/company/wydawnictwo-freedom-publishing",
+     "label": "Freedom Publishing"
+    },
+    {
+     "kind": "tiktok",
+     "url": "https://www.tiktok.com/@freedom_publishing"
+    }
+   ]
+  },
+  {
+   "id": "free-market-simpson",
+   "name": "Free Market Simpson",
+   "status": "sztuka",
+   "kind": "friends",
+   "image": "projekty/free-market-simpson.jpg",
+   "image_alt": "Obraz „The old world recipe”, Free Market Simpson, akryl na płótnie",
+   "text": "Polski artysta, który maluje wolny rynek: obrazy akrylowe, grafiki, pocztówki i murale od Warszawy, Częstochowy i Gdańska po Berlin i Pforzheim. Z humorem bierze na warsztat państwo, dotacje i planowanie centralne, pisze też o pieniądzu i Bitcoinie. Na swojej stronie poleca Dwadzieścia Jeden.",
+   "links": [
+    {
+     "label": "free-market-simpson.is",
+     "url": "https://free-market-simpson.is/home/"
+    },
+    {
+     "label": "Murale",
+     "url": "https://free-market-simpson.is/miasto/"
+    }
+   ],
+   "origin": "owner request 2026-11-06; free-market-simpson.is (home, obrazy, miasto, artykuly) 2026-11-06; image = painting The old world recipe from the site",
+   "match": [
+    "Free Market Simpson",
+    "free-market-simpson.is"
+   ],
+   "schema": "Person",
+   "story": [
+    "Free Market Simpson to artystyczny projekt prezentujący obrazy i murale. Na swojej stronie pokazuje też grafiki i pocztówki.",
+    "W galerii obrazów można obejrzeć prace akrylowe na płótnie, między innymi „Krajobraz gospodarczy”. Strona dokumentuje murale między innymi w Warszawie, Częstochowie i Gdańsku. W dziale artykułów znajdują się teksty o Bitcoinie, wolnym rynku i dotacjach."
+   ],
+   "more_links": [
+    {
+     "label": "Galeria obrazów",
+     "url": "https://free-market-simpson.is/obrazy/"
+    },
+    {
+     "label": "Artykuły",
+     "url": "https://free-market-simpson.is/artykuly/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "instagram",
+     "url": "https://www.instagram.com/freemarketsimpson"
+    }
+   ]
+  },
+  {
+   "id": "laissez-faire",
+   "kind": "friends",
+   "status": "podcast · od 2019",
+   "name": "Laissez Faire · Yellow Pill",
+   "text": "Polski wolnościowy podcast, nadawany od lipca 2019. Jego bitcoinowa seria 🟡 Yellow Pill i Bitcoin Czytanki ruszyła w 2021, w tym samym czasie co nasza pierwsza grupa yellowpilled. Dziś wychodzi tu też podcast Bujać!",
+   "links": [
+    {
+     "label": "Laissez Faire na Spotify",
+     "url": "https://open.spotify.com/show/7JKCgH1nxriBsh6y9JlfOY"
+    },
+    {
+     "label": "Fountain",
+     "url": "https://fountain.fm/show/boUD5XjpLuK9gOpCsmbb"
+    }
+   ],
+   "more_links": [
+    {
+     "label": "Apple Podcasts",
+     "url": "https://podcasts.apple.com/us/podcast/laissez-faire/id1560970874"
+    },
+    {
+     "label": "TrueFans",
+     "url": "https://truefans.fm/laissez-faire"
+    },
+    {
+     "label": "Pierwsza Bitcoin Czytanka (2021)",
+     "url": "https://anchor.fm/laissezfairepl/episodes/Bitcoin-Czytanka-Bitcoin-nie-jest-pienidzem-bez-pokrycia--Parker-Lewis-e14pnn1"
+    },
+    {
+     "label": "Bujać! u nas",
+     "internal": "/bujac/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "spotify",
+     "url": "https://open.spotify.com/show/7JKCgH1nxriBsh6y9JlfOY",
+     "label": "Laissez Faire 🇵🇱⚡"
+    },
+    {
+     "kind": "applepodcasts",
+     "url": "https://podcasts.apple.com/us/podcast/laissez-faire/id1560970874",
+     "label": "Laissez Faire 🇵🇱⚡"
+    },
+    {
+     "kind": "rss",
+     "url": "https://serve.podhome.fm/rss/c11cb847-8437-54c1-8fdf-052485f2ce6b",
+     "label": "kanał RSS"
+    }
+   ],
+   "story": [
+    "Laissez Faire 🇵🇱⚡ to wolnościowy podcast, który sam nazywa się „play-tankiem”. Pierwszy odcinek ukazał się 19 lipca 2019, a w kanale jest dziś 228 nagrań w kilku seriach: Klasa Atlasa o filozofii Ayn Rand, Komentarz Atlasa, nagrania z WK21 i WK23, 🟡 Yellow Pill i Bitcoin Czytanki oraz 🔶 Bujać!",
+    "Seria Yellow Pill to 14 bitcoinowych odcinków z lat 2021–2025. Zaczęła się od wideorecenzji „Standardu Bitcoina” w kwietniu 2021. W rozmowie MAXI 01 Jan Kłosowski z Deltabadgera opowiadał o zakładaniu bitcoinowego biznesu. Bitcoin Czytanki to lektorskie wersje tekstów o Bitcoinie, pierwsza z lipca 2021 to esej Parkera Lewisa „Bitcoin nie jest pieniądzem bez pokrycia”.",
+    "Nasza pierwsza grupa na Telegramie, yellowpilled, ruszyła w kwietniu 2021 i na początku wpadały do niej wpisy konta Yellow Pill PL. Od października 2025 w kanale Laissez Faire wychodzi podcast Bujać!, którego odcinki zebraliśmy na osobnej stronie."
+   ],
+   "match": [
+    "Laissez Faire",
+    "laissezfairepl",
+    "Yellow Pill"
+   ],
+   "image": "projekty/laissez-faire.jpg",
+   "image_alt": "Okładka podcastu Laissez Faire",
+   "origin": "owner request 2026-11-06; Laissez Faire RSS serve.podhome.fm (228 items, 14 Yellow Pill, 14 Bujać) and Apple Podcasts 2026-11-06"
+  },
+  {
+   "id": "bujac",
+   "kind": "friends",
+   "status": "podcast",
+   "name": "Bujać!",
+   "page": "/bujac/",
+   "text": "Podcast Mateusza Gadaja o Bitcoinie po polsku: rozmowy o NOSTR, prywatności, oszczędzaniu w BTC i wolności. Wszystkie odcinki, z opisami i linkami, zebraliśmy u nas na jednej stronie.",
+   "links": [
+    {
+     "label": "Wszystkie odcinki u nas",
+     "internal": "/bujac/"
+    },
+    {
+     "label": "bujac.pl",
+     "url": "https://bujac.pl/"
+    }
+   ],
+   "social": [
+    {
+     "kind": "spotify",
+     "url": "https://open.spotify.com/show/7JKCgH1nxriBsh6y9JlfOY",
+     "label": "Laissez Faire 🇵🇱⚡"
+    }
+   ],
+   "image": "projekty/bujac.jpg",
+   "image_alt": "Okładka podcastu Bujać!",
+   "origin": "owner request 2026-11-06; content/bujac.json; Laissez Faire RSS (serve.podhome.fm) 2026-11-06"
+  },
+  {
+   "id": "ryszard-zalski",
+   "name": "Ryszard Zalski",
+   "name_with": "Ryszardem Zalskim",
+   "status": "partner",
+   "kind": "friends",
+   "image": "projekty/ryszard-zalski.jpg",
+   "image_alt": "Ryszard Zalski przy mikrofonie w studiu Radia Wnet",
+   "text": "Z Azji tłumaczy światową politykę i gospodarkę: na swoim kanale YouTube łączy kropki między geopolityką, rynkami i pieniądzem. W Radiu Wnet prowadził Pomarańczowe Studio, cykl rozmów o Bitcoinie, a w podcaście Bujać! opowiadał o biznesach budowanych na Bitcoinie.",
+   "links": [
+    {
+     "label": "Kanał na YouTube",
+     "url": "https://www.youtube.com/@RyszardZalski"
+    },
+    {
+     "label": "Pomarańczowe Studio Radia Wnet",
+     "url": "https://wnet.fm/2025/03/07/wspolczesny-system-pieniezny-jest-abitralny-i-oderwany-od-rzeczywistosci-pomaranczowe-studio-radia-wnet"
+    }
+   ],
+   "origin": "owner request 2026-11-06 (friend of the site, make him a partner); youtube.com/@RyszardZalski about page + RSS (joined 6 Apr 2025, 30 videos, banner 'Gospodarka & Geopolityka') 2026-11-06; wnet.fm 2025-03-07 (Pomarańczowe Studio, 'Prowadzi Ryszard Zalski'); wnet.fm Poranek Wnet 2022-08-22 (Studio Tajpej); content/bujac.json s2-e07; image = channel avatar letterboxed over blur",
+   "match": [
+    "Ryszard Zalski",
+    "Ryszardem Zalskim",
+    "Zalski"
+   ],
+   "schema": "Person",
+   "story": [
+    "Ryszard Zalski od kwietnia 2025 prowadzi na YouTube kanał „Gospodarka & Geopolityka”. Sam pisze, że prosto z serca Azji analizuje, co naprawdę dzieje się w światowej polityce i gospodarce, i łączy kropki między geopolityką a rynkami. Świat ogląda przez pryzmat pasji do inwestowania i życia spędzonego głównie za granicą.",
+    "W Radiu Wnet prowadził wcześniej Studio Tajpej, a w 2025 roku poprowadził Pomarańczowe Studio Radia Wnet, cykl rozmów poświęconych Bitcoinowi.",
+    "We wrześniu 2025 był gościem podcastu Bujać! Rozmawiali o biznesach budowanych na Bitcoinie, niezależnych mediach, Azji, cenzurze i równoległej gospodarce."
+   ],
+   "more_links": [
+    {
+     "label": "Najnowsze filmy",
+     "url": "https://www.youtube.com/@RyszardZalski/videos"
+    },
+    {
+     "label": "Odcinek Bujać! z Ryszardem",
+     "internal": "/bujac/#s2-e07"
+    }
+   ],
+   "social": [
+    {
+     "kind": "youtube",
+     "url": "https://www.youtube.com/@RyszardZalski",
+     "label": "@RyszardZalski"
+    }
+   ]
   }
  ]
 }
