@@ -1,6 +1,6 @@
 # Handoff
 
-## 2026-11-06: partner social media, Telegram chat cards, Laissez Faire + Bujać cards, footer (local, NOT deployed)
+## 2026-11-06: partner social media, Telegram chat cards, Laissez Faire + Bujać cards, footer (DEPLOYED da94a81)
 
 - Social media on partners: new `social` list in `content/projekty.json` (`kind` = x, nostr, instagram, youtube, facebook, linkedin, github, tiktok, spotify, applepodcasts, rss; optional `label`). Cards on /projekty/ show an icon row (`social_row()`), partner subpages a "Social media" list, and the URLs go into the page's JSON-LD `sameAs`. Sources: each partner's own site footer (2026-11-06), plus web search for BitcoinWalk (@BitcoinWalkOrg) and Free Market Simpson (Instagram @freemarketsimpson). Telegram profiles of partners are left out because the build strips every t.me link. New CC0 icons from Simple Icons in `icon()`. BFF's X link moved from `links` to `social`.
 - New friends cards: "Laissez Faire · Yellow Pill" (`/projekty/laissez-faire/`, story from the podcast's RSS feed: since 2019-07-19, 228 episodes, 14 Yellow Pill episodes 2021-2025) and "Bujać!" (`page: "/bujac/"`, so the card links to the existing /bujac/ page and no subpage is generated; `partner_path()` honours `page`). Images letterboxed from the official covers (`assets/projekty/laissez-faire.jpg`, `bujac.jpg`; raw Laissez Faire cover in `source-archive/project-images/`).
@@ -10,7 +10,7 @@
 - Satsback link `satsback.com/register/dlorDWND5JPeV7pw` is the referral link from the old Ghost page "Nasze projekty", which said it was a partner link; the "ponad 600 polskich sklepów" claim comes from the same old page.
 - Built 60 pages, 254 search records; QA ALL PASS (10 gates, port 8771). Not committed, not pushed.
 
-## 2026-11-06: partner subpages + 🟠 two-line header (local, NOT deployed)
+## 2026-11-06: partner subpages + 🟠 two-line header (DEPLOYED da94a81)
 
 - Header/footer brand: logo image replaced by an 🟠 emoji (`LOGO` in build.py, `.mark--dot` in site.css) and the wordmark set on two lines "Dwadzieścia / Jeden" (owner picked option 2 of the mockups in `Hermes/image-gen/2026-11-06-dj-header-logo-variants/`).
 - Every non-"ours" project (20) now has its own page `/projekty/<id>/` (`build_partner_pages`): card text, image, 2-3 paragraph Polish story (`story` in projekty.json), links (`links` + `more_links`), "U nas na stronie" list of kronika entries and pages that mention it (`match` terms), chips to other friends, WebPage+about JSON-LD. Card heading on /projekty/ links to the page. Pages are in search.json, sitemap.xml and llms.txt under ## Projekty.
@@ -18,7 +18,7 @@
 - Free Market Simpson card image re-made: the source photo had a ~30 px strip of another picture under the painting (rows 741+), now cropped off before compositing.
 - Built 59 pages; QA ALL PASS (10 gates, port 8763). Not committed, not pushed.
 
-## 2026-11-06: Free Market Simpson art project (local, NOT deployed)
+## 2026-11-06: Free Market Simpson art project (DEPLOYED da94a81)
 
 - Added Free Market Simpson (Polish free-market painter and muralist, free-market-simpson.is; his site links back to 21) at the end of Zaprzyjaźnieni in `content/projekty.json` (status "sztuka", kind "friends"), links: home + murals page. Card image `assets/projekty/free-market-simpson.jpg` = his painting "The old world recipe" letterboxed on a blurred copy; raw images in `source-archive/project-images/fms-*.jpg`.
 - Built 39 pages, 251 search records; QA ALL PASS (10 PASS gates, port 8761). Anchor, llms.txt, llms-full.txt and search.json entries checked. Not committed, not pushed (deploy only on Tomek's word).
@@ -177,4 +177,5 @@ History of the cutover:
 
 - New friends card + subpage `/projekty/ryszard-zalski/` (status `partner`, schema Person), appended last in `content/projekty.json`. Owner: "friend of the site, make him the partner". Sources: youtube.com/@RyszardZalski about page + RSS (channel "Gospodarka & Geopolityka", joined 6 Apr 2025), wnet.fm 2025-03-07 (Pomarańczowe Studio Radia Wnet, "Prowadzi Ryszard Zalski"), wnet.fm Poranek Wnet 2022 (Studio Tajpej), `content/bujac.json` s2-e07. Image `assets/projekty/ryszard-zalski.jpg` = channel avatar (Radio Wnet studio photo) letterboxed over blur; raw in `source-archive/project-images/`.
 - `build.py`: optional `name_with` field (instrumental case) for the partner-page note ("historię z Ryszardem Zalskim"); falls back to `name`.
-- Build: 61 pages, 255 search records. QA 10 PASS, ALL PASS. Local only, NOT committed or pushed (deploy on Tomek's word).
+- Build: 61 pages, 255 search records. QA 10 PASS, ALL PASS.
+- DEPLOYED 2026-11-06 on Tomek's "publish all": commit `da94a81` pushed everything that was local (all 2026-11-06 rounds above: partner subpages, header, social icons, Telegram cards, Laissez Faire/Bujać/Free Market Simpson cards, Zalski). Live-checked: /projekty/ card anchors + image, /projekty/ryszard-zalski/, llms.txt, search.json, sitemap.xml.
