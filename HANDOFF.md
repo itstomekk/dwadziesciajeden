@@ -4,11 +4,11 @@
 
 - Social media on partners: new `social` list in `content/projekty.json` (`kind` = x, nostr, instagram, youtube, facebook, linkedin, github, tiktok, spotify, applepodcasts, rss; optional `label`). Cards on /projekty/ show an icon row (`social_row()`), partner subpages a "Social media" list, and the URLs go into the page's JSON-LD `sameAs`. Sources: each partner's own site footer (2026-11-06), plus web search for BitcoinWalk (@BitcoinWalkOrg) and Free Market Simpson (Instagram @freemarketsimpson). Telegram profiles of partners are left out because the build strips every t.me link. New CC0 icons from Simple Icons in `icon()`. BFF's X link moved from `links` to `social`.
 - New friends cards: "Laissez Faire · Yellow Pill" (`/projekty/laissez-faire/`, story from the podcast's RSS feed: since 2019-07-19, 228 episodes, 14 Yellow Pill episodes 2021-2025) and "Bujać!" (`page: "/bujac/"`, so the card links to the existing /bujac/ page and no subpage is generated; `partner_path()` honours `page`). Images letterboxed from the official covers (`assets/projekty/laissez-faire.jpg`, `bujac.jpg`; raw Laissez Faire cover in `source-archive/project-images/`).
-- Laissez Faire's podhome page links Tomek's X; both cards are under Zaprzyjaźnieni until the owner says they are "ours".
+- Laissez Faire's podhome page links Tomek's X. Owner 2026-11-06: Laissez Faire and Bujać stay under Zaprzyjaźnieni ("projekty wyrosłe / zaprzyjaźnione").
 - /projekty/ inicjatywy: "Pomóż tłumaczyć" moved to the end; "Czaty i społeczności" gets two Telegram cards (main chat and Poznań, both "na zaproszenie", link = invitation form; `ini_card()` now accepts `{B}` internal URLs). Card images `assets/projekty/telegram-21.jpg`, `telegram-poznan.jpg` rendered from HTML. Initiative blocks are wider (`.cat .ini-grid` minmax 250px, 4 per row at 1280).
 - Footer: "Zasady i sieć TwentyOne" link removed (the /zasady/ page stays; the brand line "Część sieci TwentyOne" stays).
 - Satsback link `satsback.com/register/dlorDWND5JPeV7pw` is the referral link from the old Ghost page "Nasze projekty", which said it was a partner link; the "ponad 600 polskich sklepów" claim comes from the same old page.
-- Built 60 pages, 254 search records; QA ALL PASS (10 gates, port 8771). Not committed, not pushed.
+- Built 60 pages, 254 search records; QA ALL PASS (10 gates, port 8771). Pushed in da94a81 (by a parallel session); live check 2026-11-06 13:03: /projekty/ cards, Telegram cards, /projekty/laissez-faire/, social lists and footer all present on dwadziesciajeden.pl.
 
 ## 2026-11-06: partner subpages + 🟠 two-line header (DEPLOYED da94a81)
 
