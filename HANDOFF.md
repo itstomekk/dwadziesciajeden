@@ -1,5 +1,9 @@
 # Handoff
 
+## 2026-11-07: PUBLISHED (commit 4f5b1c0, live-checked)
+
+- Pushed together: header logo with BITCOIN POLSKA subtitle, "Dlaczego Bitcoin?" mission page with verified numbers, and the Bitcoin w Polsce hub. Live check: /kim-jestesmy/ serves the new build (x4,04, PIT-38, #wolnosc, original 2022 text kept), old `article.mission` class gone, `.mpage` in live CSS, key pages 200. The "NOT deployed" labels in the three entries below are now stale: they are live.
+
 ## 2026-11-06: header subtitle "BITCOIN POLSKA" + flag (local, NOT deployed)
 
 - Owner picked mockup variant 1 (Montserrat Light, grey, spaced) with tweaks: tighter line spacing, wider letter spacing, subtitle pulled closer, and the 🟠 dot centred on the two wordmark lines only. Implemented in `BRAND_NAME` (build.py) and `.brand*` rules (assets/site.css). The flag is a drawn inline SVG (the flag emoji renders as "PL" on Windows). Wordmark: line-height .92, letter-spacing .03em; subtitle: 300 weight, .48em, .288em tracking, fitted so the flag ends flush with "Dwadzieścia" (within 0.02 px at 1280, 390, 340 wide).
