@@ -7,6 +7,7 @@ BASE: URL prefix. GitHub Pages project site = "/dwadziesciajeden"; custom domain
 NOINDEX stays True until the owner says go live.
 """
 import html
+import hashlib
 import html.parser
 import json
 import os
@@ -27,6 +28,12 @@ BASE = os.environ.get("DJ_BASE", "").rstrip("/")  # live on dwadziesciajeden.pl 
 SITE_URL = os.environ.get("DJ_SITE_URL", "https://dwadziesciajeden.pl").rstrip("/")
 NOINDEX = os.environ.get("DJ_NOINDEX", "0") == "1"
 BUILT = date.today().isoformat()
+
+
+def asset_v(name):
+    """Cache-busting token: a hash of the asset's bytes, so a CSS/JS change always gets a new URL."""
+    return hashlib.sha1((ROOT / "assets" / name).read_bytes()).hexdigest()[:10]
+
 
 INVITE_ENDPOINT = "https://dj-invitations.kolotom.workers.dev/subscribe"
 INVITE_PAGE = "/dolacz-do-nas/#invite"
@@ -196,7 +203,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None, 
 <link rel="apple-touch-icon" href="{b('/assets/apple-touch-icon.png')}">
 <link rel="preload" href="{b('/assets/fonts/montserrat-latin.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{b('/assets/fonts/fonts.css')}">
-<link rel="stylesheet" href="{b('/assets/site.css')}?v={BUILT}">
+<link rel="stylesheet" href="{b('/assets/site.css')}?v={asset_v('site.css')}">
 <link rel="alternate" type="application/rss+xml" title="Dwadzieścia Jeden: kronika i artykuły" href="{SITE_URL}/rss.xml">
 </head>
 <body class="k-{kind}" data-base="{BASE}">
@@ -254,7 +261,7 @@ def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None, 
     <button class="search__close" type="button" data-search-close>Zamknij <kbd>Esc</kbd></button>
   </div>
 </div>
-<script src="{b('/assets/site.js')}?v={BUILT}" defer></script>
+<script src="{b('/assets/site.js')}?v={asset_v('site.js')}" defer></script>
 <script data-goatcounter="{GOATCOUNTER}" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
@@ -537,7 +544,7 @@ def btcmap_app(city=None):
             f'</div></div>{legend}</section>'
             f'<script src="{b("/assets/vendor/leaflet/leaflet.js")}" defer></script>'
             f'<script src="{b("/assets/vendor/markercluster/leaflet.markercluster.js")}" defer></script>'
-            f'<script src="{b("/assets/mapa.js")}?v={BUILT}" defer></script>')
+            f'<script src="{b("/assets/mapa.js")}?v={asset_v("mapa.js")}" defer></script>')
 
 
 # ---------------------------------------------------------------- pages
