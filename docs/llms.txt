@@ -7,7 +7,7 @@ Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treś�
 ## O społeczności
 
 - [Dwadzieścia Jeden: polska społeczność Bitcoin Only](https://dwadziesciajeden.pl/index.md): Dwadzieścia Jeden: polska społeczność bitcoinowych maksymalistów, część sieci TwentyOne.
-- [Kim jesteśmy?](https://dwadziesciajeden.pl/kim-jestesmy/index.md): Jeśli choć trochę obserwujesz świat i zachodzisz w głowę, dlaczego nagle nasze życie staje się groteskowe, to z pewnością szukasz tego przyczyn i…
+- [Dlaczego Bitcoin?](https://dwadziesciajeden.pl/kim-jestesmy/index.md): Dlaczego Bitcoin? Poznaj nasze argumenty, trudne pytania i misję społeczności Dwadzieścia Jeden.
 - [Zasady i sieć TwentyOne](https://dwadziesciajeden.pl/zasady/index.md): Zasady społeczności Dwadzieścia Jeden i idea sieci TwentyOne.
 - [Dołącz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/index.md): Jeśli szukasz ludzi z którymi mógłbyś: podyskutować o bieżących wydarzeniach, zasięgnąć porady lub konsultacji, otworzyć kanał Lightning, sprawdzić
 - [Kronika](https://dwadziesciajeden.pl/kronika/index.md): Kronika społeczności Dwadzieścia Jeden: meetupy, zbiórki, kampanie.
@@ -22,7 +22,7 @@ Każda strona ma wersję Markdown pod adresem `<strona>/index.md`. Pełna treś�
 
 ## Miasta, meetupy i projekty
 
-- [Bitcoinowa Mapa Polski](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/index.md): Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność.
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/index.md): Mapa miejsc, miasta, projekty i kronika bitcoinowej społeczności w Polsce.
 - [Warszawa](https://dwadziesciajeden.pl/warszawa/index.md): BitcoinWalk w soboty o 11:30, Bitcoin Café w poniedziałki o 18:00.
 - [Kraków](https://dwadziesciajeden.pl/krakow/index.md): Meetupy w Techies i wykłady. Terminy na czacie.
 - [Poznań](https://dwadziesciajeden.pl/poznan/index.md): BitcoinWalki i lokalna społeczność.

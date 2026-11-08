@@ -50,6 +50,8 @@ Nasza pierwsza grupa na Telegramie, yellowpilled, ruszyła w kwietniu 2021 i na 
 
 - [Na początku był yellowpilled 🟡](https://dwadziesciajeden.pl/kronika/#k-2021-04-05-na-poczatku-byl-yellowpilled)kronika · 5 kwietnia 2021
 
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+
 - [Edukacja](https://dwadziesciajeden.pl/edukacja/)strona
 
 Coś nieaktualne albo chcesz dopisać swoją historię z Laissez Faire · Yellow Pill? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).

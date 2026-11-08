@@ -48,6 +48,8 @@ W listopadzie 2025 Cryptosteel znalazł się wśród pierwszych darczyńców nas
 
 - [Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/)strona
 
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+
 - [Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/)strona
 
 Coś nieaktualne albo chcesz dopisać swoją historię z Cryptosteel? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).

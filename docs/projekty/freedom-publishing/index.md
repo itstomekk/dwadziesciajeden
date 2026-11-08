@@ -58,7 +58,11 @@ W 2025 roku zachęcaliśmy do wsparcia polskiego wydania „Zepsutego pieniądza
 
 - [Bitcoin w Parlamencie: jak 560 książek trafiło do posłów i senatorów](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/)strona
 
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+
 - [Edukacja](https://dwadziesciajeden.pl/edukacja/)strona
+
+- [Dlaczego Bitcoin?](https://dwadziesciajeden.pl/kim-jestesmy/)strona
 
 - [Standard Bitcoina w polskim Parlamencie](https://dwadziesciajeden.pl/standard-bitcoina-w-polskim-parlamencie/)strona
 

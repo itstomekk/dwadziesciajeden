@@ -38,6 +38,8 @@ W kwietniu 2024 dodaliśmy Dwadzieścia Jeden do portalu Einundzwanzig, a Bitcoi
 
 - [Dołączamy do portalu sieci](https://dwadziesciajeden.pl/kronika/#k-2024-04-08-dolaczamy-do-portalu-sieci)kronika · 8 kwietnia 2024
 
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+
 Coś nieaktualne albo chcesz dopisać swoją historię z Bitcoin Meetups? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
 
 ## Inni zaprzyjaźnieni

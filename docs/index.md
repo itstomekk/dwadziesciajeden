@@ -46,7 +46,7 @@ Zrealizowany projekt
 
 Zebraliśmy w bitcoinie środki na 560 egzemplarzy książki Saifedeana Ammousa. 8 stycznia 2026 trafiły z listem otwartym do każdego posła i senatora, a cztery dni później do Prezydenta RP. Zbiórkę wsparło 80 osób.
 
-[Przeczytaj całą historię](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Przebieg w kronice](https://dwadziesciajeden.pl/kronika/) · [Edukacja Czym jest Bitcoin, jak zacząć, jak nie dać się oszukać. Plus biblioteka: książki, strony i nagrania po polsku.](https://dwadziesciajeden.pl/edukacja/) · [Mapa i miasta Gdzie zapłacisz bitcoinem i gdzie się spotykamy: Warszawa, Kraków, Poznań, Wrocław, Katowice.](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/) · [Projekty Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce.](https://dwadziesciajeden.pl/projekty/) · [Kronika Od yellowpilled w 2021 do książek w Sejmie.](https://dwadziesciajeden.pl/kronika/)
+[Przeczytaj całą historię](https://dwadziesciajeden.pl/bitcoin-w-parlamencie/) · [Przebieg w kronice](https://dwadziesciajeden.pl/kronika/) · [Edukacja Czym jest Bitcoin, jak zacząć, jak nie dać się oszukać. Plus biblioteka: książki, strony i nagrania po polsku.](https://dwadziesciajeden.pl/edukacja/) · [Bitcoin w Polsce Mapa, miasta, projekty i kronika społeczności.](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/) · [Projekty Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce.](https://dwadziesciajeden.pl/projekty/) · [Kronika Od yellowpilled w 2021 do książek w Sejmie.](https://dwadziesciajeden.pl/kronika/)
 
 ## Gdzie nas znaleźć
 

@@ -1,5 +1,31 @@
 # Handoff
 
+## 2026-11-06: header subtitle "BITCOIN POLSKA" + flag (local, NOT deployed)
+
+- Owner picked mockup variant 1 (Montserrat Light, grey, spaced) with tweaks: tighter line spacing, wider letter spacing, subtitle pulled closer, and the 🟠 dot centred on the two wordmark lines only. Implemented in `BRAND_NAME` (build.py) and `.brand*` rules (assets/site.css). The flag is a drawn inline SVG (the flag emoji renders as "PL" on Windows). Wordmark: line-height .92, letter-spacing .03em; subtitle: 300 weight, .48em, .288em tracking, fitted so the flag ends flush with "Dwadzieścia" (within 0.02 px at 1280, 390, 340 wide).
+- Dot: `translateY(-.07em)` so its ink centre sits on the caps span of the two lines (measured on 3x screenshots: 28.17 vs 28.17 desktop, 26.0 vs 25.83 phone, 26.67 vs 26.5 at 340). Header is ~4.5 px taller on desktop (69.6 vs 65). Footer brand shows the same subtitle.
+- QA ALL PASS (10 gates, port 8798). Mockup tooling in `Hermes/image-gen/2026-11-06-dj-bitcoin-polska-subtitle/` (`measure.py`, `fit.py`). Not committed or deployed.
+
+## 2026-11-06: verified numbers + Polish context on /kim-jestesmy/ (local, NOT deployed)
+
+- Added to `mission_page.py` only numbers whose source I re-opened myself (rule: nothing from `private/dlaczego-research/` goes on the page unchecked). Poland: GUS CPI 1995-2025 (x4.04, +27% in 2022-23, 1989 = 351.1, 1990 = 685.8, inline SVG chart from `GUS_CPI`), NBP denomination 10 000:1, 75.8 tys. -> 9.8 mln mkp per USD (dzieje.pl), Copernicus Meditata quote (via Bochenek, Ekonomista 2017), NBP target 2.5% +/-1, PIT-38 19% (podatki.gov.pl, updated 24.06.2026), Polish book editions (Freedom Publishing). World: Bitcoin Core v28.0 rules, halving 20.04.2024, Bitnodes ~20k (6.11.2026), Satoshi 11.02.2009 quote, Nixon 1971 (Fed), Canada 2022 (CBC), Nigeria 2020 (CoinDesk + HRW), Ukraine 2022 (Decrypt), HRF 76%, Chainalysis 2025 ($154B, <1%), UNODC 2-5% GDP, 21Shares volatility (issuer source, labelled).
+- Left out on purpose: MiCA / Polish crypto-assets law (status moved with vetoes; only seen in a search snippet, not opened), Findex 1.3 bn (only secondary source opened), HRW "raising funds through bitcoin" quote (did not match the page), research file B items B11/B12 now re-checked (halving page opened; whitepaper abstract still unused), Canada/Nigeria/Ukraine dates beyond what the sources print.
+- BUG FIXED: the article used class `mission`, which collides with the homepage `.mission` strip (3-column dark grid). The page rendered ~310 px wide on desktop. Article is now `.mpage`; the overflow QA could not see it. Check new pages with a real screenshot, not only the DOM overflow test.
+- Chart/typography: one-letter Polish words and the link arrow get `&nbsp;` in our copy only (the 2022 original is untouched). QA ALL PASS (port 8802), 3 tests in `qa/test_mission_page.py`. Screenshots: `Hermes/image-gen/2026-11-06-dj-mission-numbers/`.
+
+## 2026-11-06: "Dlaczego Bitcoin?" mission page at /kim-jestesmy/ (local, NOT deployed)
+
+- `/kim-jestesmy/` (nav label unchanged) is now an editorial explainer built by `mission_page.py` (called from `build.py`): problem of money, how Bitcoin works, why Bitcoin Only, five hard questions (energy, volatility, crime, payments, quantum), mission and CTAs. The 2022 JesterHodl text is kept whole, collapsed under "Od czego zaczynaliśmy" (`#oryginalny-tekst`); the URL is unchanged.
+- Research: 5 subagents saved claims with verbatim quotes in `private/dlaczego-research/*.json` (gitignored; all five files exist, B-rules.json arrived last: 10 verified, whitepaper abstract and 2024 halving date unverified, uptime/hashrate/Lightning/UASF not fetched). Only claims whose source was re-opened in this session went into the page (bitcoin.org FAQ and how-it-works, Cambridge, IPN, Celsius/Vermont, Canadian Commons, Lopp, Ethereum, Tether, NIST, Blockstream). Not on the page yet: GUS CPI numbers, Copernicus, Nixon 1971, HRF, Nigeria, Canada freeze figures, Ukraine, FTX/Terra DOJ, Chainalysis. Gaps from workers: no Polish-specific freedom example, no verified Turkey/Lebanon/Venezuela data, no verified Polish MiCA/19% tax source, Szabo quote and Hayek 1984 wording unverified.
+- Built 61 pages, 255 search records; QA ALL PASS (10 gates, port 8797); `qa/test_mission_page.py` passes. Vision review was blocked by a rate limit, so layout was checked by DOM only (no phone overflow). Same tree also holds the unpublished Bitcoin w Polsce hub work. Not committed or deployed.
+
+## 2026-11-06: Bitcoin w Polsce hub (local, NOT deployed)
+
+- Renamed the existing map page and main navigation item to Bitcoin w Polsce; kept its existing URL and map, city sections and old links. Added a project count derived from `content/projekty.json` (ours and friends) with a link to the project directory.
+- Added a collapsed, filterable chronicle to the hub; the separate `/kronika/` remains available for existing links, images and RSS. Removed Kronika from the main navigation only.
+- Built 61 pages and 255 search records. Site QA: 10 gates passed; new hub tests 2 passed; browser verified map presence, opening/filtering/closing the chronicle and mobile overflow. Screenshot generated but visual review blocked by vision provider rate limit. Not committed or deployed.
+- Earlier request to add real artwork and screenshots to the education library remains outstanding; no education images were changed in this round.
+
 ## 2026-11-06: partner social media, Telegram chat cards, Laissez Faire + Bujać cards, footer (DEPLOYED da94a81)
 
 - Social media on partners: new `social` list in `content/projekty.json` (`kind` = x, nostr, instagram, youtube, facebook, linkedin, github, tiktok, spotify, applepodcasts, rss; optional `label`). Cards on /projekty/ show an icon row (`social_row()`), partner subpages a "Social media" list, and the URLs go into the page's JSON-LD `sameAs`. Sources: each partner's own site footer (2026-11-06), plus web search for BitcoinWalk (@BitcoinWalkOrg) and Free Market Simpson (Instagram @freemarketsimpson). Telegram profiles of partners are left out because the build strips every t.me link. New CC0 icons from Simple Icons in `icon()`. BFF's X link moved from `links` to `social`.

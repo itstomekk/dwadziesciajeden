@@ -17,6 +17,7 @@ from datetime import date
 from pathlib import Path
 
 import whitepaper_page as wpp
+import mission_page
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
@@ -76,9 +77,8 @@ def icon(name):
 NAV = [
     ("Kim jesteśmy", "/kim-jestesmy/"),
     ("Edukacja", "/edukacja/"),
-    ("Mapa i miasta", "/bitcoinowa-mapa-polski/"),
+    ("Bitcoin w Polsce", "/bitcoinowa-mapa-polski/"),
     ("Projekty", "/projekty/"),
-    ("Kronika", "/kronika/"),
 ]
 
 MONTHS = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia",
@@ -155,7 +155,11 @@ def text_of(h: str) -> str:
 
 # Header/footer wordmark: orange circle emoji + name on two lines (owner pick 2026-11-06, variant 2).
 LOGO = '<i class="mark mark--dot" aria-hidden="true">🟠</i>'
-BRAND_NAME = '<span>Dwadzieścia<br>Jeden</span>'
+# Subtitle under the wordmark (owner pick 2026-11-06, variant 1 with a drawn flag: the flag emoji shows as "PL" on Windows).
+BRAND_NAME = ('<span class="brand__txt"><span class="brand__name">Dwadzieścia<br>Jeden</span>'
+              '<small class="brand__sub">BITCOIN POLSKA<svg class="brand__flag" viewBox="0 0 16 10" aria-hidden="true">'
+              '<rect width="16" height="5" fill="#fff"/><rect y="5" width="16" height="5" fill="#DC143C"/>'
+              '<rect x=".25" y=".25" width="15.5" height="9.5" fill="none" stroke="#cfcfcf" stroke-width=".5"/></svg></small></span>')
 
 
 def layout(path, title, body, desc="", kind="page", og_image=None, crumbs=None, ld=None):
@@ -581,7 +585,7 @@ def build():
     latest_k = sorted(kronika, key=lambda x: x["date"], reverse=True)[:4]
     sections = [
         ("Edukacja", "/edukacja/", "Czym jest Bitcoin, jak zacząć, jak nie dać się oszukać. Plus biblioteka: książki, strony i nagrania po polsku."),
-        ("Mapa i miasta", "/bitcoinowa-mapa-polski/", "Gdzie zapłacisz bitcoinem i gdzie się spotykamy: Warszawa, Kraków, Poznań, Wrocław, Katowice."),
+        ("Bitcoin w Polsce", "/bitcoinowa-mapa-polski/", "Mapa, miasta, projekty i kronika społeczności."),
         ("Projekty", "/projekty/", "Nasze projekty, zaprzyjaźnieni, stowarzyszenia, wydarzenia i czaty: kto buduje Bitcoina w Polsce."),
         ("Kronika", "/kronika/", "Od yellowpilled w 2021 do książek w Sejmie."),
     ]
@@ -671,6 +675,11 @@ def build():
         if slug == "kim-jestesmy":
             body_html = body_html.replace(f'<p><a href="{BASE}/autor/jesterhodl/">@JesterHodl</a></p>',
                                           f'<p class="byline">Tekst: <a href="{BASE}/autor/jesterhodl/">@JesterHodl</a></p>')
+            body = mission_page.render(BASE, body_html)
+            desc = "Dlaczego Bitcoin? Poznaj nasze argumenty, trudne pytania i misję społeczności Dwadzieścia Jeden."
+            write("/kim-jestesmy/", layout("/kim-jestesmy/", "Dlaczego Bitcoin?", body, desc=desc))
+            add_index("/kim-jestesmy/", "Dlaczego Bitcoin? Kim jesteśmy", "strona", text_of(body))
+            continue
         is_post = p["kind"] == "post"
         meta = ""
         if is_post:
@@ -796,12 +805,14 @@ def build():
           f'<li>Byłeś tam niedawno i zapłaciłeś bitcoinem? Potwierdź je jednym kliknięciem.</li>'
           f'<li>Nowe miejsce dodasz przez formularz BTC Map albo bezpośrednio w OpenStreetMap.</li>'
           f'<li><a href="{b(INVITE_PAGE)}">Napisz do nas</a>, żebyśmy mogli pochwalić się nowym miejscem.</li></ol>')
-    body = (f'<article class="article"><p class="kicker">Mapa i miasta</p><h1>Bitcoinowa Mapa Polski</h1>'
-            f'<p class="lede">Gdzie w Polsce zapłacisz bitcoinem i gdzie się spotykamy. <a href="#miasta">Przejdź do miast</a>.</p>'
-            f'<div class="prose">{m}</div></article>' + miasta_section)
-    write("/bitcoinowa-mapa-polski/", layout("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", body,
-                                             desc="Miejsca w Polsce, w których zapłacisz bitcoinem. Mapa BTC Map prowadzona przez społeczność."))
-    add_index("/bitcoinowa-mapa-polski/", "Bitcoinowa Mapa Polski", "strona", text_of(m))
+    polska_body = (f'<article class="article"><p class="kicker">Mapa i społeczność</p><h1>Bitcoin w Polsce</h1>'
+            f'<p class="lede">Gdzie zapłacisz bitcoinem, gdzie się spotykamy i co wspólnie tworzymy.</p>'
+            f'<nav class="toc" aria-label="Na tej stronie"><a href="#mapa">Mapa</a><a href="#miasta">Miasta</a><a href="#polskie-projekty">Projekty</a><a href="#kronika">Kronika</a></nav>'
+            f'<div class="prose" id="mapa">{m}</div></article>' + miasta_section
+            + f'<section class="cat" id="polskie-projekty"><h2 class="sec-title">Projekty</h2>'
+              f'<p>W naszym katalogu znajdziesz <strong>{len(projekty["projects"])} projektów</strong> naszych i zaprzyjaźnionych.</p>'
+              f'<a class="link-arrow" href="{b("/projekty/")}">Zobacz wszystkie projekty</a></section>')
+    add_index("/bitcoinowa-mapa-polski/", "Bitcoin w Polsce", "strona", text_of(m))
 
     # ---- projekty + inicjatywy (one page)
     def proj_card(pr):
@@ -861,6 +872,12 @@ def build():
                       for x, i in gallery)
             + "</div></section>")
     write("/kronika/", layout("/kronika/", "Kronika", body, desc="Kronika społeczności Dwadzieścia Jeden: meetupy, zbiórki, kampanie."))
+    polska_body += (f'<details id="kronika" class="cat polska-kronika"><summary><span class="sec-title">Kronika społeczności</span> '
+                    f'<span>Rozwiń · {len(ks)} wpisów</span></summary>'
+                    f'<p>Historia społeczności od 2021 roku.</p><div class="filters" role="group" aria-label="Filtruj kronikę">{fbar}</div>'
+                    f'<div class="tl-wrap">{blocks}</div><p><a class="link-arrow" href="{b("/kronika/")}">Kronika i zdjęcia na osobnej stronie</a></p></details>')
+    write("/bitcoinowa-mapa-polski/", layout("/bitcoinowa-mapa-polski/", "Bitcoin w Polsce", polska_body,
+          desc="Mapa miejsc, miasta, projekty i kronika bitcoinowej społeczności w Polsce."))
     for x in ks:
         add_index("/kronika/", f'{x["title"]} ({pl_date(x["date"])})', "kronika", x["text"], x.get("tags", []))
 

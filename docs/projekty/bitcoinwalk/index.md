@@ -50,7 +50,7 @@ W lipcu 2024 roku odbył się BitcoinWalk w Poznaniu, prowadzony przez Macieja S
 
 - [BitcoinWalk w Poznaniu](https://dwadziesciajeden.pl/kronika/#k-2024-07-06-bitcoinwalk-w-poznaniu)kronika · 6 lipca 2024
 
-- [Bitcoinowa Mapa Polski](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
 
 - [Bujać!](https://dwadziesciajeden.pl/bujac/)strona
 

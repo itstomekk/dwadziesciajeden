@@ -58,6 +58,8 @@ Pierwsza edycja festiwalu w 2023 roku rodziła się w naszej społeczności, prz
 
 - [Bitcoiners in Poland, unite!](https://dwadziesciajeden.pl/kronika/#k-2023-02-17-bitcoiners-in-poland-unite)kronika · 17 lutego 2023
 
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+
 - [Bujać!](https://dwadziesciajeden.pl/bujac/)strona
 
 Coś nieaktualne albo chcesz dopisać swoją historię z Bitcoin FilmFest? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).

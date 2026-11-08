@@ -40,6 +40,8 @@ W grudniu 2024 odnotowaliśmy w naszej kronice dołączenie bitcoina do rezerw k
 
 - [Kancelaria na standardzie bitcoina](https://dwadziesciajeden.pl/kronika/#k-2024-12-03-kancelaria-na-standardzie-bitcoina)kronika · 3 grudnia 2024
 
+- [Bitcoin w Polsce](https://dwadziesciajeden.pl/bitcoinowa-mapa-polski/)strona
+
 Coś nieaktualne albo chcesz dopisać swoją historię z Kancelaria DJP: Bitcoin desk? [Napisz do nas](https://dwadziesciajeden.pl/dolacz-do-nas/#invite).
 
 ## Inni zaprzyjaźnieni
